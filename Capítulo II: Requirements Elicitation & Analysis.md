@@ -203,13 +203,13 @@ de comercio.</th>
 
 | Estrategia/ Táctica                          | Medidas a tomar                                         |
 |----------------------------------------------|---------------------------------------------------------|
-| Diferenciación en Dinámica de Compra y Venta | \- Destacar la ventaja de la compra y venta directa.    |
-|                                              | \- Resaltar la eliminación de intermediarios.           |
-|                                              | \- Alianzas con comerciantes para impulsar compradores. |
-| Enfoque en la Economía                       | \- Maximizar rentabilidad y gestionar costos.           |
-|                                              | \- Ofrecer herramientas de análisis económico.          |
-| Publicidad de Insumos Agrícolas              | \- Resaltar acceso a insumos de calidad.                |
-|                                              | \- Colaboraciones con proveedores de insumos.           |
+| | \-     |
+|                                              | \-          |
+|                                              | \-  |
+|                      | \-           |
+|                                              | \-         |
+|             | \-               |
+|                                              | \-          |
 
 
 ## 2.2. Entrevistas.
@@ -231,16 +231,16 @@ de comercio.</th>
 
 - **Preguntas de ámbito de gestión:**
 
-  - ¿Para usted es complicado manejar las fechas durante todo el proceso de siembra? ¿Qué dificultades tiene?
-  - ¿Se le olvidan las fechas en las que debe abonar o regar sus cosechas?
+  - ¿Para usted es complicado manejar las fechas y procesos durante todo el proceso de siembra? ¿Qué dificultades tiene?
+  - ¿Se le olvidan las fechas o pasos en las que debe abonar o regar sus cosechas?
   - ¿Cómo gestiona normalmente sus cosechas?
   - ¿Qué datos considera importantes tener en cuenta para un seguimiento adecuado?
-  - ¿Cómo evaluar que sus productos tienen una calidad superior luego de la cosecha?
+  - ¿Cómo evalúa que sus productos tienen una calidad superior luego de la cosecha?
   - ¿Qué tipo de dispositivos son de su preferencia o uso personal para el uso de programas o aplicaciones?
   - ¿Qué plataformas o redes sociales utilizan regularmente para adquirir información?
   - ¿Alguna vez ha usado una aplicación o programa que le ayude en la gestión?
-  - Si tuviera la oportunidad de usar una aplicación que le ayude a gestionar sus siembras con un seguimiento de fechas y recomendaciones, ¿la utilizaría?
-  - ¿Qué características considera importantes que deben incluirse en la aplicación?
+  - Si tuviera la oportunidad de usar una plataforma que le ayude a monitorear sus siembras con dispositivos con sensores en la tierra de cultivo, ¿la utilizaría?
+  - ¿Qué características considera importantes que deben incluirse?
   - ¿Qué canales de comunicación prefiere utilizar si necesita ayuda y capacitación?
   - ¿Cuál es el navegador que utiliza para acceder a internet?
 
@@ -248,7 +248,7 @@ de comercio.</th>
 - **Preguntas principales**
   - En términos de cantidad, ¿considera que sus ventas son al por mayor o al por menor?
   - ¿Qué es lo que normalmente busca de los productos agrícolas?
-  - ¿Cómo es que compra lo que desea comerciar?
+  - ¿Qué medios usa para comerciar?
   - ¿Usted define el precio de venta o lo hacen los productores?
   - Si el vendedor es quien establece los precios, ¿considera que es adecuado?
   - ¿Alguna vez ha comprado sus productos a un precio bajo solo para tener algo que vender?
@@ -275,46 +275,42 @@ de comercio.</th>
 
 Entrevistado 1:
 
-Nombre y apellidos: Jerónimo Vilcamiza Saldaña
+Nombre y apellidos: 
 
-Edad: 41 años
+Edad:
 
-Distrito: El carmen - Chincha
+Distrito: 
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: 
 
-Inicio: 0:00 
+Inicio: 
 
-Fin: 7:43
+Fin: 
 
-Duración: 7:43
+Duración: 
 
-![entrevista1](https://github.com/JorgeGonzales15/SW51-GreatMinds-OpenSource/assets/104078975/8a677388-1d07-4e19-b9b4-0decb701f59a)
 
 Resumen de la entrevista:
-El entrevistado fue Don Gerónimo Vilcamiza Saldaña, él es un agricultor de 41 años que reside en el distrito de El Carmen, en la provincia de Chincha. Él nos menciona que  posee un terreno, donde normalmente cultiva maíz o palto. Asimismo, menciona que  indica que al momento de la cosecha, ofrece sus productos al por mayor a los intermediarios. En algunas ocasiones acepta precios bajos con el fin de no desperdiciar sus productos. No obstante, si eso sucede, comercializa sus productos en el mercado local. Por último, el dispositivo que más usa es el celular con sistema operativo Android y el browser que frecuenta es Google Chrome.
 
 Entrevistado 2:
 
-Nombre y apellidos: Gian Ismael Castillón Paucar
+Nombre y apellidos: 
 
-Edad: 28 años
+Edad: 
 
-Distrito: El carmen - Chincha
+Distrito: 
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: 
 
-Inicio: 7:43
+Inicio: 
 
-Fin: 18:53
+Fin: 
 
-Duración: 11:10
+Duración: 
 
-![entrevista2](https://github.com/JorgeGonzales15/SW51-GreatMinds-OpenSource/assets/104078975/dcc9c0b5-2698-4a89-9afd-f3418cba35a2)
 
 Resumen de la entrevista:
 
-El entrevistado fue Gian Castillón Paucar, un jóven de 28 años que se dedica a la agricultura desde muy temprana edad, al igual que toda su familia. Se considera una persona perseverante, responsable y dedicada. Su principal cultivo es la palta y la pitahaya. Gian menciona que el precio es definido por los compradores y que ello generalmente se basa en la calidad del producto y la dinámica del mercado. Si no logra vender todos sus productos, lo ofrece en el mercado local. A futuro, planea obtener mayor producción de sus plantas de palto. Sin embargo, a veces enfrenta desafíos, como la falla de los motores, lo cual desencadena una alteración en el cronograma de riego. Gian nos comenta también que a veces es complicado organizarse, por ello utiliza un programa de excel y word para anotar las fechas de todas sus actividades agrícolas. Por último, la creación de una aplicación web que le ayude a organizarse le parece una gran idea. Sin embargo, cree que la aplicación debería brindar información adicional sobre los procesos de crecimiento de su planta. Por último, el entrevistado nos contó que el browser que más usa es Google Chrome y el dispositivo que más usa es el celular con sistema operativo Android y una laptop con sistema operativo Windows.
 
 Entrevistado 3:
 
