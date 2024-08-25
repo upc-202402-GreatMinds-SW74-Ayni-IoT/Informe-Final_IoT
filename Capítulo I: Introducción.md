@@ -48,7 +48,7 @@ La aplicación web recibirá el nombre “Ayni”, debido a que, en el lenguaje 
 **Product Description**
 
 
-El software es innovador ya que se encarga de ofrecer un sistema de control de calidad de manera que monitorea productos agrícolas mediante sensores en el suelo, esto permite a los agricultores realizar funciones de mantenimiento tales como visualizar el clima al cual está expuesto la tierra, temperatura, pH, oxígeno, CO2, conductividad eléctrica y humedad, de esta manera el agricultor identifica las necesidades de mantenimiento del terreno realizando una planificación personalizada previa de lo que requiere el cultivo. Por otro lado, como función de secuencia o tipo flujo dirigida a los comerciantes, tal que pueden realizar la compra de productos de los cultivos publicados por los agricultores, acceder a los detalles de las plantas brindados por los sensores en tiempo real y calificar los productos adquiridos. Tanto los productores y comerciantes accederán a la aplicación mediante un dispositivo electrónico con conexión a internet; las computadoras y dispositivos móviles junto con un navegador serán el principal medio de acceso para la aplicación.
+El software es innovador ya que se encarga de ofrecer un sistema de control de calidad de manera que monitorea productos agrícolas mediante sensores en el suelo, esto permite a los agricultores realizar funciones de mantenimiento tales como visualizar el clima al cual está expuesto la tierra, temperatura, pH, oxígeno, CO2, conductividad eléctrica y humedad, de esta manera el agricultor identifica las necesidades de mantenimiento del terreno realizando una planificación personalizada previa de lo que requiere el cultivo. Una vez la solución IoT identifica las carencias de la tierra de cultivo, se activarán actuadores que brinden lo necesario para que el plan de cultivo se cumpla a la perfección. Por otro lado, como función de secuencia o tipo flujo dirigida a los comerciantes, tal que pueden realizar la compra de productos de los cultivos publicados por los agricultores, acceder a los detalles de las plantas brindados por los sensores en tiempo real y calificar los productos adquiridos. Tanto los productores y comerciantes accederán a la aplicación mediante un dispositivo electrónico con conexión a internet; las computadoras y dispositivos móviles junto con un navegador serán el principal medio de acceso para la aplicación. 
 
 
 **Monetización**
@@ -138,6 +138,7 @@ Posibilidad de tener acceso a toda la información actualizada y detallada del p
 - Función de calificación hacia los productos adquiridos
 - Realizar planificaciones para establecer valores requeridos del terreno para un correcto ciclo de vida del cultivo
 - Monitoreo de ciclo de vida de cultivos mediante sensores en la tierra
+- Realizar acciones de soporte para los cultivos mediante actuadores
 - Compra/venta de productos agrícolas mediante la plataforma
 
 **User Assumptions**
@@ -234,17 +235,21 @@ A continuación, se plantearán las hipótesis que proponen una solución a la p
 ---
 
 ### Hipótesis 5:
-*Creemos que generamos ganancias por publicidad de insumos para agricultura dentro de la aplicación.*
-*Sabremos que hemos tenido éxito cuando recibamos los fondos por brindar la publicidad a los proveedores de insumos.*
+*Creemos que los agricultores mejorarán la calidad de sus cultivos gracias a la solución IoT*
+*Sabremos que hemos tenido éxito cuando los registros de los actuadores aumenten considerablemente en su uso.*
 
 **Métricas:**
-1. *Ingresos por Publicidad Mensuales:* Ganancias generadas a través de acuerdos de publicidad con proveedores de insumos.
-   - Métrica actual: $500
-   - Meta deseada: $1000
+1. *Uso de actuadores:* Numero de actividades diarias 
+   - Métrica actual: 20 activdiades diarias promedio
+   - Meta deseada: 80 actividades diarias promedio
+    
+2. *Reseñas de compradores* Estrellas promedio de una escala de 1 a 5
+   - Métrica actual: 3.8 estrellas promedio de 1 a 5
+   - Meta deseada: 4.5 estrellas promedio de 1 a 5
 
 #### 1.2.2.4. Lean UX Canvas.
 
-https://miro.com/welcomeonboard/dGIzUGhtbDhSYUxERGl1VkNadTBIQldQbHVWS2piOUNCRFpoTktEQ0ZlUm16Ukpnd0M0dlJ1WXE5N3h1VVQwQ3wzMDc0NDU3MzU3NDk3MzU0NjE5fDI=?share_link_id=842526109990
+![image](https://github.com/user-attachments/assets/8bf33bdd-8b6c-46ef-9ba7-ba749f8c1b23)
 
 ### 1.3. Segmentos objetivo.
 
