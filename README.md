@@ -93,7 +93,8 @@ Para la elaboración del informe se realizaron actividades tales como:
 - [3.3. Impact Mapping](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/blob/develop/Cap%C3%ADtulo%20III:%20Requirements%20Specification.md#33-impact-mapping)
 - [3.4. Product Backlog](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/blob/develop/Cap%C3%ADtulo%20III:%20Requirements%20Specification.md#34-product-backlog)
 
-## [4.1. Strategic-Level Domain-Driven Design](#)
+## [Capítulo IV: Solution Software Design](#)
+- [4.1. Strategic-Level Domain-Driven Design](#)
 - [4.1.1. EventStorming](#)
   - [4.1.1.1. Candidate Context Discovery](#)
   - [4.1.1.2. Domain Message Flows Modeling](#)
@@ -104,8 +105,7 @@ Para la elaboración del informe se realizaron actividades tales como:
   - [4.1.3.2. Software Architecture Context Level Diagrams](#)
   - [4.1.3.3. Software Architecture Container Level Diagrams](#)
   - [4.1.3.4. Software Architecture Deployment Diagrams](#)
-
-## [4.2. Tactical-Level Domain-Driven Design](#)
+- [4.2. Tactical-Level Domain-Driven Design](#)
 - [4.2.X. Bounded Context: ""](#)
   - [4.2.X.1. Domain Layer](#)
   - [4.2.X.2. Interface Layer](#)
