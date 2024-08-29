@@ -203,13 +203,12 @@ de comercio.</th>
 
 | Estrategia/ Táctica                          | Medidas a tomar                                         |
 |----------------------------------------------|---------------------------------------------------------|
-| | \-     |
-|                                              | \-          |
-|                                              | \-  |
-|                      | \-           |
-|                                              | \-         |
-|             | \-               |
-|                                              | \-          |
+| Diferenciación en implementar IoT | \- Destacar la ventaja del uso de dispositivos IoT     |
+|                                              | \- Resaltar la ventaja de obtener detalles especificos de la tierra de cultivo         |
+|                                              | \- Implementación de actuadores que ejecutan tareas en base a los planes |
+| Uso de plataforma en multiples dispositivos     | \-  Ofrecer que la plataforma esté disponible en Android y como aplicación web de escritorio         |
+|                                              | \- Garantizar el correcto funcionamiento de las caracteristicas sin dejar de lado la experiencia de usuario        |
+
 
 
 ## 2.2. Entrevistas.
@@ -677,6 +676,8 @@ largo del proceso. Esto permite comprender mejor cómo los usuarios
 interactúan con la aplicación, identificar oportunidades de mejora y
 alinear el diseño con sus necesidades reales. Se utilizó la herramienta UXPressia.
 
+
+(actualizar, dejo un ejemplo)
 Segmento 1: Agricultores
 
 ![UserJourneyMap1](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/265284905-9e9d15f3-d00d-4309-80ea-8552a89dac0d.jpeg)
@@ -689,7 +690,7 @@ Segmento 2: Comercializadores
 ### 2.3.4. Empathy Mapping.
 
 
-![EmpathyMap1](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/263751285-bcb85957-8bd7-47fa-93aa-d5dcb7f0abee.png)
+![Empathy map (3)](https://github.com/user-attachments/assets/c0979713-7547-46b2-a968-9061c46775bd)
 
 ![EmpathyMap2](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/263751281-ba5274bf-8a83-42c1-8aaa-8e03434dfbdb.png)
 
