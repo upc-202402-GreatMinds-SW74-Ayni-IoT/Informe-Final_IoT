@@ -283,23 +283,25 @@ Resumen de la entrevista:
 
 Entrevistado 2:
 
-Nombre y apellidos: 
+Nombre y apellidos: German Portella
 
-Edad: 
+Edad: 23
 
-Distrito: 
+Región: Ancash
 
-Url: 
+Url: [Video Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u202117686_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202117686%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20German%20Portella%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E94cb76ef%2D0889%2D44d7%2Db627%2Dfde61411d96c)
 
-Inicio: 
+<!-- Inicio: 
 
-Fin: 
+Fin:  -->
 
-Duración: 
+Duración: 6:08
 
+![entrevistado2](./assets/entrevista2.png)
 
 Resumen de la entrevista:
 
+El entrevistado fue German Portella de 23 años del departamento de Ancash. Él está enfocado a una producción y venta al por menor, su producto principal es la papa. La venta la realiza en mercados locales y tiendas pequeñas. También menciona que a veces le resulta complicado coordinar todas las fechas y procesos. También menciona que hace uso de su celular para buscar información en internet o hacer uso de Facebook y Whatsapp. Por último, el dispositivo que más usa es su celular Android y su navegador de preferencia es Google Chrome.
 
 Entrevistado 3:
 
@@ -676,15 +678,13 @@ largo del proceso. Esto permite comprender mejor cómo los usuarios
 interactúan con la aplicación, identificar oportunidades de mejora y
 alinear el diseño con sus necesidades reales. Se utilizó la herramienta UXPressia.
 
-
-(actualizar, dejo un ejemplo)
 Segmento 1: Agricultores
 
-![UserJourneyMap1](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/265284905-9e9d15f3-d00d-4309-80ea-8552a89dac0d.jpeg)
+![UserJourneyMap1](./assets/user_journey_map_agricultores.png)
 
 Segmento 2: Comercializadores
 
-![UserJourneyMap2](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/265284902-b2b8a006-08fd-448d-92f4-aa8f01c87844.jpeg)
+![UserJourneyMap2](./assets/user_journey_map_comerciantes.png)
 
 
 ### 2.3.4. Empathy Mapping.

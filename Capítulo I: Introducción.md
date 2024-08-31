@@ -3,7 +3,7 @@
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
 
-El startup que se introduce en el presente informe recibe como nombre “GreatMinds”. Actualmente conformado por un conjunto de estudiantes de la Universidad Peruana de Ciencias Aplicadas, con la ambición de querer ayudar a la sociedad con nuestra grán pasión a la tecnología e informática, creamos esta startup tomando como objetivo facilitar y mejorar la producción del sector agrícola del Perú. 
+El startup que se introduce en el presente informe recibe como nombre “GreatMinds”. Actualmente conformado por un conjunto de estudiantes de la Universidad Peruana de Ciencias Aplicadas, con la ambición de querer ayudar a la sociedad con nuestra grán pasión a la tecnología e informática, creamos esta startup tomando como objetivo facilitar y mejorar la producción del sector agrícola del Perú.
 
 Como misión se plantea “Incrementar la calidad de producción agrícola con eficiencia, seguridad y transparencia entre agricultores y comerciantes del Perú”. Asimismo, la visión de la startup plantea desarrollar la solución más reconocida en el Perú para monitorear cultivos de manera eficiente y sencilla.
 
@@ -14,11 +14,9 @@ Mi nombre es Jorge Enrique Gonzales Carrión tengo 19 años de edad y curso el o
 ![jroge](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/assets/104078975/f2ae0bea-109a-48cb-abd8-47db542006c3)
 
 ---
+Mi nombre es Jhonel Enrique Rios Jaimes, estudiande de la carrera de Ingeniería de Software en la UPC. Me considero una persona responsable y que trabaja en equipo. Además poseo habilidades técnicas en lenguajes de programación como JavaScript, Python, C#.
 
-
-
-
-
+![jhonel](https://lh3.googleusercontent.com/a/ACg8ocLyLe0WU8rxwOyJokFYUBRuQzJPPqs5KQymM7A_zwAWBJpET2k=s576-c-no)
 ---
 
 
