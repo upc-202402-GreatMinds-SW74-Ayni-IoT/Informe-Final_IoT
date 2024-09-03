@@ -18,8 +18,11 @@ Mi nombre es Jhonel Enrique Rios Jaimes, estudiande de la carrera de Ingeniería
 
 ![jhonel](https://lh3.googleusercontent.com/a/ACg8ocLyLe0WU8rxwOyJokFYUBRuQzJPPqs5KQymM7A_zwAWBJpET2k=s576-c-no)
 ---
+Mi nombre es Luia Angel Alejo cardenas, soy estudiante de la carrera de Ingenieria de Software, posse conocimientos en programación en C++, Python, Java, HTML, CSS y FLutter. Además, soy bueno haciendo cálculos matemáticos, me comprometo a apoyar a mi equipo en todo lo posible y ser responsable con cada actividad que se me asigne.
 
+<br>
 
+<img src="https://cdn.discordapp.com/attachments/909636564529852427/1280676564354207864/43178475.png?ex=66d8f27e&is=66d7a0fe&hm=f7220433fc965d6f03b0a9cb73e0a64cdc9be88aba92706b1dd3a293ae46eb7b&" alt="GreatMinds" width="500px">
 
 ---
 
