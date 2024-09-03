@@ -51,8 +51,7 @@ El software es innovador ya que se encarga de ofrecer un sistema de control de c
 
 **Monetización**
 
-(preguntar si con el sistema IoT se puede generar dinero)
-Nuestra aplicación será monetizada a través de publicidad sobre insumos para cultivar, de esta manera se cobrará por la aparición de publicidad en la aplicación a proveedores de insumos. De esta manera, nuestra aplicación se volverá un entorno completo para que los productores mejoren sus productos con los insumos que serán publicitados en la aplicación (libre elección de compra).
+La forma de monetización será mediante una suscripción que cubra todo el servicio incluyendo los dispositivos IOT que se requiere.
 
 ### 1.2.1 Antecedentes y problemática
 
@@ -112,7 +111,7 @@ A partir de lo anterior, resulta posible plantear la principal interrogante que 
 
 Incremento de las transacciones de compra de productos agrícolas en un 30%.
 Incrementar el número de usuarios de la plataforma de un 40%
-(preguntar si con el sistema IoT se puede generar dinero)
+Ingresos mediante suscripciones de los clientes que corresponden al 90%
 
 **Users:**
 
@@ -162,7 +161,7 @@ La interfaz de nuestro producto debe ser sencilla e intuitiva para simplificar s
 3. **El valor #1 que mi cliente quiere de mi servicio** es la capacidad de aumentar su eficiencia al desempeñarse mejor en el proceso de cultivo mediante la solución tecnológica y una dinámica de compra y venta sencilla.
 4. **El cliente también puede obtener beneficios adicionales como** el acceso directo a los mercados mediante un sistema de compra entre los consumidores y productores. Gracias a ello, los productores pueden obtener mayores ingresos. 
 5. **Voy a adquirir la mayoría de mis clientes** mediante el marketing de boca a boca, o el anuncio mediante redes sociales o la radio.
-6. **Haré dinero a través de** (preguntar si se puede ganar dinero con IOT)
+6. **Haré dinero a través de** suscripciones que cubran todo el servicio u los dispositivos IOT
 7. **Mi competencia principal en el mercado** serán otras soluciones tecnológicas que ofrecen un servicio similar al planteado para este proyecto.
 8. **Los venceremos debido a la simplicidad** de uso de nuestra solución y a la combinación de funcionalidades únicas que permiten combatir con problemas específicos, como el del ciclo de cultivo de la planta a detalle, entre otros.
 9. **El mayor riesgo es que** los agricultores y los comerciantes no utilicen la aplicación por considerarla demasiado compleja de usar o simplemente resistirse al cambio.
