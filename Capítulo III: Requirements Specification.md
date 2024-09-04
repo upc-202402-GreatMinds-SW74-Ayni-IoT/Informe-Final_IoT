@@ -62,24 +62,24 @@ A continuación, se mostrará la herramienta Product Backlog, lista de trabajo o
 |04|HU-08|Planificar actividades agrícolas|Como agricultor, quiero ingresar los datos correspondientes para la planificación de las actividades agrícolas|5|
 |05|HU-04|Realizar pedidos de productos|Como comercializador, quiero poder realizar los pedidos de productos agrícolas para poder realizar las entregas|8|
 |06|HU-09|Monitorear los cultivos mediante dispositivos con sensores IOT|Como agricultor, quiero monitorear el estado del terreno de cultivo para poder llevar un control eficiente|8|
-|06|HU-17|Notificar las acciones realizadas por los actuadores en el terreno de cultivo|Como agricultor deseo que los actuadores realicen acciones en base a la planificación y que se me notifique para saber que problemas está pasando con el terreno de cultivo|8|
-|06|HU-03|Explorar productos agrícolas|Como comercializador quiero observar los productos disponibles para poder realizar los pedidos|3|
-|08|HU-16|Sección principal ("Home")|Como usuario del segmento productor o del segmento comerciante, deseo que luego de iniciar sesión me redirija a una sección "Home" para ver en es pantalla mis actividades recientes|2|
-|09|HU-01|Selección de roles|Como usuario, quiero elegir un rol en la aplicación web o móvil para acceder a las funcionalidades disponibles según el rol que escoja (Productor o Comerciante).|2|
-|10|HU-02|Inicio de sesión|Como usuario, quiero iniciar sesión para poder ingresar a mi cuenta|3|
-|11|HU-10|Atender pedidos|Como usuario deseo ver los pedidos que tengo de manera rápida y fácil en una pantalla|3|
-|12|HU-06|Seguimiento de Pedidos y Entregas|Como comercializador, quiero poder observar el estado de los pedidos y entregas para poder sentirme más tranquilo|5|
-|13|HU-06|Acceder a Calificaciones | Como comercializador, quiero acceder a las calificaciones para cuantificar que tan satisfecho estoy con la calidad del producto que compré|2|
-|14|TS-01|Autenticación, creación y obtención de usuarios|Como desarrollador, quiero implementar autenticación, creación y obtención de usuarios a través de una API para que pueda estar disponible la creación de usuarios e iniciar sesión para la aplicación web o móvil.|**5**|
-|15|TS–02|Creación y obtención de cultivos|Como desarrollador, quiero añadir y obtener cultivos a través de una API, para que los usuarios puedan interactuar con la aplicación web o móvil de manera eficiente.|**3**|
-|16|TS-03|Obtención y creación de registros financieros (costos y ganancias)|Como desarrollador, quiero registrar y obtener la información de los costos y ganancias mediante una API<br>Para que pueda estar disponible en la aplicación web o móvil |**5**|
-|17|TS-04|Obtención y creación para productos agrícolas|<p>Como desarrollador, quiero obtener y crear productos agrícolas a través de una API. Esto permitirá a los usuarios acceder y crear registros de productos agrícolas en la aplicación web o móvil.</p><p></p><p></p>|**3**|
-|18|TS-05|Obtención y creación de órdenes de productos de cultivo|Como desarrollador, quiero implementar la obtención y creación de órdenes de productos de cultivo a través de una API<br>para que esté disponible en la aplicación web o móvil|**5**|
-|19|HU-14|Visualización de botones y texto amplia y notoria|Como usuario deseo ver los botones y la información de las secciones o pantalla para una mejor navegación|3|
-|20|HU-15|Sistemas de búsqueda y paginación|Como usuario deseo encontrar los productos de manera rápida para no perder tiempo|1|
-|21|TS-06|Seguridad y encriptación para la creación de usuarios|Como desarrollador, quiero implementar características de seguridad mediante una API para que la aplicación web o móvil no sea vulnerable frente a ataques|**3**|
-|22|TS–07|<p>Obtención de un cultivo en específico </p><p></p>|Como desarrollador, quiero la información de un cultivo en específico a través de una API, para que los usuarios puedan interactuar con la aplicación web o móvil de manera eficiente.|**5**|
-|23|TS-08|Obtención de productos en venta relacionados a cultivos|Como desarrollador, quiero obtener la información de las órdenes de un usuario en específico mediante una API<br>Para que pueda estar disponible en la aplicación web o móvil |**5**|
-|24|TS-09|Obtención y creación de ventas (sales)|<p>Como desarrollador, quiero obtener las ganancias agrícolas de un usuario en específico a través de una API. Para que pueda estar disponible en la aplicación web o móvil </p><p></p><p></p>|**3**|
-|25|TS-10|Cambiar estado de órdenes (orders)|Como desarrollador, quiero que el estado de una orden sea cambiada mediante una API<br>Para que exista un estándar de estados en la aplicación web o móvil web|**3**|
+|07|HU-17|Notificar las acciones realizadas por los actuadores en el terreno de cultivo|Como agricultor deseo que los actuadores realicen acciones en base a la planificación y que se me notifique para saber que problemas está pasando con el terreno de cultivo|8|
+|08|HU-03|Explorar productos agrícolas|Como comercializador quiero observar los productos disponibles para poder realizar los pedidos|3|
+|09|HU-16|Sección principal ("Home")|Como usuario del segmento productor o del segmento comerciante, deseo que luego de iniciar sesión me redirija a una sección "Home" para ver en es pantalla mis actividades recientes|2|
+|10|HU-01|Selección de roles|Como usuario, quiero elegir un rol en la aplicación web o móvil para acceder a las funcionalidades disponibles según el rol que escoja (Productor o Comerciante).|2|
+|11|HU-02|Inicio de sesión|Como usuario, quiero iniciar sesión para poder ingresar a mi cuenta|3|
+|12|HU-10|Atender pedidos|Como usuario deseo ver los pedidos que tengo de manera rápida y fácil en una pantalla|3|
+|13|HU-06|Seguimiento de Pedidos y Entregas|Como comercializador, quiero poder observar el estado de los pedidos y entregas para poder sentirme más tranquilo|5|
+|14|HU-06|Acceder a Calificaciones | Como comercializador, quiero acceder a las calificaciones para cuantificar que tan satisfecho estoy con la calidad del producto que compré|2|
+|15|TS-01|Autenticación, creación y obtención de usuarios|Como desarrollador, quiero implementar autenticación, creación y obtención de usuarios a través de una API para que pueda estar disponible la creación de usuarios e iniciar sesión para la aplicación web o móvil.|**5**|
+|16|TS–02|Creación y obtención de cultivos|Como desarrollador, quiero añadir y obtener cultivos a través de una API, para que los usuarios puedan interactuar con la aplicación web o móvil de manera eficiente.|**3**|
+|17|TS-03|Obtención y creación de registros financieros (costos y ganancias)|Como desarrollador, quiero registrar y obtener la información de los costos y ganancias mediante una API<br>Para que pueda estar disponible en la aplicación web o móvil |**5**|
+|18|TS-04|Obtención y creación para productos agrícolas|<p>Como desarrollador, quiero obtener y crear productos agrícolas a través de una API. Esto permitirá a los usuarios acceder y crear registros de productos agrícolas en la aplicación web o móvil.</p><p></p><p></p>|**3**|
+|19|TS-05|Obtención y creación de órdenes de productos de cultivo|Como desarrollador, quiero implementar la obtención y creación de órdenes de productos de cultivo a través de una API<br>para que esté disponible en la aplicación web o móvil|**5**|
+|20|HU-14|Visualización de botones y texto amplia y notoria|Como usuario deseo ver los botones y la información de las secciones o pantalla para una mejor navegación|3|
+|21|HU-15|Sistemas de búsqueda y paginación|Como usuario deseo encontrar los productos de manera rápida para no perder tiempo|1|
+|22|TS-06|Seguridad y encriptación para la creación de usuarios|Como desarrollador, quiero implementar características de seguridad mediante una API para que la aplicación web o móvil no sea vulnerable frente a ataques|**3**|
+|23|TS–07|<p>Obtención de un cultivo en específico </p><p></p>|Como desarrollador, quiero la información de un cultivo en específico a través de una API, para que los usuarios puedan interactuar con la aplicación web o móvil de manera eficiente.|**5**|
+|24|TS-08|Obtención de productos en venta relacionados a cultivos|Como desarrollador, quiero obtener la información de las órdenes de un usuario en específico mediante una API<br>Para que pueda estar disponible en la aplicación web o móvil |**5**|
+|25|TS-09|Obtención y creación de ventas (sales)|<p>Como desarrollador, quiero obtener las ganancias agrícolas de un usuario en específico a través de una API. Para que pueda estar disponible en la aplicación web o móvil </p><p></p><p></p>|**3**|
+|26|TS-10|Cambiar estado de órdenes (orders)|Como desarrollador, quiero que el estado de una orden sea cambiada mediante una API<br>Para que exista un estándar de estados en la aplicación web o móvil web|**3**|
 
