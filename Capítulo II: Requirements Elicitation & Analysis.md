@@ -709,3 +709,45 @@ acciones, emociones y puntos de fricción. Se utilizó la herramienta Miro.
 Visualización de los As-Is Scenario Mapping:
 
 [<u>https://miro.com/app/board/uXjVMQLNH9s=/?share_link_id=67585397072</u>](https://miro.com/app/board/uXjVMQLNH9s=/?share_link_id=67585397072)
+
+## 2.4 Ubiquitous Language
+
+• Crop Buying and Selling (Compra/Venta de Cultivos): Proceso mediante el cual se realiza la transacción comercial de productos agrícolas entre diferentes partes interesadas.
+
+• Crop Registration (Registro de Cultivos): Acto de registrar información detallada sobre los cultivos, como su tipo, ubicación, fechas de siembra y cosecha, entre otros datos relevantes.
+
+• Crop Monitoring (Monitoreo de Cultivos): Seguimiento continuo de la evolución de los cultivos a lo largo de su ciclo de vida, mediante el uso de tecnología o informes manuales.
+
+• Crop Planning (Planificación de Cultivos): Proceso de organizar y programar las actividades agrícolas, como la siembra y la cosecha, para optimizar el rendimiento.
+
+• User Login (Inicio de Sesión): Proceso por el cual un usuario accede a la plataforma, proporcionando sus credenciales para autenticar su identidad.
+
+• Session Management (Gestión de Sesiones): Control y supervisión del acceso de los usuarios a la plataforma, asegurando que las sesiones activas estén autorizadas y protegidas.
+
+• Farmers (Agricultores): Personas o empresas responsables de cultivar y cosechar productos agrícolas.
+
+• Profile (Perfil): Un perfil es un registro que contiene información personal sobre un usuario, típicamente almacenado dentro de la base de datos de la aplicación.
+
+• Registration (Registro): La inscripción es el proceso de crear una cuenta de usuario dentro de la aplicación.
+
+• FAQ (Frequently Asked Questions) (Preguntas Frecuentes): Las FAQ (Preguntas Frecuentes) son una recopilación de preguntas comúnmente formuladas y sus respectivas respuestas, con el objetivo de proporcionar una ayuda rápida a los usuarios.
+
+• About Us (Acerca de Nosotros): "Acerca de nosotros" es una sección de la aplicación que contiene información sobre los creadores, la misión y los objetivos de la plataforma.
+
+• Dashboard (Panel de control): Un panel de control es un componente de la interfaz de usuario que proporciona una visión general de la información relevante y las acciones disponibles para el usuario, como la gestión de eventos para los organizadores o la configuración de la cuenta para los asistentes.
+
+• Confirmation (Confirmación): Una confirmación es un reconocimiento o notificación proporcionada a los usuarios después de completar una solicitud o registro de incidente.
+
+• Marketplace (Mercado): Espacio virtual o físico donde se realizan las transacciones de compra y venta de cultivos.
+
+• Weather Monitoring (Monitoreo Climático): Proceso de seguimiento de las condiciones climáticas, que impactan directamente en el ciclo de los cultivos.
+
+• Yield Forecast (Pronóstico de Rendimiento): Predicción del volumen de producción que un cultivo puede generar, basado en condiciones actuales y datos históricos.
+
+• Farm Management (Gestión de la Finca): Conjunto de actividades organizativas, financieras y técnicas que permiten administrar una operación agrícola.
+
+• Harvest Scheduling (Programación de Cosechas): Planificación de las fechas y tiempos de cosecha para maximizar la eficiencia y evitar pérdidas.
+
+• Input Management (Gestión de Insumos): Control sobre los recursos necesarios para la producción agrícola, tales como fertilizantes, semillas y agua.
+
+
