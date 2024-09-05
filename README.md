@@ -32,11 +32,11 @@ Agosto del 2024
 
 | Versión | Fecha | Autor | Descripción de la modificación |
 | - | - | - | - |
-| 1.00 | 15/08/2024 | Alejo Cardenas, Luis Angel | |
+| 1.00 | 15/08/2024 | Alejo Cardenas, Luis Angel | Elaboraciónd de Lean Ux Process, Diseño, analisis y registro de entrevistas  |
 | 1.10 | 20/08/2024 | Espejo Macuri, Paolo Andre | Registro de entrevistas y diseño de entrevistas, bounded contexts tactical-level domain driven design |
 | 1.20 | 21/08/2024 | Gonzales Carrión, Jorge Enrique| Creación de carátula, indice del informe, todos los puntos del capitulo 4, Registro de entrevistas y diseño de entrevistas, realizar el desarrollo del proceso Lean Ux|
 | 1.30 | 21/08/2024 | Rios Jaimes, Jhonel Enrique | Desarrollo de User Journey Mapping y registro de entrevista |
-| 1.40 | 01/09/2024 | Sebastian Tasayco, Javier Martin | |
+| 1.40 | 01/09/2024 | Sebastian Tasayco, Javier Martin | Diseño, analisis y registro de entrevistas |
 
 
 ---
@@ -48,10 +48,15 @@ Link de repositorio Github: (https://github.com/upc-202402-GreatMinds-SW74-Ayni-
 Para la elaboración del informe se realizaron actividades tales como: 
 - Redactar y graficar en formato Markdown los puntos designados al integrante y posteriormente realizar commits para que el avance se guarde. 
 - Elaborar los artefactos en las herramientas indicadas y posteriormente obtener el enlace de imagen mediante "Issues" dentro del repositorio del informe
-- Se realizaron reuniones para coordinar el avance de los puntos del informe, además comunicar los avances del Sprint 1 correspondiente a la Landing Page
+- Se realizaron reuniones para coordinar el avance de los puntos del informe, además comunicar las primeras versiones de arquitectura de la solución IOT
 - Se realizaron branches dentro del repositorio del informe para separar el README.md principal en capitulos.
+- Primera versión de Software Architecture, Strategic-Level Attribute-Driven Design, Strategic-Level Domain-Driven Design
+- Lean UX Process
+- Diseño y analisis de entrevistas
+- Analisis de competidores
+- User Stories y Product Backlog
 
-(imagen de commit)
+
 
 
 ---
@@ -139,5 +144,5 @@ del ABET – EAC - Student Outcome 5.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | - | - | - |
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta. |  |  |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. |  |  |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta. | Alejo Cardenas - TB1: Lideró el proceso de Lean UX y coordinó el diseño. <br> Luis Angel - TB1: Participó en la asignación de tareas y el registro de entrevistas. <br> Paolo Espejo: Contribuyó al diseño de entrevistas y al diseño táctico de bounded contexts en domain-driven design. <br> Jorge Gonzales: Lideró la creación de secciones clave del informe y el desarrollo de Lean UX. <br> Jhonel Rios: Participó en la creación de User Journey Mapping. <br> Sebastian Tasayco: Colaboró en el diseño, análisis y registro de entrevistas. | Se hizo un buen trabajo en equipo para liderar el desarrollo de los puntos que se requerian dentro del informe |
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | Alejo Cardenas - TB1: Estableció metas para el proceso de Lean UX y planificó tareas de diseño. <br> Luis Angel - TB1: Ayudó a cumplir con los objetivos de análisis y entrevistas. <br> Paolo Espejo: Estableció el plan para el registro de entrevistas y desarrolló el diseño táctico del domain-driven design. <br> Jorge Gonzales: Definió objetivos para el desarrollo de Lean UX y supervisó la creación de documentos estructurales del informe. <br> Jhonel Rios: Planificó y cumplió tareas de User Journey Mapping. <br> Sebastian Tasayco: Aseguró el cumplimiento de los objetivos de diseño y registro. | En esta primera entrega, se estableció un ambiente de colaboración y participación para establecer las metas, tareas y la inspección de cumplimiento de objetivos |
