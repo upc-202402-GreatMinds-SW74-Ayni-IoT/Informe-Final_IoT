@@ -91,6 +91,7 @@ Para la elaboración del informe se realizaron actividades tales como:
   - [2.3.3. User Journey Mapping](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/blob/develop/Cap%C3%ADtulo%20II:%20Requirements%20Elicitation%20%26%20Analysis.md#233-user-journey-mapping)
   - [2.3.4. Empathy Mapping](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/blob/develop/Cap%C3%ADtulo%20II:%20Requirements%20Elicitation%20%26%20Analysis.md#234-empathy-mapping)
   - [2.3.5. As-is Scenario Mapping](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/blob/develop/Cap%C3%ADtulo%20II:%20Requirements%20Elicitation%20%26%20Analysis.md#235-as-is-scenario-mapping)
+- [2.4. Ubiquitous Language](https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/Informe-Final_IoT/blob/main/Cap%C3%ADtulo%20II%3A%20Requirements%20Elicitation%20%26%20Analysis.md#24-ubiquitous-language)
 
 ## [Capítulo III: Requirements Specification](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/blob/develop/Cap%C3%ADtulo%20III:%20Requirements%20Specification.md)
 - [3.1. To-Be Scenario Mapping](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/blob/develop/Cap%C3%ADtulo%20III:%20Requirements%20Specification.md#31-to-be-scenario-mapping)
