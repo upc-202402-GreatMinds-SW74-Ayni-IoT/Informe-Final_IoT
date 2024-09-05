@@ -110,6 +110,22 @@ Link de Miro: https://miro.com/welcomeonboard/YkswaDJnVWNVWVpaZlQ0cXQ2Y3FUR0hTTl
 
 ## 4.1.2. Context Mapping
 
+Después de realizar el EventStorming se identificó 3 bounded context: IAM, Shopping y Management. Se ha decidido usar los siguientes patrones:
+
+**IAM y Shopping (Customer/Supplier Pattern):**
+
+Relación: IAM proporciona los servicios de autenticación y autorización necesarios para que los comerciantes puedan acceder al contexto de Shopping. Esto crea una relación Customer/Supplier, donde Shopping depende de IAM para validar el acceso.
+
+**IAM y Management (Shared Kernel Pattern):**
+
+Relación: Ambos contextos comparten información básica de usuarios, como roles y permisos, para permitir que los agricultores gestionen y monitoreen sus cultivos dentro de la plataforma. Utilizan un Shared Kernel para evitar duplicación y asegurar la consistencia en la gestión de permisos.
+
+
+**Shopping y Management (Anti-Corruption Layer Pattern):**
+
+Relación: Se podría implementar un Anti-Corruption Layer para manejar las diferencias en los modelos de datos entre los contextos de Shopping y Management. Esto es relevante para evitar que los cambios en un contexto afecten negativamente al otro, especialmente en términos de datos de cultivos y transacciones de compra/venta.
+
+![IOT drawio(2)](https://github.com/user-attachments/assets/95f4ad98-32de-412a-8d75-5d2f77ae720f)
 
 
 ## 4.1.3. Software Architecture
