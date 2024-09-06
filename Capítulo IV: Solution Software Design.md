@@ -218,6 +218,607 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 
 
 # 4.2. Tactical-Level Domain-Driven Design
+
+# 4.2. Tactical-Level Domain-Driven Design
+## 4.2.1. Bounded Context: IAM
+### 4.2.1.1. Domain Layer
+
+<table>
+    <tr>
+        <td colspan="4" align="center">Aggregate</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Categoria</td>
+        <td colspan="2">Propósito</td>
+    </tr>
+    <tr>
+        <td>User</td>
+        <td>Entity/Aggregate</td>
+        <td colspan="2">Representación de los usuarios del segmento objetivo</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Atributos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de dato</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>Long</td>
+        <td>Private</td>
+        <td>Identificador unico</td>
+    </tr>
+    <tr>
+        <td>userName</td>
+        <td>String</td>
+        <td>Private</td>
+        <td>Nombre de usuario</td>
+    </tr>
+     <tr>
+        <td>email</td>
+        <td>String</td>
+        <td>Private</td>
+        <td>Correo electronico</td>
+    </tr>
+     <tr>
+        <td>password</td>
+        <td>String</td>
+        <td>Private</td>
+        <td>Contraseña del usuario</td>
+    </tr>
+     <tr>
+        <td>role</td>
+        <td>String</td>
+        <td>Private</td>
+        <td>rol del usuario</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Métodos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de retorno</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>getUsername</td>
+        <td>username</td>
+        <td>Public</td>
+        <td>Obtención de nombre de usuario</td>
+    </tr>
+    <tr>
+        <td>getEmail</td>
+        <td>email</td>
+        <td>Public</td>
+        <td>Obtención de correo electrónico</td>
+    </tr>
+    <tr>
+        <td>getPassword</td>
+        <td>password</td>
+        <td>Public</td>
+        <td>Obtención de contraseña</td>
+    </tr>
+     <tr>
+        <td>getRoles</td>
+        <td>srtRoles</td>
+        <td>Public</td>
+        <td>Obtención del rol del usuario</td>
+    </tr>
+</table>
+
+### 4.2.1.2. Interface Layer
+
+<table>
+    <tr>
+        <td colspan="4" align="center">Controller</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Categoria</td>
+        <td colspan="2">Propósito</td>
+    </tr>
+    <tr>
+        <td>AuthController</td>
+        <td>Controller</td>
+        <td colspan="2">Controlador para autenticación</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Atributos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de dato</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>authService</td>
+        <td>AuthService</td>
+        <td>Private</td>
+        <td>Servicio de autenticación</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Métodos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de retorno</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>authenticateUser</td>
+        <td>authenticatedResource</td>
+        <td>Public</td>
+        <td>Metodo para autenticar usuario</td>
+    </tr>
+    <tr>
+        <td>registerUser</td>
+        <td>signInResource</td>
+        <td>Public</td>
+        <td>Metodo de registro de usuario</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td colspan="4" align="center">Controller</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Categoria</td>
+        <td colspan="2">Propósito</td>
+    </tr>
+    <tr>
+        <td>UsersController</td>
+        <td>Controller</td>
+        <td colspan="2">Controlador para usuarios</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Atributos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de dato</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>userQueryService</td>
+        <td>UserQueryService</td>
+        <td>Private</td>
+        <td>Servicio de registro de usuario</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Métodos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de retorno</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>getAllUsers</td>
+        <td>usersResource</td>
+        <td>Public</td>
+        <td>Metodo para obtener todos los usuarios/td>
+    </tr>
+    <tr>
+        <td>getUserById</td>
+        <td>userResource</td>
+        <td>Public</td>
+        <td>Metodo para obtener un usuario por id</td>
+    </tr>
+</table>
+
+
+### 4.2.1.3. Application Layer
+
+<table>
+    <tr>
+        <td colspan="4" align="center">Service</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Categoria</td>
+        <td colspan="2">Propósito</td>
+    </tr>
+    <tr>
+        <td>UserCommandService</td>
+        <td>Service</td>
+        <td colspan="2">Servicio con reglas de negocio para usuario</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Atributos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de dato</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>UserRepository</td>
+        <td>Long</td>
+        <td>private</td>
+        <td>Repositorio de usuario</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Métodos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de retorno</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>existByUsername</td>
+        <td>user</td>
+        <td>Public</td>
+        <td>Metodo para validar usuario por nombre de usuario</td>
+    </tr>
+    <tr>
+        <td>findByUsername</td>
+        <td>user</td>
+        <td>Public</td>
+        <td>Metodo para obtener usuario por nombre de usuario</td>
+    </tr>
+</table>
+
+
+### 4.2.1.4. Infrastructure Layer
+
+
+<table>
+    <tr>
+        <td colspan="4" align="center">Repository</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Categoria</td>
+        <td colspan="2">Propósito</td>
+    </tr>
+    <tr>
+        <td>UserRepository</td>
+        <td>Repository</td>
+        <td colspan="2">Repositorio que guarda la información de los usuario</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Métodos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de retorno</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>existsByUsername</td>
+        <td>user</td>
+        <td>Public</td>
+        <td>Metodo para validar usuario por nombre de usuario</td>
+    </tr>
+    <tr>
+        <td>findByUsername</td>
+        <td>user</td>
+        <td>Public</td>
+        <td>Metodo para buscar usuario por nombre de usuario</td>
+    </tr>
+</table>
+
+
+
+### 4.2.1.6. Bounded Context Software Architecture Component Level Diagrams
+
+![structurizr-85725-Componente (1)](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/285030967-60a9a7b9-f81b-42f7-9082-7b85c6f66481.png)
+
+
+### 4.2.1.7. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.1.7.1. Bounded Context Domain Layer Class Diagrams
+
+En entregas posteriores se detallarán los metodos y atributos en el diagrama respectivo.
+
+#### 4.2.1.7.2. Bounded Context Database Design Diagram
+
+
+## 4.2.2. Bounded Context: Shopping
+### 4.2.2.1. Domain Layer
+
+<table>
+    <tr>
+        <td colspan="4" align="center">Aggregate</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Categoria</td>
+        <td colspan="2">Propósito</td>
+    </tr>
+    <tr>
+        <td>Order</td>
+        <td>Entity/Aggregate</td>
+        <td colspan="2">Representación de una orden para la compra</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Atributos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de dato</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>Long</td>
+        <td>Private</td>
+        <td>Identificador unico</td>
+    </tr>
+    <tr>
+        <td>orderedBy</td>
+        <td>Long</td>
+        <td>Private</td>
+        <td>Ordenado por</td>
+    </tr>
+     <tr>
+        <td>acceptedBy</td>
+        <td>Long</td>
+        <td>Private</td>
+        <td>Aceptado por</td>
+    </tr>
+     <tr>
+        <td>description</td>
+        <td>String</td>
+        <td>Private</td>
+        <td>descripcion de la orden</td>
+    </tr>
+     <tr>
+        <td>quantity</td>
+        <td>Long</td>
+        <td>Private</td>
+        <td>cantidad de la orden</td>
+    </tr>
+        <tr>
+        <td>OrderDate</td>
+        <td>Date</td>
+        <td>Private</td>
+        <td>Estado de la orden</td>
+    </tr>
+    </tr>
+        <tr>
+        <td>totalPrice</td>
+        <td>Double</td>
+        <td>Private</td>
+        <td>Precio total de la orden</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Métodos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de retorno</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>updateDate</td>
+        <td>orderedDate</td>
+        <td>Public</td>
+        <td>Actualización de fecha de la orden</td>
+    </tr>
+    <tr>
+        <td>update</td>
+        <td>orderedDate</td>
+        <td>Public</td>
+        <td>Actualizar la orden</td>
+    </tr>
+    <tr>
+        <td>end</td>
+        <td>status.Finalized</td>
+        <td>Public</td>
+        <td>Estado finalizados</td>
+    </tr>
+     <tr>
+        <td>qualify</td>
+        <td>status.Quialified</td>
+        <td>Public</td>
+        <td>Estado de calificado</td>
+    </tr>
+     <tr>
+        <td>isPending</td>
+        <td>orderStatus.pending</td>
+        <td>Public</td>
+        <td>Obtención del rol del usuario</td>
+    </tr>
+         <tr>
+        <td>isQualified</td>
+        <td>orderStatus.qualified</td>
+        <td>Public</td>
+        <td>Obtención del rol del usuario</td>
+    </tr>
+         <tr>
+        <td>isFinalized</td>
+        <td>orderStatus.finalizated</td>
+        <td>Public</td>
+        <td>Obtención del rol del usuario</td>
+    </tr>
+    </tr>
+         <tr>
+        <td>getStatus</td>
+        <td>status</td>
+        <td>Public</td>
+        <td>Obtención de estado</td>
+    </tr>
+</table>
+
+### 4.2.2.2. Interface Layer
+
+<table>
+    <tr>
+        <td colspan="4" align="center">Controller</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Categoria</td>
+        <td colspan="2">Propósito</td>
+    </tr>
+    <tr>
+        <td>OrderController</td>
+        <td>Controller</td>
+        <td colspan="2">Controlador para ordenes</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Atributos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de dato</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>OrderQueryService</td>
+        <td>orderQueryService</td>
+        <td>Private</td>
+        <td>Servicio de cola de ordenes</td>
+    </tr>
+        <tr>
+        <td>OrderCommandService</td>
+        <td>orderCommandService</td>
+        <td>Private</td>
+        <td>Servicio de comandos de ordenes</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Métodos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de retorno</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>createOrder</td>
+        <td>Order Resource</td>
+        <td>Public</td>
+        <td>Metodo para crear una orden</td>
+    </tr>
+</table>
+
+
+
+### 4.2.2.3. Application Layer
+
+<table>
+    <tr>
+        <td colspan="4" align="center">Service</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Categoria</td>
+        <td colspan="2">Propósito</td>
+    </tr>
+    <tr>
+        <td>OrderCommandService</td>
+        <td>Service</td>
+        <td colspan="2">Servicio con reglas de negocio para la orden</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Atributos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de dato</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>OrderRepository</td>
+        <td>orderRepository</td>
+        <td>private</td>
+        <td>Repositorio de orden</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Métodos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de retorno</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td>existById</td>
+        <td>order</td>
+        <td>Public</td>
+        <td>Metodo para validar orden por nombre de orden</td>
+    </tr>
+    <tr>
+        <td>findById</td>
+        <td>order</td>
+        <td>Public</td>
+        <td>Metodo para obtener orden por nombre de orden</td>
+    </tr>
+</table>
+
+
+### 4.2.2.4. Infrastructure Layer
+
+
+<table>
+    <tr>
+        <td colspan="4" align="center">Repository</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Categoria</td>
+        <td colspan="2">Propósito</td>
+    </tr>
+    <tr>
+        <td>OrderRepository</td>
+        <td>Repository</td>
+        <td colspan="2">Repository </td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">Métodos</td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>Tipo de retorno</td>
+        <td>Visibilidad</td>
+        <td>Descripción</td>
+    </tr>
+    <tr>
+        <td> findOrderBySaleIdAndId</td>
+        <td>order</td>
+        <td>Public</td>
+        <td>Metodo para obtener una orden por sale Id</td>
+    </tr>
+</table>
+
+
+
+### 4.2.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+![image](https://github.com/user-attachments/assets/874b41be-d048-4820-910a-8fc1f2a4530d)
+
+### 4.2.2.7. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.2.7.1. Bounded Context Domain Layer Class Diagrams
+
+
+En entregas posteriores se detallarán los metodos y atributos en el diagrama respectivo.
+
+#### 4.2.2.7.2. Bounded Context Database Design Diagram
+
+
+
+
 ## 4.2.X. Bounded Context
 ### 4.2.X.1. Domain Layer
 ### 4.2.X.2. Interface Layer
