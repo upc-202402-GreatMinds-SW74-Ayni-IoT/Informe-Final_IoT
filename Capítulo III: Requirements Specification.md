@@ -3,7 +3,8 @@
 ## 3.1. To-Be Scenario Mapping.
 En esta parte se utilizó el “TO-BE Scenario Mapping” para ello se hizo una representación visual de cómo deberían ser los procesos después de implementar las mejoras y cambios sugeridos. Es una parte crucial de la metodología de mejora de procesos y ayuda a las organizaciones a visualizar cómo podrían ser sus operaciones optimizadas en el futuro. Se utilizó la herramienta Miro.
 
-![ToBe](https://github.com/JorgeGonzales15/SW51-GreatMinds-OpenSource/assets/104078975/364e9acb-a307-4de6-95f4-20148221907f)
+![ToBeSegmento1](https://github.com/user-attachments/assets/3828a2d2-cceb-4761-83c4-64017aa7452b)
+![ToBeSegmento2](https://github.com/user-attachments/assets/ec48b455-16c9-43fa-ab24-79c0d05dee24)
 
 ## 3.2. User Stories.
 
