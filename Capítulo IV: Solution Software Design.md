@@ -6,13 +6,15 @@ Para la sección de Event Storming el equipo de desarrollo tuvo una reunión don
 
 En esta etapa, se identificaron los eventos clave que representan las acciones significativas dentro de la solución IoT. La herramienta utilizada fue Miro.
 
-![image](https://github.com/user-attachments/assets/5b71e5bb-3dfc-4ee1-a5c5-7784fb9ed31e)
+![image](https://github.com/user-attachments/assets/f748594b-ad17-4f26-bb28-c271d86d68de)
+
 
 **Step 2: Timelines**
 
 Durante esta fase, los eventos identificados fueron agrupados en subgrupos liderados por un evento en general que encapsula la función principal del grupo. Estos grupos incluyen happy paths, que representan los caminos deseados o exitoso, y los unhappy paths, que muestran los posibles problemas o situaciones no deseadas que pudieran surgir. Esto ayudó a darle una estructura a los eventos de manera coherente y a comprender mejor las diferentes secuencias dentro del sistema.
 
-![image](https://github.com/user-attachments/assets/a73985fe-fa74-4e70-93be-e4a7032fcf66)
+![image](https://github.com/user-attachments/assets/06bcb0b0-dfec-495c-8ae7-f3736d412e5d)
+
 
 **Step 3: Paint Points**
 
@@ -24,25 +26,29 @@ En este proceso, se identificaron paint points o puntos problemáticos, que son 
 
 Se señalaron los pivotal points o puntos clave, que son eventos críticos que marcan hitos improtantes en el flujo de la plataforma. Estos eventos tienden a ser significativos en el comportamiento del sistema o en la experiencia del usuario
 
-![image](https://github.com/user-attachments/assets/4e9ddb98-1b05-4c27-bde1-9f5fdc17efc9)
+![image](https://github.com/user-attachments/assets/fee46607-61c6-4efd-8409-d5f40907061d)
+
 
 **Step 5: Commands**
 
 Cada evento se asoció a un comando en específico que lo desencadena y un actor que lo realiza. Esto ayudó a tener un mejor reconocimiento de cómo interactúan los diferentes usuarios con el sistema.
 
-![image](https://github.com/user-attachments/assets/2bd72e32-cfd6-476b-99cb-eab1a6ed341b)
+![Event Storming - Copy of Step 5_ Commands](https://github.com/user-attachments/assets/9073d36f-350e-4f86-9eec-a0b098013af7)
+
 
 **Step 6: Policies**
 
 Durante esta etapa, se identifican las politicas relevantes para cada contexto del sistema. Estas politica spueden incluir restricciones de negocio, reglas de validación, etc.
 
-![image](https://github.com/user-attachments/assets/04d1a968-fb42-4fbb-9ca3-f7dee6049165)
+![image](https://github.com/user-attachments/assets/1885247a-ee37-48b3-bd6b-d82a7a8742ca)
+
 
 **Step 7: Read Models**
 
 Durante esta fase, se diseñan y desarrollan lso modelos de lectura para cada contexto de sistema, asegurando que proporcionen la información necesaria de manera eficiente y coherente.
 
-![image](https://github.com/user-attachments/assets/ff16301c-fdb0-47bc-888e-299c017daf4f)
+![image](https://github.com/user-attachments/assets/c7e5747e-7bf7-4c3d-a44e-2af2880b2675)
+
 
 **Step 8: External Systems** 
 
@@ -54,7 +60,8 @@ Durante esta etapa, se identifican los sistemas externos relevantes para la plat
 
 Durante esta etapa, se definen aggregates para cad contexto del sistema, asegurando que representen ocrrectamente las transacciones y operaciones coherentes dentro del sistema.
 
-![image](https://github.com/user-attachments/assets/c8da11d9-476d-47ca-9f7b-ce20fc79a4e5)
+![Event Storming - Copy of Step 9; Aggregates](https://github.com/user-attachments/assets/278ba06f-b5f7-4059-93d8-7356e54165fa)
+
 
 Link de Miro: https://miro.com/welcomeonboard/YkswaDJnVWNVWVpaZlQ0cXQ2Y3FUR0hTTlBmMW1BUWNUTzBRa0tqTG1kOXlEaGRvbFJ5UmpuTmNzdWk1VE4xNHwzMDc0NDU3MzU3NDk3MzU0NjE5fDI=?share_link_id=387833456347 
 
@@ -64,20 +71,40 @@ A continuación, elegimos utilizar la técnica de start-with-value ya que el equ
 
 - **Identificación de Valores del Negocio** : Analizamos los valores clave del negocio, como la experiencia del usuario al planificar y monitorear un cultivo, la compra de productos y la eficiencia en la gestión de usuarios.
 
-- **Identificación de Funcionalidades clave** : Identificar las funcionalidades esenciales de la aplicación, como la autenticación y registro de usuarios (IAM), el monitoreo y planificación de cultivos (Management) y las funcionalidades relacionadas a la compra y calificaciones (Shopping), que contribuyen directamente a la entre de los valores empresariales.
+- **Identificación de Funcionalidades clave** : Identificar las funcionalidades esenciales de la aplicación, el monitoreo de cultivos con sensores y actuadores (Monitoring), planificación de cultivos (Planification) y 
+ registro de nuevos cultivos (Crop Register) que contribuyen directamente a la entre de los valores empresariales.
 
 Candidate para Bounded Context: IAM
-![image](https://github.com/user-attachments/assets/8d7f084c-4395-40f7-9973-3033746a6b83)
 
-Candidate para Bounded Context: Management
-![image](https://github.com/user-attachments/assets/2eca0689-d2ae-49b5-9d8e-0b28da5df317)
+![image](https://github.com/user-attachments/assets/61f21441-6d10-4bd4-aa29-5d5b3f754267)
+
+
+Candidate para Bounded Context: Monitoring
+
+![image](https://github.com/user-attachments/assets/b8891ce5-86e1-4940-897a-d47a3d8991dd)
+
+
 
 Candidate para Bounded Context: Shopping
-![image](https://github.com/user-attachments/assets/79aba723-b8ea-4412-8a12-2bdee20c0272)
+
+![image](https://github.com/user-attachments/assets/41776ae9-5f3c-417b-9c52-2b9a9c75e5af)
+
+
+
+Candidate para Bounded Context: Planification
+
+![image](https://github.com/user-attachments/assets/160156bf-ad75-421b-a5b2-2a99aa1c92a9)
+
+
+Candidate para Bounded Context: Crop registration
+
+![image](https://github.com/user-attachments/assets/a4483053-af9e-43b3-99f1-2644ed05a945)
+
 
 Vista completa:
-![Event Storming - Copy of Step 10_ Bounded Contexts](https://github.com/user-attachments/assets/c6b71474-bc4d-423c-a750-378ad516e789)
+![Event Storming - Copy of Step 10_ Bounded Contexts (1)](https://github.com/user-attachments/assets/c097c48f-d683-4eef-bb09-747871a5ffd2)
 
+Link de Miro: https://miro.com/welcomeonboard/YkswaDJnVWNVWVpaZlQ0cXQ2Y3FUR0hTTlBmMW1BUWNUTzBRa0tqTG1kOXlEaGRvbFJ5UmpuTmNzdWk1VE4xNHwzMDc0NDU3MzU3NDk3MzU0NjE5fDI=?share_link_id=387833456347 
 
 
 ### 4.1.1.2 Domain Message Flows Modeling
@@ -87,7 +114,8 @@ Scenario: El usuario desea iniciar sesión
 
 **Agricultor**
 Scenario: Agricultor desea crear un cultivo
-![image](https://github.com/user-attachments/assets/aff750cc-ce25-4d8e-a4c7-09ac9b94b9f9)
+![image](https://github.com/user-attachments/assets/bfb1c762-d1a9-4f44-9656-68eb8c5be836)
+
 
 **Comerciante**
 Scenario: Comerciante desea comprar un cultivo
@@ -98,34 +126,59 @@ Link de Miro: https://miro.com/welcomeonboard/YkswaDJnVWNVWVpaZlQ0cXQ2Y3FUR0hTTl
 ### 4.1.1.3 Bounded Context Canvases
 
 IAM:
+
 ![image](https://github.com/user-attachments/assets/f3c625c1-2a38-4091-a9da-718c705b2004)
 
-Management:
-![image](https://github.com/user-attachments/assets/78049c49-0e06-4443-bff3-5ce7a71c4140)
+Crop Registration:
+
+![image](https://github.com/user-attachments/assets/74b2d39c-fdb2-4113-8b3c-1ed1418a9850)
+
+
+
+Planification:
+
+![image](https://github.com/user-attachments/assets/595a98dc-25ad-496b-81b3-0a33c834b936)
+
+
+Monitoring:
+
+![image](https://github.com/user-attachments/assets/20b0128e-4088-4897-9508-9d4cf728638f)
+
 
 Shopping: 
+
 ![image](https://github.com/user-attachments/assets/3af24e41-68bf-4e32-a92b-7c23cf036600)
+
+
 
 Link de Miro: https://miro.com/welcomeonboard/YkswaDJnVWNVWVpaZlQ0cXQ2Y3FUR0hTTlBmMW1BUWNUTzBRa0tqTG1kOXlEaGRvbFJ5UmpuTmNzdWk1VE4xNHwzMDc0NDU3MzU3NDk3MzU0NjE5fDI=?share_link_id=387833456347 
 
 ## 4.1.2. Context Mapping
 
-Después de realizar el EventStorming se identificó 3 bounded context: IAM, Shopping y Management. Se ha decidido usar los siguientes patrones:
+Después de realizar el EventStorming se identificó 5 bounded context: IAM, Shopping, Monitoring, Planification y Crop Registration. Se ha decidido usar los siguientes patrones:
 
-**IAM y Shopping (Customer/Supplier Pattern):**
+**Relación 1: IAM ↔ Shopping**
+Patrón: Customer/Supplier
+Explicación: El contexto de Shopping actúa como un Customer que consume los servicios de autenticación y autorización del contexto IAM (Session Management), que es el Supplier. Shopping se adapta a la API de IAM para validar las sesiones de los usuarios.
 
-Relación: IAM proporciona los servicios de autenticación y autorización necesarios para que los comerciantes puedan acceder al contexto de Shopping. Esto crea una relación Customer/Supplier, donde Shopping depende de IAM para validar el acceso.
+**Relación 2: Crop Registration ↔ IAM**
+Patrón: Customer/Supplier
+Explicación: El contexto de registro de cultivos depende de la información del usuario pasada en base al rol escogido en IAM context.
 
-**IAM y Management (Shared Kernel Pattern):**
+**Relación 3: Crop Registration ↔ Planification**
+Patrón: Anticurroption Layer
+Explicación: Ambos contextos necesitan pasarse información y no comprometerse entre ellos, dado que una planificación debe ser ligada al cultivo
 
-Relación: Ambos contextos comparten información básica de usuarios, como roles y permisos, para permitir que los agricultores gestionen y monitoreen sus cultivos dentro de la plataforma. Utilizan un Shared Kernel para evitar duplicación y asegurar la consistencia en la gestión de permisos.
+**Relación 4: Planification ↔ Monitoring**
+Patrón: Anticurroption Layer
+Explicación: El contexto de monitoring debe utilizar la información de las planificaciones dentro de su contexto respectivo.
 
+**Relación 5: Monitoring ↔  Shoppoing Context**
+Patrón: Customer/Supplier
+Explicación: El contexto de monitoring debe brindarle la infomración de los sensores al momento de elegir el cultivo en su compra.
 
-**Shopping y Management (Anti-Corruption Layer Pattern):**
+![IOT drawio (11)](https://github.com/user-attachments/assets/8cf4ad6e-cf46-42eb-86b0-c937ad440de1)
 
-Relación: Se podría implementar un Anti-Corruption Layer para manejar las diferencias en los modelos de datos entre los contextos de Shopping y Management. Esto es relevante para evitar que los cambios en un contexto afecten negativamente al otro, especialmente en términos de datos de cultivos y transacciones de compra/venta.
-
-![IOT drawio(2)](https://github.com/user-attachments/assets/95f4ad98-32de-412a-8d75-5d2f77ae720f)
 
 
 ## 4.1.3. Software Architecture
@@ -151,13 +204,15 @@ En la siguiente imagen se aprecia 2 usuarios que interactúan con el sistema, "F
 
 En la siguiente imagen se visualizan los contenedores, los cuales sirven para dividr el sistema de la aplicación.
 
-![IOT drazxcxzczxcwio](https://github.com/user-attachments/assets/c431c249-f2df-4c5c-9a76-0fc7dfe62b1a)
+![IOT drawio (13)](https://github.com/user-attachments/assets/c9f8325f-9eb8-425b-a72b-fbf498e2571a)
+
 
 
 
 ### 4.1.3.3. Software Architecture Deployment Diagrams
 
-![IOT drawzxczxcio](https://github.com/user-attachments/assets/2d9fdec2-2887-4e55-ae57-26b1f3bf8e44)
+![IOT drawio (12134)](https://github.com/user-attachments/assets/69aefb03-1d12-459d-8400-1aabe9797b46)
+
 
 
 
