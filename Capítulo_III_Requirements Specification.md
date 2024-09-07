@@ -90,3 +90,8 @@ A continuación, se mostrará la herramienta Product Backlog, lista de trabajo o
 |27|TS-09|Obtención y creación de ventas (sales)|<p>Como desarrollador, quiero obtener las ganancias agrícolas de un usuario en específico a través de una API. Para que pueda estar disponible en la aplicación web o móvil </p><p></p><p></p>|**3**|
 |28|TS-10|Cambiar estado de órdenes (orders)|Como desarrollador, quiero que el estado de una orden sea cambiada mediante una API<br>Para que exista un estándar de estados en la aplicación web o móvil web|**3**|
 
+Se realizó el product backlog en trello, utilizando herramientas para poder ponerle story points a las cards de las historias de usuario:
+![image](https://github.com/user-attachments/assets/f0344fc8-a86f-4d18-9261-c723513ffb98)
+
+Link: https://trello.com/invite/66319522d8041cca79454fba/ATTI4f35c943e49002c3da553f58b9cc0ec1487164EE 
+
