@@ -264,22 +264,25 @@ de comercio.</th>
 
 Entrevistado 1:
 
-Nombre y apellidos: 
+Nombre y apellidos: Lissane Mareni
 
-Edad:
+Edad: 21
 
-Distrito: 
+Distrito: Lince
 
-Url: 
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 
+Inicio: 0:00
 
-Fin: 
+Fin: 5:15
 
-Duración: 
+Duración: 5:15
 
+![image](https://github.com/user-attachments/assets/fa8e4c8a-dd96-4b7f-90b0-95f911c9f8e9)
 
 Resumen de la entrevista:
+
+Lisanne Mareni, se dedica a al agricultura como negocio familiar, nos expuso las actividades cotidianas que realiza y la manera en las que las hace, el cual la mayoria son manualmente. Además, exponse sus dificultades que tiene para realizar procesos de cultivos, los cuales en su mayoria son las fechas de riego. Por otro lado, nos dice que el uso de una solución IOT le llama mucho la atención y que la utilizaría en sus terrenos de cultivos. Su dispositivo preferido para usar apliaciones o programas es su celular con sistema operativo Android. Los navegadores que más usa son Chorme y Edge.
 
 Entrevistado 2:
 
@@ -289,11 +292,11 @@ Edad: 23
 
 Región: Ancash
 
-Url: [Video Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u202117686_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202117686%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%20German%20Portella%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E94cb76ef%2D0889%2D44d7%2Db627%2Dfde61411d96c)
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-<!-- Inicio: 
+Inicio: 5:15
 
-Fin:  -->
+Fin: 11:24
 
 Duración: 6:08
 
@@ -311,13 +314,13 @@ Edad: 50
 
 Región: Junín 
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 18:53
+Inicio: 11:24
 
-Fin: 27:02
+Fin: 19:21
 
-Duración: 08:09
+Duración: 08:05
 
 ![entrevsitado3](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/dc54cc29-50a7-46f8-8929-9ca4a2a5bc83)
 
@@ -335,13 +338,13 @@ Edad: 25
 
 Distrito: Lince - Lima
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 27:02
+Inicio: 19:21
 
-Fin: 35:37
+Fin: 28:03
 
-Duración: 08:35
+Duración: 08:42
 
 ![entrevistado4](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/289905bc-abd5-4a1a-994b-9855c7e7e673)
 
@@ -357,13 +360,13 @@ Edad: 24
 
 Distrito: Santiago de Surco - Lima
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 35:37
+Inicio: 28:03
 
-Fin: 44:03
+Fin: 36:27
 
-Duración: 08:26
+Duración: 08:24
 
 ![entrevistado5](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/1db9b603-0d51-4cd1-a8f1-a06507ad8ec9)
 
@@ -378,13 +381,13 @@ Edad: 45
 
 Distrito: Surco - Lima
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 44:03
+Inicio: 36:27
 
-Fin: 48:53
+Fin: 41:12
 
-Duración: 04:50
+Duración: 04:45
 
 ![entrevsitado 6](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/0a0a8d9e-5582-49dc-9bf7-1976f0e1cad1)
 
