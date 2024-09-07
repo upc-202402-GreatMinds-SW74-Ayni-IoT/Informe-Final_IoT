@@ -387,6 +387,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
         <td>userQueryService</td>
         <td>UserQueryService</td>
         <td>Private</td>
+        <td>Servicio de consultas de usuario</td>
+    </tr>
+    <tr>
+        <td>userCommandService</td>
+        <td>UserCommandService</td>
+        <td>Private</td>
         <td>Servicio de registro de usuario</td>
     </tr>
     <tr>
@@ -426,6 +432,11 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
     </tr>
     <tr>
         <td>UserCommandService</td>
+        <td>Service</td>
+        <td colspan="2">Servicio con reglas de negocio para usuario</td>
+    </tr>
+    <tr>
+        <td>UserQueryService</td>
         <td>Service</td>
         <td colspan="2">Servicio con reglas de negocio para usuario</td>
     </tr>
@@ -728,6 +739,11 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
         <td colspan="2">Servicio con reglas de negocio para la orden</td>
     </tr>
     <tr>
+        <td>OrderQueryService</td>
+        <td>Service</td>
+        <td colspan="2">Servicio con reglas de negocio para la orden</td>
+    </tr>
+    <tr>
         <td colspan="4" align="center">Atributos</td>
     </tr>
     <tr>
@@ -840,7 +856,19 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 
 ### 4.2.3.3. Application Layer
 
-<table> <tr> <td colspan="4" align="center">Service</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>ProductCommandService</td> <td>Service</td> <td colspan="2">Servicio con lógica de negocio para productos</td> </tr> <tr> <td colspan="4" align="center">Atributos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>ProductRepository</td> <td>productRepository</td> <td>Private</td> <td>Repositorio de productos</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>handleCreateProduct</td> <td>Long</td> <td>Public</td> <td>Método para manejar la creación de un producto</td> </tr> <tr> <td>handleGetProductById</td> <td>Optional&lt;Product&gt;</td> <td>Public</td> <td>Método para manejar la consulta de un producto por su ID</td> </tr> <tr> <td>handleGetAllProducts</td> <td>List&lt;Product&gt;</td> <td>Public</td> <td>Método para manejar la consulta de todos los productos</td> </tr> </table>
+<table> 
+ <tr> <td colspan="4" align="center">Service</td> </tr> 
+ <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> 
+ <tr> <td>ProductCommandService</td> <td>Service</td> <td colspan="2">Servicio con lógica de negocio para productos</td> </tr> 
+ <tr> <td>ProductQueryService</td> <td>Service</td> <td colspan="2">Servicio con lógica de negocio para productos</td> </tr> 
+ <tr> <td colspan="4" align="center">Atributos</td> </tr> 
+ <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+ <tr> <td>ProductRepository</td> <td>productRepository</td> <td>Private</td> <td>Repositorio de productos</td> </tr> 
+ <tr> <td colspan="4" align="center">Métodos</td> </tr> 
+ <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+ <tr> <td>handleCreateProduct</td> <td>Long</td> <td>Public</td> <td>Método para manejar la creación de un producto</td> </tr> 
+ <tr> <td>handleGetProductById</td> <td>Optional&lt;Product&gt;</td> <td>Public</td> <td>Método para manejar la consulta de un producto por su ID</td> </tr> 
+ <tr> <td>handleGetAllProducts</td> <td>List&lt;Product&gt;</td> <td>Public</td> <td>Método para manejar la consulta de todos los productos</td> </tr> </table>
 
 ### 4.2.3.4. Infrastructure Layer
 
@@ -926,6 +954,7 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
   <tr> <td colspan="4" align="center">Service</td> </tr> 
   <tr> <td>Nombre</td> <td>Categoría</td> <td colspan="2">Propósito</td> </tr> 
   <tr> <td>CropCommandService</td> <td>Service</td> <td colspan="2">Servicio que contiene las reglas de negocio para los cultivos</td> </tr> 
+  <tr> <td>CropQueryService</td> <td>Service</td> <td colspan="2">Servicio que contiene las reglas de negocio para los cultivos</td> </tr> 
   <tr> <td colspan="4" align="center">Atributos</td> </tr> 
   <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
   <tr> <td>CropRepository</td> <td>CropRepository</td> <td>Private</td> <td>Repositorio de cultivos</td> </tr> 
