@@ -984,8 +984,7 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 
 ### 4.2.5.6. Bounded Context Software Architecture Component Level Diagrams
 
-![structurizr-85725-Componente (1)]()
-
+![image](https://github.com/user-attachments/assets/e655c3e7-3fe7-438e-bc13-02e73f03df8c)
 
 ### 4.2.5.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.5.7.1. Bounded Context Domain Layer Class Diagrams
