@@ -214,11 +214,6 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 ![IOT drawio (12134)](https://github.com/user-attachments/assets/69aefb03-1d12-459d-8400-1aabe9797b46)
 
 
-
-
-
-# 4.2. Tactical-Level Domain-Driven Design
-
 # 4.2. Tactical-Level Domain-Driven Design
 ## 4.2.1. Bounded Context: IAM
 ### 4.2.1.1. Domain Layer
@@ -523,9 +518,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 ### 4.2.1.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.1.7.1. Bounded Context Domain Layer Class Diagrams
 
-En entregas posteriores se detallarán los metodos y atributos en el diagrama respectivo.
+![image](https://github.com/user-attachments/assets/756ee8f2-a2c0-4d8b-95d1-69b36efe7740)
+
 
 #### 4.2.1.7.2. Bounded Context Database Design Diagram
+
+![image](https://github.com/user-attachments/assets/71c76fb2-c063-42d8-a7be-0c6cd55fa1a3)
 
 
 ## 4.2.2. Bounded Context: Shopping
@@ -811,10 +809,12 @@ En entregas posteriores se detallarán los metodos y atributos en el diagrama re
 ### 4.2.2.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.2.7.1. Bounded Context Domain Layer Class Diagrams
 
+![image](https://github.com/user-attachments/assets/6697ed43-5f31-4bc9-a241-d779fffc8477)
 
-En entregas posteriores se detallarán los metodos y atributos en el diagrama respectivo.
 
 #### 4.2.2.7.2. Bounded Context Database Design Diagram
+
+![image](https://github.com/user-attachments/assets/91d47e55-640d-4e7c-b129-439d5349f3af)
 
 ## 4.2.3. Bounded Context: Crop Registration
 ### 4.2.3.1. Domain Layer
@@ -848,15 +848,20 @@ En entregas posteriores se detallarán los metodos y atributos en el diagrama re
 
 ### 4.2.1.6. Bounded Context Software Architecture Component Level Diagrams
 
-![structurizr-85725-Componente (1)]()
+![image](https://github.com/user-attachments/assets/36aa4fad-8889-4eee-a0ec-1e560d7e333a)
 
 
 ### 4.2.3.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.3.7.1. Bounded Context Domain Layer Class Diagrams
 
-En entregas posteriores se detallarán los metodos y atributos en el diagrama respectivo.
+![image](https://github.com/user-attachments/assets/025a1cfd-5749-45e9-8963-bb1f222b7955)
+
+
 
 #### 4.2.3.7.2. Bounded Context Database Design Diagram
+
+![image](https://github.com/user-attachments/assets/3710915f-2038-4d1a-9d92-c41a2864497a)
+
 
 ## 4.2.4. Bounded Context: Planification
 ### 4.2.4.1. Domain Layer
@@ -946,15 +951,19 @@ En entregas posteriores se detallarán los metodos y atributos en el diagrama re
 
 ### 4.2.4.6. Bounded Context Software Architecture Component Level Diagrams
 
-![structurizr-85725-Componente (1)]()
-
+![image](https://github.com/user-attachments/assets/38bdd8af-3f7a-403c-9883-d780c5212818)
 
 ### 4.2.4.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.4.7.1. Bounded Context Domain Layer Class Diagrams
 
-En entregas posteriores se detallarán los metodos y atributos en el diagrama respectivo.
+![image](https://github.com/user-attachments/assets/087a48ca-458e-48dd-98be-a4a7f338692a)
+
 
 #### 4.2.4.7.2. Bounded Context Database Design Diagram
+
+![image](https://github.com/user-attachments/assets/99e675a2-b960-4221-b757-b7ed9ca75d04)
+
+
 
 ## 4.2.5. Bounded Context: Monitoring
 ### 4.2.5.1. Domain Layer
