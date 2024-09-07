@@ -11,30 +11,33 @@ Como misión se plantea “Incrementar la calidad de producción agrícola con e
 
 Mi nombre es Jorge Enrique Gonzales Carrión tengo 19 años de edad y curso el octavo ciclo de la carrera Ingeniería de Software. Me considero una persona con sentido de responsabilidad y la suficiente capacidad de trabajar en equipo aportando ideas innovadoras. Además, en cualidades me considero asertivo y colaborativo, puntos que pueden mejorar el proceso de elaboración de los distintos trabajos del curso. Finalmente, poseo conocimientos de programación que brindaron los ciclos anteriores al presente.
 
-![jroge](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/assets/104078975/f2ae0bea-109a-48cb-abd8-47db542006c3)
+![266133367-f2ae0bea-109a-48cb-abd8-47db542006c3](https://github.com/user-attachments/assets/a60fd628-7088-42ff-8c8d-22d0a1f3987b)
+
 
 ---
 Mi nombre es Jhonel Enrique Rios Jaimes, estudiande de la carrera de Ingeniería de Software en la UPC. Me considero una persona responsable y que trabaja en equipo. Además poseo habilidades técnicas en lenguajes de programación como JavaScript, Python, C#.
 
-![jhonel](https://lh3.googleusercontent.com/a/ACg8ocLyLe0WU8rxwOyJokFYUBRuQzJPPqs5KQymM7A_zwAWBJpET2k=s576-c-no)
+![68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f612f414367386f634c794c65305755387278774f794a6f6b465955425275517a4a50507173354b51796d4d37415f7a774157424a704554326b3d733537362d632d6e](https://github.com/user-attachments/assets/7eebdc1f-5ff1-4d7e-b70e-7d4ee87b26ab)
+
 ---
 Mi nombre es Luia Angel Alejo cardenas, soy estudiante de la carrera de Ingenieria de Software, posse conocimientos en programación en C++, Python, Java, HTML, CSS y FLutter. Además, soy bueno haciendo cálculos matemáticos, me comprometo a apoyar a mi equipo en todo lo posible y ser responsable con cada actividad que se me asigne.
 
-<br>
+![68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3930393633363536343532393835323432372f313238303637363536343335343230373836342f34333137383437352e706e673f65783d3636643866323](https://github.com/user-attachments/assets/e03a61e9-aa20-4c86-a8ea-b04b047f3a40)
 
-<img src="https://cdn.discordapp.com/attachments/909636564529852427/1280676564354207864/43178475.png?ex=66d8f27e&is=66d7a0fe&hm=f7220433fc965d6f03b0a9cb73e0a64cdc9be88aba92706b1dd3a293ae46eb7b&" alt="GreatMinds" width="500px">
 
 ---
 
 Mi nombre es Javier Martin Sebastian Tasayco, tengo 20 años de edad, estoy cursando la carrera de Ingeniería de Software en la UPC. Mis habilidades que ofrezco al presente trabajo colaborativo es el trabajo en conjunto. De la misma manera el compromiso por realizar el seguimiento y avance para garantizar el cumplimiento de los parámetros exigidos por el curso.
 
-![martin](https://github.com/user-attachments/assets/f70c785e-c1ab-4f7e-8709-29ff91e7ced9)
+![365327243-f70c785e-c1ab-4f7e-8709-29ff91e7ced9](https://github.com/user-attachments/assets/2ae765c1-ea70-4cf9-95bd-bf4e73375838)
+
 
 ---
 
 Mi nombre es Paolo Andre Espejo Macuri, tengo 20 años de edad, estoy cursando el sexto ciclo de la carrera de Ingeniería de Software en la UPC. Soy hábil con las TICs y soy una persona creativa para proporcionar ideas innovadoras. Aprendo de forma rápida nuevos temas al practicarlos y se me da bien la programación y la solución de errores.
 
-![lolo (1)](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/assets/104078975/5f1175df-e03c-4d5a-9cd0-be7f807ed27f)
+![Captura de pantalla 2024-09-06 144650](https://github.com/user-attachments/assets/a412c0ac-183a-407a-8c9a-f559c6fbc5b7)
+
 
 
 
