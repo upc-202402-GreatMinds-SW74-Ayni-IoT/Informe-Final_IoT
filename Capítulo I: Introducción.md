@@ -25,7 +25,9 @@ Mi nombre es Jorge Enrique Gonzales Carrión tengo 19 años de edad y curso el s
 
 ---
 
+Mi nombre es Javier Martin Sebastian Tasayco, tengo 20 años de edad, estoy cursando la carrera de Ingeniería de Software en la UPC. Mis habilidades que ofrezco al presente trabajo colaborativo es el trabajo en conjunto. De la misma manera el compromiso por realizar el seguimiento y avance para garantizar el cumplimiento de los parámetros exigidos por el curso.
 
+![martin](https://github.com/user-attachments/assets/f70c785e-c1ab-4f7e-8709-29ff91e7ced9)
 
 ---
 
