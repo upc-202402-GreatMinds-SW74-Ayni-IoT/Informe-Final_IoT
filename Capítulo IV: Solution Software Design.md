@@ -204,14 +204,16 @@ En la siguiente imagen se aprecia 2 usuarios que interactúan con el sistema, "F
 
 En la siguiente imagen se visualizan los contenedores, los cuales sirven para dividr el sistema de la aplicación.
 
-![IOT drawio (13)](https://github.com/user-attachments/assets/c9f8325f-9eb8-425b-a72b-fbf498e2571a)
+
+![image](https://github.com/user-attachments/assets/01001759-c84f-4e7c-93df-4f6d64d35f19)
 
 
 
 
 ### 4.1.3.3. Software Architecture Deployment Diagrams
 
-![IOT drawio (12134)](https://github.com/user-attachments/assets/69aefb03-1d12-459d-8400-1aabe9797b46)
+![image](https://github.com/user-attachments/assets/1e05d0a9-5a3b-4016-b43f-ec71a56d6e66)
+
 
 
 # 4.2. Tactical-Level Domain-Driven Design
