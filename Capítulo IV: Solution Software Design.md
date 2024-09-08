@@ -204,20 +204,17 @@ En la siguiente imagen se aprecia 2 usuarios que interactúan con el sistema, "F
 
 En la siguiente imagen se visualizan los contenedores, los cuales sirven para dividr el sistema de la aplicación.
 
-![IOT drawio (13)](https://github.com/user-attachments/assets/c9f8325f-9eb8-425b-a72b-fbf498e2571a)
+
+![image](https://github.com/user-attachments/assets/01001759-c84f-4e7c-93df-4f6d64d35f19)
 
 
 
 
 ### 4.1.3.3. Software Architecture Deployment Diagrams
 
-![IOT drawio (12134)](https://github.com/user-attachments/assets/69aefb03-1d12-459d-8400-1aabe9797b46)
+![image](https://github.com/user-attachments/assets/1e05d0a9-5a3b-4016-b43f-ec71a56d6e66)
 
 
-
-
-
-# 4.2. Tactical-Level Domain-Driven Design
 
 # 4.2. Tactical-Level Domain-Driven Design
 ## 4.2.1. Bounded Context: IAM
@@ -392,6 +389,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
         <td>userQueryService</td>
         <td>UserQueryService</td>
         <td>Private</td>
+        <td>Servicio de consultas de usuario</td>
+    </tr>
+    <tr>
+        <td>userCommandService</td>
+        <td>UserCommandService</td>
+        <td>Private</td>
         <td>Servicio de registro de usuario</td>
     </tr>
     <tr>
@@ -431,6 +434,11 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
     </tr>
     <tr>
         <td>UserCommandService</td>
+        <td>Service</td>
+        <td colspan="2">Servicio con reglas de negocio para usuario</td>
+    </tr>
+    <tr>
+        <td>UserQueryService</td>
         <td>Service</td>
         <td colspan="2">Servicio con reglas de negocio para usuario</td>
     </tr>
@@ -523,9 +531,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 ### 4.2.1.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.1.7.1. Bounded Context Domain Layer Class Diagrams
 
-En entregas posteriores se detallarán los metodos y atributos en el diagrama respectivo.
+![image](https://github.com/user-attachments/assets/756ee8f2-a2c0-4d8b-95d1-69b36efe7740)
+
 
 #### 4.2.1.7.2. Bounded Context Database Design Diagram
+
+![image](https://github.com/user-attachments/assets/71c76fb2-c063-42d8-a7be-0c6cd55fa1a3)
 
 
 ## 4.2.2. Bounded Context: Shopping
@@ -730,6 +741,11 @@ En entregas posteriores se detallarán los metodos y atributos en el diagrama re
         <td colspan="2">Servicio con reglas de negocio para la orden</td>
     </tr>
     <tr>
+        <td>OrderQueryService</td>
+        <td>Service</td>
+        <td colspan="2">Servicio con reglas de negocio para la orden</td>
+    </tr>
+    <tr>
         <td colspan="4" align="center">Atributos</td>
     </tr>
     <tr>
@@ -811,20 +827,202 @@ En entregas posteriores se detallarán los metodos y atributos en el diagrama re
 ### 4.2.2.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.2.7.1. Bounded Context Domain Layer Class Diagrams
 
+![image](https://github.com/user-attachments/assets/6697ed43-5f31-4bc9-a241-d779fffc8477)
 
-En entregas posteriores se detallarán los metodos y atributos en el diagrama respectivo.
 
 #### 4.2.2.7.2. Bounded Context Database Design Diagram
 
+![image](https://github.com/user-attachments/assets/91d47e55-640d-4e7c-b129-439d5349f3af)
+
+## 4.2.3. Bounded Context: Crop Registration
+### 4.2.3.1. Domain Layer
+
+<table> <tr> <td colspan="4" align="center">Aggregate</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>Product</td> <td>Entity/Aggregate</td> <td colspan="2">Representación de un producto agrícola</td> </tr> <tr> <td colspan="4" align="center">Atributos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>id</td> <td>Long</td> <td>Private</td> <td>Identificador único</td> </tr> <tr> <td>name</td> <td>String</td> <td>Private</td> <td>Nombre del producto</td> </tr> <tr> <td>description</td> <td>String</td> <td>Private</td> <td>Descripción del producto</td> </tr> <tr> <td>recommendedCultivationDistance</td> <td>String</td> <td>Private</td> <td>Distancia de cultivo recomendada</td> </tr> <tr> <td>recommendedCultivationDepth</td> <td>String</td> <td>Private</td> <td>Profundidad de cultivo recomendada</td> </tr> <tr> <td>recommendedGrowingClimate</td> <td>String</td> <td>Private</td> <td>Clima de crecimiento recomendado</td> </tr> <tr> <td>recommendedSoilType</td> <td>String</td> <td>Private</td> <td>Tipo de suelo recomendado</td> </tr> <tr> <td>recommendedGrowingSeason</td> <td>String</td> <td>Private</td> <td>Temporada de crecimiento recomendada</td> </tr> <tr> <td>imageUrl</td> <td>String</td> <td>Private</td> <td>URL de la imagen del producto</td> </tr> <tr> <td>userId</td> <td>Long</td> <td>Private</td> <td>Identificador del usuario que creó el producto</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>getId</td> <td>Long</td> <td>Public</td> <td>Obtiene el identificador del producto</td> </tr> <tr> <td>getName</td> <td>String</td> <td>Public</td> <td>Obtiene el nombre del producto</td> </tr> <tr> <td>getDescription</td> <td>String</td> <td>Public</td> <td>Obtiene la descripción del producto</td> </tr> <tr> <td>getRecommendedCultivationDistance</td> <td>String</td> <td>Public</td> <td>Obtiene la distancia de cultivo recomendada</td> </tr> <tr> <td>getRecommendedCultivationDepth</td> <td>String</td> <td>Public</td> <td>Obtiene la profundidad de cultivo recomendada</td> </tr> <tr> <td>getRecommendedGrowingClimate</td> <td>String</td> <td>Public</td> <td>Obtiene el clima de crecimiento recomendado</td> </tr> <tr> <td>getRecommendedSoilType</td> <td>String</td> <td>Public</td> <td>Obtiene el tipo de suelo recomendado</td> </tr> <tr> <td>getRecommendedGrowingSeason</td> <td>String</td> <td>Public</td> <td>Obtiene la temporada de crecimiento recomendada</td> </tr> <tr> <td>getImageUrl</td> <td>String</td> <td>Public</td> <td>Obtiene la URL de la imagen del producto</td> </tr> <tr> <td>getUserId</td> <td>Long</td> <td>Public</td> <td>Obtiene el identificador del usuario que creó el producto</td> </tr> </table>
+
+### 4.2.3.2. Interface Layer
+
+<table> 
+  <tr> <td colspan="4" align="center">Controller</td> </tr> 
+  <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> 
+  <tr> <td>ProductController</td> <td>Controller</td> <td colspan="2">Controlador para productos</td> </tr> 
+  <tr> <td colspan="4" align="center">Atributos</td> </tr> 
+  <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+  <tr> <td>ProductQueryService</td> <td>productQueryService</td> <td>Private</td> <td>Servicio de consultas de productos</td> </tr> 
+  <tr> <td>ProductCommandService</td> <td>productCommandService</td> <td>Private</td> <td>Servicio de comandos de productos</td> </tr> 
+  <tr> <td colspan="4" align="center">Métodos</td> </tr> 
+  <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+  <tr> <td>createProduct</td> <td>ProductResource</td> <td>Public</td> <td>Método para crear un producto</td> </tr> 
+  <tr> <td>getAllProducts</td> <td>List&lt;ProductResource&gt;</td> <td>Public</td> <td>Método para obtener todos los productos</td> </tr> 
+  <tr> <td>getProductById</td> <td>ProductResource</td> <td>Public</td> <td>Método para obtener un producto por ID</td> </tr> 
+</table>
+
+### 4.2.3.3. Application Layer
+
+<table> 
+ <tr> <td colspan="4" align="center">Service</td> </tr> 
+ <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> 
+ <tr> <td>ProductCommandService</td> <td>Service</td> <td colspan="2">Servicio con lógica de negocio para productos</td> </tr> 
+ <tr> <td>ProductQueryService</td> <td>Service</td> <td colspan="2">Servicio con lógica de negocio para productos</td> </tr> 
+ <tr> <td colspan="4" align="center">Atributos</td> </tr> 
+ <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+ <tr> <td>ProductRepository</td> <td>productRepository</td> <td>Private</td> <td>Repositorio de productos</td> </tr> 
+ <tr> <td colspan="4" align="center">Métodos</td> </tr> 
+ <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+ <tr> <td>handleCreateProduct</td> <td>Long</td> <td>Public</td> <td>Método para manejar la creación de un producto</td> </tr> 
+ <tr> <td>handleGetProductById</td> <td>Optional&lt;Product&gt;</td> <td>Public</td> <td>Método para manejar la consulta de un producto por su ID</td> </tr> 
+ <tr> <td>handleGetAllProducts</td> <td>List&lt;Product&gt;</td> <td>Public</td> <td>Método para manejar la consulta de todos los productos</td> </tr> </table>
+
+### 4.2.3.4. Infrastructure Layer
+
+<table> <tr> <td colspan="4" align="center">Repository</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>ProductRepository</td> <td>Repository</td> <td colspan="2">Repositorio para la persistencia de productos</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>findById</td> <td>Optional&lt;Product&gt;</td> <td>Public</td> <td>Método para encontrar un producto por su ID</td> </tr> <tr> <td>findAll</td> <td>List&lt;Product&gt;</td> <td>Public</td> <td>Método para obtener todos los productos</td> </tr> </table>
+
+### 4.2.1.6. Bounded Context Software Architecture Component Level Diagrams
+
+![image](https://github.com/user-attachments/assets/36aa4fad-8889-4eee-a0ec-1e560d7e333a)
+
+
+### 4.2.3.7. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.3.7.1. Bounded Context Domain Layer Class Diagrams
+
+![image](https://github.com/user-attachments/assets/025a1cfd-5749-45e9-8963-bb1f222b7955)
 
 
 
-## 4.2.X. Bounded Context
-### 4.2.X.1. Domain Layer
-### 4.2.X.2. Interface Layer
-### 4.2.X.3. Application Layer
-### 4.2.X.4. Infrastructure Layer
-### 4.2.X.6. Bounded Context Software Architecture Component Level Diagrams
-### 4.2.X.7. Bounded Context Software Architecture Code Level Diagrams
-#### 4.2.X.7.1. Bounded Context Domain Layer Class Diagrams
-#### 4.2.X.7.2. Bounded Context Database Design Diagram
+#### 4.2.3.7.2. Bounded Context Database Design Diagram
+
+![image](https://github.com/user-attachments/assets/3710915f-2038-4d1a-9d92-c41a2864497a)
+
+
+## 4.2.4. Bounded Context: Planification
+### 4.2.4.1. Domain Layer
+
+<table> <tr> <td colspan="4" align="center"><strong>Aggregate</strong></td> </tr> 
+  <tr> <td><strong>Nombre</strong></td> <td><strong>Categoría</strong></td> <td colspan="2"><strong>Propósito</strong></td> </tr> 
+  <tr> <td>Crop</td> <td>Entity/Aggregate</td> <td colspan="2">Representación de un cultivo agrícola</td> </tr> 
+  <tr> <td colspan="4" align="center"><strong>Atributos</strong></td> </tr> 
+  <tr> <td><strong>Nombre</strong></td> <td><strong>Tipo de dato</strong></td> <td><strong>Visibilidad</strong></td> <td><strong>Descripción</strong></td> </tr> 
+  <tr> <td>id</td> <td>Long</td> <td>Private</td> <td>Identificador único del cultivo</td> </tr> 
+  <tr> <td>name</td> <td>String</td> <td>Private</td> <td>Nombre del cultivo</td> </tr> 
+  <tr> <td>pickUpWeed</td> <td>Boolean</td> <td>Private</td> <td>Indica si el deshierbe está activo</td> </tr> 
+  <tr> <td>fertilizeCrop</td> <td>Boolean</td> <td>Private</td> <td>Indica si la fertilización del cultivo está activa</td> </tr> 
+  <tr> <td>oxygenateCrop</td> <td>Boolean</td> <td>Private</td> <td>Indica si la oxigenación del cultivo está activa</td> </tr> 
+  <tr> <td>makeCropLine</td> <td>Boolean</td> <td>Private</td> <td>Indica si se deben hacer líneas en el cultivo</td> </tr> 
+  <tr> <td>makeCropHole</td> <td>Boolean</td> <td>Private</td> <td>Indica si se deben hacer hoyos en el cultivo</td> </tr> 
+  <tr> <td>wateringDays</td> <td>Long</td> <td>Private</td> <td>Número de días de riego</td> </tr> 
+  <tr> <td>pestCleanupDays</td> <td>Long</td> <td>Private</td> <td>Número de días de limpieza de plagas</td> </tr> 
+  <tr> <td>product</td> <td>Product (Entity)</td> <td>Private</td> <td>Producto asociado al cultivo</td> </tr> 
+  <tr> <td>userId</td> <td>Long</td> <td>Private</td> <td>Identificador del usuario responsable</td> </tr> 
+  <tr> <td colspan="4" align="center"><strong>Métodos</strong></td> </tr> 
+  <tr> <td><strong>Nombre</strong></td> <td><strong>Tipo de retorno</strong></td> <td><strong>Visibilidad</strong></td> <td><strong>Descripción</strong></td> </tr> 
+  <tr> <td>updateInformation</td> <td>Crop</td> <td>Public</td> <td>Actualiza la información del cultivo</td> </tr> 
+  <tr> <td>isPickUpWeedActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si el deshierbe está activo</td> </tr> 
+  <tr> <td>isFertilizeCropActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si la fertilización del cultivo está activa</td> </tr> 
+  <tr> <td>isOxygenateCropActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si la oxigenación del cultivo está activa</td> </tr> 
+  <tr> <td>isMakeCropLineActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si se deben hacer líneas en el cultivo</td> </tr> 
+  <tr> <td>isMakeCropHoleActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si se deben hacer hoyos en el cultivo</td> </tr> 
+  <tr> <td>getId</td> <td>Long</td> <td>Public</td> <td>Obtiene el identificador único del cultivo</td> </tr> 
+  <tr> <td>getName</td> <td>String</td> <td>Public</td> <td>Obtiene el nombre del cultivo</td> </tr> 
+  <tr> <td>getPickUpWeed</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado del deshierbe</td> </tr> 
+  <tr> <td>getFertilizeCrop</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado de la fertilización del cultivo</td> </tr> 
+  <tr> <td>getOxygenateCrop</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado de la oxigenación del cultivo</td> </tr> 
+  <tr> <td>getMakeCropLine</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado de la creación de líneas en el cultivo</td> </tr> 
+  <tr> <td>getMakeCropHole</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado de la creación de hoyos en el cultivo</td> </tr> 
+  <tr> <td>getWateringDays</td> <td>Long</td> <td>Public</td> <td>Obtiene el número de días de riego</td> </tr> 
+  <tr> <td>getPestCleanupDays</td> <td>Long</td> <td>Public</td> <td>Obtiene el número de días de limpieza de plagas</td> </tr> 
+  <tr> <td>getProduct</td> <td>Product</td> <td>Public</td> <td>Obtiene el producto asociado al cultivo</td> </tr> 
+  <tr> <td>getUserId</td> <td>Long</td> <td>Public</td> <td>Obtiene el identificador del usuario responsable</td> </tr> 
+</table>
+
+### 4.2.4.2. Interface Layer
+
+<table> 
+  <tr> <td colspan="4" align="center">Controller</td> </tr> 
+  <tr> <td>Nombre</td> <td>Categoría</td> <td colspan="2">Propósito</td> </tr> 
+  <tr> <td>CropController</td> <td>Controller</td> <td colspan="2">Controlador para manejar solicitudes relacionadas con cultivos</td> </tr> 
+  <tr> <td colspan="4" align="center">Atributos</td> </tr> 
+  <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+  <tr> <td>CropQueryService</td> <td>CropQueryService</td> <td>Private</td> <td>Servicio para consultas de cultivos</td> </tr> 
+  <tr> <td>CropCommandService</td> <td>CropCommandService</td> <td>Private</td> <td>Servicio para comandos de cultivos</td> </tr> 
+  <tr> <td colspan="4" align="center">Métodos</td> </tr> 
+  <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+  <tr> <td>createCrop</td> <td>Crop Resource</td> <td>Public</td> <td>Método para crear un nuevo cultivo</td> </tr> 
+  <tr> <td>getAllCrops</td> <td>List(Crop Resource)</td> <td>Public</td> <td>Método para obtener todos los cultivos</td> </tr> 
+  <tr> <td>getCropById</td> <td>Crop Resource</td> <td>Public</td> <td>Método para obtener un cultivo en especifico</td> </tr> 
+</table>
+
+### 4.2.4.3. Application Layer
+
+<table> 
+  <tr> <td colspan="4" align="center">Service</td> </tr> 
+  <tr> <td>Nombre</td> <td>Categoría</td> <td colspan="2">Propósito</td> </tr> 
+  <tr> <td>CropCommandService</td> <td>Service</td> <td colspan="2">Servicio que contiene las reglas de negocio para los cultivos</td> </tr> 
+  <tr> <td>CropQueryService</td> <td>Service</td> <td colspan="2">Servicio que contiene las reglas de negocio para los cultivos</td> </tr> 
+  <tr> <td colspan="4" align="center">Atributos</td> </tr> 
+  <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+  <tr> <td>CropRepository</td> <td>CropRepository</td> <td>Private</td> <td>Repositorio de cultivos</td> </tr> 
+  <tr> <td colspan="4" align="center">Métodos</td> </tr> 
+  <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+  <tr> <td>getAllCrops</td> <td>List(Crop)</td> <td>Public</td> <td>Obtinene todos los cultivos</td> </tr> 
+  <tr> <td>getCropById</td> <td>Crop</td> <td>Public</td> <td>Obtinene un cultivo especifico</td> </tr> 
+  <tr> <td>getCropsByProductId</td> <td>List(Crop)</td> <td>Public</td> <td>Busca todos los cultivo que le pertenecen a un producto</td> </tr> 
+  <tr> <td>getCropByProductId</td> <td>Crop</td> <td>Public</td> <td>Busca un cultivo por la id el producto</td> </tr> 
+  <tr> <td>createCrop</td> <td>Crop</td> <td>Public</td> <td>Crea un cultivo</td> </tr> 
+</table>
+
+### 4.2.4.4. Infrastructure Layer
+
+<table> <tr> <td colspan="4" align="center">Repository</td> </tr> 
+  <tr> <td>Nombre</td> <td>Categoría</td> <td colspan="2">Propósito</td> </tr> 
+  <tr> <td>CropRepository</td> <td>Repository</td> <td colspan="2">Repositorio para manejar la persistencia de cultivos</td> </tr> 
+  <tr> <td colspan="4" align="center">Métodos</td> </tr> 
+  <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
+  <tr> <td>findCropByProductIdAndId</td> <td>Crop</td> <td>Public</td> <td>Encuentra un cultivo por su ID y el ID del producto asociado</td> </tr> 
+  <tr> <td>findAllByProductId</td> <td>List(Crop)</td> <td>Public</td> <td>Retorna todos los cultivos asociados a un producto específico</td> </tr> 
+    </table>
+
+### 4.2.4.6. Bounded Context Software Architecture Component Level Diagrams
+
+![image](https://github.com/user-attachments/assets/38bdd8af-3f7a-403c-9883-d780c5212818)
+
+### 4.2.4.7. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.4.7.1. Bounded Context Domain Layer Class Diagrams
+
+![image](https://github.com/user-attachments/assets/087a48ca-458e-48dd-98be-a4a7f338692a)
+
+
+#### 4.2.4.7.2. Bounded Context Database Design Diagram
+
+![image](https://github.com/user-attachments/assets/99e675a2-b960-4221-b757-b7ed9ca75d04)
+
+
+
+## 4.2.5. Bounded Context: Monitoring
+### 4.2.5.1. Domain Layer
+
+<table> <tr> <td colspan="4" align="center">Aggregate</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>Sensor</td> <td>Entity/Aggregate</td> <td colspan="2">Representación de un sensor IoT para monitorear datos del terreno.</td> </tr> <tr> <td>Actuator</td> <td>Entity/Aggregate</td> <td colspan="2">Representación de un actuador IoT para realizar acciones automáticas en base a los datos monitoreados.</td> </tr> <tr> <td colspan="4" align="center">Atributos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>id</td> <td>Long</td> <td>Private</td> <td>Identificador único del sensor o actuador.</td> </tr> <tr> <td>dataValue</td> <td>String</td> <td>Private</td> <td>Valor de datos medido por el sensor (ej. temperatura).</td> </tr> <tr> <td>timestamp</td> <td>String</td> <td>Private</td> <td>Fecha y hora de la medición realizada por el sensor.</td> </tr> <tr> <td>status</td> <td>String</td> <td>Private</td> <td>Estado del actuador (ej. activado/desactivado).</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>CollectDailyData</td> <td>SensorData</td> <td>Public</td> <td>Recolectar datos diarios de los sensores.</td> </tr> <tr> <td>ActivateActuator</td> <td>void</td> <td>Public</td> <td>Activar un actuador basado en condiciones del terreno.</td> </tr> <tr> <td>DeactivateActuator</td> <td>void</td> <td>Public</td> <td>Desactivar un actuador.</td> </tr> </table>
+
+### 4.2.5.2. Interface Layer
+
+<table> <tr> <td colspan="4" align="center">Controller</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>MonitoringController</td> <td>Controller</td> <td colspan="2">Controlador para la gestión de sensores y actuadores IoT.</td> </tr> <tr> <td colspan="4" align="center">Atributos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>SensorQueryService</td> <td>sensorQueryService</td> <td>Private</td> <td>Servicio de consulta de sensores.</td> </tr> <tr> <td>ActuatorCommandService</td> <td>actuatorCommandService</td> <td>Private</td> <td>Servicio de comandos para actuadores.</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>getDailySensorData</td> <td>List<SensorData></td> <td>Public</td> <td>Obtener datos diarios de sensores.</td> </tr> <tr> <td>activateActuator</td> <td>void</td> <td>Public</td> <td>Activar un actuador basado en los datos recolectados.</td> </tr> <tr> <td>deactivateActuator</td> <td>void</td> <td>Public</td> <td>Desactivar un actuador.</td> </tr> </table>
+
+### 4.2.5.3. Application Layer
+
+<table> <tr> <td colspan="4" align="center">Service</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>SensorQueryService</td> <td>Service</td> <td colspan="2">Servicio para consultas de datos de sensores.</td> </tr> <tr> <td>ActuatorCommandService</td> <td>Service</td> <td colspan="2">Servicio para ejecutar comandos de actuadores.</td> </tr> <tr> <td colspan="4" align="center">Atributos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>SensorRepository</td> <td>sensorRepository</td> <td>Private</td> <td>Repositorio de datos de sensores.</td> </tr> <tr> <td>ActuatorRepository</td> <td>actuatorRepository</td> <td>Private</td> <td>Repositorio de actuadores.</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>existById</td> <td>Boolean</td> <td>Public</td> <td>Método para validar la existencia de un sensor o actuador por ID.</td> </tr> <tr> <td>findById</td> <td>Sensor/Actuator</td> <td>Public</td> <td>Método para obtener un sensor o actuador por ID.</td> </tr> </table>
+
+### 4.2.5.4. Infrastructure Layer
+
+<table> <tr> <td colspan="4" align="center">Repository</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>SensorRepository</td> <td>Repository</td> <td colspan="2">Repositorio de sensores.</td> </tr> <tr> <td>ActuatorRepository</td> <td>Repository</td> <td colspan="2">Repositorio de actuadores.</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>findSensorById</td> <td>Sensor</td> <td>Public</td> <td>Método para obtener un sensor por su ID.</td> </tr> <tr> <td>findActuatorById</td> <td>Actuator</td> <td>Public</td> <td>Método para obtener un actuador por su ID.</td> </tr> </table>
+
+### 4.2.5.6. Bounded Context Software Architecture Component Level Diagrams
+
+![image](https://github.com/user-attachments/assets/e655c3e7-3fe7-438e-bc13-02e73f03df8c)
+
+### 4.2.5.7. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.5.7.1. Bounded Context Domain Layer Class Diagrams
+
+![image](https://github.com/user-attachments/assets/0c6f98c0-8bbb-41c1-ac54-4ddcfa8d8d25)
+
+#### 4.2.5.7.2. Bounded Context Database Design Diagram
+
+![image](https://github.com/user-attachments/assets/305633b9-6f93-4cf5-8711-8950ff5ddf92)
+
