@@ -3,35 +3,41 @@
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
 
-El startup que se introduce en el presente informe recibe como nombre “GreatMinds”. Actualmente conformado por un conjunto de estudiantes de la Universidad Peruana de Ciencias Aplicadas, con la ambición de querer ayudar a la sociedad con nuestra grán pasión a la tecnología e informática, creamos esta startup tomando como objetivo facilitar y mejorar la producción del sector agrícola del Perú. 
+El startup que se introduce en el presente informe recibe como nombre “GreatMinds”. Actualmente conformado por un conjunto de estudiantes de la Universidad Peruana de Ciencias Aplicadas, con la ambición de querer ayudar a la sociedad con nuestra grán pasión a la tecnología e informática, creamos esta startup tomando como objetivo facilitar y mejorar la producción del sector agrícola del Perú.
 
 Como misión se plantea “Incrementar la calidad de producción agrícola con eficiencia, seguridad y transparencia entre agricultores y comerciantes del Perú”. Asimismo, la visión de la startup plantea desarrollar la solución más reconocida en el Perú para monitorear cultivos de manera eficiente y sencilla.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-Mi nombre es Jorge Enrique Gonzales Carrión tengo 19 años de edad y curso el sexto ciclo de la carrera Ingeniería de Software. Me considero una persona con sentido de responsabilidad y la suficiente capacidad de trabajar en equipo aportando ideas innovadoras. Además, en cualidades me considero asertivo y colaborativo, puntos que pueden mejorar el proceso de elaboración de los distintos trabajos del curso. Finalmente, poseo conocimientos de programación que brindaron los ciclos anteriores al presente.
+Mi nombre es Jorge Enrique Gonzales Carrión tengo 19 años de edad y curso el octavo ciclo de la carrera Ingeniería de Software. Me considero una persona con sentido de responsabilidad y la suficiente capacidad de trabajar en equipo aportando ideas innovadoras. Además, en cualidades me considero asertivo y colaborativo, puntos que pueden mejorar el proceso de elaboración de los distintos trabajos del curso. Finalmente, poseo conocimientos de programación que brindaron los ciclos anteriores al presente.
 
-![jroge](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/assets/104078975/f2ae0bea-109a-48cb-abd8-47db542006c3)
-
----
-
-
-
+![266133367-f2ae0bea-109a-48cb-abd8-47db542006c3](https://github.com/user-attachments/assets/a60fd628-7088-42ff-8c8d-22d0a1f3987b)
 
 
 ---
+Mi nombre es Jhonel Enrique Rios Jaimes, estudiande de la carrera de Ingeniería de Software en la UPC. Me considero una persona responsable y que trabaja en equipo. Además poseo habilidades técnicas en lenguajes de programación como JavaScript, Python, C#.
 
+![68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f612f414367386f634c794c65305755387278774f794a6f6b465955425275517a4a50507173354b51796d4d37415f7a774157424a704554326b3d733537362d632d6e](https://github.com/user-attachments/assets/7eebdc1f-5ff1-4d7e-b70e-7d4ee87b26ab)
+
+---
+Mi nombre es Luia Angel Alejo cardenas, soy estudiante de la carrera de Ingenieria de Software, posse conocimientos en programación en C++, Python, Java, HTML, CSS y FLutter. Además, soy bueno haciendo cálculos matemáticos, me comprometo a apoyar a mi equipo en todo lo posible y ser responsable con cada actividad que se me asigne.
+
+![68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3930393633363536343532393835323432372f313238303637363536343335343230373836342f34333137383437352e706e673f65783d3636643866323](https://github.com/user-attachments/assets/e03a61e9-aa20-4c86-a8ea-b04b047f3a40)
 
 
 ---
 
+Mi nombre es Javier Martin Sebastian Tasayco, tengo 20 años de edad, estoy cursando la carrera de Ingeniería de Software en la UPC. Mis habilidades que ofrezco al presente trabajo colaborativo es el trabajo en conjunto. De la misma manera el compromiso por realizar el seguimiento y avance para garantizar el cumplimiento de los parámetros exigidos por el curso.
+
+![365327243-f70c785e-c1ab-4f7e-8709-29ff91e7ced9](https://github.com/user-attachments/assets/2ae765c1-ea70-4cf9-95bd-bf4e73375838)
 
 
 ---
 
 Mi nombre es Paolo Andre Espejo Macuri, tengo 20 años de edad, estoy cursando el sexto ciclo de la carrera de Ingeniería de Software en la UPC. Soy hábil con las TICs y soy una persona creativa para proporcionar ideas innovadoras. Aprendo de forma rápida nuevos temas al practicarlos y se me da bien la programación y la solución de errores.
 
-![lolo (1)](https://github.com/upc-pre-202302-GreatMinds-SW51/Informe-Final_OpenSource/assets/104078975/5f1175df-e03c-4d5a-9cd0-be7f807ed27f)
+![Captura de pantalla 2024-09-06 144650](https://github.com/user-attachments/assets/a412c0ac-183a-407a-8c9a-f559c6fbc5b7)
+
 
 
 
@@ -47,17 +53,17 @@ La aplicación web recibirá el nombre “Ayni”, debido a que, en el lenguaje 
 
 **Product Description**
 
-(actualizar)
-El software es innovador ya que se encarga de ofrecer un sistema de control de calidad del ciclo de vida de los cultivos para que su producción se incremente de forma exponencial para su venta o exportación con herramientas IoT de registro, notificación y planificación. Debido a ello, está enfocado principalmente a los productores de cultivos, en donde ellos pueden hacer un plan de cultivo, registrar parcelas, gestionar insumos, obtener un historial de cultivos, gestionar sus costos y gastos y atender pedidos. Por otro lado también tenemos a los exportadores, que pueden realizar pedidos a los productores y dejar reseñas acerca de los servicios brindados.
+
+El software es innovador ya que se encarga de ofrecer un sistema de control de calidad de manera que monitorea productos agrícolas mediante sensores en el suelo, esto permite a los agricultores realizar funciones de mantenimiento tales como visualizar el clima al cual está expuesto la tierra, temperatura, pH, oxígeno, CO2, conductividad eléctrica y humedad, de esta manera el agricultor identifica las necesidades de mantenimiento del terreno realizando una planificación personalizada previa de lo que requiere el cultivo. Una vez la solución IoT identifica las carencias de la tierra de cultivo, se activarán actuadores que brinden lo necesario para que el plan de cultivo se cumpla a la perfección. Por otro lado, como función de secuencia o tipo flujo dirigida a los comerciantes, tal que pueden realizar la compra de productos de los cultivos publicados por los agricultores, acceder a los detalles de las plantas brindados por los sensores en tiempo real y calificar los productos adquiridos. Tanto los productores y comerciantes accederán a la aplicación mediante un dispositivo electrónico con conexión a internet; las computadoras y dispositivos móviles junto con un navegador serán el principal medio de acceso para la aplicación. 
+
 
 **Monetización**
 
-(preguntar si con el sistema IoT se puede generar dinero)
-Nuestra aplicación será monetizada a través de publicidad sobre insumos para cultivar, de esta manera se cobrará por la aparición de publicidad en la aplicación a proveedores de insumos. De esta manera, nuestra aplicación se volverá un entorno completo para que los productores mejoren sus productos con los insumos que serán publicitados en la aplicación (libre elección de compra).
+La forma de monetización será mediante una suscripción que cubra todo el servicio incluyendo los dispositivos IOT que se requiere.
 
 ### 1.2.1 Antecedentes y problemática
 
-
+En los ultimos años, según Barrantes-Mann, Olivos, Liza-Zatti y Arévalo (2021), el sector agrícola en el Perú realizó esfuerzos para incrementar la calidad de los productos y su crecimiento en mercados, sin embargo, todavía hay varios aspectos que cubrir como la capacitación de los agricultores, manejo del ecosistema, desarrollo institucional y sobretodo la transferencia tecnológica. Debido a ello, si bien es conocido mundialmente que Perú es un país privilegeado con su ecosistema, si no se logra un cambio significativo en sus politicas de desarrollo tecnológico, se enfrentarían a peligros mayores a futuro. Por otro lado, para poner en contexto la importancia de la falta de desarrollo tecnologico del sector agrícola del Perú, según Lehikoinen et al. (2021), señala que el 80% de los países del resto del mundo dependen de importaciones de alimentos para mantener su suministro apropiado de alimentos para sus ciudadanos. 
 
 **Herramienta 5W y 2H**
 
@@ -92,7 +98,7 @@ El problema del bajo rendimiento de los cultivos en Perú se refleja en una pér
 
 **Conclusiones de las 5W + 2H**
 
-Luego de haber desarrollado las 5W’s y 2H’s se logró desarrollar una visión general sobre la problemática, cuyo alcance es de ámbito nacional. Para conseguir resultados verídicos y garantizar el funcionamiento del producto solución, se optará por presentarlo a un público nacional. Existen pocas soluciones actuales a la problemática, para erradicar estas problemáticas se desarrollará una aplicación que realice monitoreos de productos agrícolas que permitan a los agricultores realizar funciones de mantenimiento tales como visualizar el clima al cual está expuesto la tierra, temperatura, pH, oxígeno, CO2, conductividad eléctrica y humedad, de esta manera el agricultor identifica las necesidades de mantenimiento del terreno realizando una planificación personalizada previa de lo que requiere el cultivo. Por otro lado, como función de secuencia o tipo flujo dirigida a los comerciantes, tal que pueden realizar la compra de productos, que se compone de una búsqueda, venta y validación. Asimismo, se contará con un sistema de calificación y reseñas que se mostrará luego de realizar un pedido o compra. Tanto los productores y comerciantes accederán a la aplicación mediante un dispositivo electrónico con conexión a internet; las computadoras junto con un navegador serán el principal medio de acceso para la aplicación.
+Luego de haber desarrollado las 5W’s y 2H’s se logró desarrollar una visión general sobre la problemática, cuyo alcance es de ámbito nacional. Para conseguir resultados verídicos y garantizar el funcionamiento del producto solución, se optará por presentarlo a un público nacional. Existen pocas soluciones actuales a la problemática, para erradicar estas problemáticas se desarrollará una aplicación que realice monitoreos de productos agrícolas que permitan a los agricultores realizar funciones de mantenimiento tales como visualizar el clima al cual está expuesto la tierra, temperatura, pH, oxígeno, CO2, conductividad eléctrica y humedad, de esta manera el agricultor identifica las necesidades de mantenimiento del terreno realizando una planificación personalizada previa de lo que requiere el cultivo. Por otro lado, como función de secuencia o tipo flujo dirigida a los comerciantes, tal que pueden realizar la compra de productos de los cultivos publicados por los agricultores, acceder a los detalles de las plantas brindados por los sensores en tiempo real y calificar los productos adquiridos. Tanto los productores y comerciantes accederán a la aplicación mediante un dispositivo electrónico con conexión a internet; las computadoras y dispositivos móviles junto con un navegador serán el principal medio de acceso para la aplicación.
 
 ### 1.2.2 Lean UX Process.
 #### 1.2.2.1. Lean UX Problem Statements.
@@ -101,7 +107,7 @@ El propósito de “Ayni” es proporcionar a los agricultores una solución tec
 
 Actualmente, existen pocas aplicaciones de plataformas que ofrecen soluciones orientadas al monitorieo de los cultivos en el sector agrícola. En ese sentido, nuestra plataforma busca ingresar al mercado como una alternativa diferenciadora, con el propósito de resolver los problemas a los que se enfrentan los productores agrícolas.
 
-Sin embargo, hemos observado un factor crítico que perjudica la productividad agrícola: la falta de una herramienta integrada que permita tomar decisiones de manera informada. Como consecuencia, se hace un uso ineficiente de los recursos naturales y el rendimiento del terreno se reduce.
+Sin embargo, hemos observado un factor crítico que perjudica la productividad agrícola: la falta de una solución que permita tomar decisiones en el ciclo de vida del cultivo de manera precisa. Como consecuencia, se hace un uso ineficiente de los recursos naturales y el rendimiento del terreno se reduce.
 
 A partir de lo anterior, resulta posible plantear la principal interrogante que el proyecto propone resolver:
 
@@ -113,7 +119,7 @@ A partir de lo anterior, resulta posible plantear la principal interrogante que 
 
 Incremento de las transacciones de compra de productos agrícolas en un 30%.
 Incrementar el número de usuarios de la plataforma de un 40%
-(preguntar si con el sistema IoT se puede generar dinero)
+Ingresos mediante suscripciones de los clientes que corresponden al 90%
 
 **Users:**
 
@@ -137,6 +143,7 @@ Posibilidad de tener acceso a toda la información actualizada y detallada del p
 - Función de calificación hacia los productos adquiridos
 - Realizar planificaciones para establecer valores requeridos del terreno para un correcto ciclo de vida del cultivo
 - Monitoreo de ciclo de vida de cultivos mediante sensores en la tierra
+- Realizar acciones de soporte para los cultivos mediante actuadores
 - Compra/venta de productos agrícolas mediante la plataforma
 
 **User Assumptions**
@@ -149,55 +156,52 @@ Nuestro producto encaja en la vida diaria de los agricultores, debido a que les 
 Nuestro producto puede enfrentar algunos desafíos como la percepción de ser compleja de usar por algunos agricultores. Para evitar ello, la interfaz debe lucir sencilla e interactiva. 
 4. **¿Cuándo y cómo es nuestro producto? ¿Usado?**
 Nuestra solución está diseñada para ser utilizada por el agricultor durante todo el proceso de cultivo, que va desde la siembra hasta la cosecha y posterior venta de los productos. Asimismo, es útil para planificar lo necesario para que el terreno donde se cultive cumpla con todos los requisitos de una buena producción. Los compradores podrán obtener información detalla de los productos, comprar los cultivos y dejar calificaciones.
-
-(actualizar desde aqui)
-5. **¿Qué características son importantes?**
- Algunas funcionalidades importantes en la solución serán la programación de actividades, el registro de los gastos y las ganancias, la gestión de los insumos, control de plagas, reportes detallados en base a la información ingresada, entre otros. Por otro lado, los compradores podrán utilizar la aplicación para buscar productos agrícolas  de buena calidad, obtener información acerca de estos, realizar pedidos y acceder a un sistema de calificación y reseñas.
-
-6. **¿Cómo debe verse nuestro producto y cómo comportarse?**
+6. **¿Qué características son importantes?**
+ Algunas funcionalidades importantes en la solución serán la planificación de los requisitos de la planta, monitoreo a tiempo real de los componentes del terreno del cultivo, y publicar sus cultivos a venta. Por otro lado, los compradores podrán utilizar la aplicación para buscar productos agrícolas de buena calidad, obtener información a tiempo real y detallada acerca de estos, realizar pedidos y acceder a un sistema de calificación y reseñas.
+7. **¿Cómo debe verse nuestro producto y cómo comportarse?**
 La interfaz de nuestro producto debe ser sencilla e intuitiva para simplificar su uso. Además, el tiempo de respuesta de las funcionalidades debe ser rápido para que el usuario no pierda interés al momento de utilizar la aplicación.
 
 
 **Business Assumptions**
 
 1. **Creemos que nuestros clientes necesitan** una mejor planificación de sus actividades agrícolas para maximizar la eficiencia de sus cultivos.
-2. **Estas necesidades se pueden resolver con una** aplicación web que brinda la posibilidad de gestionar adecuadamente los procesos agrícolas y que permite la compra de productos agrícolas.
-3. **El valor #1 que mi cliente quiere de mi servicio** es la capacidad de aumentar su eficiencia al organizarse mejor mediante la aplicación y una dinámica de compra y venta sencilla.
+2. **Estas necesidades se pueden resolver con una** solución IOT que brinda la posibilidad de planificar y monitorear adecuadamente los productos agrícolas y que permite la compra/venta de productos agrícolas.
+3. **El valor #1 que mi cliente quiere de mi servicio** es la capacidad de aumentar su eficiencia al desempeñarse mejor en el proceso de cultivo mediante la solución tecnológica y una dinámica de compra y venta sencilla.
 4. **El cliente también puede obtener beneficios adicionales como** el acceso directo a los mercados mediante un sistema de compra entre los consumidores y productores. Gracias a ello, los productores pueden obtener mayores ingresos. 
 5. **Voy a adquirir la mayoría de mis clientes** mediante el marketing de boca a boca, o el anuncio mediante redes sociales o la radio.
-6. **Haré dinero a través de** la publicación de anuncios por parte de personas que quieran ofrecer servicios o productos destinados a los agricultores, tales como fertilizantes u otros pesticidas.
-7. **Mi competencia principal en el mercado** serán otras aplicaciones que ofrecen un servicio similar al planteado para este proyecto.
-8. **Los venceremos debido a la simplicidad** de uso de nuestra aplicación y a la combinación de funcionalidades únicas que permiten combatir con problemas específicos, como el control de plagas, entre otros.
-9. **El mayor riesgo es que** los agricultores y los compradores no utilicen la aplicación por considerarla demasiado compleja de usar o simplemente resistirse al cambio.
+6. **Haré dinero a través de** suscripciones que cubran todo el servicio u los dispositivos IOT
+7. **Mi competencia principal en el mercado** serán otras soluciones tecnológicas que ofrecen un servicio similar al planteado para este proyecto.
+8. **Los venceremos debido a la simplicidad** de uso de nuestra solución y a la combinación de funcionalidades únicas que permiten combatir con problemas específicos, como el del ciclo de cultivo de la planta a detalle, entre otros.
+9. **El mayor riesgo es que** los agricultores y los comerciantes no utilicen la aplicación por considerarla demasiado compleja de usar o simplemente resistirse al cambio.
 10. **Resolveremos esto a través de** la agregación de funcionalidades útiles para ambos segmentos objetivos.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements.
 
-A continuación, se plantearán las hipótesis que proponen una solución a la problemática dentro de las funcionalidades de la aplicación web. Cada una de estas hipótesis será especifica y medible para que se pueda sustentar el éxito de manera objetiva. Cabe resaltar que las metricas actuales son iguales a promedios generales de aplicaciones ya existentes.
+A continuación, se plantearán las hipótesis que proponen una solución a la problemática dentro de las funcionalidades de la solución tecnológica. Cada una de estas hipótesis será especifica y medible para que se pueda sustentar el éxito de manera objetiva. Cabe resaltar que las metricas actuales son iguales a promedios generales de soluciones ya existentes.
 
 ### Hipótesis 1:
-*Creemos que los agricultores necesitan organizar sus actividades diarias.*
+*Creemos que los agricultores necesitan organizar sus procesos de cultivo.*
 *Sabremos que hemos tenido éxito cuando nuestra aplicación se vuelva parte de su rutina para cosechar.*
 
 **Métricas:**
-1. *Frecuencia de Uso Diario:* Porcentaje de usuarios activos diariamente en la aplicación.
+1. *Frecuencia de Uso Diario:* Porcentaje de usuarios activos diariamente.
    - Métrica actual: 20%
    - Meta deseada: 50%
 
-2. *Retención a Largo Plazo:* Porcentaje de usuarios que siguen utilizando la aplicación después de 3 meses.
+2. *Retención a Largo Plazo:* Porcentaje de usuarios que siguen utilizando la solución después de 3 meses.
    - Métrica actual: 30%
    - Meta deseada: 40%
 
 ---
 
 ### Hipótesis 2:
-*Creemos que los agricultores necesitan gestionar sus costos e ingresos.*
-*Sabremos que hemos tenido éxito cuando nuestra aplicación ayude a la economía de los clientes y maximice la calidad de sus productos.*
+*Creemos que los agricultores necesitan planificar los requisitos del terreno adecuadamente.*
+*Sabremos que hemos tenido éxito cuando nuestra solución aumente la calidad de los cultivos en base a una buena planificación.*
 
 **Métricas:**
-1. *Ahorro de Costos:* Porcentaje de agricultores que informan un ahorro mensual en sus operaciones.
-   - Métrica actual: 10%
-   - Meta deseada: 25%
+1. *Planificación de cultivos:* Porcentaje de agricultores que realicen una planificación.
+   - Métrica actual: 70%
+   - Meta deseada: 90%
 
 2. *Aumento en la Calidad de los Productos:* Medido por la calificación promedio de los productos en la plataforma.
    - Métrica actual: 3.5 (en una escala de 1 a 5)
@@ -236,17 +240,21 @@ A continuación, se plantearán las hipótesis que proponen una solución a la p
 ---
 
 ### Hipótesis 5:
-*Creemos que generamos ganancias por publicidad de insumos para agricultura dentro de la aplicación.*
-*Sabremos que hemos tenido éxito cuando recibamos los fondos por brindar la publicidad a los proveedores de insumos.*
+*Creemos que los agricultores mejorarán la calidad de sus cultivos gracias a la solución IoT*
+*Sabremos que hemos tenido éxito cuando los registros de los actuadores aumenten considerablemente en su uso.*
 
 **Métricas:**
-1. *Ingresos por Publicidad Mensuales:* Ganancias generadas a través de acuerdos de publicidad con proveedores de insumos.
-   - Métrica actual: $500
-   - Meta deseada: $1000
+1. *Uso de actuadores:* Numero de actividades diarias 
+   - Métrica actual: 20 activdiades diarias promedio
+   - Meta deseada: 80 actividades diarias promedio
+    
+2. *Reseñas de compradores* Estrellas promedio de una escala de 1 a 5
+   - Métrica actual: 3.8 estrellas promedio de 1 a 5
+   - Meta deseada: 4.5 estrellas promedio de 1 a 5
 
 #### 1.2.2.4. Lean UX Canvas.
 
-
+![image](https://github.com/user-attachments/assets/8bf33bdd-8b6c-46ef-9ba7-ba749f8c1b23)
 
 ### 1.3. Segmentos objetivo.
 
