@@ -203,13 +203,12 @@ de comercio.</th>
 
 | Estrategia/ Táctica                          | Medidas a tomar                                         |
 |----------------------------------------------|---------------------------------------------------------|
-| | \-     |
-|                                              | \-          |
-|                                              | \-  |
-|                      | \-           |
-|                                              | \-         |
-|             | \-               |
-|                                              | \-          |
+| Diferenciación en implementar IoT | \- Destacar la ventaja del uso de dispositivos IoT     |
+|                                              | \- Resaltar la ventaja de obtener detalles especificos de la tierra de cultivo         |
+|                                              | \- Implementación de actuadores que ejecutan tareas en base a los planes |
+| Uso de plataforma en multiples dispositivos     | \-  Ofrecer que la plataforma esté disponible en Android y como aplicación web de escritorio         |
+|                                              | \- Garantizar el correcto funcionamiento de las caracteristicas sin dejar de lado la experiencia de usuario        |
+
 
 
 ## 2.2. Entrevistas.
@@ -221,24 +220,17 @@ de comercio.</th>
   - En términos de cantidad, ¿considera que su producción es al por mayor o al por menor?
   - ¿Qué es lo que normalmente siembra en sus terrenos?
   - ¿Cómo es que vende lo que produce?
-  - ¿Usted define el precio de venta o lo que hacen sus compradores?
-  - Si el comprador es quien establece los precios, ¿considera que es adecuado?
-  - ¿Alguna vez ha vendido sus productos a un precio bajo solo para vender todo lo que tenía?
-  - ¿Le resulta difícil vender todo lo que produce?
   - Si no logra vender todo lo cosechado, ¿qué hace con la cantidad sobrante?
   - ¿Cuáles son sus objetivos a futuro con respecto a la producción de sus cultivos?
   - ¿Cuáles son las principales frustraciones que ha enfrentado en su trabajo como agricultor?
-
-- **Preguntas de ámbito de gestión:**
-
   - ¿Para usted es complicado manejar las fechas y procesos durante todo el proceso de siembra? ¿Qué dificultades tiene?
   - ¿Se le olvidan las fechas o pasos en las que debe abonar o regar sus cosechas?
   - ¿Cómo gestiona normalmente sus cosechas?
-  - ¿Qué datos considera importantes tener en cuenta para un seguimiento adecuado?
+  - ¿Qué datos considera importantes tener en cuenta para una cosecha adecuada?
   - ¿Cómo evalúa que sus productos tienen una calidad superior luego de la cosecha?
   - ¿Qué tipo de dispositivos son de su preferencia o uso personal para el uso de programas o aplicaciones?
   - ¿Qué plataformas o redes sociales utilizan regularmente para adquirir información?
-  - ¿Alguna vez ha usado una aplicación o programa que le ayude en la gestión?
+  - ¿Alguna vez ha usado una solución IoT que le ayude en la gestión?
   - Si tuviera la oportunidad de usar una plataforma que le ayude a monitorear sus siembras con dispositivos con sensores en la tierra de cultivo, ¿la utilizaría?
   - ¿Qué características considera importantes que deben incluirse?
   - ¿Qué canales de comunicación prefiere utilizar si necesita ayuda y capacitación?
@@ -249,13 +241,10 @@ de comercio.</th>
   - En términos de cantidad, ¿considera que sus ventas son al por mayor o al por menor?
   - ¿Qué es lo que normalmente busca de los productos agrícolas?
   - ¿Qué medios usa para comerciar?
-  - ¿Usted define el precio de venta o lo hacen los productores?
-  - Si el vendedor es quien establece los precios, ¿considera que es adecuado?
   - ¿Alguna vez ha comprado sus productos a un precio bajo solo para tener algo que vender?
   - ¿Le resulta difícil comprar lo que se ofrece en el mercado actual?
   - ¿Cuáles son sus objetivos a futuro con respecto a la exportación de productos agrícolas?
   - ¿Cuáles son las principales frustraciones que ha enfrentado en su trabajo como exportador?
-- **Preguntas de ámbito de gestión**
   - ¿Para usted es complicado encontrar a productores para comprar sus productos? ¿Qué dificultades tiene?
   - ¿Se olvida de los pedidos que tiene pendiente a menudo?
   - ¿Cómo gestiona normalmente sus exportaciones?
@@ -263,8 +252,8 @@ de comercio.</th>
   - ¿Cómo evaluar que los productos tienen una calidad superior luego de su compra?
   - ¿Qué tipo de dispositivos son de su preferencia o uso personal?
   - ¿Qué plataformas o redes sociales utilizan regularmente para adquirir información?
-  - ¿Alguna vez ha usado una aplicación o programa que le ayude en la gestión?
-  - Si tuviera la oportunidad de usar una aplicación que le ayude a realizar la compra de productos para exportar, ¿la utilizaría?
+  - ¿Alguna vez ha usado una solución tecnológica IoT que le ayude en la gestión?
+  - Si tuviera la oportunidad de usar una plataforma que le brinde información en tiempo real del ciclo de cosecha de productos para comprar, ¿la utilizaría?
   - ¿Qué características considera importantes que deben incluirse en la aplicación?
   - ¿Qué canales de comunicación prefiere utilizar si necesita ayuda y capacitación?
   - ¿Cuál es el navegador que utiliza para acceder a internet?
@@ -275,42 +264,47 @@ de comercio.</th>
 
 Entrevistado 1:
 
-Nombre y apellidos: 
+Nombre y apellidos: Lissane Mareni
 
-Edad:
+Edad: 21
 
-Distrito: 
+Distrito: Lince
 
-Url: 
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 
+Inicio: 0:00
 
-Fin: 
+Fin: 5:15
 
-Duración: 
+Duración: 5:15
 
+![image](https://github.com/user-attachments/assets/fa8e4c8a-dd96-4b7f-90b0-95f911c9f8e9)
 
 Resumen de la entrevista:
+
+Lisanne Mareni, se dedica a al agricultura como negocio familiar, nos expuso las actividades cotidianas que realiza y la manera en las que las hace, el cual la mayoria son manualmente. Además, exponse sus dificultades que tiene para realizar procesos de cultivos, los cuales en su mayoria son las fechas de riego. Por otro lado, nos dice que el uso de una solución IOT le llama mucho la atención y que la utilizaría en sus terrenos de cultivos. Su dispositivo preferido para usar apliaciones o programas es su celular con sistema operativo Android. Los navegadores que más usa son Chorme y Edge.
 
 Entrevistado 2:
 
-Nombre y apellidos: 
+Nombre y apellidos: German Portella
 
-Edad: 
+Edad: 23
 
-Distrito: 
+Región: Ancash
 
-Url: 
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 
+Inicio: 5:15
 
-Fin: 
+Fin: 11:24
 
-Duración: 
+Duración: 6:08
 
+![entrevistado2](./assets/entrevista2.png)
 
 Resumen de la entrevista:
 
+El entrevistado fue German Portella de 23 años del departamento de Ancash. Él está enfocado a una producción y venta al por menor, su producto principal es la papa. La venta la realiza en mercados locales y tiendas pequeñas. También menciona que a veces le resulta complicado coordinar todas las fechas y procesos. También menciona que hace uso de su celular para buscar información en internet o hacer uso de Facebook y Whatsapp. Por último, el dispositivo que más usa es su celular Android y su navegador de preferencia es Google Chrome.
 
 Entrevistado 3:
 
@@ -320,13 +314,13 @@ Edad: 50
 
 Región: Junín 
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 18:53
+Inicio: 11:24
 
-Fin: 27:02
+Fin: 19:21
 
-Duración: 08:09
+Duración: 08:05
 
 ![entrevsitado3](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/dc54cc29-50a7-46f8-8929-9ca4a2a5bc83)
 
@@ -344,13 +338,13 @@ Edad: 25
 
 Distrito: Lince - Lima
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 27:02
+Inicio: 19:21
 
-Fin: 35:37
+Fin: 28:03
 
-Duración: 08:35
+Duración: 08:42
 
 ![entrevistado4](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/289905bc-abd5-4a1a-994b-9855c7e7e673)
 
@@ -366,13 +360,13 @@ Edad: 24
 
 Distrito: Santiago de Surco - Lima
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 35:37
+Inicio: 28:03
 
-Fin: 44:03
+Fin: 36:27
 
-Duración: 08:26
+Duración: 08:24
 
 ![entrevistado5](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/1db9b603-0d51-4cd1-a8f1-a06507ad8ec9)
 
@@ -387,13 +381,13 @@ Edad: 45
 
 Distrito: Surco - Lima
 
-Url: [Video Microsoft Teams](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EXc-uBMZqwpIlzsRikopK7QByS0Aly3640gv24rnaIIqgg?e=nq1dGR)
+Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-Inicio: 44:03
+Inicio: 36:27
 
-Fin: 48:53
+Fin: 41:12
 
-Duración: 04:50
+Duración: 04:45
 
 ![entrevsitado 6](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/0a0a8d9e-5582-49dc-9bf7-1976f0e1cad1)
 
@@ -402,189 +396,125 @@ La entrevistada es Juli Carrión, una mujer de 45 años que se dedica a ser asis
 
 ### 2.2.3. Análisis de entrevistas.
 
-**Segmento Objetivo: Productores que quieren mejorar la calidad de sus ventas**
+## Segmento Objetivo: Productores que quieren mejorar la calidad de sus ventas
 
-**Preguntas principales**
+### Preguntas principales
 
-  - **En términos de cantidad, ¿considera que su producción es al por mayor o al por menor?**
-  
-    - El 100% de nuestros entrevistados consideran que su cosecha está destinada a realizar ventas al por mayor, sin embargo, hay casos donde para terminar todo el producto deciden vender sus cosechas al por menor.
+- **En términos de cantidad, ¿considera que su producción es al por mayor o al por menor?**  
+  El 100% de nuestros entrevistados consideran que su cosecha está destinada a realizar ventas al por mayor; sin embargo, en algunos casos, para vender todo el producto, deciden vender sus cosechas al por menor.
 
-- **¿Qué es lo que normalmente siembra en sus terrenos?**
-  
-  - Nuestros entrevistados tienen una variedad de cultivos entre los mencionados están el maíz, la palta, papas y zanahorias.
+- **¿Qué es lo que normalmente siembra en sus terrenos?**  
+  Nuestros entrevistados tienen una variedad de cultivos, entre ellos: maíz, palta, papas y zanahorias.
 
-- **¿Cómo es que vende lo que produce?**
-  
-  - El 40% de nuestros entrevistados ofrecen sus cultivos a los compradores que visitan su puesto de venta al momento de la cosecha o en fechas cercanas a esta y el 60% lo hacen mediante intermediarios.
+- **¿Cómo es que vende lo que produce?**  
+  El 40% de nuestros entrevistados ofrecen sus cultivos a los compradores que visitan su puesto de venta al momento de la cosecha o en fechas cercanas, mientras que el 60% lo hacen mediante intermediarios.
 
-- **¿Usted define el precio de venta o lo que hacen sus compradores?**
-  
-  - El 100% menciona que el precio es dado por los compradores teniendo en cuenta el mercado.
+- **Si no logra vender todo lo cosechado, ¿qué hace con la cantidad sobrante?**  
+  El 100% de nuestros entrevistados mencionan que si sobra producto, lo venden al por menor en el mercado local.
 
-- **Si el comprador es quien establece los precios, ¿considera que es adecuado?**
-  
-  - El 60% consideran que el precio es adecuado porque lo definen dependiendo de la competencia existente en el mercado y el 40% dicen que el precio que le dan a veces es muy bajo por lo que no están de acuerdo.
+- **¿Cuáles son sus objetivos a futuro con respecto a la producción de sus cultivos?**  
+  El 100% menciona que su objetivo es incrementar la productividad con cada nueva plantación para obtener más ganancias.
 
-- **¿Alguna vez ha vendido sus productos a un precio bajo solo para vender todo lo que tenía?**
-  
-  - El 100% de nuestros entrevistados dicen que alguna vez los productos que les sobraron los vendieron a un precio bajo para terminarlo y obtener ganancias.
+- **¿Cuáles son las principales frustraciones que ha enfrentado en su trabajo como agricultor?**  
+  El 60% mencionan que las fallas mecánicas y la escasez de agua retrasan su calendario y reducen la calidad de su producción. El 40% restante mencionan que el clima adverso es su mayor frustración, ya que impide que sus cultivos prosperen.
 
-- **¿Le resulta difícil vender todo lo que produce?**
-  
-  - El 40% de nuestros entrevistados dicen que no es tan complicado vender todo a sus compradores, mientras que el 60% mencionan que sí es complicado porque los compradores realizan una selección de los productos que quieren comprar.
+- **¿Para usted es complicado manejar las fechas y procesos durante todo el proceso de siembra? ¿Qué dificultades tiene?**  
+  El 60% de los entrevistados afirman que sí es complicado recordar todas las fechas, mientras que el 40% dicen que no les resulta difícil porque ya tienen costumbre.
 
-- **Si no logra vender todo lo cosechado, ¿qué hace con la cantidad sobrante?**
-  
-  - El 100% de nuestros entrevistados dicen que si se da el caso de sobrar productos lo venden al por menor en el mercado local.
+- **¿Se le olvidan las fechas o pasos en las que debe abonar o regar sus cosechas?**  
+  El 60% dicen que sí se han olvidado de una fecha importante que les afectó, mientras que el 40% mencionan que siguen un cronograma definido y es difícil que se les pase alguna fecha.
 
-- **Cuáles son sus objetivos a futuro con respecto a la producción de sus cultivos?**
-  
-  - El 100% mencionan que siempre plantean como objetivo con cada nueva plantación el incrementar la productividad y poder obtener más ganancias.
+- **¿Cómo gestiona normalmente sus cosechas?**  
+  El 100% de nuestros entrevistados mencionan que siguen un proceso establecido y generalmente se enfocan en conseguir una buena calidad para sus productos.
 
-- **Cuáles son las principales frustraciones que ha enfrentado en su trabajo como agricultor?**
-  
-  - El 60% mencionan que las fallas mecánicas y la escasez de agua retrasaron su calendario además de que reduce la calidad de su producción, mientras que el 40% restante mencionan que lo peor que les pasa es que el clima no deja que sus cultivos prosperen.
+- **¿Qué datos considera importantes tener en cuenta para una cosecha adecuada?**  
+  El 60% consideran que tener un control de fechas es lo más importante para hacer un seguimiento continuo, mientras que el 40% restante también mencionan la necesidad de conocer las características de cada planta.
 
-**Preguntas de ámbito de gestión:**
+- **¿Cómo evalúa que sus productos tienen una calidad superior luego de la cosecha?**  
+  El 100% de los entrevistados determinan la calidad de la cosecha basándose en el tamaño del cultivo, el color, y si no fueron afectados por plagas.
 
-- **¿Para usted es complicado manejar las fechas durante todo el proceso de siembra? ¿Qué dificultades tiene?**
-  
-  - Para el 60% de nuestros entrevistados si se le hace complicado el recordar las fechas porque tienen muchas a tener en cuenta y el 40% restante mencionan que no les resulta difícil porque ya tienen costumbre.
+- **¿Qué tipo de dispositivos son de su preferencia o uso personal para el uso de programas o aplicaciones?**  
+  El 60% de nuestros entrevistados utilizan su celular inteligente como principal herramienta, mientras que el 40% restante usan tanto celulares como laptops y herramientas especializadas en agricultura.
 
-- **¿Se le olvidan las fechas en las que debe abonar o regar sus cosechas?**
-  
-  - El 60% dicen que si se olvidaron una fecha importante que le afectó en un futuro, mientras que el 40% restante dicen que como llevan un cronograma definido es difícil que se les pase alguna fecha.
+- **¿Qué plataformas o redes sociales utilizan regularmente para adquirir información?**  
+  El 100% mencionan que su principal fuente de información es "YouTube".
 
-- **¿Cómo gestiona normalmente sus cosechas?**
-  
-  - El 100% de nuestros entrevistados mencionan que tiene un proceso a seguir y generalmente se basan en conseguir una buena calidad para sus productos.
+- **¿Alguna vez ha usado una solución IoT que le ayude en la gestión?**  
+  El 40% dicen que utilizan aplicaciones como Excel o Word para ayudarse en la gestión, mientras que el 60% restante usan cuadernos o anotaciones.
 
-- **¿Qué datos considera importantes tener en cuenta para un seguimiento adecuado?**
-  
-  - El 60% de nuestros entrevistados consideran que el tener un control de fechas es lo más importante para poder hacer un seguimiento continuo, mientras que el 40% restante mencionan que además de las fechas también es necesario tener en cuenta características de cada planta.
+- **Si tuviera la oportunidad de usar una plataforma que le ayude a monitorear sus siembras con dispositivos con sensores en la tierra de cultivo, ¿la utilizaría?**  
+  El 100% de los entrevistados mencionan que sí les ayudaría, ya que les facilitaría la gestión, evitando errores por olvidos y automatizando el proceso de gestión.
 
-- **¿Cómo evaluar que sus productos tienen una calidad superior luego de la cosecha?**
-  
-  - El 100% de nuestros entrevistados nos cuentan que para determinar que sí tuvieron una buena cosecha se basan en el tamaño del cultivo, el color y si no fueron afectados por plagas.
+- **¿Qué características considera importantes que deben incluirse?**  
+  El 100% consideran que necesitan cronogramas y una función que les ayude a identificar la etapa en la que se encuentra su cultivo.
 
-- **¿Qué tipo de dispositivos son de su preferencia o uso personal para el uso de programas o aplicaciones?**
-  
-  - El 60% de nuestros entrevistados usan como principal herramienta su celular inteligente y el 40% restante además de hacer uso a los celulares también cuentan con laptops y herramientas especiales enfocadas en la agricultura.
+- **¿Qué canales de comunicación prefiere utilizar si necesita ayuda y capacitación?**  
+  El 60% prefieren llamadas y reuniones, mientras que el 40% restante también sugieren redes sociales y aplicaciones de videollamada.
 
-- **¿Qué plataformas o redes sociales utilizan regularmente para adquirir información?**
-  
-  - El 100% de nuestros entrevistados mencionan que su principal fuente de información es el sitio web “Youtube”.
+- **¿Cuál es el navegador que utiliza para acceder a internet?**  
+  El 100% de los entrevistados usan Google Chrome para navegar en internet.
 
-- **¿Alguna vez ha usado una aplicación o programa que le ayude en la gestión?**
-  
-  - El 40% de los entrevistados dicen que si uso aplicaciones como excel o word para ayudarse en la gestión, mientras que el 60% restante nunca usaron aplicaciones sino que se ayudaban con cuadernos o anotaciones.
+## Segmento Objetivo: Comerciantes que quieren mejorar la calidad de sus ventas
 
-- **Si tuviera la oportunidad de usar una aplicación que le ayude a gestionar sus siembras con un seguimiento de fechas y recomendaciones, ¿la utilizaría?**
-  
-  - El 100% de nuestros entrevistados mencionan que si les ayudaría mucho porque tendrán una aplicación que les ayude con las fechas facilitandoles la gestión previniendo que no ocurra errores por olvidarse el cronograma además de que automatiza el proceso gestión que realizan.
+### Preguntas principales
 
-- **¿Qué características considera importantes que deben incluirse en la aplicación?**
-  
-  - El 100% de nuestros entrevistados consideran que necesitan tener cronogramas y una función que les ayude a identificar la etapa en la que se encuentra su cultivo.
+- **En términos de cantidad, ¿considera que sus ventas son al por mayor o al por menor?**  
+  El 100% de los encuestados sostienen que sus ventas son al por mayor, debido a cuestiones de dinero en las negociaciones.
 
-- **¿Qué canales de comunicación prefiere utilizar si necesita ayuda y capacitación?**
-  
-  - El 60% de los entrevistados consideran que los canales que prefieren usar son las llamadas y reuniones y el 40% restante además de eso, también le gustaría el uso de redes sociales y aplicaciones de videollamada.
+- **¿Qué es lo que normalmente busca de los productos agrícolas?**  
+  El 60% de los encuestados buscan calidad, mientras que el 40% buscan buenos precios.
 
-- **Cuál es el navegador que utiliza para acceder a internet?**
-  
-  - El 100% de nuestros entrevistados usan Google Chrome para hacer uso de internet.
+- **¿Qué medios usa para comerciar?**  
+  El 100% de los encuestados compran con contacto directo con los productores a través de redes sociales.
 
-**Segmento Objetivo: Comerciantes que quieren mejorar la calidad de sus ventas**
+- **¿Alguna vez ha comprado sus productos a un precio bajo solo para tener algo que vender?**  
+  El 100% asegura que sí, debido a la escasez de recursos financieros y la necesidad de generar ingresos.
 
-**Preguntas principales**
+- **¿Le resulta difícil comprar lo que se ofrece en el mercado actual?**  
+  El 100% sostiene que no, debido a la amplia disponibilidad de contactos de productores y canales de comunicación.
 
-  - **En términos de cantidad, ¿considera que sus ventas son al por mayor o al por menor?**
-  
-    - El 100% de los encuestados sostienen que sus ventas la hacen al por mayor, debido a cuestiones de dinero en las negociaciones.
+- **¿Cuáles son sus objetivos a futuro con respecto a la exportación de productos agrícolas?**  
+  El 100% de los encuestados desean mejorar la calidad de sus productos o formar una empresa reconocida a nivel nacional.
 
-- **¿Qué es lo que normalmente busca de los productos agrícolas?**
-  
-  - El 60% de los encuestados nos dicen que buscan calidad, mientras que el otro 40% buscan buenos precios para proceder con su compra.
+- **¿Cuáles son las principales frustraciones que ha enfrentado en su trabajo como exportador?**  
+  El 100% tienen como frustraciones experiencias relacionadas con estafas y retrasos en los pedidos.
 
-- **¿Cómo es que compra lo que desea comerciar?**
-  
-  - El 100% de los encuestados sostienen que su compra es con contacto directo con el productos a través de una red social.
+- **¿Para usted es complicado encontrar a productores para comprar sus productos? ¿Qué dificultades tiene?**  
+  El 60% de los encuestados no tienen dificultades debido a la disponibilidad de los productos, mientras que el 40% presentan dificultades debido a los canales o plataformas donde encontrar productores.
 
-- **¿Usted define el precio de venta o lo hacen los productores?**
-  
-  - El 80% de los encuestados dicen que el precio de venta lo definen los productores mientras que el 20% aseguran que sí lo definen los productores, no es rentable.
+- **¿Se olvida de los pedidos que tiene pendiente a menudo?**  
+  El 100% no presentan inconvenientes gracias al uso de aplicaciones de recordatorios o calendarios.
 
-- **Si el vendedor es quien establece los precios, ¿considera que es adecuado?**
-  
-  - El 60% de los encuestados sostienen que en base a su experiencia los precios son adecuados. Sin embargo, el 40% restante considera que el precio no es el adecuado.
+- **¿Cómo gestiona normalmente sus exportaciones?**  
+  El 60% manejan sus ventas en programas como Excel o con lápiz y papel, mientras que el 40% restante no usan programas específicos.
 
-- **¿Alguna vez ha comprado sus productos a un precio bajo solo para tener algo que vender?**
-  
-  - El 100% asegura que sí, debido a la escasez de recursos financieros y la necesidad de generar ingresos.
+- **¿Qué datos considera importantes tener en cuenta para un seguimiento adecuado de la compra de productos?**  
+  El 100% dice que es importante saber la fecha de salida de la producción y contar con seguimiento en tiempo real.
 
-- **¿Le resulta difícil comprar lo que se ofrece en el mercado actual?**
-  
-  - El 100% sostiene que no debido a que hay varios contactos de productores y canales donde se puede contactar con ellos, además de la disponibilidad de productos de distintas calidades.
+- **¿Cómo evalúa que los productos tienen una calidad superior luego de su compra?**  
+  El 60% indica que existen procesos especiales para evaluar la calidad, mientras que el 40% evalúa mediante una muestra previa.
 
-- **Cuáles son sus objetivos a futuro con respecto a la exportación de productos agrícolas?**
-  
-  - El 100% de los encuestados desean mejorar su calidad de sus productos o formar una empresa reconocida a nivel nacional.
+- **¿Qué tipo de dispositivos son de su preferencia o uso personal?**  
+  El 60% usan computadoras o laptops, mientras que el 40% usan solo celulares.
 
-- **Cuáles son las principales frustraciones que ha enfrentado en su trabajo como exportador?**
-  
-  - El 100% de los encuestados tienen como frustraciones experiencias relacionadas a estafas y retraso del pedido.
+- **¿Qué plataformas o redes sociales utilizan regularmente para adquirir información?**  
+  El 100% usa Facebook para buscar productos y contactar a los productores.
 
-**Preguntas de ámbito de gestión:**
+- **¿Alguna vez ha usado una solución tecnológica IoT que le ayude en la gestión?**  
+  El 100% dice que no ha usado ninguna aplicación para la gestión de compras.
 
-- **¿Para usted es complicado encontrar a productores para comprar sus productos? ¿Qué dificultades tiene?**
-  
-  - El 60% de los encuestados no tienen dificultades debido a la disponibilidad de los productos, mientras que el 40% presentan dificultades debido a los canales o plataformas donde encontrar productores.
+- **Si tuviera la oportunidad de usar una plataforma que le brinde información en tiempo real del ciclo de cosecha de productos para comprar, ¿la utilizaría?**  
+  El 100% de los encuestados dicen que una aplicación con esta característica les ayudaría bastante en el proceso de compra.
 
-- **¿Se olvida de los pedidos que tiene pendiente a menudo?**
-  
-  - El 100% de los encuestados no presentan estos inconvenientes gracias a que usan aplicaciones de recordatorios de eventos o calendarios.
+- **¿Qué características considera importantes que deben incluirse en la aplicación?**  
+  El 100% coinciden en que debe tener funcionalidades como contactar al productor y seguimiento de la compra.
 
-- **¿Cómo gestiona normalmente sus exportaciones?**
-  
-  - El 60% de los encuestados dice que maneja sus ventas en programas como excel o a simple lápiz y papel para gestionar sus exportaciones. Mientras que el 40% restante no usa programas en específico.
+- **¿Qué canales de comunicación prefiere utilizar si necesita ayuda y capacitación?**  
+  El 60% desean canales de ayuda en YouTube mediante videos tutoriales, mientras que el 40% prefieren tutoriales dentro de la aplicación web.
 
-- **¿Qué datos considera importantes tener en cuenta para un seguimiento adecuado de la compra de productos?**
-  
-  - El 100% de los encuestados dice que es importante saber la fecha de salida de la producción, debido a que se puede estimar la llegada de este, asimismo contar con seguimiento a tiempo real.
+- **¿Cuál es el navegador que utiliza para acceder a internet?**  
+  El 100% de los encuestados usan Google Chrome como navegador habitual.
 
-- **¿Cómo evaluar que los productos tienen una calidad superior luego de su compra?**
-  
-  - El 60% sostiene que los superiores del lugar de trabajo tienen procesos especiales para evaluar la calidad mientras que el 40% dice que evalúa la calidad con una muestra previa de la producción solicitada.
-
-- **¿Qué tipo de dispositivos son de su preferencia o uso personal?**
-  
-  - El 60% de los encuestados dice que usa computadoras o laptops, mientras que el 40% solo usa celulares.
-
-- **¿Qué plataformas o redes sociales utilizan regularmente para adquirir información?**
-  
-  - El 100% dice que no usa plataformas pero usan Facebook para buscar productos y contactar con los productores.
-
-- **¿Alguna vez ha usado una aplicación o programa que le ayude en la gestión?**
-  
-  - El 100% dice que no ha usado ninguna aplicación para la gestión de compras.
-
-- **Si tuviera la oportunidad de usar una aplicación que le ayude a realizar la compra de productos para exportar, ¿la utilizaría?**
-  
-  - El 100% de los encuestados dice que una aplicación con esta característica le ayudaría bastante en el proceso de compra debido a que sería en un entorno más formal que el contacto directo.
-
-- **¿Qué características considera importantes que deben incluirse en la aplicación?**
-  
-  - El 100% de los encuestados coincidieron que debe tener funcionalidades como la de contactar con el productor y seguimiento de la compra.
-
-- **¿Qué canales de comunicación prefiere utilizar si necesita ayuda y capacitación?**
-  
-  - El 60% de los encuestados sostiene que desearían canales de ayuda en Youtube de manera de videos tutoriales mientras que el 40% prefiere tutoriales dentro de la aplicación web.
-
-- **Cuál es el navegador que utiliza para acceder a internet?**
-  
-  - El 100% de los encuestados usan Google Chrome como navegador habitual en sus dispositivos.
 
 ## 2.3. Needfinding.
 
@@ -636,7 +566,7 @@ Agricultores que desean mejorar la calidad de sus productos y comerciantes que d
     <td>Low</td>
   </tr>
   <tr>
-    <td>Registrar pedidos y entregas de productos </td>
+    <td>Registrar pedidos y entregas de productos manualmente </td>
     <td>Always</td>
     <td>Medium</td>
     <td>Always</td>
@@ -664,25 +594,25 @@ Agricultores que desean mejorar la calidad de sus productos y comerciantes que d
     <td>High</td>
   </tr>
   <tr>
-    <td>Gestionar sus ganancias en cuadernos</td>
+    <td>Registrar contactos de vendedores en cuadernos</td>
     <td>Often</td>
     <td>Low</td>
     <td>Often</td>
     <td>High</td>
   </tr>
   <tr>
-    <td>Gestionar insumos agrícolas</td>
-    <td>Rare</td>
-    <td>Low</td>
+    <td>Conocer el estado de la tierra de cultivo </td>
     <td>Always</td>
     <td>High</td>
+    <td>Often</td>
+    <td>Low</td>
   </tr>
   <tr>
-    <td>Mitigar plagas con alterntivas caseras</td>
-    <td>Rare</td>
+    <td>Aplicar agua, nutrientes, abono a la tierra de cultivo manualmente </td>
     <td>Low</td>
-    <td>Always</td>
-    <td>Medium</td>
+    <td>Low</td>
+    <td>High</td>
+    <td>High</td>
   </tr>
   <tr>
     <td>Vender y comprar sus productos informalmente</td>
@@ -698,43 +628,47 @@ Agricultores que desean mejorar la calidad de sus productos y comerciantes que d
 
 
 
-**Tareas con Mayor Frecuencia e Importancia:**
+### **Tareas con Mayor Frecuencia e Importancia:**
 
-- Frecuencia:
+- **Frecuencia:**
 
-> Respecto al segmento objetivo de agricultores las tareas con mayor
-> frecuencia son planear actividades agrícolas, gestionar insumos
-> agrícolas y el monitoreo de plagas. Respecto a los comercializadores
-> las tareas que se realizan el mayor número de veces son explorar
-> productos agrícolas, gestionar pedidos y entregas, y evaluar la
-> calidad de los productos.
+  - Respecto al segmento objetivo de **agricultores**, las tareas con mayor frecuencia son:
+    - Evaluar la calidad de los productos.
+    - Planificar la siembra de cultivos en cuadernos.
+    - Registrar contactos de vendedores en cuadernos.
+    - Registrar pedidos y entregas de productos manualmente.
+    - Evaluar la demanda y tendencias.
 
-- Importancia:
+  - Respecto al segmento objetivo de **comerciantes**, las tareas que se realizan con mayor frecuencia son:
+    - Buscar productos de calidad para comerciar.
+    - Registrar pedidos y entregas de productos manualmente.
+    - Evaluar la calidad de los productos.
+    - Evaluar demanda y tendencias.
+    - Vender y comprar productos informalmente.
 
-> Respecto al segmento objetivo de comercializadores las tareas con
-> mayor importancias son explorar productos agrícolas, realizar pedidos
-> de productos, evaluar la calidad de productos y evaluar la demanda y
-> tendencias de los productos. Por otro lado, con respecto al segmento
-> de agricultores las tareas más relevantes son planificar actividades
-> agrícolas, control de costos y ganancias, gestionar insumos agrícolas
-> y realizar las ventas de estos mismo.
+- **Importancia:**
 
-**Principales diferencias y coincidencias:**
+  - Respecto al segmento objetivo de **comerciantes**, las tareas con mayor importancia son:
+    - Buscar productos de calidad para comerciar.
+    - Coordinar contratos con proveedores de productos.
+    - Evaluar la calidad de los productos.
+    - Evaluar la demanda y tendencias.
 
-La principal diferencia entre las tareas de nuestros segmentos objetivo
-se encuentra en la tarea sobre el monitoreo de plagas, así como la
-gestión de los insumos agrícolas. Puesto que, los agricultores tienen un
-conocimiento bien construido de como poder cultivar los alimentos de
-calidad que van a ser vendidos posteriormente y asegurarse de que estos
-mismos sean de alta calidad. Mientras que los comercializadores tienen
-menos conocimientos de cómo realizar estas tareas.
+  - Con respecto al segmento de **agricultores**, las tareas más relevantes son:
+    - Evaluar la calidad de los productos.
+    - Planificar la siembra de cultivos en cuadernos.
+    - Conocer el estado de la tierra de cultivo.
+    - Aplicar agua, nutrientes, y abono a la tierra de cultivo manualmente.
 
-Las tareas con mayor coincidencias dentro de este recuadro pueden ser la
-evaluación de calidad de los productos. Esto se evidencia, ya que, los
-comercializadores tienen la tarea de revisar la evaluación de estos
-productos mediante la tarea de reporte detallado que tendrán los
-agricultores. Por lo que ambos intervienen a la hora de realizar la
-evaluación de la calidad de los productos.
+### **Principales Diferencias y Coincidencias:**
+
+- **Diferencias:**
+  - Los **agricultores** se centran más en la planificación y la gestión de cultivos, como la **planificación de la siembra en cuadernos** y **conocer el estado de la tierra de cultivo**, mientras que los **comerciantes** se enfocan en tareas relacionadas con la comercialización, como **buscar productos de calidad** y **coordinar contratos con proveedores**.
+  - Los **comerciantes** tienen una mayor importancia en tareas relacionadas con la demanda del mercado y la calidad de los productos, debido a su necesidad de maximizar ganancias a través de una selección precisa y eficiente de productos.
+
+- **Coincidencias:**
+  - Ambas partes consideran crucial la tarea de **evaluar la calidad de los productos**. Esto se debe a que tanto los agricultores, que deben garantizar que sus productos sean de alta calidad antes de venderlos, como los comerciantes, que deben verificar la calidad antes de comprarlos, dependen de esta evaluación para asegurar transacciones exitosas y maximizar su rentabilidad.
+
 
 ### 2.3.3. User Journey Mapping.
 
@@ -749,17 +683,17 @@ alinear el diseño con sus necesidades reales. Se utilizó la herramienta UXPres
 
 Segmento 1: Agricultores
 
-![UserJourneyMap1](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/265284905-9e9d15f3-d00d-4309-80ea-8552a89dac0d.jpeg)
+![UserJourneyMap1](./assets/user_journey_map_agricultores.png)
 
 Segmento 2: Comercializadores
 
-![UserJourneyMap2](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/265284902-b2b8a006-08fd-448d-92f4-aa8f01c87844.jpeg)
+![UserJourneyMap2](./assets/user_journey_map_comerciantes.png)
 
 
 ### 2.3.4. Empathy Mapping.
 
 
-![EmpathyMap1](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/263751285-bcb85957-8bd7-47fa-93aa-d5dcb7f0abee.png)
+![Empathy map (3)](https://github.com/user-attachments/assets/c0979713-7547-46b2-a968-9061c46775bd)
 
 ![EmpathyMap2](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/263751281-ba5274bf-8a83-42c1-8aaa-8e03434dfbdb.png)
 
@@ -778,3 +712,45 @@ acciones, emociones y puntos de fricción. Se utilizó la herramienta Miro.
 Visualización de los As-Is Scenario Mapping:
 
 [<u>https://miro.com/app/board/uXjVMQLNH9s=/?share_link_id=67585397072</u>](https://miro.com/app/board/uXjVMQLNH9s=/?share_link_id=67585397072)
+
+## 2.4 Ubiquitous Language
+
+• Crop Buying and Selling (Compra/Venta de Cultivos): Proceso mediante el cual se realiza la transacción comercial de productos agrícolas entre diferentes partes interesadas.
+
+• Crop Registration (Registro de Cultivos): Acto de registrar información detallada sobre los cultivos, como su tipo, ubicación, fechas de siembra y cosecha, entre otros datos relevantes.
+
+• Crop Monitoring (Monitoreo de Cultivos): Seguimiento continuo de la evolución de los cultivos a lo largo de su ciclo de vida, mediante el uso de tecnología o informes manuales.
+
+• Crop Planning (Planificación de Cultivos): Proceso de organizar y programar las actividades agrícolas, como la siembra y la cosecha, para optimizar el rendimiento.
+
+• User Login (Inicio de Sesión): Proceso por el cual un usuario accede a la plataforma, proporcionando sus credenciales para autenticar su identidad.
+
+• Session Management (Gestión de Sesiones): Control y supervisión del acceso de los usuarios a la plataforma, asegurando que las sesiones activas estén autorizadas y protegidas.
+
+• Farmers (Agricultores): Personas o empresas responsables de cultivar y cosechar productos agrícolas.
+
+• Profile (Perfil): Un perfil es un registro que contiene información personal sobre un usuario, típicamente almacenado dentro de la base de datos de la aplicación.
+
+• Registration (Registro): La inscripción es el proceso de crear una cuenta de usuario dentro de la aplicación.
+
+• FAQ (Frequently Asked Questions) (Preguntas Frecuentes): Las FAQ (Preguntas Frecuentes) son una recopilación de preguntas comúnmente formuladas y sus respectivas respuestas, con el objetivo de proporcionar una ayuda rápida a los usuarios.
+
+• About Us (Acerca de Nosotros): "Acerca de nosotros" es una sección de la aplicación que contiene información sobre los creadores, la misión y los objetivos de la plataforma.
+
+• Dashboard (Panel de control): Un panel de control es un componente de la interfaz de usuario que proporciona una visión general de la información relevante y las acciones disponibles para el usuario, como la gestión de eventos para los organizadores o la configuración de la cuenta para los asistentes.
+
+• Confirmation (Confirmación): Una confirmación es un reconocimiento o notificación proporcionada a los usuarios después de completar una solicitud o registro de incidente.
+
+• Marketplace (Mercado): Espacio virtual o físico donde se realizan las transacciones de compra y venta de cultivos.
+
+• Weather Monitoring (Monitoreo Climático): Proceso de seguimiento de las condiciones climáticas, que impactan directamente en el ciclo de los cultivos.
+
+• Yield Forecast (Pronóstico de Rendimiento): Predicción del volumen de producción que un cultivo puede generar, basado en condiciones actuales y datos históricos.
+
+• Farm Management (Gestión de la Finca): Conjunto de actividades organizativas, financieras y técnicas que permiten administrar una operación agrícola.
+
+• Harvest Scheduling (Programación de Cosechas): Planificación de las fechas y tiempos de cosecha para maximizar la eficiencia y evitar pérdidas.
+
+• Input Management (Gestión de Insumos): Control sobre los recursos necesarios para la producción agrícola, tales como fertilizantes, semillas y agua.
+
+
