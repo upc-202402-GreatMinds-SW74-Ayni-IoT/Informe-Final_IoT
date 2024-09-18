@@ -150,18 +150,92 @@ Rate Products / Calificar productos: Página donde el comerciante podrá calific
 
 ### 5.2.3 SEO Tags and Meta Tags
 
+En esta sección, se presentarán las etiquetas que identificarán y diferenciarán al sitio web de los demás en internet. Gracias a ellos, se podrá encontrar a Ayni en los diversos buscadores.
 
+Para el sitio web estático:
+
+Tittle: Ayni
+
+Description: Ayni - GreatMinds Oficial Landing Page
+
+Keywords: harvest management, sell crops, harvest suppliers
+
+Authors: GreatMinds team
+
+Para la aplicación web:
+
+Tittle: Ayni
+
+Description: Ayni - GreatMinds Oficial Web Page
+
+Keywords: harvest management, sell crops, harvest suppliers, crop planning,
+
+Authors: GreatMinds team
+
+Para la aplicación móvil:
+
+Tittle: Ayni
+
+Description: Ayni - GreatMinds Oficial Mobile App
+
+Keywords: harvest management, sell crops, harvest suppliers, crop planning,
+
+Authors: GreatMinds team
 
 
 ### 5.2.4 Searching Systems
 
+En esta sección se presentarán los sistemas de búsqueda que se implementarán en la aplicación web. móvil y landing page. Al hacer uso de esos sistemas, los usuarios podrán encontrar la información que requieran.
 
+En el sitio web estático, los usuarios podrán utilizar la barra de navegación para buscar la información acerca del producto solución, paralelas funcionalidades se hará uso interactivo de un botón donde se alternará entre “Para productores” y “Para comerciantes”
+
+En la aplicación web y móvil:
+
+Segmento: Productores que desean mejorar la calidad de sus productos
+
+Mis productos: Esta sección le permitirá al productor realizar el seguimiento de sus cultivos. En esta sección luego el productor podrá realizar un plan de cultivo en la siguiente página luego de seleccionar el producto en “Mis productos”. En esta sección se podrá usar un buscador que contará con la función de filtro para los productos asimismo con la sección de planes de cultivo, donde se podrá realizar búsquedas de planes de cultivo predeterminado o hacer uno personalizado. Posteriormente, los resultados de esta búsqueda mostrarán una lista de lo deseado.
+
+Mis pedidos: Esta sección le permitirá al usuario atender los pedidos que los comerciantes realicen, es de elección del productor atenderlos o no. Se mostrarán los pedidos en una lista según orden de origen predeterminadamente, pero estarán filtros para visualizar los pedidos según meses o días.
+
+Segmento: Exportadores o comerciantes que desean mejorar la calidad de sus ventas
+
+Búsqueda de productos: Esta sección es una de las más importantes para el flujo principal de la aplicación debido a ello, contará con un sistema de búsqueda mediante una barra para que los comerciantes busquen el producto en específico. En esta sección también se podrá acordar la venta, introducir un precio, fecha, hora y lugar. Posteriormente, se realiza la venta.
 
 ### 5.2.5 Navigation Systems
 
+A continuación, el equipo mostrará los sistemas de navegación con los que contará Ayni para permitir a los usuarios navegar de manera rápida y segura a cualquier bloque de información.
+
+En el Landing Page, se cuenta con encabezados que representan a las diversas secciones que estarán presentes. Estas estarán ubicadas en la parte superior de la página como menú horizontal siempre presente a la hora de bajar y subir con el ratón. Para que el usuario no tenga que realizar una traslación de manera manual por toda la página para llegar a una sección, se podrá usar estos encabezados para ubicarse inmediatamente en el sector que se desee. Obviamente, el visitante tiene que haber leído el título del encabezado para asegurarse de que se ubicará en la zona adecuada. Gracias a esto, se genera una traslación fácil e intuitiva.
+
+En el caso de la aplicación web, se presenta un proceso similar para el menú principal, se utilizarán diversas opciones que presenta para trasladarse a otra página del sitio web. Estas opciones variarán de acuerdo al segmento objetivo al que pertenezca el usuario. Del mismo modo, se utilizan listados para los grupos de elementos, Dentro de estas listas podrán aplicar filtros que permitan a los usuarios navegar entre esas opciones
+
+En el caso de la aplicación móvil, la navegación tendrá como caracteristica un scroll limitado, mostrando carruseles de los productos en loa sección Home, por otro lado, la navegación será asistida con un bottom navigation bar, que verían entre opciones según el tipo de usuario.
+
 ## 5.3 Landing Page UI Design
+
+En esta sección se mostrará el desarrollo visual del Landing Page. Para ello, se usuará la herramienta de diseño web Figma, debido a sus funciones y plugins que nos permite desarrollar el prototipo sin dificultades. Asimismo se evidenciará el uso de los Style Guidelines e Information architecture.
+
 ### 5.3.1 Landing Page Wireframe
+
+![wireframe landing2](https://user-images.githubusercontent.com/104078975/265294361-ba30a39c-91f2-4854-aae4-14e8560d2aa4.png) 
+
+![wireframe landing1](https://user-images.githubusercontent.com/104078975/265294362-cf7b8b7d-a3c6-4886-a961-17ebea4f9f2f.png)
+
+Link: https://www.figma.com/design/hvG1ZF2UKWOEpW9kons6b1/Landing-Page?node-id=0-1&t=yWIQX0TXDIKOqSn0-1
+
 ### 5.3.2 Landing Page Mock-up
+
+Trabajando con los wireframes anteriormente mostrados, luego se aplicó los Style Guidelines para el uso de los colores. Como se aprecia, estos tienen un contraste llamativo en cada sección de la landing page.
+
+![image](https://github.com/user-attachments/assets/b1d63659-6428-4324-acec-ff58e0398c3c)
+![image](https://github.com/user-attachments/assets/d5ec52e7-3c6d-4a1a-9815-8e99e0445cf7)
+![image](https://github.com/user-attachments/assets/c6b228a0-a7a3-4772-bed4-5b824dad6a0d)
+
+Finalmente, este es un vistazo general a los mockups y wireframes:
+
+![image](https://github.com/user-attachments/assets/695e511e-9000-48b8-b4bf-fe9b5f89d64e)
+
+Link: Link: https://www.figma.com/design/hvG1ZF2UKWOEpW9kons6b1/Landing-Page?node-id=0-1&t=yWIQX0TXDIKOqSn0-1
 
 ## 5.4 Applications UI/UX Design
 ### 5.4.1 Applications Wireframes
