@@ -27,8 +27,40 @@ El nombre de la solución IOT es Ayni. Este nombre nació de la lengua quechua p
 
 ## 5.4 Applications UI/UX Design
 ### 5.4.1 Applications Wireframes
+
+**Pantallas relacionadas al inicio de sesión y registro de usuario**
+![wireframe login y registro](./assets/web_app_wireframe-login_register.png)
+
+**Pantallas relacionadas a la gestión de los cultivos del agricultor**
+![wireframe login y registro](./assets/web_app_wireframe-agricultor_gestion_cultivos.png)
+
+**Pantallas relacionadas a la gestión de solicitudes de compra del agricultor**
+![wireframe login y registro](./assets/web_app_wireframe-agricultor_pedidos.png)
+
+**Pantallas relacionadas al proceso de compra del comerciante**
+![wireframe login y registro](./assets/web_app_wireframe-comerciante_compra.png)
+
+**Pantallas relacionadas al proceso de calificar un producto por parte del comerciante**
+![wireframe login y registro](./assets/web_app_wireframe-comerciantes_calificar.png)
+
 ### 5.4.2 Applications Wireflow Diagrams
 ### 5.4.3 Applications Mock-ups
+
+**Pantallas relacionadas al inicio de sesión y registro de usuario**
+![wireframe login y registro](./assets/web_app_mockup-login_register.png)
+
+**Pantallas relacionadas a la gestión de los cultivos del agricultor**
+![wireframe login y registro](./assets/web_app_mockup-agricultor_cultivos.png)
+
+**Pantallas relacionadas a la gestión de solicitudes de compra del agricultor**
+![wireframe login y registro](./assets/web_app_mockup-agricultor_pedidos.png)
+
+**Pantallas relacionadas al proceso de compra del comerciante**
+![wireframe login y registro](./assets/web_app_mockup-comerciante_compras.png)
+
+**Pantallas relacionadas al proceso de calificar un producto por parte del comerciante**
+![wireframe login y registro](./assets/web_app_mockup-comerciante_calificar.png)
+
 ### 5.4.4 Applications User Flow Diagrams
 ### 5.4.5 Applications Prototyping
 
