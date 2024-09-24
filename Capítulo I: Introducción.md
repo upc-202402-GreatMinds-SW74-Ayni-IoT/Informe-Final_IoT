@@ -103,15 +103,15 @@ Luego de haber desarrollado las 5W’s y 2H’s se logró desarrollar una visió
 ### 1.2.2 Lean UX Process.
 #### 1.2.2.1. Lean UX Problem Statements.
 
-El propósito de “Ayni” es proporcionar a los agricultores una solución tecnológica integral que permita planificar, monitorear y optimizar de manera eficiente las diversas actividades realizadas durante todas las etapas de producción de los cultivos. Por otro lado, el propósito para los comerciantes de productos agricolas es brindar una plataforma donde puedan comprar, calificar y visualizar la calidad del proceso de cultivo de los productos elegidos que han sido publicados por los agricultores dentro de la aplicación. Esta solución responde a la problemática de la informalidad y baja calidad del proceso de cultivo y la intermediación de entidades abusivas en la compra/venta de las cosechas.
+El estado actual de la gestión agrícola se ha centrado principalmente en brindar capacitación a un usuario que ya sabe cómo hacer su trabajo y no considerar la informalidad del proceso de compra/venta de cultivos.
 
-Actualmente, existen pocas aplicaciones de plataformas que ofrecen soluciones orientadas al monitorieo de los cultivos en el sector agrícola. En ese sentido, nuestra plataforma busca ingresar al mercado como una alternativa diferenciadora, con el propósito de resolver los problemas a los que se enfrentan los productores agrícolas.
+Lo que los productos/servicios existentes no abordan es un cambio en el mercado, que sería la implementación de una solución IoT que no les diga cómo hacer su trabajo, sino que sea una herramienta más eficiente y proactiva para ellos. Por otro lado, tampoco se aborda la informalidad en la compra/venta de estos cultivos, lo que genera poco interés en los comerciantes y una tendencia a producir cultivos de baja calidad.
 
-Sin embargo, hemos observado un factor crítico que perjudica la productividad agrícola: la falta de una solución que permita tomar decisiones en el ciclo de vida del cultivo de manera precisa. Como consecuencia, se hace un uso ineficiente de los recursos naturales y el rendimiento del terreno se reduce.
+Nuestro producto/servicio abordará estas carencias mediante un enfoque de IoT, brindando monitoreo automatizado de los ciclos de cultivo y acción rápida ante deficiencias en diferentes etapas del proceso agrícola mediante sensores y actuadores visualizados a través de una aplicación web y móvil. Además, ofreceremos una plataforma segura para la compra y venta de cultivos, certificando la calidad del producto mediante los datos recolectados por los sensores, presentados en informes detallados.
 
-A partir de lo anterior, resulta posible plantear la principal interrogante que el proyecto propone resolver:
+Nuestro objetivo inicial será los agricultores y comerciantes que desean mejorar la calidad de sus cultivos y aumentar la confianza en las transacciones de compra/venta.
 
-**¿Cómo mejorar el proceso de cultivo y la calidad de los productos en el sector agrícola?**
+Sabremos que hemos tenido éxito cuando veamos que los usuarios registren un aumento en la calidad de sus cultivos, utilicen regularmente la plataforma para monitorear sus campos, y se incremente el número de transacciones verificadas en la plataforma de compra/venta.
 
 #### 1.2.2.2. Lean UX Assumptions.
 
@@ -148,18 +148,29 @@ Posibilidad de tener acceso a toda la información actualizada y detallada del p
 
 **User Assumptions**
 
-1. **¿Quién es el usuario?**
-Los usuarios de nuestra plataforma son pequeños y medianos agricultores que desean mejorar la calidad de sus cultivos. Asimismo, también está dirigido a las personas interesadas en comprar productos frescos y de calidad directamente de los productores.
-2. **¿Dónde encaja nuestro producto en su trabajo o vida?**
-Nuestro producto encaja en la vida diaria de los agricultores, debido a que les brinda una herramienta digital que les permite monitorear y planificar a todas las actividades agrícolas de manera más eficiente. Por otro lado, los compradores pueden encontrar y adquirir diversos productos agrícolas de buena calidad en nuestra plataforma y dejar calificaciones según su satisfacción.
-3. **¿Qué problemas tiene nuestro producto? ¿Evitar?**
-Nuestro producto puede enfrentar algunos desafíos como la percepción de ser compleja de usar por algunos agricultores. Para evitar ello, la interfaz debe lucir sencilla e interactiva. 
-4. **¿Cuándo y cómo es nuestro producto? ¿Usado?**
-Nuestra solución está diseñada para ser utilizada por el agricultor durante todo el proceso de cultivo, que va desde la siembra hasta la cosecha y posterior venta de los productos. Asimismo, es útil para planificar lo necesario para que el terreno donde se cultive cumpla con todos los requisitos de una buena producción. Los compradores podrán obtener información detalla de los productos, comprar los cultivos y dejar calificaciones.
-6. **¿Qué características son importantes?**
- Algunas funcionalidades importantes en la solución serán la planificación de los requisitos de la planta, monitoreo a tiempo real de los componentes del terreno del cultivo, y publicar sus cultivos a venta. Por otro lado, los compradores podrán utilizar la aplicación para buscar productos agrícolas de buena calidad, obtener información a tiempo real y detallada acerca de estos, realizar pedidos y acceder a un sistema de calificación y reseñas.
-7. **¿Cómo debe verse nuestro producto y cómo comportarse?**
-La interfaz de nuestro producto debe ser sencilla e intuitiva para simplificar su uso. Además, el tiempo de respuesta de las funcionalidades debe ser rápido para que el usuario no pierda interés al momento de utilizar la aplicación.
+**1. Los agricultores están enfocados en mejorar la eficiencia y calidad de sus cultivos.**
+   - Están interesados en soluciones que les permitan mejorar el rendimiento y la sostenibilidad.
+   - Tienen acceso limitado a tecnologías avanzadas, pero están dispuestos a adoptar herramientas que simplifiquen su trabajo.
+
+**2. Los comerciantes agrícolas valoran cultivos de alta calidad y consistencia.**
+   - Su objetivo principal es adquirir productos que cumplan con altos estándares de calidad para satisfacer la demanda del mercado.
+   - Están dispuestos a pagar más por cultivos que tengan menos defectos y que ofrezcan mayor seguridad en la cadena de suministro.
+
+**3.Ambos grupos tienen restricciones en tiempo y recursos.**
+   - Los agricultores quieren soluciones que no les exijan una gran inversión de tiempo o dinero.
+   - Los comerciantes prefieren procesos de compra eficientes que minimicen la incertidumbre en la calidad y la logística de entrega.
+
+**4. Los agricultores necesitan acceso a información en tiempo real.**
+   - Están interesados en recibir alertas y recomendaciones sobre el estado de sus cultivos (ej. humedad, plagas, etc.), para tomar decisiones rápidas.
+
+**5. La simplicidad y facilidad de uso son críticas para la adopción.**
+   - Los agricultores y comerciantes agrícolas no son tecnólogos, por lo que las soluciones deben ser intuitivas y requerir poco entrenamiento.
+
+**6. Los comerciantes buscan transparencia en el proceso de producción.**
+   - Les interesa conocer el historial y las condiciones en que se produjeron los cultivos para asegurar su calidad al comprar.
+
+**7. Ambos grupos desean mejorar la trazabilidad y el control de calidad.**
+   - La capacidad de monitorear y verificar la calidad de los productos desde el campo hasta la entrega es un diferenciador clave en sus decisiones de compra o uso de tecnología.
 
 
 **Business Assumptions**
@@ -177,80 +188,42 @@ La interfaz de nuestro producto debe ser sencilla e intuitiva para simplificar s
 
 #### 1.2.2.3. Lean UX Hypothesis Statements.
 
-A continuación, se plantearán las hipótesis que proponen una solución a la problemática dentro de las funcionalidades de la solución tecnológica. Cada una de estas hipótesis será especifica y medible para que se pueda sustentar el éxito de manera objetiva. Cabe resaltar que las metricas actuales son iguales a promedios generales de soluciones ya existentes.
+A continuación, se plantearán las hipótesis que proponen una solución a la problemática dentro de las funcionalidades de la solución tecnológica.
 
-### Hipótesis 1:
-*Creemos que los agricultores necesitan organizar sus procesos de cultivo.*
-*Sabremos que hemos tenido éxito cuando nuestra aplicación se vuelva parte de su rutina para cosechar.*
+**Hipótesis 1:**
 
-**Métricas:**
-1. *Frecuencia de Uso Diario:* Porcentaje de usuarios activos diariamente.
-   - Métrica actual: 20%
-   - Meta deseada: 50%
+Creemos que conseguiremos: Un incremento del 30% en las transacciones de compra de productos agrícolas.
+Si: Los comerciantes agrícolas
+Lograran: Acceso a información detallada y actualizada sobre los productos agrícolas ofrecidos.
+Con: Una funcionalidad que muestre información detallada y monitoreada de los cultivos mediante sensores en la tierra.
 
-2. *Retención a Largo Plazo:* Porcentaje de usuarios que siguen utilizando la solución después de 3 meses.
-   - Métrica actual: 30%
-   - Meta deseada: 40%
+**Hipótesis 2:**
 
----
+Creemos que conseguiremos: Un aumento del 40% en el número de usuarios de la plataforma.
+Si: Los agricultores
+Lograran: La posibilidad de acceder a un mercado más amplio de compradores de productos agrícolas.
+Con: Una plataforma que permita la compra y venta de productos agrícolas directamente.
 
-### Hipótesis 2:
-*Creemos que los agricultores necesitan planificar los requisitos del terreno adecuadamente.*
-*Sabremos que hemos tenido éxito cuando nuestra solución aumente la calidad de los cultivos en base a una buena planificación.*
+**Hipótesis 3:**
 
-**Métricas:**
-1. *Planificación de cultivos:* Porcentaje de agricultores que realicen una planificación.
-   - Métrica actual: 70%
-   - Meta deseada: 90%
+Creemos que conseguiremos: Un incremento del 30% en las transacciones de compra de productos agrícolas.
+Si: Los comerciantes agrícolas
+Lograran: Mayor seguridad y eficiencia en el proceso de compra de productos agrícolas.
+Con: Un sistema de calificaciones para evaluar la calidad de los productos adquiridos.
 
-2. *Aumento en la Calidad de los Productos:* Medido por la calificación promedio de los productos en la plataforma.
-   - Métrica actual: 3.5 (en una escala de 1 a 5)
-   - Meta deseada: 4.0
+**Hipótesis 4:**
 
----
+Creemos que conseguiremos: Un aumento del 40% en el número de usuarios de la plataforma.
+Si: Los agricultores
+Lograran: La capacidad de mejorar la calidad de sus cultivos mediante recomendaciones automatizadas.
+Con: Un sistema que permita planificar el ciclo de vida de los cultivos basándose en datos del terreno.
 
-### Hipótesis 3:
-*Creemos que los comerciantes o exportadores necesitan comprar productos de calidad y contacto directo con los productores.*
-*Sabremos que hemos tenido éxito cuando nuestra aplicación se vuelva el principal medio de comercio entre productores y comerciantes.*
+**Hipótesis 5:**
 
-**Métricas:**
-1. *Volumen de Compras Mensuales:* Número de compras completadas a través de la aplicación web.
-   - Métrica actual: 100
-   - Meta deseada: 300
-
-2. *Porcentaje de Retención de Clientes Comerciantes:* Porcentaje de comerciantes que realizan al menos una compra mensualmente.
-   - Métrica actual: 40%
-   - Meta deseada: 60%
-
----
-
-### Hipótesis 4:
-*Creemos que los comerciantes deben calificar los productos que compraron.*
-*Sabremos que hemos tenido éxito cuando las calificaciones sustenten la calidad de los productos de los productores dentro de la aplicación.*
-
-**Métricas:**
-1. *Número de Calificaciones Mensuales:* Cantidad de calificaciones emitidas por los comerciantes.
-   - Métrica actual: 50
-   - Meta deseada: 150
-
-2. *Calificación Promedio de los Productos:* Medida en una escala de 1 a 5.
-   - Métrica actual: 4.2
-   - Meta deseada: 4.5
-
----
-
-### Hipótesis 5:
-*Creemos que los agricultores mejorarán la calidad de sus cultivos gracias a la solución IoT*
-*Sabremos que hemos tenido éxito cuando los registros de los actuadores aumenten considerablemente en su uso.*
-
-**Métricas:**
-1. *Uso de actuadores:* Numero de actividades diarias 
-   - Métrica actual: 20 activdiades diarias promedio
-   - Meta deseada: 80 actividades diarias promedio
-    
-2. *Reseñas de compradores* Estrellas promedio de una escala de 1 a 5
-   - Métrica actual: 3.8 estrellas promedio de 1 a 5
-   - Meta deseada: 4.5 estrellas promedio de 1 a 5
+Creemos que conseguiremos: Ingresos mediante suscripciones que representen el 90% de los ingresos.
+Si: Los agricultores
+Lograran: Aumento en la calidad de su inventario agrícola y retroalimentación de los compradores.
+Con: Un sistema de monitoreo continuo del ciclo de vida del cultivo a través de sensores y actuadores que optimicen el rendimiento del terreno.
 
 #### 1.2.2.4. Lean UX Canvas.
 
