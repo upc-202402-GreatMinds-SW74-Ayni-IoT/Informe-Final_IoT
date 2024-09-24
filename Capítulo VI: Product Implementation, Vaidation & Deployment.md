@@ -151,7 +151,7 @@ Para el despliegue del Landing Page se utilizará Netlify, para el despliegue au
 | Sprint 1 - Retrospective Summary  | No aplica (Es el primer Sprint) |
 | **Sprint Goal & User Stories** | - |
 | Sprint 1 Goal| El objetivo del presente Sprint es en desarrollar la Landing Page y Web App usando los wireframes y mockups diseñados previamente |
-| Sprint 1 - Velocity | El equipo puede aceptar 20 Story Points|
+| Sprint 1 - Velocity | El equipo puede aceptar 28 Story Points|
 | Sprint 1 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 18|
 
 
@@ -161,18 +161,26 @@ Para el despliegue del Landing Page se utilizará Netlify, para el despliegue au
 <table><tr><th valign="top">Sprint 1</th><th colspan="7" valign="top">Implementar landing page y primera versión de fronend</th></tr>
 <tr><td colspan="2" valign="top">User Story</td><td colspan="6" valign="top">Work-Item / Task</td></tr>
 <tr><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Description</td><td valign="top">Estimation (Hours)</td><td valign="top">Assigned To</td><td valign="top"><p>Status </p><p>(To-do / </p><p>InProcess / </p><p>To Review / </p><p>Done)</p></td></tr>
-<tr><td rowspan="2" valign="top">HU-11</td><td rowspan="2" valign="top">Visualización de características de la aplicación web o móvil web en Landing Page</td><td valign="top">11.1</td><td valign="top">Implementar vistas con estilos</td><td valign="top">Realizar las secciones de funcionalidades y beneficios</td><td valign="top">4</td><td valign="top">Jorge Gonzales</td><td valign="top">Done</td></tr>
-<tr><td valign="top">11.2</td><td valign="top">Implementar sección responsive </td><td valign="top">Realizar las secciones con proporciones repsonsive</td><td valign="top">4</td><td valign="top">Jorge Gonzales</td><td valign="top">Done</td></tr>
+<tr><td rowspan="2" valign="top">HU-11</td><td rowspan="2" valign="top">Sección Hero y Botón Call-to-Action</td><td valign="top">11.1</td><td valign="top">Implementar vistas con estilos</td><td valign="top">Realizar las secciones de hero y calltoaction</td><td valign="top">4</td><td valign="top">Jorge Gonzales</td><td valign="top">Done</td></tr>
+<tr><td valign="top">11.2</td><td valign="top">Implementar sección responsive </td><td valign="top">Realizar las secciones con proporciones repsonsive</td><td valign="top">2</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
 
 <tr><td rowspan="1" valign="top">HU-12</td><td rowspan="1" valign="top">Landing Page responsive</td><td valign="top">12.1</td><td valign="top">Implementar vistas responsive</td><td valign="top">Realizar los estilos de las secciones responsive</td><td valign="top">4</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
 
 
-<tr><td rowspan="1" valign="top">HU-13</td><td rowspan="1" valign="top">Botón Call to Action</td><td valign="top">13.1</td><td valign="top">Implementar sección Hero con botón call to action</td><td valign="top">Realizar la sección hero con el botón call to action para redirigar a la aplicación</td><td valign="top">4</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
+<tr><td rowspan="1" valign="top">HU-13</td><td rowspan="1" valign="top">Sección de Funcionalidades y Planes</td><td valign="top">13.1</td><td valign="top">Implementar sección de funcionalidades y beneficios</td><td valign="top">Realizar la sección con los estilos e iconografía correspondiente</td><td valign="top">2</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
 
-<tr><td valign="top">HU-16</td><td valign="top">Sección principal ("Home")</td><td valign="top">16.1</td><td valign="top">Implementar sección Home </td><td valign="top">Realizar la vista y cards dentro de la sección Home en Web App </td><td valign="top">2</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
+<tr><td rowspan="1" valign="top">HU-14</td><td rowspan="1" valign="top">Sección de Misión y Visión</td><td valign="top">14.1</td><td valign="top">Implementar sección de misión y visión de la landing page</td><td valign="top">Realizar la sección con los estilos e iconografía correspondiente</td><td valign="top">2</td><td valign="top">Javier Sebastian</td><td valign="top">Done</td></tr>
 
-<tr><td valign="top">HU-04</td><td valign="top">Ver detalles del terreno de cultivo y de las fases de cosecha de los cultivos</td><td valign="top">04.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web</td><td valign="top">4</td><td valign="top">Javier Sebastían</td><td valign="top">Done</td></tr>
-<
+<tr><td valign="top">HU-16</td><td valign="top">Sección principal ("Home")</td><td valign="top">16.1</td><td valign="top">Implementar sección Home de la web app</td><td valign="top">Realizar los estilos de la sección Home para agricultores </td><td valign="top">2</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-04</td><td valign="top">Ver detalles del terreno de cultivo y de las fases de cosecha de los cultivos</td><td valign="top">04.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web utilizando un JSON Placeholder</td><td valign="top">8</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-08</td><td valign="top">Planificar actividades agrícolas</td><td valign="top">08.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web</td><td valign="top">4</td><td valign="top">Javier Sebastían</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-15</td><td valign="top">Sistemas de búsqueda y paginación</td><td valign="top">15.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web</td><td valign="top">3</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-02</td><td valign="top">Inicio de sesión</td><td valign="top">02.1</td><td valign="top">Implementar vistas de inicio de sesión y planes en la web app</td><td valign="top">Implementar vistas y formularios de inicio de sesión (sin función)</td><td valign="top">3</td><td valign="top">Jorge gonzales</td><td valign="top">Done</td></tr>
+
 </table>
 
 ### 6.2.1.3 Development Evidence for Sprint Review
