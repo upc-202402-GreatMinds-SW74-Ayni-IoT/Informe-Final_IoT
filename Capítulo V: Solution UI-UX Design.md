@@ -235,46 +235,417 @@ Finalmente, este es un vistazo general a los mockups y wireframes:
 
 ![image](https://github.com/user-attachments/assets/695e511e-9000-48b8-b4bf-fe9b5f89d64e)
 
-Link: Link: https://www.figma.com/design/hvG1ZF2UKWOEpW9kons6b1/Landing-Page?node-id=0-1&t=yWIQX0TXDIKOqSn0-1
+Link de Figma: https://www.figma.com/design/hvG1ZF2UKWOEpW9kons6b1/Landing-Page?node-id=0-1&t=yWIQX0TXDIKOqSn0-1
 
 ## 5.4 Applications UI/UX Design
 ### 5.4.1 Applications Wireframes
 
+**Web Application**
+
 **Pantallas relacionadas al inicio de sesión y registro de usuario**
-![wireframe login y registro](./assets/web_app_wireframe-login_register.png)
+
+![image](https://github.com/user-attachments/assets/6d2041c9-f06e-4fbb-9fce-a5204806d6b1)
+
 
 **Pantallas relacionadas a la gestión de los cultivos del agricultor**
-![wireframe login y registro](./assets/web_app_wireframe-agricultor_gestion_cultivos.png)
+
+![image](https://github.com/user-attachments/assets/1f054f21-8a04-46c1-9d40-b420c17f3135)
+
 
 **Pantallas relacionadas a la gestión de solicitudes de compra del agricultor**
-![wireframe login y registro](./assets/web_app_wireframe-agricultor_pedidos.png)
+
+![image](https://github.com/user-attachments/assets/0fd1c04a-0c64-4dd7-b199-9cf5edeeee6b)
+
 
 **Pantallas relacionadas al proceso de compra del comerciante**
-![wireframe login y registro](./assets/web_app_wireframe-comerciante_compra.png)
+
+![image](https://github.com/user-attachments/assets/34d3df8e-dd05-40c5-8f27-8efa27e06cd7)
+
 
 **Pantallas relacionadas al proceso de calificar un producto por parte del comerciante**
-![wireframe login y registro](./assets/web_app_wireframe-comerciantes_calificar.png)
+
+![image](https://github.com/user-attachments/assets/92238f77-9567-4ec5-8d69-ca0c147e5e15)
+
+
+---
+
+**Mobile Application**
+
+**Pantallas relacionadas al inicio de sesión y registro de usuario**
+
+![image](https://github.com/user-attachments/assets/e18c50d4-23cb-4ba6-9a65-fa1e0239be65)
+
+**Pantallas relacionadas a la gestión de cultivos del agricultor**
+
+![image](https://github.com/user-attachments/assets/d17f5991-4037-4d16-9ca3-1fe82c93b867)
+
+**Pantallas relacionadas al proceso de compras del comerciante**
+
+![image](https://github.com/user-attachments/assets/53951723-27c7-4764-9c4b-9cfdc362546c)
+
+**Pantalals relacionadas al estado de la orden de un cultivo**
+
+![image](https://github.com/user-attachments/assets/e8092df0-a4a8-4b1e-a122-bef1a7902fa4)
+
+**Pantallas relacionadas al proceso de calificar un producto por parte del comerciante**
+
+![image](https://github.com/user-attachments/assets/7f5094bc-4d88-4e90-aad8-6baaf2b981fb)
+
+Link de Figma: https://www.figma.com/design/ihUX0q6TZToajfIfLt5h82/Wireframes-App.-Moviles?node-id=0-1&t=o66KQhhg5VyRkx9e-1
 
 ### 5.4.2 Applications Wireflow Diagrams
+
+En esta sección, se presentan los wireflows de la aplicación web y móvil guiándose de las historias de usuario en la herramienta LucidChart.
+
+Link de Lucidchar: (https://lucid.app/lucidchart/aa72d3cf-f994-4a82-9ad8-044f3b9fc331/edit?viewport_loc=676%2C-2242%2C15341%2C7356%2C0_0&invitationId=inv_0da86b32-9131-4d2a-9317-1d95207a50e7)
+
+**Web App**
+
+Usar Goal: Como usuario, quiero poder registrarme en la aplicación para acceder a las funcionalidades disponibles.
+
+Task Flow:
+
+- Primero se observará la pantalla de inicio de sesión, en esta se puede o iniciar o registrarse
+- Si accede a registrarse, se mostrará la pantalla de registro. Puede regresar a iniciar sesión o continuar
+- Finalmente, se accede a la pantalla de selección de roles si es que se registra, para que acceda a la aplicación.
+
+![image](https://github.com/user-attachments/assets/6bf9e278-b55a-48bc-974c-f10a1d82ea5e)
+
+---
+
+User Goal: Como agricultor (Maria Gracia), quiero ingresar los datos correspondientes para la planificación de las actividades agrícolas.
+
+Task Flow:
+
+- Primero se está en la pantalla de “Mis productos”
+- Si presiona el botón de “Añadir nuevo producto”, se mostrará la pantalla para rellenar los datos del cultivo
+- Luego, se mostrará un dashboard para la planificación de cultivo, donde se irá introduciendo pasos para la planificación
+- Finalmente, se mostrará el calendario de la planificación donde el usuario podrá introducir eventos
+
+![image](https://github.com/user-attachments/assets/fe8480a0-5196-4b3c-8444-c550245cfcd8)
+
+---
+
+User Goal: Como usuario tipo agricultor (Maria Gracia), deseo ver los pedidos que tengo de manera rápida y fácil en una pantalla
+
+Task Flow:
+
+- Primero el usuario tiene que estar en la sección del header “Mis pedidos”
+- Luego, se mostrará la pantalla de pedidos con las listas de los pedidos pendientes
+- Al seleccionar un pedido, el productor puede darle al botón de aceptar o rechazar pedido
+
+![image](https://github.com/user-attachments/assets/9efcab4f-3255-4ae5-b97f-26cd5b01175f)
+
+---
+
+User Goal: Como usuario de la aplicación Ayni deseo encontrar los productos de manera rápida para no perder tiempo
+
+Task Flow:
+
+- Primero el usuario debe encotnrarse en una de las paginas de inicio o en secciones con paginación
+- Luego, el usuario deberá escribir lo que desea en el input y luego darle click al icono de la lupa, en caso de paginación escoger la pagina deseada.
+
+![image](https://github.com/user-attachments/assets/baefe68f-f238-48fe-81a3-d1ae016f8e61)
+
+---
+
+User Goal: Como comercializador (Carlos Martinez) quiero observar los productos disponibles para poder realizar los pedidos
+
+Task Flow:
+
+- Primero el usuario tiene que estar en la sección “Buscar Productos”
+- Luego se mostrará la pantalla con los productos disponibles y una descripción
+
+![image](https://github.com/user-attachments/assets/792a0f1d-9b25-48c7-9014-eef8924d9235)
+
+---
+
+Usar Goal: Como comercializador (Carlos Martinez), quiero poder realizar los pedidos de productos agrícolas para poder realizar las entregas
+
+Task Flow:
+
+- Primero el usuario debe estar en la pantalla de buscar productos
+- Luego debe seleccionar el producto que desee comprar
+- Se debe dar click en comprar y aparecerá la pantalla de dashboard donde debe completar datos para la compra
+
+![image](https://github.com/user-attachments/assets/4656cc1a-c928-4a4a-9e8a-6c1fb171f071)
+
+---
+
+User Goal: Como comercializador (Carlos Martinez), quiero poder observar el estado de los pedidos y entregas para poder sentirme más tranquilo
+
+Task Flow:
+
+- Primero el usuario debe estar en la pestaña de “Mis compras”
+- Seleccionar un producto y luego se le mostrará el estado de su compra e información
+- Si hace click en el botón “Ver estado” podrá ver detalladamente el estado actual del producto
+
+![image](https://github.com/user-attachments/assets/cceeabd4-705d-4ed8-b086-20db14374ac1)
+
+---
+
+User Goal: Como comercializador (Carlos Martinez), quiero acceder a las calificaciones y reseñas dejadas por los agricultores para saber sobre la valoración de mis servicios
+
+Task Flow:
+
+- Primero el usuario debe estar en la sección “Calificaciones”
+- En la siguiente pantalla se mostrará información de los productos que compró y una calificación en estrellas
+
+![image](https://github.com/user-attachments/assets/571cf5f6-aa1a-47d1-8531-4d188c1ee082)
+
+---
+
+**Mobile App**
+
+User Goal: Como comercializador (Carlos Martinez) quiero observar los productos disponibles para poder realizar los pedidos
+
+Task Flow:
+
+- Primero el usuario tiene que estar en la sección “Buscar Productos”
+- Luego se mostrará la pantalla con los productos disponibles y una descripción
+
+![image](https://github.com/user-attachments/assets/b2913e71-56bd-42b7-95b6-2330a43cd214)
+
+
+---
+
+Usar Goal: Como comercializador (Carlos Martinez), quiero poder realizar los pedidos de productos agrícolas para poder realizar las entregas
+
+Task Flow:
+
+- Primero el usuario debe estar en la pantalla de buscar productos
+- Luego debe seleccionar el producto que desee comprar
+- Se debe dar click en comprar y aparecerá la pantalla del detalle para una orden
+- Luego se añade un medio de pago y se confirma la compra
+
+![image](https://github.com/user-attachments/assets/8fc2f305-04d7-4c9e-a5e4-52ed84babfb5)
+
+---
+
+User Goal: Como comercializador (Carlos Martinez), quiero poder observar el estado de los pedidos y entregas para poder sentirme más tranquilo
+
+Task Flow:
+
+- Primero el usuario debe estar en la pestaña de “Mis compras”
+- Seleccionar un producto y luego se le mostrará el estado de su compra e información
+- Si hace click en el botón “Ver estado” podrá ver detalladamente el estado actual del producto
+- Si desea cancelar el producto le saldrá un aviso de confirmación
+
+![image](https://github.com/user-attachments/assets/b762188b-74b8-4f0d-a90e-73b72fe8d0a2)
+
+
+
 ### 5.4.3 Applications Mock-ups
 
+**Web Application**
+
 **Pantallas relacionadas al inicio de sesión y registro de usuario**
-![wireframe login y registro](./assets/web_app_mockup-login_register.png)
+
+![image](https://github.com/user-attachments/assets/8ae3e093-fe59-4af9-93ff-f03df738f190)
+
 
 **Pantallas relacionadas a la gestión de los cultivos del agricultor**
-![wireframe login y registro](./assets/web_app_mockup-agricultor_cultivos.png)
+
+![image](https://github.com/user-attachments/assets/af1c60fb-26ed-4d91-8811-6164f18691e3)
+
 
 **Pantallas relacionadas a la gestión de solicitudes de compra del agricultor**
-![wireframe login y registro](./assets/web_app_mockup-agricultor_pedidos.png)
+
+![image](https://github.com/user-attachments/assets/1c807d38-1b3c-4331-a56a-74734a0d8d98)
+
 
 **Pantallas relacionadas al proceso de compra del comerciante**
-![wireframe login y registro](./assets/web_app_mockup-comerciante_compras.png)
+
+![image](https://github.com/user-attachments/assets/3915590c-a8f1-445e-9b3a-752d7524b8b8)
+
 
 **Pantallas relacionadas al proceso de calificar un producto por parte del comerciante**
-![wireframe login y registro](./assets/web_app_mockup-comerciante_calificar.png)
+
+![image](https://github.com/user-attachments/assets/7b9e0c31-6b9f-40f7-b2b9-b62527f94bc7)
+
+
+---
+
+**Mobile Application**
+
+**Pantallas relacionadas al inicio de sesión y membresias**
+
+![image](https://github.com/user-attachments/assets/d664eba5-2098-4138-8c53-296b9a332f7c)
+
+**Pantallas relacionadas a la exploración de productos (Comerciantes)**
+
+![image](https://github.com/user-attachments/assets/b66abc90-c3bc-4633-87ef-269331ced0fa)
+
+**Pantallas de proceso de compra de un cultivo**
+
+![image](https://github.com/user-attachments/assets/5f71c6ee-a249-4cf3-bdea-109b87a92902)
+
+**Pantalla de calificación de una orden**
+
+![image](https://github.com/user-attachments/assets/e7f16f33-5e3f-4703-bbec-5e579749402f)
+
+**Pantalla de estado de una orden**
+
+![image](https://github.com/user-attachments/assets/af19b50e-cb40-4e12-8cae-728dc0683bc9)
+
+**Pantalla de registro de un cultivo por parte de agricultor**
+
+![image](https://github.com/user-attachments/assets/c6e294f4-5c14-43e2-9557-3445b271f961)
+
+**Pantalla de monitoreo de cultivos**
+
+![image](https://github.com/user-attachments/assets/5456509a-5563-4334-8ad5-9db153be6a30)
+
+**Pantalla de registro de plan de cultivo**
+
+![image](https://github.com/user-attachments/assets/d58cef82-3f3c-469e-8029-47cf78148330)
+
+**Pantalla de publicación de cultivo en venta**
+
+![image](https://github.com/user-attachments/assets/402dc456-bd52-4d06-9ec3-eb6a2dc37ee7)
+
+Link de Figma: https://www.figma.com/design/ihUX0q6TZToajfIfLt5h82/Wireframes-App.-Moviles?node-id=0-1&t=o66KQhhg5VyRkx9e-1
 
 ### 5.4.4 Applications User Flow Diagrams
+
+**Web App**
+
+User Goal: Observar el estado de los pedidos realizados
+
+Task Flow:
+
+- Primero el usuario debe estar en la pestaña de “Mis compras”
+- Seleccionar un producto y luego se le mostrará el estado de su compra e información
+- Si hace click en el botón “Ver estado” podrá ver detalladamente el estado actual del producto
+- Si el usuario lo desea puede cancelar su compra (Unhappy Path)
+
+![image](https://github.com/user-attachments/assets/d0bad33e-4583-400b-8d9c-7c92f9934f85)
+
+Usar Goal: Realizar pedidos de productos agrícolas
+
+---
+
+Task Flow:
+
+- Primero el usuario debe estar en la pantalla de buscar productos
+- Luego debe seleccionar el producto que desee comprar
+- Se debe dar click en comprar y aparecerá la pantalla de dashboard donde debe completar datos para la compra
+- Si el usuario lo desea puede cancelar la compra con el botón "Cancelar compra" (Unhappy Path)
+
+![image](https://github.com/user-attachments/assets/7e0680f6-9a58-4a67-889f-5caf938605d1)
+
+---
+
+User Goal: Visualizar los pedidos existentes
+
+Task Flow:
+
+- Primero el usuario tiene que estar en la sección del header “Mis pedidos”
+- Luego, se mostrará la pantalla de pedidos con las listas de los pedidos pendientes
+- Al seleccionar un pedido, el productor puede darle al botón de aceptar (Happy Path) o rechazar pedido (Unhappy Path)
+
+![image](https://github.com/user-attachments/assets/654c5896-9411-418c-b37a-b1ba2a8101fe)
+
+---
+
+User Goal: Añadir cultivos y realizar plan de cultivo de este mismo
+
+Task Flow:
+
+- Primero se está en la pantalla de “Mis productos”
+- Si presiona el botón de “Añadir nuevo producto”, se mostrará la pantalla para rellenar los datos del cultivo
+- Luego, se mostrará un dashboard para la planificación de cultivo, donde se irá introduciendo pasos para la planificación
+- Finalmente, se mostrará el calendario de la planificación donde el usuario podrá introducir eventos
+- Si el usuario quiere eliminar el cultivo, le debe dar al botón "Elminar cultivo" (Unhappy Path)
+
+![image](https://github.com/user-attachments/assets/882ac091-f77f-415f-9fbc-54a604e6fb01)
+
+---
+
+**Mobile App**
+
+User Goal: Visualizar los datos de los sensores para el monitoreo de cultivo
+
+Task Flow:
+- Primero al seleccionar un cultivo existente
+- Al dar en el boton de "Cultivar"
+- Se le mostrará los detalels del plan de cultivo acabo
+- Luego, se le muestra un dashboard de la información de los sensores
+- Si el usuario desea un resumen de la información de los sensores, al dar click al boton next será redirigido a esa pantalla
+- Si el usuario desea terminar con el cultivo, le da al botón Back y se le lleva a la pantalla de inicio  (Unhappy path)
+
+![image](https://github.com/user-attachments/assets/5ef50c70-ea69-405a-8069-98346ec27143)
+
+---
+
+User Goal: Añadir cultivos y realizar plan de cultivo de este mismo
+
+Task Flow:
+
+- Primero se está en la pantalla de “Mis productos”
+- Se le muestran los cultivos disponibles para añadir un plan de cultivo
+- Luego, se mostrará un formulario para la planificación de cultivo, donde se irá introduciendo pasos para la planificación
+- Si el usuario quiere eliminar el cultivo, le debe dar al botón "Elminar cultivo" (Unhappy Path)
+
+![image](https://github.com/user-attachments/assets/7c62c22e-656e-419a-b572-eae7064eb5b6)
+
+---
+
+User Goal: Visualizar los pedidos existentes
+
+Task Flow:
+
+- Primero el usuario tiene que estar en la sección del header “Mis pedidos”
+- Luego, se mostrará la pantalla de pedidos con las listas de los pedidos pendientes
+- Al seleccionar un pedido, el productor puede darle al botón de aceptar (Happy Path) o rechazar pedido (Unhappy Path)
+
+![image](https://github.com/user-attachments/assets/61217a16-6eed-41c6-860b-c4ecba25c5f1)
+
+---
+
+User Goal: Visualizar los pedidos existentes
+
+Task Flow:
+
+- Primero el usuario tiene que estar en la sección del header “Mis pedidos”
+- Luego, se mostrará la pantalla de pedidos con las listas de los pedidos pendientes
+- Al seleccionar un pedido, el productor puede darle al botón de aceptar (Happy Path) o rechazar pedido (Unhappy Path)
+
+![image](https://github.com/user-attachments/assets/2ad22083-73e4-489a-9a18-d26e044f6ca8)
+
+---
+
+User Goal: Observar el estado de los pedidos realizados
+
+Task Flow:
+
+- Primero el usuario debe estar en la pestaña de “Mis compras”
+- Seleccionar un producto y luego se le mostrará el estado de su compra e información
+- Si hace click en el botón “Ver estado” podrá ver detalladamente el estado actual del producto
+- Si el usuario lo desea puede cancelar su compra (Unhappy Path)
+
+![image](https://github.com/user-attachments/assets/f076b3b0-1493-4d6e-9a6b-c81ae75d3425)
+
+
+
 ### 5.4.5 Applications Prototyping
 
 ## 5.5 Appilcations Prototyping
+En esta sección, se puede acceder al prototipo en la herramienta Figma. Asismismo se pueden evidenciar los principios de arquitectura de información, esto hace que la aplicación se vea lo más eficiente posible.
+
+Principio de elección: Procuramos que la aplicación web Y MOVIL posea una cantidad de secciones a todo momento, por lo que se cuenta con la barra superior e inferior siempre en la aplicación con 4 secciones, los cuales podrá acceder a las funcionalidades rapidamente desde cualquier pantalla.
+
+Principio de divulgación: La información presentada se separa por partes, de tal manera que el usuario encuentre lo que desee. Esto se evidencia en los detalles al seleccionar un cultivo.
+
+![image](https://github.com/user-attachments/assets/6c3aed2b-58d2-45ee-8e8d-257dd61aea3d)
+
+
+Link de video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EbqyE9CXfb5Ehf9tzTvo2SABleoGIMDoOvpgHuxEPFCQ8w?e=RPmzQt&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+
+**Web App:**
+![image](https://github.com/user-attachments/assets/df0845c9-6c2e-46ab-85a6-33ee65fa4c6a)
+
+**Mobile App:**
+![image](https://github.com/user-attachments/assets/4c858d5f-d29d-499d-a117-fae2fd030ff6)
 
