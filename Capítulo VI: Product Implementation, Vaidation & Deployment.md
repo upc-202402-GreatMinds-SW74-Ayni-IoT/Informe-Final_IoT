@@ -150,7 +150,7 @@ Para el despliegue del Landing Page se utilizará Netlify, para el despliegue au
 | Sprint 1 - Review Summary | No aplica (Es el primer Sprint) |
 | Sprint 1 - Retrospective Summary  | No aplica (Es el primer Sprint) |
 | **Sprint Goal & User Stories** | - |
-| Sprint 1 Goal| El objetivo del presente Sprint es en desarrollar la Landing Page y Web App usando los wireframes y mockups diseñados previamente |
+| Sprint 1 Goal| **Nuestro objetivo** es brindar información pertinente en secciones acerca de la aplicación en la landing page y visualizar cultivos, planificar cultivos en una primera versión de la web app. **Creemos que esto genera** una base sólida de las funcionalidades y experiencia de usaurio para nuestra organización. **Esto será confirmado cuando** la landing page contenga las secciones correctamente desarrolladas y se redirija a la aplicación web  |
 | Sprint 1 - Velocity | El equipo puede aceptar 28 Story Points|
 | Sprint 1 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 18|
 
@@ -158,11 +158,11 @@ Para el despliegue del Landing Page se utilizará Netlify, para el despliegue au
 
 ### 6.2.1.2 Sprint Backlog 1
 
-<table><tr><th valign="top">Sprint 1</th><th colspan="7" valign="top">Implementar landing page y primera versión de fronend</th></tr>
+<table><tr><th valign="top">Sprint #</th><th colspan="7" valign="top">Sprint 1</th></tr>
 <tr><td colspan="2" valign="top">User Story</td><td colspan="6" valign="top">Work-Item / Task</td></tr>
 <tr><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Description</td><td valign="top">Estimation (Hours)</td><td valign="top">Assigned To</td><td valign="top"><p>Status </p><p>(To-do / </p><p>InProcess / </p><p>To Review / </p><p>Done)</p></td></tr>
 <tr><td rowspan="2" valign="top">HU-11</td><td rowspan="2" valign="top">Sección Hero y Botón Call-to-Action</td><td valign="top">11.1</td><td valign="top">Implementar vistas con estilos</td><td valign="top">Realizar las secciones de hero y calltoaction</td><td valign="top">4</td><td valign="top">Jorge Gonzales</td><td valign="top">Done</td></tr>
-<tr><td valign="top">11.2</td><td valign="top">Implementar sección responsive </td><td valign="top">Realizar las secciones con proporciones repsonsive</td><td valign="top">2</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
+<tr><td valign="top">11.2</td><td valign="top">Implementar sección responsive </td><td valign="top">Realizar las secciones con proporciones responsive</td><td valign="top">2</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
 
 <tr><td rowspan="1" valign="top">HU-12</td><td rowspan="1" valign="top">Landing Page responsive</td><td valign="top">12.1</td><td valign="top">Implementar vistas responsive</td><td valign="top">Realizar los estilos de las secciones responsive</td><td valign="top">4</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
 
@@ -184,8 +184,151 @@ Para el despliegue del Landing Page se utilizará Netlify, para el despliegue au
 </table>
 
 ### 6.2.1.3 Development Evidence for Sprint Review
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| - | - | - | - | - | - |
+| Ayni_LandingPageOfficial | feature/aboutus-section | 5832e79 | feat: update descriptions  | - | 25/09/2023 |
+| Ayni_LandingPageOfficial  | feature/functionalities-section | c69748b | feat/added prices and functionalities  | - | 25/09/2023 |
+| Ayni_LandingPageOfficial  | feature/hero-section | 457fd51 | feat: update descriptions  | - | 25/09/2023 |
+| Ayni_LandingPageOfficial  | develop | 4524261 | fix: sections and cards  | - | 19/09/2023 |
+| Ayni_LandingPageOfficial  | develop | 13c7bbe| Fix: update functionalities farmers  | - | 19/09/2023 |
+| Ayni_LandingPageOfficial  | develop | 929a124 | feat: Hero section update  | - | 19/09/2023 |
+| AyniFrontend  | feature/crop-detail | 4eb7589 | fix: signin and signup components  | - | 19/09/2023 |
+| AyniFrontend  | feature/crop-detail | 13fa79a | fix: sales indentation  | - | 19/09/2023 |
+| AyniFrontend  | feature/crop-detail | b79d6a8 | fix: rates component indentation | - | 19/09/2023 |
+| AyniFrontend  | feature/crop-detail | 597a41e | feat: json server | - | 21/09/2023 |
+| AyniFrontend  | feature/crop-detail | 02d5eab | feat: crop details component | - | 21/09/2023 |
+| AyniFrontend  | feature/crop-detail | 9dd841f | feat: navigate to crop detail | - | 21/09/2023 |
+| AyniFrontend  | feature/home-ui | 239aecd | fix: update fonts and cards | - | 23/09/2023 |
+| AyniFrontend  | feature/plans-forms | 27abcdf | update: fix stepper for plans forms | - | 23/09/2023 |
+| AyniFrontend  | feature/plans-forms | 40aacad | fix: update following steps to plan form | - | 23/09/2023 |
+| AyniFrontend  | fix/code-style | c72eeb2 | fix: styles in bottom bar and rates | - | 23/09/2023 |
+
 ### 6.2.1.4 Testing Suite Evidence for Sprint Review
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| - | - | - | - | - | - |
+| acceptance-test-IoT | test/UserStories | 70f7178 | Acceptance_test_09.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | e075329 | Acceptance_test_08.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 7580071 | Acceptance_test_07.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 792b52e | Acceptance_test_06.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 3549d2d | Acceptance_test_05.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | dbf0ead | Acceptance_test_04.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | d9d7765 | Acceptance_test_03.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 16df5ba | Acceptance_test_02.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 3fab5b6 | Acceptance_test_01.feature  | - | 25/09/2023 |
+
+
 ### 6.2.1.5 Execution Evidence for Sprint Review
+
+En el Sprint 1 se alcanzó a desarrollar una primera versión de las web apps y la landing page
+
+Principales vistas desarrolladas:
+Landing page (sección Hero):
+![image](https://github.com/user-attachments/assets/354bdd5e-7307-4f97-8aa6-c56a28fccbc1)
+
+Landing page (sección de funcionalidades y precios):
+![image](https://github.com/user-attachments/assets/5b46dd5a-8241-4fb7-beec-45af560f00ff)
+![image](https://github.com/user-attachments/assets/8c0f4e25-9d4c-4bf6-bd19-c093622ac8f1)
+
+Landing Page (sección about us)
+![image](https://github.com/user-attachments/assets/bfcfcbba-f554-40b2-8298-fd7f95ba4518)
+
+
+Home:
+![image](https://github.com/user-attachments/assets/0447d09e-bcd3-457a-9bf8-95fae1b7ac06)
+
+Dashboard de monitoreo de cultivo:
+![image](https://github.com/user-attachments/assets/0c8e2c9a-d5ec-4ab2-98d2-f1dfa036fb80)
+
+Vista de cultivos:
+![image](https://github.com/user-attachments/assets/28ee32ec-d2b5-4e90-a6a1-5fbe6c847cfc)
+![image](https://github.com/user-attachments/assets/8634a5c5-8e5e-4e1b-9913-fd05c75a1407)
+
+Stepper de planificación de cultivo:
+![image](https://github.com/user-attachments/assets/b70e9166-5753-4530-8117-914ace8233f5)
+
+Formulario de añadir cultivo:
+![image](https://github.com/user-attachments/assets/e332837b-715b-4ca9-9640-29ff73956a8f)
+
+A continuación se muestra un video con todas las vistas mostradas:
+
+![image](https://github.com/user-attachments/assets/b1f1202f-a32e-4984-a737-896f308d640a)
+
+Link de video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/Eaahd6mxXbdNjQaZuE3PZrIB814G-5xhwWlgis9qpv1sWw?e=mH887A&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
 ### 6.2.1.6 Services Documentation Evidence for Sprint Review
+
+Para este sprint 1, debido a que no existe la incorporación de los Web Services, se decidió usar JSON Placeholder como alternativa a consumir datos.
+
+JSON Placeholder: https://my-json-server.typicode.com/JorgeGonzales15/ayni-jsonplaceholder-iot
+
+| Endpoint | Detalles |
+| - | - | 
+| /users| En este endpoint se almacenan la información de los usuarios, tales como username, email, password, role, photo y token | 
+| /products | En este endpoint se almacenan los productos que aun no son publicados a venta y tienen una planificación definida | 
+| /orders  | En este endpoint se almacena las ordenes de los comerciantes, en el cual tienen un precio, que es ligado a un saleId, metodo de pago, descripción, etc. | 
+| /crops  | En este endpoint almacena los cultivos creados por parte de los agricultores | 
+| /rates  | En este endpoint se almacena las calificaciones y sus estados para cada orden | 
+| /sales  | En este endpont se almacena los ventas de los comerciantes |
+
 ### 6.2.1.7 Software Deployment Evidence for Sprint Review
+
+
+Para el despliegue de la web app y landing page se usó Netlify, a continuación se detallará paso a paso para este Sprint 1:
+
+Ejecutamos el comando “ng build” en la ruta de nuestro projecto en angular, nos muestra lo siguiente:
+
+![image](https://github.com/user-attachments/assets/04bc0a04-824c-472c-93e2-f28ee2533092)
+
+
+Se genera la carpeta dist:
+
+![image](https://github.com/user-attachments/assets/044c7e28-9ba6-418d-b38a-0b1f6d4f48b9)
+
+
+Se añade el archivo “netlify.toml” para que netlify pueda entender las rutas de nuestro programa en angular con la siguiente configuración:
+
+![image](https://github.com/user-attachments/assets/c709bea5-f479-493f-bb9b-dee374c80e7a)
+
+
+
+Por último, vamos a netlify a la sección que nos permite desplegar nuestra aplicación manualmente para evitar errores:
+
+![image](https://github.com/user-attachments/assets/e4ff6f55-ee48-4e0e-bbcd-ed09daf71694)
+
+
+Y pasamos la carpeta que se encuentra dentro de la carpeta dist generada en nuestro proyecto. Y se obtiene el registro del despliegue dentro de Netlify
+
+![image](https://github.com/user-attachments/assets/3a7f5aa8-86cc-4d3d-8f06-cc76a4f224c5)
+
+
+De esta manera el avance del Sprint 1 queda desplegado.
+
+Link de landing page: (https://ayni-landingpage-v1.netlify.app/)
+Link de primera versión de frontend: (https://ayni-webapp-v1.netlify.app/)
+
+
+
 ### 6.2.1.8 Team Collaboration Insights during Sprint
+
+En el presente sprint se implementó la landing page y una primera versión de la web application, a continuación se mostrará una tabal de las actividades de todos participantes:
+
+| Alumno | Actividad | 
+| - | - | 
+| Espejo Macuri, Paolo Andre  | Desarrollo de frontend y landing page | 
+| Gonzales Carrión, Jorge Enrique  | Desarrollo de frontend y landing page | 
+| Alejo Cardenas, Luis Angel  |  Desarrollo de frontend y landing page | 
+| Rios Jaimes, Jhonel Enrique |  Desarrollo de frontend y landing pageDesarrollo de frontend y backend | 
+| Sebastian Tasayco, Javier Martin |  Desarrollo de frontend y landing page | 
+
+Landing Page
+![image](https://github.com/user-attachments/assets/d4c2f9fe-5efc-46e0-857d-052e97e8ca13)
+![image](https://github.com/user-attachments/assets/8302ff21-28bd-4efb-bb04-271ab0c4591d)
+
+
+Web App
+![image](https://github.com/user-attachments/assets/fa251f6c-bb7c-4536-b578-f616b159f250)
+![image](https://github.com/user-attachments/assets/8343536d-d3f4-47ce-aa48-6e2b82479e94)
+
+
