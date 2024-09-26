@@ -74,29 +74,70 @@ A continuación, elegimos utilizar la técnica de start-with-value ya que el equ
 - **Identificación de Funcionalidades clave** : Identificar las funcionalidades esenciales de la aplicación, el monitoreo de cultivos con sensores y actuadores (Monitoring), planificación de cultivos (Planification) y 
  registro de nuevos cultivos (Crop Register) que contribuyen directamente a la entre de los valores empresariales.
 
-Candidate para Bounded Context: IAM
+**Candidate para Bounded Context: IAM**
+
+Este contexto está encargado de manejar el ciclo de vida de los usuarios en la plataforma, desde el registro hasta la validación de credenciales y el acceso a la plataforma, de acuerdo con su rol, ya sea agricultor o comerciante. Se cubren dos políticas clave: Política de Registro y Registro de Roles y Política de Autenticación.
+
+Posibles responsabilidades del Bounded Context:
+- Gestionar el registro y autenticación de usuarios.
+- Definir y aplicar políticas de roles para asegurarse de que cada usuario tenga las capacidades correctas dentro del sistema.
+- Proveer un sistema de validación de credenciales utilizando estándares de seguridad como JWT.
+- Facilitar el acceso a la plataforma basado en los roles asignados al usuario al registrarse.
 
 ![image](https://github.com/user-attachments/assets/61f21441-6d10-4bd4-aa29-5d5b3f754267)
 
 
-Candidate para Bounded Context: Monitoring
+**Candidate para Bounded Context: Monitoring**
+Este contexto se enfoca en permitir a los comerciantes realizar transacciones dentro de la plataforma, específicamente la compra y venta de cultivos. Está centrado en garantizar que los procesos comerciales fluyan de manera eficiente entre los comerciantes y agricultores.
+
+Posibles responsabilidades del Bounded Context:
+- Gestionar la publicación de cultivos en venta y asegurar que sean visibles para otros usuarios de acuerdo a las políticas definidas.
+- Administrar la compra y calificación de cultivos, asegurando la satisfacción del usuario y la validez de las transacciones.
+- Enviar notificaciones automáticas a través de servicios de mensajería para mantener a los usuarios informados sobre sus cultivos, compras y calificaciones.
+- Aplicar las políticas comerciales que rigen las interacciones entre comerciantes y agricultores.
 
 ![image](https://github.com/user-attachments/assets/b8891ce5-86e1-4940-897a-d47a3d8991dd)
 
 
+**Candidate para Bounded Context: Shopping**
 
-Candidate para Bounded Context: Shopping
+Este contexto se centra en las operaciones que permiten a los comerciantes interactuar con los cultivos que publican los agricultores, asegurando que los procesos de compra, venta y calificación de los cultivos se realicen de manera efectiva.
+
+Responsabilidades del Bounded Context:
+- Publicación y gestión de la lista de cultivos en venta.
+- Facilitar el proceso de compra de cultivos asegurando la seguridad y fiabilidad de la transacción.
+- Gestionar las calificaciones de los productos comprados, incentivando la transparencia y confianza en la plataforma.
+- Notificaciones automáticas a través de servicios como EmailJS para informar a los agricultores sobre las actividades comerciales que afectan a sus productos.
 
 ![image](https://github.com/user-attachments/assets/41776ae9-5f3c-417b-9c52-2b9a9c75e5af)
 
 
 
-Candidate para Bounded Context: Planification
+**Candidate para Bounded Context: Planification**
+
+Este contexto se centra en las operaciones que permiten a los agricultores planificar y gestionar sus cultivos, asegurando que los procesos de creación y edición de los planes de cultivo se realicen de manera efectiva.
+
+Responsabilidades del Bounded Context:
+
+- Permitir la creación de nuevos planes de cultivo por parte de los agricultores.
+- Facilitar la edición de los planes de cultivo ya existentes, asegurando que los detalles puedan ser actualizados de forma eficiente.
+- Validar la información ingresada para asegurar que los planes de cultivo estén completos y listos para su ejecución.
+- Informar a los agricultores sobre el éxito o los posibles problemas en la creación y edición de los planes mediante mensajes claros y acciones correctivas, si es necesario.
+
+
 
 ![image](https://github.com/user-attachments/assets/160156bf-ad75-421b-a5b2-2a99aa1c92a9)
 
 
-Candidate para Bounded Context: Crop registration
+**Candidate para Bounded Context: Crop registration**
+Este contexto se centra en las operaciones que permiten a los agricultores registrar nuevos cultivos en el sistema, asegurando que los cultivos se agreguen correctamente a la lista de cultivos disponibles.
+
+Responsabilidades del Bounded Context:
+
+- Permitir a los agricultores registrar nuevos cultivos en la plataforma.
+- Almacenar los datos de los cultivos registrados de manera eficiente y confiable.
+- Añadir el nuevo cultivo a la lista de cultivos disponibles para su posterior gestión.
+- Ofrecer la opción de vincular el cultivo registrado con un plan de cultivo para su seguimiento y planificación.
 
 ![image](https://github.com/user-attachments/assets/a4483053-af9e-43b3-99f1-2644ed05a945)
 
@@ -110,44 +151,372 @@ Link de Miro: https://miro.com/welcomeonboard/YkswaDJnVWNVWVpaZlQ0cXQ2Y3FUR0hTTl
 ### 4.1.1.2 Domain Message Flows Modeling
 **Usuario**
 Scenario: El usuario desea iniciar sesión
+
+Explicación del proceso:
+
+- **Identificación de Actores:** Se comienza por identificar al usuario como el principal actor en este flujo de inicio de sesión. El sistema de autenticación (IAM) también es un actor clave que interactúa con los datos del usuario.
+
+
+**Definición de los eventos y mensajes clave:**
+
+- Ingreso de datos: El usuario ingresa sus credenciales (ID, email, password, role) en el sistema.
+- Envío de datos: Una vez ingresados, los datos se envían al sistema para su procesamiento.
+- Autenticación y validación de datos: Los datos son enviados al servicio de autenticación IAM, que valida la información (username y password).
+- Confirmación de autenticación: Tras la validación, IAM devuelve los datos autenticados si el proceso es exitoso.
+
+**Visualización del flujo:**
+- Se representa el flujo de mensajes entre el usuario, la aplicación web o móvil y el sistema IAM.
+- Cada paso en el proceso de inicio de sesión está acompañado de los datos clave involucrados en cada interacción.
+
+Explicación del escenario:
+
+El diagrama modela el proceso de inicio de sesión en una aplicación web o móvil, describiendo las interacciones y mensajes que se intercambian entre los distintos componentes del sistema.
+
+- El usuario ingresa sus credenciales: Esto incluye el nombre de usuario, correo electrónico, contraseña y rol.
+
+- Los datos son enviados al sistema de inicio de sesión: El sistema procesa los datos ingresados y los envía al servicio de autenticación IAM.
+
+- Autenticación de los datos: El servicio IAM recibe las credenciales y las valida. Si la información es correcta, se autentican los datos.
+
+- Validación y retorno de información autenticada: Una vez validados los datos, el sistema de autenticación devuelve una respuesta que indica si el usuario fue autenticado correctamente. Estos datos autenticados contienen la información relevante (ID, username, password y rol) que permite al usuario acceder a la aplicación.
+
 ![image](https://github.com/user-attachments/assets/c3b7edd2-10e6-4a3d-9477-a312e1e5f9bd)
 
 **Agricultor**
 Scenario: Agricultor desea crear un cultivo
+
+Explicación del proceso:
+
+**Actor Principal (Agricultor):**
+
+- El agricultor es quien interactúa con la aplicación web/móvil. El actor es representado en el diagrama como el punto de inicio del proceso.
+
+**Acción Inicial (Crear Cultivo):**
+
+- El agricultor inicia el proceso seleccionando la opción "Crear cultivo" en la interfaz de la aplicación. Esta acción es la primera interacción que desencadena el flujo de mensajes.
+- El agricultor puede visualizar un formulario para ingresar los detalles del cultivo.
+Llenado de Datos del Cultivo:
+
+**El agricultor proporciona los datos requeridos para el registro de su cultivo.** 
+Estos pueden incluir:
+
+- Nombre del cultivo.
+- Información sobre pesticidas o fertilizantes utilizados.
+- Días de riego, entre otros datos necesarios para la administración del cultivo.
+- Este paso se refleja en el segundo bloque del diagrama (2. Llenar datos del cultivo).
+
+**Proceso Interno en la Aplicación (Crop Registration):**
+
+- Una vez que los datos son ingresados, la aplicación web/móvil se comunica con un sistema de backend (representado por "Crop registration"). Este sistema valida y procesa la información proporcionada por el agricultor.
+- En esta etapa, se registra el cultivo en la base de datos, verificando que toda la información sea correcta.
+
+**Confirmación (Cultivo Creado):**
+
+- La aplicación confirma al agricultor que el cultivo ha sido creado con éxito, proporcionando un mensaje o actualización visual (Paso 3. Cultivos creados). El sistema puede devolver una lista de cultivos registrados, que el agricultor podrá revisar o actualizar en el futuro.
+
+**Listar Cultivos Registrados:**
+
+- El agricultor finalmente puede visualizar el cultivo recién registrado en la Página de lista de cultivos. Este es el último paso en el proceso donde el agricultor ve el resultado de la operación iniciada.
+
 ![image](https://github.com/user-attachments/assets/bfb1c762-d1a9-4f44-9656-68eb8c5be836)
 
 
 **Comerciante**
 Scenario: Comerciante desea comprar un cultivo
+
+Explicación de proceso:
+El comerciante es el usuario que inicia el proceso. Su objetivo es comprar un cultivo disponible en la plataforma.
+
+- **Buscar cultivos en venta:**
+El comerciante utiliza la aplicación web o móvil para buscar cultivos disponibles para la compra. El sistema le devuelve una lista de cultivos (identificados por id, products, merchantId).
+
+- **Elegir cultivo:**
+El comerciante selecciona uno de los cultivos listados. Este paso podría involucrar mostrar información detallada sobre el cultivo seleccionado, como precios y características.
+
+- **Pagar el cultivo:**
+Tras seleccionar un cultivo, el comerciante procede a realizar el pago. La aplicación toma los detalles del cultivo seleccionado y los datos del comerciante para procesar la compra.
+
+- **Enviar datos del pago:**
+Los datos del cultivo y del comerciante se envían a un servicio externo de pago, representado en el diagrama como "Shopping". Esta interacción representa la comunicación entre la aplicación y un sistema externo encargado de procesar la transacción.
+
+- **Confirmación de pago realizado:**
+El sistema de pago confirma que la transacción ha sido completada exitosamente y notifica tanto al sistema como al comerciante. El diagrama lo representa como el evento "Pago realizado".
+
+- **Confirmación visual del pago:**
+Finalmente, el comerciante recibe una confirmación en la aplicación, donde puede ver los detalles de la transacción completada (id, date, image_url, unit_price, name). Esta es una confirmación visual dentro de la plataforma que asegura al comerciante que el proceso se completó correctamente.
+
+
 ![image](https://github.com/user-attachments/assets/7533142b-6314-4f14-8302-cd6a376d46d8)
 
 Link de Miro: https://miro.com/welcomeonboard/YkswaDJnVWNVWVpaZlQ0cXQ2Y3FUR0hTTlBmMW1BUWNUTzBRa0tqTG1kOXlEaGRvbFJ5UmpuTmNzdWk1VE4xNHwzMDc0NDU3MzU3NDk3MzU0NjE5fDI=?share_link_id=387833456347 
 
 ### 4.1.1.3 Bounded Context Canvases
 
-IAM:
+En esta sección, se detallan los criterios considerados en cada Bounded Context Canvases, herramienta que sirve para diseñar y documentar un solo bounded context, el proceso de diseño de cada uno se basó en la importancia que tiene para la solución IOT.
 
-![image](https://github.com/user-attachments/assets/f3c625c1-2a38-4091-a9da-718c705b2004)
+**Crop Registration:**
 
-Crop Registration:
+Explicación de diseño:
 
-![image](https://github.com/user-attachments/assets/74b2d39c-fdb2-4113-8b3c-1ed1418a9850)
+El diseño del bounded context se fundamenta en las interacciones esenciales para el agricultor. La funcionalidad central se centra en permitir el registro de cultivos y su posterior monitoreo, lo cual es un proceso fundamental para la plataforma Ayni. Las decisiones de diseño están alineadas con mantener este proceso eficiente y asegurarse de que los datos críticos se gestionen correctamente.
+
+La implementación como custom build asegura que el contexto esté profundamente adaptado a las necesidades específicas del negocio agrícola, mientras que el rol de compliance enforcer garantiza que los usuarios cumplan con las reglas definidas para la gestión de cultivos.
+
+1. **Propósito (Purpose)**:
+   El objetivo principal del contexto es la **funcionalidad de registro y edición de cultivos** y sus detalles, proporcionando a los agricultores la capacidad de crear y mantener información sobre sus cultivos dentro de la plataforma.
+
+2. **Clasificación Estratégica (Strategic Classification)**:
+   - **Dominio:** El contexto es parte del dominio **Core** ya que el registro de cultivos es esencial para el modelo de negocio de la plataforma agrícola.
+   - **Modelo de Negocio:** Actúa como un **compliance enforcer** ya que asegura que los cultivos cumplan con las políticas y regulaciones internas.
+   - **Evolución:** La solución se clasifica como **custom build**, lo que significa que ha sido diseñada específicamente para ajustarse a los requisitos del negocio, personalizando el proceso de registro de cultivos.
+
+3. **Roles del Dominio (Domain Roles)**:
+   El tipo de rol que este contexto juega es **Execution Context**, donde los usuarios interactúan directamente con el sistema para completar sus tareas de registro y edición de cultivos.
+
+4. **Comunicación Entrante (Inbound Communication)**:
+   - El principal colaborador es el **agricultor**, quien interactúa con el sistema enviando solicitudes para registrar nuevos cultivos o modificar los existentes.
+   - Mensajes clave incluyen: 
+     - **Crop register request**
+     - **Post crop**
+     - **Form sent**
+
+5. **Comunicación Saliente (Outbound Communication)**:
+   - El sistema responde confirmando las acciones tomadas por el agricultor con mensajes como:
+     - **Crop confirmed**
+     - **Details confirmed**
+     - Además de mensajes que permiten visualizar los cultivos registrados: **Show crop** y **Show details**.
+   - Esta información es enviada al **Frontend**, lo que facilita la interacción con el usuario final.
+
+6. **Lenguaje Ubicuo (Ubiquitous Language)**:
+   - Definición clara de los términos dentro del dominio:
+     - **Crop:** Objeto que se crea cuando el usuario registra un cultivo.
+     - **Product Details:** Son los detalles del cultivo cuando se publica una venta.
+     - **Crop Details:** Son los detalles específicos del cultivo como tipo de planta, tiempo de vida, etc.
+
+7. **Decisiones de Negocio (Business Decisions)**:
+   - Algunas de las reglas claves de negocio incluyen:
+     - Un usuario con un ID único puede ver solo sus propios cultivos.
+     - Solo el usuario agricultor puede crear, ver y editar cultivos.
+
+8. **Suposiciones (Assumptions)**:
+   - Los usuarios agricultores deben crear un cultivo para luego hacer una planificación.
+   - Los usuarios pueden publicar productos en venta siempre y cuando tengan una planificación.
+   - Los usuarios pueden crear varios cultivos.
+
+9. **Métricas de Verificación (Verification Metrics)**:
+   - El principal criterio de éxito es la **cantidad de cultivos creados en la plataforma**, que servirá para medir el uso y efectividad del sistema.
 
 
+![image](https://github.com/user-attachments/assets/c1605e83-dc86-437a-9b94-ace570e8d4af)
 
-Planification:
+---
+
+**Planification:**
+
+El diseño del bounded context se enfoca en ofrecer una solución personalizada para la planificación agrícola. Al ser parte del dominio Core, el éxito del negocio depende directamente de la capacidad de los agricultores para planificar sus cultivos. La personalización (custom build) de esta solución permite una adaptación a las necesidades agrícolas, y el sistema asegura el cumplimiento de las reglas establecidas. La interacción con el frontend facilita una experiencia fluida para los agricultores al gestionar sus planes.
+
+1. **Propósito (Purpose)**:
+   El contexto está diseñado para manejar la **funcionalidad de planificación de cultivos**, permitiendo a los agricultores crear planes detallados relacionados con el manejo de sus cultivos, estableciendo acciones y plazos para optimizar la producción.
+
+2. **Clasificación Estratégica (Strategic Classification)**:
+   - **Dominio:** El contexto es parte del dominio **Core** ya que la planificación es crucial para el éxito de la gestión de cultivos.
+   - **Modelo de Negocio:** Funciona como un **compliance enforcer** asegurando que los planes de cultivo cumplan con los estándares establecidos.
+   - **Evolución:** Clasificado como **custom build** porque la planificación de cultivos está adaptada a las necesidades específicas del negocio agrícola.
+  
+3. **Roles del Dominio (Domain Roles)**:
+   El contexto actúa bajo el rol de **Execution Context**, donde los agricultores interactúan directamente con el sistema para establecer y gestionar planes para sus cultivos.
+
+4. **Comunicación Entrante (Inbound Communication)**:
+   - El principal colaborador es el **agricultor**, quien envía solicitudes para crear o editar planes de cultivo.
+   - Los mensajes clave son:
+     - **Planification request**
+     - **Post plans**
+     - **Form sent**
+
+5. **Comunicación Saliente (Outbound Communication)**:
+   - El sistema responde confirmando la creación o modificación de planes con mensajes como:
+     - **Plan confirmed**
+     - **Crop confirmed**
+     - También se incluye la visualización de los planes: **Show plan**
+   - Esta información es enviada al **Frontend**, donde los usuarios pueden ver y gestionar sus planes de cultivo.
+
+6. **Lenguaje Ubicuo (Ubiquitous Language)**:
+   - Se define un lenguaje claro dentro del dominio:
+     - **Planification:** Es el proceso de planificación relacionada a los cultivos.
+     - **Schedule:** Rango de días en los que se realizarán las acciones relacionadas con los cultivos.
+
+7. **Decisiones de Negocio (Business Decisions)**:
+   - Algunas reglas de negocio importantes son:
+     - Solo el usuario agricultor puede crear planificaciones para sus cultivos.
+     - Solo se puede hacer un plan con un cultivo existente.
+
+8. **Suposiciones (Assumptions)**:
+   - Los planes admiten distintos detalles del cultivo.
+   - Los planes deben ser la base de funcionamiento de los sensores y actuadores en la plataforma.
+
+9. **Métricas de Verificación (Verification Metrics)**:
+   - El éxito del contexto se medirá por la **cantidad de planes realizados en la plataforma**, asegurando que los usuarios están utilizando la funcionalidad de planificación de manera efectiva.
 
 ![image](https://github.com/user-attachments/assets/595a98dc-25ad-496b-81b3-0a33c834b936)
 
+---
 
-Monitoring:
+**Monitoring:**
 
-![image](https://github.com/user-attachments/assets/20b0128e-4088-4897-9508-9d4cf728638f)
+El diseño del bounded context de Monitoring se enfoca en el seguimiento continuo y en tiempo real de los cultivos, asegurando que el agricultor pueda reaccionar rápidamente a cualquier cambio en las condiciones del cultivo. Al ser parte del dominio Core, su rol es vital en la gestión agrícola. El sistema facilita la integración con sensores y actuadores, mientras que el Frontend provee al agricultor con información crítica y fácil de interpretar para tomar decisiones en el momento adecuado.
+
+1. **Propósito (Purpose)**:
+   El contexto está diseñado para manejar la **funcionalidad de control, planificación y registro de cultivos**, permitiendo monitorear y registrar información de los cultivos a través de sensores y actuadores.
+
+2. **Clasificación Estratégica (Strategic Classification)**:
+   - **Dominio:** Este contexto pertenece al dominio **Core**, ya que el monitoreo en tiempo real es crucial para la efectividad del sistema de gestión de cultivos.
+   - **Modelo de Negocio:** Funciona como un **compliance enforcer**, garantizando que las acciones de monitoreo y control se realicen siguiendo los procedimientos predefinidos.
+   - **Evolución:** Es clasificado como **custom build** debido a la necesidad de personalización según las características y requisitos de los cultivos en diferentes situaciones.
+
+3. **Roles del Dominio (Domain Roles)**:
+   Este contexto actúa en el rol de **Execution Context**, donde se ejecuta el monitoreo constante y se reportan los estados de los sensores y actuadores al sistema y al usuario.
+
+4. **Comunicación Entrante (Inbound Communication)**:
+   - El **agricultor** es el colaborador clave que solicita información del dashboard.
+   - Los mensajes principales son:
+     - **Watch dashboard request**
+     - **Get information from sensors**
+     - **Form sent**
+
+5. **Comunicación Saliente (Outbound Communication)**:
+   - El sistema responde enviando la información monitoreada a través de mensajes como:
+     - **Information obtained**
+     - **New dashboard confirmed**
+     - Además de la visualización de la información en el dashboard con **Show Dashboard**.
+   - Estos datos se presentan en el **Frontend** para facilitar la interpretación y acción por parte del usuario.
+
+6. **Lenguaje Ubicuo (Ubiquitous Language)**:
+   - **Sensor:** Dispositivo que monitorea y controla diferentes aspectos del negocio, en este caso los terrenos de cultivo.
+   - **Actuator:** Dispositivo encargado de ejecutar tareas con base en condiciones establecidas.
+   - **Base plan:** Los sensores y actuadores trabajan según el plan creado previamente por el agricultor.
+
+7. **Decisiones de Negocio (Business Decisions)**:
+   - Reglas importantes dentro de este contexto incluyen:
+     - Solo el usuario agricultor puede crear cultivos y planificaciones.
+     - Los sensores y actuadores responden a las acciones predeterminadas del plan.
+
+8. **Suposiciones (Assumptions)**:
+   - Los sensores deben estar conectados a un dispositivo central que enviará la información a la plataforma.
+   - Los sensores y actuadores serán codificados en una **Edge API IoT** para facilitar la integración con la plataforma.
+
+9. **Métricas de Verificación (Verification Metrics)**:
+   - El éxito del sistema se medirá por la **cantidad de notificaciones de sensores recibidas**, asegurando que los datos son monitoreados correctamente y reportados al agricultor a través del dashboard.
 
 
-Shopping: 
+![image](https://github.com/user-attachments/assets/0f9bb4f0-5a3d-47a1-b81f-53b5cc6896c7)
+
+---
+
+**Shopping:**
+
+ElBounded Context Canvas presentado se enfoca en el contexto de un sistema de "compra y venta de cultivos", donde se analizan distintos aspectos clave para el diseño del dominio.
+
+1. **Propósito (Purpose)**:
+   El contexto está diseñado para manejar la **funcionalidad de compra y venta de cultivos**, cubriendo las necesidades de ambos segmentos: vendedores y compradores de cultivos.
+
+2. **Clasificación Estratégica (Strategic Classification)**:
+   - **Dominio:** Este contexto pertenece al dominio **Core**, ya que la compra y venta de cultivos es una parte esencial del negocio.
+   - **Modelo de Negocio:** Funciona como un **compliance enforcer**, garantizando que las transacciones de compra y venta se realicen conforme a las normativas del negocio.
+   - **Evolución:** Se clasifica como **custom build**, debido a la necesidad de personalizar el sistema según las necesidades específicas de los usuarios en el mercado de cultivos.
+
+3. **Roles del Dominio (Domain Roles)**:
+   Este contexto actúa en el rol de **Execution Context**, manejando la ejecución de las transacciones de compra y venta de cultivos entre los usuarios, tanto vendedores como compradores.
+
+4. **Comunicación Entrante (Inbound Communication)**:
+   - El **comerciante** es el colaborador clave que interactúa con el sistema.
+   - Los mensajes principales que envía son:
+     - **Pay attendance**: Confirmación de pago.
+     - **Post sales**: Publicación de ventas.
+     - **Form sent**: Formulario enviado.
+     - **Rate attendance**: Valoración de asistencia.
+     - **Post rate**: Publicación de calificación.
+
+5. **Comunicación Saliente (Outbound Communication)**:
+   - El sistema responde enviando mensajes tanto al colaborador clave como al **Frontend**. Algunos mensajes clave son:
+     - **Rate confirmed**: Confirmación de la valoración.
+     - **Payment confirmed**: Confirmación del pago.
+     - **Show confirmation**: Mostrar confirmación al usuario.
+     - **Show rates**: Mostrar las calificaciones de los productos o ventas.
+
+6. **Lenguaje Ubicuo (Ubiquitous Language)**:
+   - **Producto:** Cultivo que se ofrece para la venta.
+   - **Ventas:** La transacción de venta vinculada al producto.
+   - **Orden:** La orden finalizada asociada a una venta concreta.
+
+7. **Decisiones de Negocio (Business Decisions)**:
+   - Reglas importantes dentro de este contexto incluyen:
+     - Un usuario puede tener varias ventas publicadas.
+     - Cada venta está vinculada a un producto específico.
+     - Cada orden corresponde a una transacción finalizada.
+
+8. **Suposiciones (Assumptions)**:
+   - Los usuarios son libres de elegir qué productos comprar.
+   - Deben realizar un pago a través de una pasarela para concretar la compra.
+   - Los cultivos que se muestran deben ser publicados primero por los agricultores.
+
+9. **Métricas de Verificación (Verification Metrics)**:
+   - Cantidad de usuarios que realizan una venta al día.
+   - Cantidad de usuarios que publican cultivos a la venta diariamente.
+
 
 ![image](https://github.com/user-attachments/assets/3af24e41-68bf-4e32-a92b-7c23cf036600)
+
+---
+
+**IAM:**
+
+1. **Propósito (Purpose)**:
+   Este contexto está diseñado para manejar la **autenticación de usuarios** según su tipo de cuenta. Los usuarios pueden crear un perfil, registrarse en la plataforma y autenticarse.
+
+2. **Clasificación Estratégica (Strategic Classification)**:
+   - **Dominio:** Este contexto pertenece al dominio **Generic**, ya que la autenticación de usuarios es una funcionalidad estándar en muchas plataformas.
+   - **Modelo de Negocio:** Funciona como un **compliance enforcer**, asegurando que el proceso de autenticación y registro de usuarios siga las normativas y procedimientos definidos.
+   - **Evolución:** Se clasifica como **Commodity**, ya que es una funcionalidad comúnmente implementada en plataformas y no requiere un desarrollo altamente personalizado.
+
+3. **Roles del Dominio (Domain Roles)**:
+   Este contexto actúa como un **Execution Context**, donde se maneja la validación de las credenciales de los usuarios y la creación de cuentas.
+
+4. **Comunicación Entrante (Inbound Communication)**:
+   - El colaborador clave es el **Usuario**, quien interactúa con el sistema enviando los siguientes mensajes:
+     - **Log In**: Inicio de sesión mediante credenciales.
+     - **Sign In**: Registro de usuario.
+     - **Post Account Info**: Envío de la información de la cuenta.
+     - **Form Sent**: Formulario enviado con los datos del usuario.
+
+5. **Comunicación Saliente (Outbound Communication)**:
+   - El sistema responde enviando mensajes al **Frontend** y a otros colaboradores como el **IAM**:
+     - **User validation**: Validación del usuario.
+     - **Get credentials info**: Obtención de las credenciales del usuario.
+     - **Account created**: Confirmación de la creación de la cuenta.
+     - **Account logged**: Confirmación del inicio de sesión.
+     - **Data saved**: Datos guardados exitosamente.
+
+6. **Lenguaje Ubicuo (Ubiquitous Language)**:
+   - **Log In:** El proceso de ingresar credenciales (correo electrónico y contraseña) para acceder al sistema.
+   - **Sign Up:** El proceso de registrar una nueva cuenta, incluyendo la creación de credenciales.
+   - **Account:** El perfil o cuenta de un usuario, que contiene su información personal.
+   - **Validation:** Proceso de verificación de las credenciales para asegurar que sean correctas.
+
+7. **Decisiones de Negocio (Business Decisions)**:
+   - Las reglas importantes dentro de este contexto incluyen:
+     - Cada cuenta debe estar vinculada a un único usuario.
+     - Los datos de la cuenta se deben guardar correctamente para permitir la autenticación futura.
+
+8. **Suposiciones (Assumptions)**:
+   - Lo primero que debe hacer el usuario para utilizar la plataforma es iniciar sesión (Log In) o registrarse (Sign Up).
+   - La plataforma debe almacenar los datos del usuario y la autenticación se realiza mediante correo electrónico y contraseña.
+
+9. **Métricas de Verificación (Verification Metrics)**:
+   - Cantidad de usuarios que ingresan a la app diariamente.
+
+![image](https://github.com/user-attachments/assets/f3c625c1-2a38-4091-a9da-718c705b2004)
+
+Link de Miro: https://miro.com/welcomeonboard/YkswaDJnVWNVWVpaZlQ0cXQ2Y3FUR0hTTlBmMW1BUWNUTzBRa0tqTG1kOXlEaGRvbFJ5UmpuTmNzdWk1VE4xNHwzMDc0NDU3MzU3NDk3MzU0NjE5fDI=?share_link_id=387833456347 
 
 
 
@@ -189,14 +558,14 @@ A continuación, se muestra los diagramas C4 donde se expone la arquitectura de 
 
 Nuestra startup cuenta con un sistema de software Ayni(aplicación web y móvil) y cuenta con un sistema que maneja dispositivos IoT.
 
-![IOT drawiso](https://github.com/user-attachments/assets/b202f2fe-2cdd-4dd2-a030-aaf39619870c)
+![image](https://github.com/user-attachments/assets/a7e1193e-88b7-4311-b5d3-bc6fffb9026b)
 
 
 ### 4.1.3.2. Software Architecture Context Level Diagrams
 
 En la siguiente imagen se aprecia 2 usuarios que interactúan con el sistema, "Farmer" y "Merchant" son el segmetno objetivo. Además existe una dependencia a un sistema externo, EmailJS.
 
-![IOT drazxcio](https://github.com/user-attachments/assets/80dbd09a-c3ed-4cd3-8694-8e22b1ee2c7e)
+![image](https://github.com/user-attachments/assets/c1950481-9795-4402-b339-bf2ed0c58f69)
 
 
 
@@ -205,7 +574,7 @@ En la siguiente imagen se aprecia 2 usuarios que interactúan con el sistema, "F
 En la siguiente imagen se visualizan los contenedores, los cuales sirven para dividr el sistema de la aplicación.
 
 
-![image](https://github.com/user-attachments/assets/01001759-c84f-4e7c-93df-4f6d64d35f19)
+![image](https://github.com/user-attachments/assets/751fc70f-c1b5-4a7d-ab07-083875a1b004)
 
 
 
@@ -213,6 +582,7 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 ### 4.1.3.3. Software Architecture Deployment Diagrams
 
 ![image](https://github.com/user-attachments/assets/1e05d0a9-5a3b-4016-b43f-ec71a56d6e66)
+
 
 
 
@@ -1025,4 +1395,3 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 #### 4.2.5.7.2. Bounded Context Database Design Diagram
 
 ![image](https://github.com/user-attachments/assets/305633b9-6f93-4cf5-8711-8950ff5ddf92)
-
