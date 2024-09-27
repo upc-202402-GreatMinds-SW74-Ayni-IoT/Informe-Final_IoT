@@ -1246,19 +1246,105 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 ## 4.2.5. Bounded Context: Monitoring
 ### 4.2.5.1. Domain Layer
 
-<table> <tr> <td colspan="4" align="center">Aggregate</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>Sensor</td> <td>Entity/Aggregate</td> <td colspan="2">Representación de un sensor IoT para monitorear datos del terreno.</td> </tr> <tr> <td>Actuator</td> <td>Entity/Aggregate</td> <td colspan="2">Representación de un actuador IoT para realizar acciones automáticas en base a los datos monitoreados.</td> </tr> <tr> <td colspan="4" align="center">Atributos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>id</td> <td>Long</td> <td>Private</td> <td>Identificador único del sensor o actuador.</td> </tr> <tr> <td>dataValue</td> <td>String</td> <td>Private</td> <td>Valor de datos medido por el sensor (ej. temperatura).</td> </tr> <tr> <td>timestamp</td> <td>String</td> <td>Private</td> <td>Fecha y hora de la medición realizada por el sensor.</td> </tr> <tr> <td>status</td> <td>String</td> <td>Private</td> <td>Estado del actuador (ej. activado/desactivado).</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>CollectDailyData</td> <td>SensorData</td> <td>Public</td> <td>Recolectar datos diarios de los sensores.</td> </tr> <tr> <td>ActivateActuator</td> <td>void</td> <td>Public</td> <td>Activar un actuador basado en condiciones del terreno.</td> </tr> <tr> <td>DeactivateActuator</td> <td>void</td> <td>Public</td> <td>Desactivar un actuador.</td> </tr> </table>
+| **Aggregate**: `Sensor`                                                                                        |
+|-------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa un sensor IoT para monitorear datos del terreno.    |
+
+| **Atributos**                                | **Tipo de dato** | **Visibilidad** | **Descripción**                                                                                           |
+|----------------------------------------------|------------------|-----------------|-----------------------------------------------------------------------------------------------------------|
+| `id`                                         | `Long`           | `Private`       | Identificador único del sensor o actuador.                                                                 |
+| `dataValue`                                  | `String`         | `Private`       | Valor de datos medido por el sensor (ej. temperatura).                                                     |
+| `timestamp`                                  | `String`         | `Private`       | Fecha y hora de la medición realizada por el sensor.                                                       |
+
+| **Métodos**                                  | **Tipo de retorno** | **Visibilidad** | **Descripción**                                                                                           |
+|----------------------------------------------|---------------------|-----------------|-----------------------------------------------------------------------------------------------------------|
+| `CollectDailyData()`                         | `SensorData`         | `Public`        | Recolecta datos diarios de los sensores.                                                                  |
+
+
+| **Aggregate**: `Actuator`                                                                                        |
+|-------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa un actuador IoT para realizar acciones automáticas. |
+
+| **Atributos**                                | **Tipo de dato** | **Visibilidad** | **Descripción**                                                                                           |
+|----------------------------------------------|------------------|-----------------|-----------------------------------------------------------------------------------------------------------|
+| `id`                                         | `Long`           | `Private`       | Identificador único del sensor o actuador.                                                                 |
+| `status`                                     | `String`         | `Private`       | Estado del actuador (ej. activado/desactivado).                                                            |
+
+| **Métodos**                                  | **Tipo de retorno** | **Visibilidad** | **Descripción**                                                                                           |
+|----------------------------------------------|---------------------|-----------------|-----------------------------------------------------------------------------------------------------------|
+| `ActivateActuator()`                         | `void`               | `Public`        | Activa un actuador basado en las condiciones del terreno.                                                  |
+| `DeactivateActuator()`                       | `void`               | `Public`        | Desactiva un actuador.                                                                                     |
+
 
 ### 4.2.5.2. Interface Layer
 
-<table> <tr> <td colspan="4" align="center">Controller</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>MonitoringController</td> <td>Controller</td> <td colspan="2">Controlador para la gestión de sensores y actuadores IoT.</td> </tr> <tr> <td colspan="4" align="center">Atributos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>SensorQueryService</td> <td>sensorQueryService</td> <td>Private</td> <td>Servicio de consulta de sensores.</td> </tr> <tr> <td>ActuatorCommandService</td> <td>actuatorCommandService</td> <td>Private</td> <td>Servicio de comandos para actuadores.</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>getDailySensorData</td> <td>List<SensorData></td> <td>Public</td> <td>Obtener datos diarios de sensores.</td> </tr> <tr> <td>activateActuator</td> <td>void</td> <td>Public</td> <td>Activar un actuador basado en los datos recolectados.</td> </tr> <tr> <td>deactivateActuator</td> <td>void</td> <td>Public</td> <td>Desactivar un actuador.</td> </tr> </table>
+| **Controller** `MonitoringController`                                                                                             |
+|------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador para la gestión de sensores y actuadores IoT.                                   |
+
+| **Atributos**                              | **Tipo de dato**           | **Visibilidad** | **Descripción**                                 |
+|--------------------------------------------|----------------------------|-----------------|-------------------------------------------------|
+| `SensorQueryService`                      | `sensorQueryService`      | `Private`       | Servicio de consulta de sensores.                |
+| `ActuatorCommandService`                  | `actuatorCommandService`  | `Private`       | Servicio de comandos para actuadores.            |
+
+| **Métodos**                                | **Tipo de retorno**       | **Visibilidad** | **Descripción**                                 |
+|--------------------------------------------|----------------------------|-----------------|-------------------------------------------------|
+| `getDailySensorData()`                     | `List<SensorData>`        | `Public`        | Obtiene datos diarios de sensores.               |
+| `activateActuator()`                       | `void`                     | `Public`        | Activa un actuador basado en los datos recolectados. |
+| `deactivateActuator()`                     | `void`                     | `Public`        | Desactiva un actuador.                           |
+
 
 ### 4.2.5.3. Application Layer
 
-<table> <tr> <td colspan="4" align="center">Service</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>SensorQueryService</td> <td>Service</td> <td colspan="2">Servicio para consultas de datos de sensores.</td> </tr> <tr> <td>ActuatorCommandService</td> <td>Service</td> <td colspan="2">Servicio para ejecutar comandos de actuadores.</td> </tr> <tr> <td colspan="4" align="center">Atributos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>SensorRepository</td> <td>sensorRepository</td> <td>Private</td> <td>Repositorio de datos de sensores.</td> </tr> <tr> <td>ActuatorRepository</td> <td>actuatorRepository</td> <td>Private</td> <td>Repositorio de actuadores.</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>existById</td> <td>Boolean</td> <td>Public</td> <td>Método para validar la existencia de un sensor o actuador por ID.</td> </tr> <tr> <td>findById</td> <td>Sensor/Actuator</td> <td>Public</td> <td>Método para obtener un sensor o actuador por ID.</td> </tr> </table>
+| **Service** `SensorQueryService`                                                                                             |
+|--------------------------------------------------------------------------------------------------------|
+| **Descripción**: Servicio para consultas de datos de sensores.                                           |
+
+| **Atributos**                           | **Tipo de dato**           | **Visibilidad** | **Descripción**                                 |
+|-----------------------------------------|----------------------------|-----------------|-------------------------------------------------|
+| `SensorRepository`                     | `sensorRepository`        | `Private`       | Repositorio de datos de sensores.                |
+
+| **Métodos**                             | **Tipo de retorno**       | **Visibilidad** | **Descripción**                                 |
+|-----------------------------------------|----------------------------|-----------------|-------------------------------------------------|
+| `existById`                            | `Boolean`                 | `Public`        | Método para validar la existencia de un sensor por ID. |
+| `findById`                             | `Sensor`                  | `Public`        | Método para obtener un sensor por ID.           |
+
+
+
+| **Service** `ActuatorCommandService`                                                                                             |
+|--------------------------------------------------------------------------------------------------------|
+| **Descripción**: Servicio para ejecutar comandos de actuadores.                                           |
+
+| **Atributos**                           | **Tipo de dato**           | **Visibilidad** | **Descripción**                                 |
+|-----------------------------------------|----------------------------|-----------------|-------------------------------------------------|
+| `ActuatorRepository`                   | `actuatorRepository`      | `Private`       | Repositorio de actuadores.                       |
+
+| **Métodos**                             | **Tipo de retorno**       | **Visibilidad** | **Descripción**                                 |
+|-----------------------------------------|----------------------------|-----------------|-------------------------------------------------|
+| `existById`                            | `Boolean`                 | `Public`        | Método para validar la existencia de un actuador por ID. |
+| `findById`                             | `Actuator`                | `Public`        | Método para obtener un actuador por ID.         |
+
 
 ### 4.2.5.4. Infrastructure Layer
 
-<table> <tr> <td colspan="4" align="center">Repository</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>SensorRepository</td> <td>Repository</td> <td colspan="2">Repositorio de sensores.</td> </tr> <tr> <td>ActuatorRepository</td> <td>Repository</td> <td colspan="2">Repositorio de actuadores.</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>findSensorById</td> <td>Sensor</td> <td>Public</td> <td>Método para obtener un sensor por su ID.</td> </tr> <tr> <td>findActuatorById</td> <td>Actuator</td> <td>Public</td> <td>Método para obtener un actuador por su ID.</td> </tr> </table>
+| **Repository** `SensorRepository`                                                                                         |
+|--------------------------------------------------------------------------------------------------------|
+| **Descripción**: Repositorio de sensores.                                                                |
+
+| **Métodos**                                | **Tipo de retorno**     | **Visibilidad** | **Descripción**                                 |
+|---------------------------------------------|--------------------------|-----------------|-------------------------------------------------|
+| `findSensorById`                          | `Sensor`                 | `Public`        | Método para obtener un sensor por su ID.       |
+
+---
+
+| **Repository** `ActuatorRepository`                                                                                          |
+|--------------------------------------------------------------------------------------------------------|
+| **Descripción**: Repositorio de actuadores.                                                              |
+
+| **Métodos**                                | **Tipo de retorno**     | **Visibilidad** | **Descripción**                                 |
+|---------------------------------------------|--------------------------|-----------------|-------------------------------------------------|
+| `findActuatorById`                        | `Actuator`               | `Public`        | Método para obtener un actuador por su ID.     |
+
 
 ### 4.2.5.6. Bounded Context Software Architecture Component Level Diagrams
 
