@@ -1,4 +1,3 @@
-
 # 4.1. Strategic-Level Domain-Driven Design
 ## 4.1.1. EventStorming
 
@@ -571,8 +570,16 @@ En la siguiente imagen se aprecia 2 usuarios que interactúan con el sistema, "F
 
 ### 4.1.3.2. Software Architecture Container Level Diagrams
 
-En la siguiente imagen se visualizan los contenedores, los cuales sirven para dividr el sistema de la aplicación.
 
+El diagrama de contexto muestra un sistema de monitoreo y compra/venta de cultivos llamado Ayni, donde interactúan dos tipos de usuarios: Merchant (comerciante) y Farmer (agricultor). El Merchant puede realizar compras de cultivos de calidad, mientras que el Farmer se encarga de gestionar y mejorar sus cultivos.
+
+El Farmer utiliza diferentes interfaces para interactuar con el sistema, tales como una Landing Page (hecha en HTML/CSS), una Aplicación Móvil (con Flutter/Dart) y una Aplicación Web. Estas interfaces le permiten crear, monitorear y publicar cultivos. El Merchant accede principalmente a través de una Web App (Java y Spring MVC) y una Aplicación de Página Única (con JavaScript y Angular), que le permiten visualizar cultivos y realizar compras.
+
+El sistema se soporta en varias capas de infraestructura tecnológica. Hay una Aplicación Web API (con SpringBoot Java) que actúa como intermediaria entre las aplicaciones de usuario y otras capas del sistema. Esta aplicación maneja llamadas API que son procesadas por una Aplicación de Edge API (también en SpringBoot), que a su vez se comunica con una base de datos MySQL. También existe una Aplicación IoT embebida (en C++) que procesa información desde dispositivos IoT y la envía al resto del sistema.
+
+Adicionalmente, el sistema se conecta a servicios externos como Email JS (para mensajería) y Niubiz (para pasarela de pago).
+
+En resumen, el diagrama representa un sistema distribuido que integra diferentes interfaces y tecnologías para monitorear y comercializar cultivos, con soporte para pagos y notificaciones.
 
 ![image](https://github.com/user-attachments/assets/751fc70f-c1b5-4a7d-ab07-083875a1b004)
 
@@ -580,6 +587,24 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 
 
 ### 4.1.3.3. Software Architecture Deployment Diagrams
+
+El diagrama describe el despliegue de un sistema distribuido, que incluye diferentes aplicaciones front-end, back-end y bases de datos, organizadas según sus nodos de despliegue. Los componentes principales son:
+
+Aplicación Móvil (Flutter/Dart): Se despliega en el dispositivo móvil del cliente (ya sea iOS o Android). La aplicación hace llamadas API (JSON/HTTP) para interactuar con el backend.
+
+Aplicación de Página Única (JavaScript/Angular): Ejecutada en el navegador web del cliente (Chrome, Firefox, Safari, Edge), también realiza llamadas API (JSON/HTTP) para conectarse con el sistema.
+
+Aplicación Web (Java y Spring MVC): Desplegada en Netlify, sirve a los clientes a través del navegador, entregando contenido web.
+
+Aplicación Web API (SpringBoot Java): Desplegada en Zeabur, actúa como intermediario entre las aplicaciones de cliente (móvil y web) y la base de datos. Esta aplicación realiza lecturas y escrituras a la base de datos mediante protocolos SQL/TCP.
+
+Aplicación Embebida IoT (C++): Desplegada en Cloud Azure, procesa y envía información relevante al sistema a través de las API.
+
+Aplicación Edge API (SpringBoot): También desplegada en Cloud Azure, esta aplicación recibe información de la aplicación IoT y la envía a la base de datos mediante llamadas SQL.
+
+Bases de Datos MySQL: Existen dos bases de datos principales. Una es la base de datos central que maneja la Web API, y la otra es una base de datos para la Edge API. Ambas están desplegadas en Railway y usan MySQL para almacenar y recuperar datos mediante conexiones SQL.
+
+Este diagrama ilustra la arquitectura distribuida del sistema, donde diferentes componentes están desplegados en nodos en la nube (Netlify, Zeabur, Azure, Railway) y se comunican entre sí utilizando APIs y protocolos SQL, manteniendo la interoperabilidad entre las aplicaciones cliente y las bases de datos backend.
 
 ![image](https://github.com/user-attachments/assets/1e05d0a9-5a3b-4016-b43f-ec71a56d6e66)
 
@@ -589,6 +614,10 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 # 4.2. Tactical-Level Domain-Driven Design
 ## 4.2.1. Bounded Context: IAM
 ### 4.2.1.1. Domain Layer
+
+La capa de dominio es el núcleo de la aplicación, donde residen las reglas de negocio y los modelos esenciales que definen la lógica del sistema. En este caso, el Aggregate "User" representa la entidad principal que define a los usuarios del sistema, incluidas sus propiedades y métodos. Esta capa se asegura de que los conceptos empresariales y sus interacciones estén correctamente modelados y encapsulados. 
+
+Propósito: Modelar las entidades del negocio, incluyendo atributos y comportamientos necesarios para representar de forma fiel los conceptos de la aplicación, como usuarios, productos, transacciones, etc.
 
 | **Aggregate**: `User`                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------------|
@@ -657,6 +686,10 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 
 ### 4.2.1.2. Interface Layer
 
+Esta capa actúa como un punto de entrada para la interacción entre los usuarios del sistema y los servicios que se ofrecen. Los controladores (Controllers) son los componentes clave de esta capa, que gestionan las solicitudes entrantes y devuelven las respuestas adecuadas. En este caso, los controladores de autenticación y de usuarios gestionan el flujo de autenticación y el acceso a los recursos de usuario.
+
+Propósito: Exponer los endpoints (APIs) para que los usuarios o sistemas interactúen con la lógica del negocio. Esta capa no contiene lógica de negocio, sino que se centra en orquestar las llamadas a servicios o a la capa de dominio.
+
 | **Controlador**: `AuthController`                                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------|
 | **Descripción**: Controlador que maneja los endpoints relacionados con la autenticación de usuarios.                  |
@@ -691,7 +724,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `GetUserByIdQuery`                          | Consulta que se utiliza para obtener un usuario específico por su ID.                          |
 | `UserResourceFromEntityAssembler`           | Utilidad para convertir las entidades de usuario en recursos que se envían en la respuesta.     |
 
+
 ### 4.2.1.3. Application Layer
+
+La capa de aplicación es responsable de coordinar las operaciones de negocio y ejecutar la lógica que controla el flujo de datos entre las capas de infraestructura y dominio. En esta capa residen los servicios que gestionan tanto los comandos como las consultas relacionadas con los usuarios, encapsulando las reglas de negocio en torno a estos procesos.
+
+Propósito: Proveer los servicios que implementan la lógica de negocio aplicada, orquestando las interacciones entre el repositorio (capa de infraestructura) y las entidades del dominio. Aquí se realizan las validaciones de negocio y otras operaciones complejas antes de interactuar con la capa de dominio o infraestructura.
 
 | **Servicio**: `UserCommandServiceImpl`                                                                                     |
 |--------------------------------------------------------------------------------------------------------------------------|
@@ -729,7 +767,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `GetUserByIdQuery`                       | Consulta que encapsula la información necesaria para buscar un usuario por su ID.                                     |
 | `GetAllUsersQuery`                       | Consulta que encapsula la información necesaria para obtener todos los usuarios registrados.                          |
 
+
 ### 4.2.1.4. Infrastructure Layer
+
+La capa de infraestructura se encarga de la interacción con fuentes externas de datos, como bases de datos, APIs de terceros, o cualquier recurso que esté fuera del ámbito de la lógica de negocio del sistema. En este caso, el UserRepository es el responsable de la persistencia de los datos del usuario, proporcionando métodos para validar la existencia de un usuario y buscar usuarios en la base de datos.
+
+Propósito: Implementar la lógica de acceso a datos y garantizar que el sistema pueda interactuar con fuentes externas de forma eficiente. Esta capa contiene los repositorios que manejan la persistencia de las entidades del dominio.
 
 | **Repositorio**: `UserRepository`                                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------|
@@ -752,22 +795,36 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 
 ### 4.2.1.6. Bounded Context Software Architecture Component Level Diagrams
 
+El diagrama representa una arquitectura monolítica de una aplicación API llamada "Ayni". La aplicación está dividida en componentes que interactúan entre sí: una SPA que realiza llamadas API a controladores para gestionar autenticación y obtener datos de usuarios. Los controladores, como el Auth Controller y Users Controller, delegan las operaciones de comandos y consultas a servicios como UserCommandService y UserQueryService, que interactúan con el UserRepository. El repositorio gestiona el acceso a la base de datos MySQL, encargada de almacenar los datos de los usuarios.
+
 ![structurizr-85725-Componente (1)](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/285030967-60a9a7b9-f81b-42f7-9082-7b85c6f66481.png)
 
 
 ### 4.2.1.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.1.7.1. Bounded Context Domain Layer Class Diagrams
 
-![image](https://github.com/user-attachments/assets/756ee8f2-a2c0-4d8b-95d1-69b36efe7740)
+En el diagrama de clases perteneciente al bounded context IAM, se tiene como aggregate a User, el cual se conforma por atributos básicos como id (de tipo Long), email, password y username (de tipo String). Este agregado proporciona métodos como getUsername(), getEmail() y getPassword() para acceder a esos datos.
+
+El agregado User se relaciona con dos interfaces: UserQueryService y UserCommandService. Estas interfaces abstraen las operaciones relacionadas con la consulta y los comandos sobre los usuarios. UserQueryService encapsula las consultas relacionadas con los usuarios, como la obtención de datos del usuario sin modificarlos. Por otro lado, UserCommandService está destinado a ejecutar acciones que modifican el estado del agregado, como actualizaciones o creación de usuarios.
+
+![image](https://github.com/user-attachments/assets/f44e6f3b-e721-4b04-8a7b-e388ac9e3d23)
+
 
 
 #### 4.2.1.7.2. Bounded Context Database Design Diagram
+
+
+El diagrama de base de datos muestra dos tablas principales en el bounded context "Iam" (Identity and Access Management): users y roles, relacionadas por una clave foránea. La tabla users contiene campos como id (clave primaria), email, password, username (todos de tipo varchar(50)), y role_id (tipo bigint), que es una clave foránea que referencia la tabla roles. La tabla roles tiene los campos id (clave primaria) y name (de tipo varchar(30)) para definir diferentes roles de usuario. Esta estructura sugiere un sistema de autenticación y autorización donde cada usuario tiene un rol específico que determina sus permisos dentro del sistema.
 
 ![image](https://github.com/user-attachments/assets/71c76fb2-c063-42d8-a7be-0c6cd55fa1a3)
 
 
 ## 4.2.2. Bounded Context: Shopping
 ### 4.2.2.1. Domain Layer
+
+Descripción: El Domain Layer es donde se define la lógica de negocio principal, encapsulando las reglas de negocio más importantes del sistema. Este nivel contiene las entidades y los agregados que representan objetos de dominio reales, y en este caso, la entidad principal es Order. Los agregados en esta capa permiten gestionar la consistencia y las operaciones de estas entidades.
+
+Justificación: La entidad Order representa las órdenes de compra en el sistema. Contiene atributos como el identificador único, el cliente que ordena, el encargado que la acepta, descripción, cantidad, fecha de la orden, y el precio total. Los métodos como updateDate, end, y qualify proporcionan las operaciones esenciales para manejar el ciclo de vida de una orden, permitiendo actualizaciones de estado y la gestión del flujo de trabajo de las órdenes, como si están pendientes, calificadas o finalizadas.
 
 | **Aggregate**: `Order`                                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------|
@@ -833,8 +890,96 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 |-----------------------------|--------------------------------------------------------------------------------------------------|
 | `Sale(String name, String description, Double unitPrice, Long quantity, String imageUrl, Long userId)` | Constructor que inicializa una nueva instancia de la entidad `Sale`. |
 
-
 ### 4.2.2.2. Interface Layer
+
+Descripción: El Interface Layer o capa de interfaz define cómo los usuarios o sistemas externos interactúan con el sistema. Aquí, los controladores reciben y gestionan las solicitudes HTTP, enviando la información adecuada a los servicios de aplicación.
+
+Justificación: El OrderController maneja las solicitudes relacionadas con las órdenes de compra, como la creación de nuevas órdenes mediante el método createOrder. Este controlador se apoya en los servicios OrderQueryService y OrderCommandService para consultar y ejecutar acciones sobre las órdenes, respetando las reglas de negocio definidas en el sistema. Este layer actúa como la entrada principal para interactuar con las órdenes, canalizando solicitudes a la capa de aplicación.
+
+| **Controlador**: `OrderController`                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que gestiona las operaciones relacionadas con los pedidos. Define los endpoints para la API.   |
+
+| **Método**                              | **Descripción**                                                                                                     |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `createOrder(CreateOrderResource resource)`    | Crea un nuevo pedido y devuelve el recurso del pedido creado con su ID.                                         |
+| `finalizeOrder(Long orderId)`          | Finaliza un pedido existente basado en su ID y devuelve el ID del pedido finalizado.                            |
+| `qualifyOrder(Long orderId)`           | Califica un pedido existente basado en su ID y devuelve el ID del pedido calificado.                             |
+| `getAllOrders()`                        | Recupera una lista de todos los pedidos registrados y los devuelve como recursos.                                |
+| `getOrderById(Long orderId)`           | Recupera un pedido específico por su ID y devuelve el recurso correspondiente.                                    |
+| `updateOrder(Long orderId, UpdateOrderResource resource)` | Actualiza un pedido existente y devuelve el recurso del pedido actualizado.                                         |
+| `deleteOrder(Long orderId)`            | Elimina un pedido basado en su ID y devuelve una respuesta sin contenido.                                         |
+
+| **Dependencias**                          | **Descripción**                                                                                                      |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `OrderQueryService`                       | Servicio para manejar las consultas relacionadas con los pedidos.                                                   |
+| `OrderCommandService`                     | Servicio para manejar las órdenes relacionadas con las operaciones de comando de pedidos.                           |
+| `CreateOrderCommandFromResourceAssembler` | Ensamblador para convertir un recurso de creación de pedido en un comando.                                          |
+| `OrderResourceFromEntityAssembler`       | Ensamblador para convertir una entidad de pedido en un recurso para la API.                                         |
+| `CreateOrderResource`                     | Recurso que representa la solicitud para crear un pedido.                                                           |
+| `OrderResource`                           | Recurso que representa la respuesta de un pedido en la API.                                                         |
+| `UpdateOrderResource`                     | Recurso que representa la solicitud para actualizar un pedido.                                                      |
+
+| **Controlador**: `RateController`                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que gestiona las operaciones relacionadas con las tarifas. Define los endpoints para la API.   |
+
+| **Método**                              | **Descripción**                                                                                                     |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `createRate(CreateRateResource resource)`    | Crea una nueva tarifa y devuelve el recurso de la tarifa creada con su ID.                                       |
+| `getAllRates()`                        | Recupera una lista de todas las tarifas registradas y las devuelve como recursos.                                |
+| `getRateById(Long rateId)`           | Recupera una tarifa específica por su ID y devuelve el recurso correspondiente.                                    |
+
+| **Dependencias**                          | **Descripción**                                                                                                      |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `RateQueryService`                       | Servicio para manejar las consultas relacionadas con las tarifas.                                                   |
+| `RateCommandService`                     | Servicio para manejar las órdenes relacionadas con las operaciones de comando de tarifas.                           |
+| `CreateRateCommandFromResourceAssembler` | Ensamblador para convertir un recurso de creación de tarifa en un comando.                                          |
+| `RateResourceFromEntityAssembler`       | Ensamblador para convertir una entidad de tarifa en un recurso para la API.                                         |
+| `CreateRateResource`                     | Recurso que representa la solicitud para crear una tarifa.                                                           |
+| `RateResource`                           | Recurso que representa la respuesta de una tarifa en la API.                                                         |
+
+| **Controlador**: `SaleController`                                                                                              |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que gestiona las operaciones relacionadas con las ventas. Define los endpoints para la API.     |
+
+| **Método**                             | **Descripción**                                                                                                    |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| `createSale(CreateSaleResource resource)` | Crea una nueva venta y devuelve el recurso de la venta creada con su ID.                                        |
+| `getAllSales(String name)`            | Recupera una lista de todas las ventas registradas, con opción de filtrar por nombre.                           |
+| `getSaleById(Long saleId)`            | Recupera una venta específica por su ID y devuelve el recurso correspondiente.                                   |
+
+| **Dependencias**                         | **Descripción**                                                                                                     |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `SaleQueryService`                      | Servicio para manejar las consultas relacionadas con las ventas.                                                  |
+| `SaleCommandService`                    | Servicio para manejar las órdenes relacionadas con las operaciones de comando de ventas.                          |
+| `CreateSaleCommandFromResourceAssembler`| Ensamblador para convertir un recurso de creación de venta en un comando.                                         |
+| `SaleResourceFromEntityAssembler`      | Ensamblador para convertir una entidad de venta en un recurso para la API.                                        |
+| `CreateSaleResource`                    | Recurso que representa la solicitud para crear una venta.                                                          |
+| `SaleResource`                          | Recurso que representa la respuesta de una venta en la API.                                                       |
+
+| **Controlador**: `SaleOrdersController`                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que gestiona las operaciones relacionadas con los pedidos de una venta.                           |
+
+| **Método**                                   | **Descripción**                                                                                                    |
+|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| `getOrderBySaleIdAndOrderId(Long saleId, Long orderId)` | Recupera un pedido específico asociado a una venta utilizando los IDs de la venta y del pedido. Devuelve el recurso correspondiente. |
+
+| **Dependencias**                              | **Descripción**                                                                                                     |
+|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `OrderQueryService`                          | Servicio para manejar las consultas relacionadas con los pedidos.                                                  |
+| `GetOrderBySaleIdQuery`                     | Consulta utilizada para obtener un pedido basado en el ID de la venta y el ID del pedido.                          |
+| `OrderResource`                              | Recurso que representa la respuesta de un pedido en la API.                                                       |
+| `OrderResourceFromEntityAssembler`          | Ensamblador para convertir una entidad de pedido en un recurso para la API.                                        |
+
+
+
+### 4.2.2.3. Application Layer
+
+Descripción: El Application Layer orquesta las operaciones que deben ejecutarse para cumplir con las necesidades del usuario, coordinando diferentes servicios y repositorios del sistema. Contiene la lógica específica de las acciones que no necesariamente forman parte del dominio principal pero son esenciales para el funcionamiento.
+
+Justificación: En este contexto, los servicios OrderCommandService y OrderQueryService gestionan las reglas de negocio relacionadas con las órdenes. Se encargan de ejecutar comandos y consultas sobre las órdenes, como validar si una orden existe (existById) o recuperar una orden por su identificador (findById). Esta capa se comunica con el OrderRepository, asegurando que la lógica de negocio esté correctamente aplicada y se cumplan las reglas de integridad.
 
 | **Controlador**: `OrderController`                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------|
@@ -1012,7 +1157,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `GetAllSalesQuery`                         | Comando que encapsula la solicitud para obtener todas las ventas.                                                        |
 | `GetSaleByIdQuery`                         | Comando que encapsula la solicitud para obtener una venta específica por su ID.                                          |
 
+
 ### 4.2.2.4. Infrastructure Layer
+
+Descripción: El Infrastructure Layer se encarga de proporcionar acceso a la base de datos, servicios externos y otros detalles técnicos que no forman parte de la lógica de negocio. Actúa como la implementación real de la persistencia y otras preocupaciones técnicas.
+
+Justificación: El OrderRepository es el repositorio responsable de la persistencia de las órdenes. Métodos como findOrderBySaleIdAndId permiten interactuar directamente con la base de datos para obtener órdenes por el identificador de la venta y el identificador de la orden. Este layer asegura que los datos se almacenen y recuperen correctamente desde la infraestructura subyacente, separando las preocupaciones técnicas de las reglas de negocio.
 
 | **Repositorio**: `OrderRepository`                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------|
@@ -1023,22 +1173,37 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `findOrderBySaleIdAndId(Long saleId, Long orderId)` | Busca una orden específica asociada a una venta dada, utilizando el ID de la venta y el ID de la orden. Retorna un `Optional<Order>` que puede contener la orden buscada o estar vacío si no se encuentra. |
 
 
+
+
 ### 4.2.2.6. Bounded Context Software Architecture Component Level Diagrams
+
+Este nuevo diagrama muestra una arquitectura monolítica ampliada de la aplicación API "Ayni". La Single Page Application (SPA) realiza llamadas API a varios controladores, como el Rate Controller, Sale Controller, Order Controller, y SalesOrders Controller, los cuales gestionan las operaciones de productos, ventas, pedidos y sus relaciones. Cada controlador delega las funciones de consultas y comandos a sus respectivos servicios, como RateQueryService, SaleCommandService, y OrderQueryService, que interactúan con repositorios dedicados (como RateRepository, SaleRepository, y OrderRepository) para acceder y gestionar los datos almacenados en una base de datos MySQL. Esta arquitectura asegura una separación clara de responsabilidades dentro del monolito, facilitando la gestión de datos y operaciones.
 
 ![image](https://github.com/user-attachments/assets/874b41be-d048-4820-910a-8fc1f2a4530d)
 
 ### 4.2.2.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.2.7.1. Bounded Context Domain Layer Class Diagrams
 
-![image](https://github.com/user-attachments/assets/6697ed43-5f31-4bc9-a241-d779fffc8477)
+el diagrama UML presenta la estructura de un sistema de gestión de órdenes y ventas, mostrando clases como "Order" con atributos y métodos específicos, relacionadas con clases como "OrderStatus", "PaymentMethod", y "Sale". Incluye interfaces para servicios de comandos y consultas, sugiriendo una arquitectura orientada a servicios para operaciones CRUD. las relaciones y asociaciones en el diagrama reflejan principios de orientación a objetos como encapsulación, herencia y polimorfismo.
+
+![image](https://github.com/user-attachments/assets/bd054473-b833-4024-8598-d20666508e0b)
+
 
 
 #### 4.2.2.7.2. Bounded Context Database Design Diagram
 
+
+El diagrama de la base de datos para el bounded context "Shopping" muestra las tablas clave relacionadas con el procesamiento de órdenes de compra. La tabla principal es orders, que almacena información sobre los pedidos, incluyendo el método de pago, fecha de la orden, ID de la venta, cantidad, precio total, usuario que realizó la orden y el estado del pedido. La tabla order_statuses define los diferentes estados que una orden puede tener. La tabla sales almacena detalles de los productos en venta, como el nombre, descripción, precio unitario e imagen. También está vinculada a los usuarios que los venden mediante el campo user_id. Las relaciones entre tablas como payments especifican los métodos de pago utilizados en las órdenes, y la tabla rates contiene las calificaciones de los productos vendidos, asociadas a la tabla sales. Las conexiones entre las tablas están definidas por claves foráneas que aseguran la integridad de los datos, permitiendo la gestión eficiente de las órdenes, productos, pagos y calificaciones en el contexto de compras.
+
 ![image](https://github.com/user-attachments/assets/91d47e55-640d-4e7c-b129-439d5349f3af)
 
 ## 4.2.3. Bounded Context: Crop Registration
+
 ### 4.2.3.1. Domain Layer
+
+El Domain Layer es el corazón del diseño de un sistema basado en DDD (Domain-Driven Design). En el contexto de Crop Registration, este capa contiene la lógica del dominio y modela los conceptos centrales del sistema, en este caso, los productos agrícolas. El agregado principal es la entidad Product, que representa un producto agrícola y contiene atributos como nombre, descripción, tipo de suelo recomendado, distancia y profundidad de cultivo, y más.
+
+Justificación: Este nivel se encarga de encapsular las reglas de negocio y los invariantes asociados a los productos agrícolas, asegurando que cualquier operación relacionada con los productos cumpla con las reglas del negocio. Los métodos públicos proporcionan acceso a los atributos del producto de una manera controlada, lo que evita inconsistencias y errores en la manipulación de los datos. El Domain Layer define el modelo de dominio sin involucrarse en detalles de implementación o infraestructura.
 
 | **Entidad**: `Product`                                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------|
@@ -1071,8 +1236,11 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `getUserId()`                     | Retorna el ID del usuario (`userId`).                                 |
 
 
-
 ### 4.2.3.2. Interface Layer
+
+El Interface Layer contiene los Controladores que permiten la interacción entre el sistema y los usuarios o sistemas externos. Aquí se encuentran métodos como createProduct, getAllProducts, y getProductById, que se encargan de gestionar las solicitudes HTTP relacionadas con los productos agrícolas.
+
+Justificación: Este layer actúa como un mediador entre el mundo exterior (usuarios, APIs externas, etc.) y la aplicación, traduce las solicitudes entrantes en comandos que el sistema entiende y devuelve respuestas comprensibles para los usuarios o sistemas. Los servicios de comandos y consultas (ProductCommandService y ProductQueryService) están inyectados como dependencias, permitiendo que los controladores deleguen la lógica de negocio a servicios especializados.
 
 | **Controlador**: `ProductController`                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------|
@@ -1093,7 +1261,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `getAllCropsByProductId(Long productId)`           | Maneja la recuperación de todos los cultivos asociados a un producto específico dado su ID. Retorna una lista de recursos de cultivos. |
 | `getCropByProductIdAndCropId(Long productId, Long cropId)` | Maneja la recuperación de un cultivo específico dado su ID y el ID del producto. Si el cultivo no se encuentra, retorna un estado 404 Not Found; de lo contrario, retorna el recurso del cultivo. |
 
+
 ### 4.2.3.3. Application Layer
+
+El Application Layer es el nivel donde se definen los servicios de aplicación que gestionan la orquestación de las reglas de negocio. Aquí, se encuentran servicios como ProductCommandService y ProductQueryService, que implementan la lógica relacionada con la creación, modificación y consulta de productos.
+
+Justificación: Esta capa actúa como intermediaria entre el Domain Layer y la Interface Layer. Al centralizar las reglas de negocio en los servicios, el sistema mantiene la lógica separada de los controladores y el dominio, lo que facilita su reutilización y prueba. Además, esta capa no almacena datos directamente, sino que interactúa con el repositorio para obtener o persistir información.
 
 | **Servicio**: `ProductCommandServiceImpl`                                                                                              |
 |-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -1112,7 +1285,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `handle(GetProductByIdQuery query)`                | Maneja la consulta para recuperar un producto por su ID. Devuelve un `Optional<Product>` que contiene el producto si se encuentra, o está vacío si no. |
 | `handle(GetAllProductsQuery query)`                | Maneja la consulta para recuperar todos los productos. Retorna una lista de productos disponibles en la base de datos. |
 
+
 ### 4.2.3.4. Infrastructure Layer
+
+El Infrastructure Layer maneja los detalles de la persistencia de los datos. Aquí se define el ProductRepository, que se encarga de interactuar con la base de datos para realizar operaciones CRUD sobre los productos. Métodos como findById y findAll permiten al sistema recuperar productos de la base de datos.
+
+Justificación: Este layer permite desacoplar la lógica de acceso a datos del dominio y la aplicación, siguiendo el principio de separación de preocupaciones. La infraestructura está diseñada para ser fácilmente intercambiable o adaptable (por ejemplo, cambiar una base de datos sin modificar la lógica de negocio). Además, encapsula detalles técnicos como el mapeo de objetos a tablas en una base de datos relacional.
 
 | **Repositorio**: `ProductRepository`                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -1126,23 +1304,40 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 
 ### 4.2.1.6. Bounded Context Software Architecture Component Level Diagrams
 
+Este diagrama muestra una arquitectura de componente para la gestión de productos en una aplicación monolítica. En la parte superior, la Single-Page Application (SPA) es el punto de acceso de los usuarios y está construida con tecnologías como JavaScript y Angular. Esta SPA realiza llamadas API (como JSON/HTTP) al Products Controller, que está implementado como un controlador MVC de Spring.
+
+El Products Controller gestiona las solicitudes relacionadas con la creación y consulta de productos. Para operaciones de comando, como agregar productos, el controlador utiliza el ProductCommandService, que encapsula la lógica relacionada con los comandos para productos. Para las consultas de datos, se apoya en el ProductQueryService, que facilita la recuperación de datos de productos.
+
+Ambos servicios, el ProductCommandService y el ProductQueryService, interactúan con el ProductRepository, que abstrae los detalles de interacción con la base de datos. Finalmente, el ProductRepository lee y escribe datos en una base de datos MySQL. Esta estructura sigue el patrón de separación de responsabilidades, asegurando que los controladores gestionen la lógica de presentación, mientras que los servicios manejan la lógica de negocio y los repositorios interactúan con la base de datos.
+
 ![image](https://github.com/user-attachments/assets/36aa4fad-8889-4eee-a0ec-1e560d7e333a)
 
 
 ### 4.2.3.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.3.7.1. Bounded Context Domain Layer Class Diagrams
 
-![image](https://github.com/user-attachments/assets/025a1cfd-5749-45e9-8963-bb1f222b7955)
+el diagrama UML muestra una entidad "Product" con atributos como "id", "name", "description" y varios consejos de cultivo, además de una "imageUrl". dos interfaces, "ProductCommandService" y "ProductQueryService", están relacionadas con esta entidad, indicando una posible implementación de servicios de comandos y consultas, típicos de un patrón CQRS. las flechas sugieren que estas interfaces manejan operaciones relacionadas con objetos "Product".
+
+![image](https://github.com/user-attachments/assets/126321e3-30df-4fbe-ab13-49421aafebbf)
+
 
 
 
 #### 4.2.3.7.2. Bounded Context Database Design Diagram
+
+
+El diagrama de la tabla products representa los productos disponibles en el contexto de un sistema agrícola. Cada producto tiene un ID único como clave primaria, y atributos que incluyen el nombre y una descripción detallada. Además, contiene varias recomendaciones específicas para el cultivo del producto, como la distancia de cultivo, profundidad de cultivo, clima adecuado para el crecimiento, tipo de suelo recomendado, y la temporada de cultivo ideal. También se incluye un campo para la URL de la imagen del producto y un campo de clave foránea (user_id) que relaciona al producto con el usuario que lo ha registrado. Estos atributos permiten gestionar no solo la información básica de los productos, sino también recomendaciones detalladas para su cultivo óptimo.
 
 ![image](https://github.com/user-attachments/assets/3710915f-2038-4d1a-9d92-c41a2864497a)
 
 
 ## 4.2.4. Bounded Context: Planification
 ### 4.2.4.1. Domain Layer
+
+El Domain Layer en este contexto se encarga de definir las entidades fundamentales que representan el dominio agrícola, específicamente la entidad "Crop". Este agregado captura las propiedades esenciales de un cultivo, como su nombre, estado de deshierbe, fertilización, oxigenación, y otras características propias de la gestión agrícola. También define la relación de un cultivo con otros elementos del sistema, como el producto asociado y el usuario responsable.
+
+Justificación:
+El uso de un Domain Layer permite encapsular la lógica de negocio y las reglas específicas del dominio en torno a la gestión de cultivos. Al centralizar estos aspectos en el agregado "Crop", se asegura una consistencia en la manipulación de datos y operaciones relacionadas a los cultivos. Este enfoque también facilita la escalabilidad del sistema, ya que permite agregar nuevas propiedades o métodos a la entidad sin afectar otros niveles del sistema.
 
 | **Aggregate**: `Crop`                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------------|
@@ -1184,6 +1379,11 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 
 ### 4.2.4.2. Interface Layer
 
+El Interface Layer expone las operaciones que el sistema permite realizar con los cultivos mediante el controlador "CropController". Este controlador actúa como intermediario entre la capa de aplicación y el cliente, permitiendo crear, consultar, y actualizar la información de los cultivos. Se apoya en los servicios de consultas y comandos para ejecutar las operaciones necesarias.
+
+Justificación:
+El Interface Layer es crucial para mantener una separación clara entre las capas de la aplicación y el cliente. Al usar un controlador dedicado, se asegura que todas las interacciones con los cultivos pasen por un punto central, lo que permite validar datos, aplicar reglas de seguridad, y simplificar el flujo de datos entre las diferentes capas del sistema. Además, desacopla la lógica de presentación de la lógica de negocio, promoviendo una arquitectura más limpia y fácil de mantener.
+
 | **Controlador**: `CropController`                                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------|
 | **Descripción**: Controlador que maneja las operaciones relacionadas con cultivos. Define los endpoints para la gestión de cultivos. |
@@ -1194,7 +1394,13 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `getAllCrops(String name)`                   | Maneja la recuperación de todos los cultivos. Devuelve una lista de recursos de cultivo. Permite filtrar por nombre.        |
 | `getCropById(Long cropId)`                   | Maneja la recuperación de un cultivo específico por su ID. Devuelve el recurso del cultivo correspondiente o un 404 si no se encuentra. |
 
+
 ### 4.2.4.3. Application Layer
+
+El Application Layer implementa la lógica de negocio relacionada con los cultivos mediante dos servicios clave: el CropCommandService y el CropQueryService. Estos servicios manejan las operaciones de comandos, como la creación de cultivos, y las consultas, como la obtención de todos los cultivos o la búsqueda de cultivos específicos por su ID o por el ID del producto asociado.
+
+Justificación:
+Este enfoque permite separar claramente las operaciones de comando y consulta, facilitando el mantenimiento y la expansión del sistema. La lógica de negocio es gestionada en este nivel, lo que permite aplicar reglas y restricciones de manera centralizada antes de realizar cambios en el dominio. Esto garantiza que las acciones relacionadas con los cultivos sean coherentes con las reglas de negocio y, al mismo tiempo, asegura que las consultas de información sean eficientes y directas.
 
 | **Servicio**: `CropCommandServiceImpl`                                                                                         |
 |----------------------------------------------------------------------------------------------------------------------------------|
@@ -1215,8 +1421,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `handle(GetAllCropsByProductIdQuery query)`| Maneja la consulta para obtener todos los cultivos asociados a un producto específico. Devuelve una lista de cultivos.      |
 | `handle(GetCropByProductIdQuery query)`     | Maneja la consulta para obtener un cultivo específico asociado a un producto dado. Devuelve un `Optional<Crop>` si existe. |
 
-
 ### 4.2.4.4. Infrastructure Layer
+
+El Infrastructure Layer maneja la persistencia de los datos del dominio, en este caso, de los cultivos. El CropRepository es responsable de interactuar con la base de datos y proveer métodos para buscar, guardar y actualizar los cultivos, ya sea individualmente o en conjunto, mediante su ID o el ID del producto asociado.
+
+Justificación:
+Esta capa es esencial para desacoplar la lógica de negocio de los detalles de persistencia. Al utilizar un repositorio, se abstraen las interacciones directas con la base de datos, lo que facilita cambiar la implementación de la persistencia sin afectar las capas superiores. Además, permite centralizar el acceso a los datos, asegurando que todas las operaciones que modifiquen o consulten cultivos lo hagan de manera consistente y controlada.
 
 | **Repositorio**: `CropRepository`                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------|
@@ -1227,17 +1437,26 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `findCropByProductIdAndId(Long productId, Long cropId)` | Busca un cultivo específico por su ID y el ID del producto al que está asociado. Devuelve un `Optional<Crop>` que contiene el cultivo, si existe. |
 | `findAllByProductId(Long productId)`            | Devuelve una lista de todos los cultivos que están asociados a un producto específico, utilizando el ID del producto.    |
 
+
 ### 4.2.4.6. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama muestra la arquitectura de un sistema monolítico donde una Single-Page Application (SPA), implementada con JavaScript y Angular, interactúa a través de llamadas API con una Web API Application construida con Spring. La SPA realiza peticiones HTTP a dos controladores: el Crops Controller, que permite a los usuarios añadir cultivos, y el ProductCrops Controller, que gestiona la interacción entre productos y cultivos. Ambos controladores utilizan servicios: el CropCommandService para operaciones relacionadas con la creación y modificación de cultivos, y el CropQueryService para la recuperación de datos. Estos servicios, a su vez, interactúan con el CropRepository, un componente que abstrae los detalles de interacción con la base de datos MySQL, usando JPA para lectura y escritura de información.
 
 ![image](https://github.com/user-attachments/assets/38bdd8af-3f7a-403c-9883-d780c5212818)
 
 ### 4.2.4.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.4.7.1. Bounded Context Domain Layer Class Diagrams
 
-![image](https://github.com/user-attachments/assets/087a48ca-458e-48dd-98be-a4a7f338692a)
+el diagrama contiene una clase 'Crop' que detalla características y cuidados del cultivo junto con operaciones para su gestión y estado. existen dos interfaces, 'CropQueryService' y 'CropCommandService', para las consultas y comandos del cultivo. las relaciones no están indicadas con flechas pero su disposición implica una conexión.
+
+![image](https://github.com/user-attachments/assets/1c62f486-68fd-4e19-9cc3-1ba3646343c1)
+
 
 
 #### 4.2.4.7.2. Bounded Context Database Design Diagram
+
+
+El diagrama de la tabla crops describe las tareas y parámetros relacionados con el cultivo de productos agrícolas. Cada cultivo tiene un ID único como clave primaria y un nombre descriptivo. Además, incluye campos booleanos que indican si es necesario realizar tareas como recoger maleza (pick_up_weed), fertilizar el cultivo (fertilize_crop), oxigenar el cultivo (oxygenate_crop), hacer líneas de cultivo (make_crop_line), y hacer agujeros para el cultivo (make_crop_hole). También se especifican campos numéricos que indican la cantidad de días de riego (watering_days) y de días para limpieza de plagas (pest_cleanup_days). Finalmente, la tabla está vinculada a la tabla products a través de la clave foránea product_id, lo que relaciona las actividades de cultivo con un producto específico. Esto permite la gestión detallada de las operaciones necesarias para el cuidado de distintos tipos de cultivos.
 
 ![image](https://github.com/user-attachments/assets/99e675a2-b960-4221-b757-b7ed9ca75d04)
 
@@ -1245,6 +1464,11 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 
 ## 4.2.5. Bounded Context: Monitoring
 ### 4.2.5.1. Domain Layer
+
+En el Domain Layer del contexto de monitoreo, los agregados principales son el "Sensor" y el "Actuator". Estos representan los componentes clave del sistema de monitoreo IoT, donde los sensores recolectan datos en tiempo real del terreno (como la temperatura o humedad), y los actuadores responden de manera automática a las condiciones monitoreadas, como activarse para regar o ajustar la ventilación.
+
+Justificación:
+Este enfoque permite encapsular las responsabilidades de cada dispositivo en un solo agregado. Al definir claramente qué información y comportamientos están asociados a cada entidad, se garantiza la coherencia y la integridad en la recolección de datos y en las respuestas automatizadas. Los atributos clave, como id, dataValue y timestamp en los sensores, y status en los actuadores, ayudan a gestionar eficientemente los estados y las mediciones críticas para las decisiones automatizadas.
 
 | **Aggregate**: `Sensor`                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------|
@@ -1275,8 +1499,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `ActivateActuator()`                         | `void`               | `Public`        | Activa un actuador basado en las condiciones del terreno.                                                  |
 | `DeactivateActuator()`                       | `void`               | `Public`        | Desactiva un actuador.                                                                                     |
 
-
 ### 4.2.5.2. Interface Layer
+
+El Interface Layer incluye el "MonitoringController", que expone las operaciones para gestionar tanto los sensores como los actuadores. Este controlador permite obtener los datos diarios de los sensores y activar o desactivar los actuadores en base a las condiciones del terreno.
+
+Justificación:
+El Interface Layer es esencial para proporcionar un punto de entrada claro para la gestión de dispositivos IoT. Con un controlador dedicado, se logra desacoplar la lógica de presentación de la lógica de negocio, manteniendo la simplicidad y claridad en la interacción entre la interfaz del usuario y el sistema. Esto garantiza que la recolección de datos y la activación de los actuadores ocurran de manera controlada y eficiente.
 
 | **Controller** `MonitoringController`                                                                                             |
 |------------------------------------------------------------------------------------------------------------|
@@ -1293,8 +1521,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `activateActuator()`                       | `void`                     | `Public`        | Activa un actuador basado en los datos recolectados. |
 | `deactivateActuator()`                     | `void`                     | `Public`        | Desactiva un actuador.                           |
 
-
 ### 4.2.5.3. Application Layer
+
+En el Application Layer, el "SensorQueryService" y el "ActuatorCommandService" manejan la lógica de negocio relacionada con los sensores y actuadores. El servicio de consultas se encarga de obtener los datos de los sensores, mientras que el servicio de comandos gestiona la activación o desactivación de los actuadores en función de los datos del terreno.
+
+Justificación:
+Esta capa asegura que todas las interacciones con los sensores y actuadores sigan las reglas de negocio definidas. Separar las consultas y comandos en servicios especializados permite mantener el código limpio y modular. También facilita la ampliación futura del sistema para incluir nuevas reglas o tipos de datos sin alterar la estructura básica.
 
 | **Service** `SensorQueryService`                                                                                             |
 |--------------------------------------------------------------------------------------------------------|
@@ -1309,23 +1541,12 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 | `existById`                            | `Boolean`                 | `Public`        | Método para validar la existencia de un sensor por ID. |
 | `findById`                             | `Sensor`                  | `Public`        | Método para obtener un sensor por ID.           |
 
-
-
-| **Service** `ActuatorCommandService`                                                                                             |
-|--------------------------------------------------------------------------------------------------------|
-| **Descripción**: Servicio para ejecutar comandos de actuadores.                                           |
-
-| **Atributos**                           | **Tipo de dato**           | **Visibilidad** | **Descripción**                                 |
-|-----------------------------------------|----------------------------|-----------------|-------------------------------------------------|
-| `ActuatorRepository`                   | `actuatorRepository`      | `Private`       | Repositorio de actuadores.                       |
-
-| **Métodos**                             | **Tipo de retorno**       | **Visibilidad** | **Descripción**                                 |
-|-----------------------------------------|----------------------------|-----------------|-------------------------------------------------|
-| `existById`                            | `Boolean`                 | `Public`        | Método para validar la existencia de un actuador por ID. |
-| `findById`                             | `Actuator`                | `Public`        | Método para obtener un actuador por ID.         |
-
-
 ### 4.2.5.4. Infrastructure Layer
+
+El Infrastructure Layer gestiona la persistencia de los datos. Los repositorios de sensores y actuadores son responsables de interactuar con la base de datos para obtener y almacenar la información crítica relacionada con estos dispositivos. Métodos como findSensorById y findActuatorById permiten recuperar la información correspondiente a un dispositivo en particular.
+
+Justificación:
+El uso de repositorios permite centralizar el acceso a los datos, desacoplando la lógica de negocio de la infraestructura de persistencia. Esto facilita cambios en la implementación de la base de datos sin afectar otras capas del sistema, y garantiza que los datos se gestionen de manera coherente y eficiente, manteniendo la fiabilidad del sistema IoT.
 
 | **Repository** `SensorRepository`                                                                                         |
 |--------------------------------------------------------------------------------------------------------|
@@ -1345,17 +1566,23 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 |---------------------------------------------|--------------------------|-----------------|-------------------------------------------------|
 | `findActuatorById`                        | `Actuator`               | `Public`        | Método para obtener un actuador por su ID.     |
 
-
 ### 4.2.5.6. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama de componentes representa un sistema monolítico que gestiona datos de sensores y actuadores, donde una Single-Page Application (SPA), implementada con JavaScript y Angular, interactúa con una Web API Application a través de llamadas HTTP. La SPA realiza peticiones al Sensors Controller para obtener datos de los sensores, y al Actuators Controller para acceder a las funcionalidades de los actuadores. El Sensors Controller utiliza el SensorQueryService para encapsular la lógica de recuperación de datos, que a su vez se comunica con el SensorRepository, encargado de abstraer la interacción con la base de datos. De manera similar, el Actuators Controller utiliza el ActuatorCommandService para encapsular la lógica de control de actuadores, y este se comunica con el ActuatorRepository para la interacción con la base de datos. Ambos repositorios emplean JPA para realizar operaciones de lectura y escritura en la base de datos MySQL.
 
 ![image](https://github.com/user-attachments/assets/e655c3e7-3fe7-438e-bc13-02e73f03df8c)
 
 ### 4.2.5.7. Bounded Context Software Architecture Code Level Diagrams
 #### 4.2.5.7.1. Bounded Context Domain Layer Class Diagrams
 
-![image](https://github.com/user-attachments/assets/0c6f98c0-8bbb-41c1-ac54-4ddcfa8d8d25)
+El diagrama de clases representa el bounded context "Monitoring" y muestra dos agregados principales: Sensor y Actuator, cada uno con su respectiva interfaz de servicio. El agregado Sensor tiene atributos como id: Long, dataValue: String, y timestamp: String, y está asociado con la interfaz SensorQueryService que probablemente proporciona operaciones de consulta sobre los sensores. El agregado Actuator tiene atributos como id: Long y status: String, y está vinculado a la interfaz ActuatorCommandService, sugiriendo que este servicio maneja comandos para el control de actuadores. Los dos agregados están conectados mediante una relación de composición, indicando que juntos forman un sistema de monitoreo que integra sensores y actuadores.
+
+![image](https://github.com/user-attachments/assets/c5e870d5-1047-4da0-96b0-507f709bf5dc)
+
 
 #### 4.2.5.7.2. Bounded Context Database Design Diagram
+
+El diagrama de base de datos representa el contexto limitado (bounded context) de "Monitoring", compuesto por dos tablas principales: sensors y actuators. La tabla sensors contiene los atributos id (clave primaria), data_value (valor de datos registrado, de tipo varchar), timestamp (de tipo booleano, probablemente para indicar si es válido), y crop_id (clave foránea que posiblemente hace referencia a un cultivo específico). La tabla actuators está relacionada con sensors a través de sensor_id (clave foránea), y sus atributos incluyen id (clave primaria), status (estado actual del actuador, de tipo varchar) y sensor_id. Esta estructura sugiere un sistema de monitoreo donde los sensores capturan datos asociados a cultivos y los actuadores reaccionan en función de esos datos.
 
 ![image](https://github.com/user-attachments/assets/305633b9-6f93-4cf5-8711-8950ff5ddf92)
 
