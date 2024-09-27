@@ -590,307 +590,164 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 ## 4.2.1. Bounded Context: IAM
 ### 4.2.1.1. Domain Layer
 
-<table>
-    <tr>
-        <td colspan="4" align="center">Aggregate</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Categoria</td>
-        <td colspan="2">Propósito</td>
-    </tr>
-    <tr>
-        <td>User</td>
-        <td>Entity/Aggregate</td>
-        <td colspan="2">Representación de los usuarios del segmento objetivo</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Atributos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de dato</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>id</td>
-        <td>Long</td>
-        <td>Private</td>
-        <td>Identificador unico</td>
-    </tr>
-    <tr>
-        <td>userName</td>
-        <td>String</td>
-        <td>Private</td>
-        <td>Nombre de usuario</td>
-    </tr>
-     <tr>
-        <td>email</td>
-        <td>String</td>
-        <td>Private</td>
-        <td>Correo electronico</td>
-    </tr>
-     <tr>
-        <td>password</td>
-        <td>String</td>
-        <td>Private</td>
-        <td>Contraseña del usuario</td>
-    </tr>
-     <tr>
-        <td>role</td>
-        <td>String</td>
-        <td>Private</td>
-        <td>rol del usuario</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Métodos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de retorno</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>getUsername</td>
-        <td>username</td>
-        <td>Public</td>
-        <td>Obtención de nombre de usuario</td>
-    </tr>
-    <tr>
-        <td>getEmail</td>
-        <td>email</td>
-        <td>Public</td>
-        <td>Obtención de correo electrónico</td>
-    </tr>
-    <tr>
-        <td>getPassword</td>
-        <td>password</td>
-        <td>Public</td>
-        <td>Obtención de contraseña</td>
-    </tr>
-     <tr>
-        <td>getRoles</td>
-        <td>srtRoles</td>
-        <td>Public</td>
-        <td>Obtención del rol del usuario</td>
-    </tr>
-</table>
+| **Aggregate**: `User`                                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa el agregado raíz "Usuario", que contiene los datos de la cuenta y su rol. Se mapea a la tabla `users` en la base de datos.|
+
+| **Atributo**                      | **Tipo**                | **Descripción**                                                   |
+|-----------------------------------|-------------------------|-------------------------------------------------------------------|
+| `id`                              | `Long`                  | Identificador único del usuario (autogenerado).                   |
+| `username`                        | `Username` (Value Object) | Nombre de usuario (Valor embebido).                               |
+| `email`                           | `EmailAddress` (Value Object) | Dirección de correo electrónico (Valor embebido).                  |
+| `password`                        | `Password` (Value Object) | Contraseña del usuario (Valor embebido).                          |
+| `role`                            | `Role` (Value Object)   | Rol del usuario (Valor embebido).                                 |
+| `createdAt`                       | `Date`                  | Fecha de creación del usuario (no modificable).                   |
+| `updatedAt`                       | `Date`                  | Fecha de la última actualización del usuario.                     |
+
+| **Método**                        | **Descripción**                                                                                   |
+|-----------------------------------|---------------------------------------------------------------------------------------------------|
+| `getId()`                         | Retorna el `id` del usuario.                                                                      |
+| `getUsername()`                   | Retorna el `username` del usuario (valor embebido).                                                |
+| `getEmail()`                      | Retorna el `email` del usuario (valor embebido).                                                   |
+| `getPassword()`                   | Retorna el `password` del usuario (valor embebido).                                                |
+| `getRoles()`                      | Retorna los `roles` asociados al usuario (actualmente solo uno).                                   |
+
+| **Value Object**: `EmailAddress`                                                                                           |
+|----------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa una dirección de correo electrónico válida como un objeto de valor embebido.                   |
+
+| **Atributo**                     | **Tipo**                | **Descripción**                                                   |
+|----------------------------------|-------------------------|-------------------------------------------------------------------|
+| `email`                          | `String`                | Dirección de correo electrónico validada (no en blanco, máximo 50 caracteres, formato válido de correo). |
+
+| **Método**                       | **Descripción**                                                                                   |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| `EmailAddress(String email)`     | Constructor que recibe un correo electrónico y lo valida según las restricciones.                  |
+| `EmailAddress()`                 | Constructor por defecto que inicializa con `null`.                                                 |
+| `email()`                        | Retorna la dirección de correo electrónico encapsulada en este Value Object.                       |
+
+| **Value Object**: `Password`                                                                                               |
+|----------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa una contraseña válida como un objeto de valor embebido, encapsulando y validando su longitud.  |
+
+| **Atributo**                     | **Tipo**                | **Descripción**                                                   |
+|----------------------------------|-------------------------|-------------------------------------------------------------------|
+| `password`                       | `String`                | Contraseña del usuario (no en blanco, máximo 120 caracteres).      |
+
+| **Método**                       | **Descripción**                                                                                   |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| `Password(String password)`      | Constructor que recibe una contraseña y la valida según las restricciones.                        |
+| `Password()`                     | Constructor por defecto que inicializa con `null`.                                                 |
+| `password()`                     | Retorna la contraseña encapsulada en este Value Object.                                            |
+
+| **Value Object**: `Role`                                                                                                   |
+|----------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa el rol de un usuario como un objeto de valor embebido, encapsulando un rol específico.         |
+
+| **Atributo**                     | **Tipo**                | **Descripción**                                                   |
+|----------------------------------|-------------------------|-------------------------------------------------------------------|
+| `role`                           | `ERole`                 | Rol del usuario, puede ser `ROLE_FARMER` o `ROLE_MERCHANT`.        |
+
+| **Método**                       | **Descripción**                                                                                   |
+|----------------------------------|---------------------------------------------------------------------------------------------------|
+| `Role(String role)`              | Constructor que recibe un string y asigna un rol basado en el valor (`farmer` o `merchant`).       |
+| `Role()`                         | Constructor por defecto que no asigna ningún rol.                                                  |
+| `getRole()`                      | Retorna el valor del rol encapsulado.                                                             |
+
 
 ### 4.2.1.2. Interface Layer
 
-<table>
-    <tr>
-        <td colspan="4" align="center">Controller</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Categoria</td>
-        <td colspan="2">Propósito</td>
-    </tr>
-    <tr>
-        <td>AuthController</td>
-        <td>Controller</td>
-        <td colspan="2">Controlador para autenticación</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Atributos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de dato</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>authService</td>
-        <td>AuthService</td>
-        <td>Private</td>
-        <td>Servicio de autenticación</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Métodos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de retorno</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>authenticateUser</td>
-        <td>authenticatedResource</td>
-        <td>Public</td>
-        <td>Metodo para autenticar usuario</td>
-    </tr>
-    <tr>
-        <td>registerUser</td>
-        <td>signInResource</td>
-        <td>Public</td>
-        <td>Metodo de registro de usuario</td>
-    </tr>
-</table>
+| **Controlador**: `AuthController`                                                                                     |
+|-----------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que maneja los endpoints relacionados con la autenticación de usuarios.                  |
 
-<table>
-    <tr>
-        <td colspan="4" align="center">Controller</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Categoria</td>
-        <td colspan="2">Propósito</td>
-    </tr>
-    <tr>
-        <td>UsersController</td>
-        <td>Controller</td>
-        <td colspan="2">Controlador para usuarios</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Atributos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de dato</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>userQueryService</td>
-        <td>UserQueryService</td>
-        <td>Private</td>
-        <td>Servicio de consultas de usuario</td>
-    </tr>
-    <tr>
-        <td>userCommandService</td>
-        <td>UserCommandService</td>
-        <td>Private</td>
-        <td>Servicio de registro de usuario</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Métodos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de retorno</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>getAllUsers</td>
-        <td>usersResource</td>
-        <td>Public</td>
-        <td>Metodo para obtener todos los usuarios/td>
-    </tr>
-    <tr>
-        <td>getUserById</td>
-        <td>userResource</td>
-        <td>Public</td>
-        <td>Metodo para obtener un usuario por id</td>
-    </tr>
-</table>
+| **Método**              | **Ruta**                  | **Descripción**                                                                                                                                                      |
+|-------------------------|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `authenticateUser`      | `POST /api/v1/auth/signin` | Maneja la autenticación de usuarios. Toma un objeto `SignInResource` del cuerpo de la solicitud, lo convierte en un comando, y llama al servicio de comandos para autenticar al usuario. Si la autenticación es exitosa, devuelve un recurso de usuario autenticado. Si falla, retorna un error 404. |
+| `registerUser`          | `POST /api/v1/auth/signup` | Maneja el registro de nuevos usuarios. Recibe un objeto `SignUpResource`, lo convierte en un comando, y llama al servicio de comandos para registrar al usuario. Si el registro es exitoso, recupera los datos del usuario y devuelve un recurso de usuario. Si hay un error, retorna un error 400.      |
 
+| **Dependencias**                            | **Descripción**                                                                                  |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `UserQueryService`                          | Servicio encargado de manejar las consultas relacionadas con usuarios.                          |
+| `UserCommandService`                        | Servicio encargado de manejar los comandos relacionados con la creación y autenticación de usuarios. |
+| `SignInCommandFromResourceAssembler`       | Utilidad para convertir el recurso de inicio de sesión en un comando.                          |
+| `SignUpCommandFromResourceAssembler`       | Utilidad para convertir el recurso de registro en un comando.                                   |
+| `AuthenticatedUserResourceFromEntityAssembler` | Utilidad para convertir el usuario autenticado en un recurso.                                  |
+| `UserResourceFromEntityAssembler`          | Utilidad para convertir el usuario registrado en un recurso.                                     |
+
+| **Controlador**: `UsersController`                                                                                     |
+|-----------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que maneja los endpoints relacionados con la gestión de usuarios.                        |
+
+| **Método**                | **Ruta**                           | **Descripción**                                                                                                                                                  |
+|---------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `getAllUsers`            | `GET /api/v1/users`                | Maneja la solicitud para obtener todos los usuarios. Llama al servicio de consultas, obtiene la lista de usuarios y la convierte en recursos para la respuesta. Devuelve una lista de recursos de usuarios. |
+| `getUserById`            | `GET /api/v1/users/{userId}`      | Maneja la solicitud para obtener un usuario específico por su ID. Llama al servicio de consultas con el ID proporcionado. Si el usuario existe, lo convierte en un recurso y lo devuelve; si no, retorna un error 404. |
+
+| **Dependencias**                            | **Descripción**                                                                                  |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `UserQueryService`                          | Servicio encargado de manejar las consultas relacionadas con usuarios.                          |
+| `GetAllUsersQuery`                          | Consulta que se utiliza para obtener todos los usuarios.                                        |
+| `GetUserByIdQuery`                          | Consulta que se utiliza para obtener un usuario específico por su ID.                          |
+| `UserResourceFromEntityAssembler`           | Utilidad para convertir las entidades de usuario en recursos que se envían en la respuesta.     |
 
 ### 4.2.1.3. Application Layer
 
-<table>
-    <tr>
-        <td colspan="4" align="center">Service</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Categoria</td>
-        <td colspan="2">Propósito</td>
-    </tr>
-    <tr>
-        <td>UserCommandService</td>
-        <td>Service</td>
-        <td colspan="2">Servicio con reglas de negocio para usuario</td>
-    </tr>
-    <tr>
-        <td>UserQueryService</td>
-        <td>Service</td>
-        <td colspan="2">Servicio con reglas de negocio para usuario</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Atributos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de dato</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>UserRepository</td>
-        <td>Long</td>
-        <td>private</td>
-        <td>Repositorio de usuario</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Métodos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de retorno</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>existByUsername</td>
-        <td>user</td>
-        <td>Public</td>
-        <td>Metodo para validar usuario por nombre de usuario</td>
-    </tr>
-    <tr>
-        <td>findByUsername</td>
-        <td>user</td>
-        <td>Public</td>
-        <td>Metodo para obtener usuario por nombre de usuario</td>
-    </tr>
-</table>
+| **Servicio**: `UserCommandServiceImpl`                                                                                     |
+|--------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación del servicio de comandos para la gestión de usuarios, incluyendo registro e inicio de sesión.  |
 
+| **Método**                | **Descripción**                                                                                                                                              |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `handle(SignUpCommand)`   | Maneja el comando de registro de un nuevo usuario. Verifica la unicidad del nombre de usuario y del correo electrónico. Si todo es válido, crea un nuevo usuario y lo guarda en el repositorio, devolviendo su ID. |
+| `handle(SignInCommand)`   | Maneja el comando de inicio de sesión. Busca al usuario por nombre de usuario. Verifica que el usuario existe y que la contraseña coincide. Si es válido, genera un token de autenticación y lo devuelve junto con el usuario. |
+
+| **Dependencias**                            | **Descripción**                                                                                                      |
+|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `UserRepository`                            | Repositorio que maneja las operaciones de persistencia relacionadas con usuarios.                                    |
+| `HashingService`                            | Servicio encargado de codificar y verificar contraseñas de usuarios.                                                |
+| `TokenService`                              | Servicio que genera tokens de autenticación para usuarios.                                                           |
+| `User`                                      | Agregado que representa al usuario en el sistema.                                                                   |
+| `SignUpCommand`                            | Comando que encapsula la información necesaria para registrar un nuevo usuario.                                     |
+| `SignInCommand`                            | Comando que encapsula la información necesaria para iniciar sesión con un usuario.                                  |
+
+| **Servicio**: `UserQueryServiceImpl`                                                                                   |
+|-----------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación del servicio de consultas para la gestión de usuarios, permitiendo obtener información sobre usuarios registrados.  |
+
+| **Método**                  | **Descripción**                                                                                                       |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| `handle(GetUserByUsernameQuery)` | Maneja el comando para obtener un usuario por su nombre de usuario. Devuelve un `Optional<User>` que puede estar vacío si no se encuentra el usuario. |
+| `handle(GetUserByIdQuery)`       | Maneja el comando para obtener un usuario por su ID. Devuelve un `Optional<User>` que puede estar vacío si no se encuentra el usuario. |
+| `handle(GetAllUsersQuery)`       | Maneja el comando para obtener todos los usuarios registrados en el sistema. Devuelve una lista de objetos `User`.  |
+
+| **Dependencias**                          | **Descripción**                                                                                                        |
+|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| `UserRepository`                          | Repositorio que maneja las operaciones de persistencia relacionadas con usuarios.                                      |
+| `User`                                    | Agregado que representa al usuario en el sistema.                                                                     |
+| `GetUserByUsernameQuery`                 | Consulta que encapsula la información necesaria para buscar un usuario por su nombre de usuario.                      |
+| `GetUserByIdQuery`                       | Consulta que encapsula la información necesaria para buscar un usuario por su ID.                                     |
+| `GetAllUsersQuery`                       | Consulta que encapsula la información necesaria para obtener todos los usuarios registrados.                          |
 
 ### 4.2.1.4. Infrastructure Layer
 
+| **Repositorio**: `UserRepository`                                                                                     |
+|-----------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Repositorio que maneja las operaciones de persistencia relacionadas con los usuarios en la base de datos.  |
 
-<table>
-    <tr>
-        <td colspan="4" align="center">Repository</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Categoria</td>
-        <td colspan="2">Propósito</td>
-    </tr>
-    <tr>
-        <td>UserRepository</td>
-        <td>Repository</td>
-        <td colspan="2">Repositorio que guarda la información de los usuario</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Métodos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de retorno</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>existsByUsername</td>
-        <td>user</td>
-        <td>Public</td>
-        <td>Metodo para validar usuario por nombre de usuario</td>
-    </tr>
-    <tr>
-        <td>findByUsername</td>
-        <td>user</td>
-        <td>Public</td>
-        <td>Metodo para buscar usuario por nombre de usuario</td>
-    </tr>
-</table>
+| **Método**                               | **Descripción**                                                                                                     |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `findByUsername(Username username)`      | Busca un usuario en la base de datos utilizando su nombre de usuario. Devuelve un `Optional<User>`.                |
+| `findById(Long id)`                     | Busca un usuario en la base de datos utilizando su ID. Devuelve un `Optional<User>`.                              |
+| `findAll()`                             | Devuelve una lista de todos los usuarios almacenados en la base de datos.                                         |
+| `existsByUsername(Username username)`    | Verifica si un usuario con el nombre de usuario especificado ya existe en la base de datos. Devuelve un `boolean`. |
+| `existsByEmail(EmailAddress email)`      | Verifica si un usuario con el correo electrónico especificado ya existe en la base de datos. Devuelve un `boolean`. |
 
+| **Dependencias**                          | **Descripción**                                                                                                      |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `User`                                    | Clase que representa al usuario en el sistema.                                                                      |
+| `Username`                                | Valor de objeto que encapsula el nombre de usuario.                                                                 |
+| `EmailAddress`                            | Valor de objeto que encapsula la dirección de correo electrónico del usuario.                                        |
 
 
 ### 4.2.1.6. Bounded Context Software Architecture Component Level Diagrams
@@ -912,282 +769,258 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 ## 4.2.2. Bounded Context: Shopping
 ### 4.2.2.1. Domain Layer
 
-<table>
-    <tr>
-        <td colspan="4" align="center">Aggregate</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Categoria</td>
-        <td colspan="2">Propósito</td>
-    </tr>
-    <tr>
-        <td>Order</td>
-        <td>Entity/Aggregate</td>
-        <td colspan="2">Representación de una orden para la compra</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Atributos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de dato</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>id</td>
-        <td>Long</td>
-        <td>Private</td>
-        <td>Identificador unico</td>
-    </tr>
-    <tr>
-        <td>orderedBy</td>
-        <td>Long</td>
-        <td>Private</td>
-        <td>Ordenado por</td>
-    </tr>
-     <tr>
-        <td>acceptedBy</td>
-        <td>Long</td>
-        <td>Private</td>
-        <td>Aceptado por</td>
-    </tr>
-     <tr>
-        <td>description</td>
-        <td>String</td>
-        <td>Private</td>
-        <td>descripcion de la orden</td>
-    </tr>
-     <tr>
-        <td>quantity</td>
-        <td>Long</td>
-        <td>Private</td>
-        <td>cantidad de la orden</td>
-    </tr>
-        <tr>
-        <td>OrderDate</td>
-        <td>Date</td>
-        <td>Private</td>
-        <td>Estado de la orden</td>
-    </tr>
-    </tr>
-        <tr>
-        <td>totalPrice</td>
-        <td>Double</td>
-        <td>Private</td>
-        <td>Precio total de la orden</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Métodos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de retorno</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>updateDate</td>
-        <td>orderedDate</td>
-        <td>Public</td>
-        <td>Actualización de fecha de la orden</td>
-    </tr>
-    <tr>
-        <td>update</td>
-        <td>orderedDate</td>
-        <td>Public</td>
-        <td>Actualizar la orden</td>
-    </tr>
-    <tr>
-        <td>end</td>
-        <td>status.Finalized</td>
-        <td>Public</td>
-        <td>Estado finalizados</td>
-    </tr>
-     <tr>
-        <td>qualify</td>
-        <td>status.Quialified</td>
-        <td>Public</td>
-        <td>Estado de calificado</td>
-    </tr>
-     <tr>
-        <td>isPending</td>
-        <td>orderStatus.pending</td>
-        <td>Public</td>
-        <td>Obtención del rol del usuario</td>
-    </tr>
-         <tr>
-        <td>isQualified</td>
-        <td>orderStatus.qualified</td>
-        <td>Public</td>
-        <td>Obtención del rol del usuario</td>
-    </tr>
-         <tr>
-        <td>isFinalized</td>
-        <td>orderStatus.finalizated</td>
-        <td>Public</td>
-        <td>Obtención del rol del usuario</td>
-    </tr>
-    </tr>
-         <tr>
-        <td>getStatus</td>
-        <td>status</td>
-        <td>Public</td>
-        <td>Obtención de estado</td>
-    </tr>
-</table>
+| **Aggregate**: `Order`                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa la raíz del agregado de una orden en el sistema de compras, mapeando la tabla "orders".        |
+
+| **Atributo**                     | **Tipo**                | **Descripción**                                                   |
+|----------------------------------|-------------------------|-------------------------------------------------------------------|
+| `id`                             | `Long`                  | Identificador único de la orden.                                  |
+| `sale`                           | `Sale`                  | Relación con la entidad `Sale` a la que pertenece la orden.       |
+| `orderedBy`                      | `Long`                  | ID del usuario que realizó la orden.                              |
+| `acceptedBy`                     | `Long`                  | ID del usuario que aceptó la orden.                               |
+| `description`                    | `String`                | Descripción detallada de la orden.                                |
+| `quantity`                       | `Long`                  | Cantidad de productos solicitados en la orden.                    |
+| `status`                         | `OrderStatus`           | Estado de la orden, utilizando un objeto de valor `OrderStatus`.  |
+| `orderedDate`                    | `Date`                  | Fecha en la que se realizó la orden.                              |
+| `totalPrice`                     | `Double`                | Precio total de la orden.                                         |
+| `paymentMethod`                  | `String`                | Método de pago utilizado en la orden.                             |
+
+| **Método**                       | **Descripción**                                                                             |
+|----------------------------------|---------------------------------------------------------------------------------------------|
+| `Order(...)`                     | Constructor que inicializa una nueva orden con los valores de sus atributos.                |
+| `updateDate(Date currentDate)`    | Actualiza la fecha de la orden a la proporcionada.                                         |
+| `update(Order request)`          | Actualiza los atributos de la orden (descripción, cantidad, precio total, método de pago).  |
+| `end()`                          | Cambia el estado de la orden a `FINALIZED`.                                                 |
+| `qualify()`                      | Cambia el estado de la orden a `QUALIFIED`.                                                 |
+| `isPending()`                    | Verifica si la orden está en estado `PENDING`.                                              |
+| `isQualified()`                  | Verifica si la orden está en estado `QUALIFIED`.                                            |
+| `isFinalized()`                  | Verifica si la orden está en estado `FINALIZED`.                                            |
+| `getStatus()`                    | Retorna el estado actual de la orden como un string en minúsculas.                          |
+
+| **Aggregate**: `Rate`                                                                                                          |
+|--------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa la raíz del agregado de una calificación (rate) en el sistema de compras, mapeando la tabla "rates". |
+
+| **Atributo**                     | **Tipo**                | **Descripción**                                                   |
+|----------------------------------|-------------------------|-------------------------------------------------------------------|
+| `id`                             | `Long`                  | Identificador único de la calificación.                           |
+| `rate`                           | `Long`                  | Valor de la calificación asignada por un usuario.                 |
+| `date`                           | `String`                | Fecha en la que se asignó la calificación.                        |
+| `product`                        | `Sale`                  | Relación con la entidad `Sale` que está siendo calificada.        |
+| `userId`                         | `Long`                  | Identificador del usuario que asignó la calificación.             |
+
+| **Método**                       | **Descripción**                                                                             |
+|----------------------------------|---------------------------------------------------------------------------------------------|
+| `Rate(Long rate, String date, Sale product, Long userId)` | Constructor que inicializa un nuevo "Rate" con sus atributos.      |
+| `updateRate(Long rate)`          | Actualiza el valor de la calificación.                                                      |
+
+| **Entidad**: `Sale`                                                                                                            |
+|---------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa la entidad de una venta, mapeando la estructura de la tabla "sales" en la base de datos.       |
+
+| **Atributo**                | **Tipo**           | **Descripción**                                                             |
+|-----------------------------|--------------------|-----------------------------------------------------------------------------|
+| `id`                        | `Long`             | Identificador único de la venta.                                            |
+| `name`                      | `String`           | Nombre del producto o servicio en venta.                                    |
+| `description`               | `String`           | Descripción detallada del producto o servicio.                              |
+| `unitPrice`                 | `Double`           | Precio unitario del producto o servicio.                                    |
+| `quantity`                  | `Long`             | Cantidad disponible del producto para la venta.                             |
+| `imageUrl`                  | `String`           | URL de la imagen representativa del producto.                               |
+| `userId`                    | `Long`             | Identificador del usuario que está ofreciendo el producto o servicio.       |
+
+| **Método**                  | **Descripción**                                                                                  |
+|-----------------------------|--------------------------------------------------------------------------------------------------|
+| `Sale(String name, String description, Double unitPrice, Long quantity, String imageUrl, Long userId)` | Constructor que inicializa una nueva instancia de la entidad `Sale`. |
+
 
 ### 4.2.2.2. Interface Layer
 
-<table>
-    <tr>
-        <td colspan="4" align="center">Controller</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Categoria</td>
-        <td colspan="2">Propósito</td>
-    </tr>
-    <tr>
-        <td>OrderController</td>
-        <td>Controller</td>
-        <td colspan="2">Controlador para ordenes</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Atributos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de dato</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>OrderQueryService</td>
-        <td>orderQueryService</td>
-        <td>Private</td>
-        <td>Servicio de cola de ordenes</td>
-    </tr>
-        <tr>
-        <td>OrderCommandService</td>
-        <td>orderCommandService</td>
-        <td>Private</td>
-        <td>Servicio de comandos de ordenes</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Métodos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de retorno</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>createOrder</td>
-        <td>Order Resource</td>
-        <td>Public</td>
-        <td>Metodo para crear una orden</td>
-    </tr>
-</table>
+| **Controlador**: `OrderController`                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que gestiona las operaciones relacionadas con los pedidos. Define los endpoints para la API.   |
 
+| **Método**                              | **Descripción**                                                                                                     |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `createOrder(CreateOrderResource resource)`    | Crea un nuevo pedido y devuelve el recurso del pedido creado con su ID.                                         |
+| `finalizeOrder(Long orderId)`          | Finaliza un pedido existente basado en su ID y devuelve el ID del pedido finalizado.                            |
+| `qualifyOrder(Long orderId)`           | Califica un pedido existente basado en su ID y devuelve el ID del pedido calificado.                             |
+| `getAllOrders()`                        | Recupera una lista de todos los pedidos registrados y los devuelve como recursos.                                |
+| `getOrderById(Long orderId)`           | Recupera un pedido específico por su ID y devuelve el recurso correspondiente.                                    |
+| `updateOrder(Long orderId, UpdateOrderResource resource)` | Actualiza un pedido existente y devuelve el recurso del pedido actualizado.                                         |
+| `deleteOrder(Long orderId)`            | Elimina un pedido basado en su ID y devuelve una respuesta sin contenido.                                         |
 
+| **Dependencias**                          | **Descripción**                                                                                                      |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `OrderQueryService`                       | Servicio para manejar las consultas relacionadas con los pedidos.                                                   |
+| `OrderCommandService`                     | Servicio para manejar las órdenes relacionadas con las operaciones de comando de pedidos.                           |
+| `CreateOrderCommandFromResourceAssembler` | Ensamblador para convertir un recurso de creación de pedido en un comando.                                          |
+| `OrderResourceFromEntityAssembler`       | Ensamblador para convertir una entidad de pedido en un recurso para la API.                                         |
+| `CreateOrderResource`                     | Recurso que representa la solicitud para crear un pedido.                                                           |
+| `OrderResource`                           | Recurso que representa la respuesta de un pedido en la API.                                                         |
+| `UpdateOrderResource`                     | Recurso que representa la solicitud para actualizar un pedido.                                                      |
+
+| **Controlador**: `RateController`                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que gestiona las operaciones relacionadas con las tarifas. Define los endpoints para la API.   |
+
+| **Método**                              | **Descripción**                                                                                                     |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `createRate(CreateRateResource resource)`    | Crea una nueva tarifa y devuelve el recurso de la tarifa creada con su ID.                                       |
+| `getAllRates()`                        | Recupera una lista de todas las tarifas registradas y las devuelve como recursos.                                |
+| `getRateById(Long rateId)`           | Recupera una tarifa específica por su ID y devuelve el recurso correspondiente.                                    |
+
+| **Dependencias**                          | **Descripción**                                                                                                      |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| `RateQueryService`                       | Servicio para manejar las consultas relacionadas con las tarifas.                                                   |
+| `RateCommandService`                     | Servicio para manejar las órdenes relacionadas con las operaciones de comando de tarifas.                           |
+| `CreateRateCommandFromResourceAssembler` | Ensamblador para convertir un recurso de creación de tarifa en un comando.                                          |
+| `RateResourceFromEntityAssembler`       | Ensamblador para convertir una entidad de tarifa en un recurso para la API.                                         |
+| `CreateRateResource`                     | Recurso que representa la solicitud para crear una tarifa.                                                           |
+| `RateResource`                           | Recurso que representa la respuesta de una tarifa en la API.                                                         |
+
+| **Controlador**: `SaleController`                                                                                              |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que gestiona las operaciones relacionadas con las ventas. Define los endpoints para la API.     |
+
+| **Método**                             | **Descripción**                                                                                                    |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| `createSale(CreateSaleResource resource)` | Crea una nueva venta y devuelve el recurso de la venta creada con su ID.                                        |
+| `getAllSales(String name)`            | Recupera una lista de todas las ventas registradas, con opción de filtrar por nombre.                           |
+| `getSaleById(Long saleId)`            | Recupera una venta específica por su ID y devuelve el recurso correspondiente.                                   |
+
+| **Dependencias**                         | **Descripción**                                                                                                     |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `SaleQueryService`                      | Servicio para manejar las consultas relacionadas con las ventas.                                                  |
+| `SaleCommandService`                    | Servicio para manejar las órdenes relacionadas con las operaciones de comando de ventas.                          |
+| `CreateSaleCommandFromResourceAssembler`| Ensamblador para convertir un recurso de creación de venta en un comando.                                         |
+| `SaleResourceFromEntityAssembler`      | Ensamblador para convertir una entidad de venta en un recurso para la API.                                        |
+| `CreateSaleResource`                    | Recurso que representa la solicitud para crear una venta.                                                          |
+| `SaleResource`                          | Recurso que representa la respuesta de una venta en la API.                                                       |
+
+| **Controlador**: `SaleOrdersController`                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que gestiona las operaciones relacionadas con los pedidos de una venta.                           |
+
+| **Método**                                   | **Descripción**                                                                                                    |
+|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| `getOrderBySaleIdAndOrderId(Long saleId, Long orderId)` | Recupera un pedido específico asociado a una venta utilizando los IDs de la venta y del pedido. Devuelve el recurso correspondiente. |
+
+| **Dependencias**                              | **Descripción**                                                                                                     |
+|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `OrderQueryService`                          | Servicio para manejar las consultas relacionadas con los pedidos.                                                  |
+| `GetOrderBySaleIdQuery`                     | Consulta utilizada para obtener un pedido basado en el ID de la venta y el ID del pedido.                          |
+| `OrderResource`                              | Recurso que representa la respuesta de un pedido en la API.                                                       |
+| `OrderResourceFromEntityAssembler`          | Ensamblador para convertir una entidad de pedido en un recurso para la API.                                        |
 
 ### 4.2.2.3. Application Layer
 
-<table>
-    <tr>
-        <td colspan="4" align="center">Service</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Categoria</td>
-        <td colspan="2">Propósito</td>
-    </tr>
-    <tr>
-        <td>OrderCommandService</td>
-        <td>Service</td>
-        <td colspan="2">Servicio con reglas de negocio para la orden</td>
-    </tr>
-    <tr>
-        <td>OrderQueryService</td>
-        <td>Service</td>
-        <td colspan="2">Servicio con reglas de negocio para la orden</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Atributos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de dato</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>OrderRepository</td>
-        <td>orderRepository</td>
-        <td>private</td>
-        <td>Repositorio de orden</td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Métodos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de retorno</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td>existById</td>
-        <td>order</td>
-        <td>Public</td>
-        <td>Metodo para validar orden por nombre de orden</td>
-    </tr>
-    <tr>
-        <td>findById</td>
-        <td>order</td>
-        <td>Public</td>
-        <td>Metodo para obtener orden por nombre de orden</td>
-    </tr>
-</table>
+| **Servicio**: `OrderCommandServiceImpl`                                                                                                 |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación de la interfaz `OrderCommandService`, encargada de manejar la creación y actualización de pedidos.  |
 
+| **Método**                                    | **Descripción**                                                                                                               |
+|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `handle(CreateOrderCommand command)`         | Maneja la creación de un nuevo pedido. Valida la venta asociada y guarda el pedido en el repositorio.                        |
+| `handle(FinalizeOrderCommand command)`      | Maneja la finalización de un pedido existente. Marca el pedido como finalizado y lo guarda en el repositorio.                 |
+| `handle(QualifyOrderCommand command)`       | Maneja la calificación de un pedido existente. Actualiza el estado del pedido y lo guarda en el repositorio.                  |
+| `deleteOrder(Long orderId)`                  | Elimina un pedido existente por ID. Lanza una excepción si el pedido no se encuentra en el repositorio.                      |
+| `updateOrder(Long orderId, UpdateOrderResource request)` | Actualiza un pedido existente si su estado es "pendiente". Lanza una excepción si el pedido no se encuentra o no está en estado "pendiente". |
+
+| **Dependencias**                             | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `OrderRepository`                           | Repositorio para manejar la persistencia de los pedidos.                                                                     |
+| `SaleQueryService`                          | Servicio para manejar las consultas relacionadas con las ventas, utilizado para validar ventas al crear o actualizar pedidos. |
+| `CreateOrderCommand`                        | Comando que encapsula los datos necesarios para crear un nuevo pedido.                                                      |
+| `FinalizeOrderCommand`                      | Comando que encapsula los datos necesarios para finalizar un pedido.                                                        |
+| `QualifyOrderCommand`                       | Comando que encapsula los datos necesarios para calificar un pedido.                                                        |
+| `UpdateOrderResource`                       | Recurso que encapsula los datos necesarios para actualizar un pedido.                                                       |
+| `Order`                                     | Entidad que representa un pedido en el dominio.                                                                              |
+
+| **Servicio**: `OrderQueryServiceImpl`                                                                                               |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación de la interfaz `OrderQueryService`, encargada de manejar las consultas relacionadas con los pedidos.  |
+
+| **Método**                                   | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `handle(GetOrderByIdQuery query)`          | Maneja la consulta para obtener un pedido por su ID. Devuelve un `Optional<Order>` que contiene el pedido si se encuentra.     |
+| `handle(GetAllOrdersQuery query)`          | Maneja la consulta para obtener todos los pedidos. Devuelve una lista de todos los pedidos.                                    |
+| `handle(GetOrderBySaleIdQuery query)`      | Maneja la consulta para obtener un pedido específico asociado a una venta por sus IDs. Devuelve un `Optional<Order>` que contiene el pedido si se encuentra. |
+
+| **Dependencias**                             | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `OrderRepository`                           | Repositorio para manejar la persistencia y consulta de pedidos.                                                              |
+| `GetOrderByIdQuery`                        | Consulta que encapsula el ID del pedido que se desea obtener.                                                                |
+| `GetAllOrdersQuery`                        | Consulta que no requiere parámetros y busca obtener todos los pedidos.                                                       |
+| `GetOrderBySaleIdQuery`                    | Consulta que encapsula el ID de la venta y el ID del pedido para buscar un pedido específico.                                 |
+
+| **Servicio**: `RateCommandServiceImpl`                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación de la interfaz `RateCommandService`, encargada de manejar la creación de valoraciones.       |
+
+| **Método**                                   | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `handle(CreateRateCommand command)`          | Maneja la creación de una nueva valoración. Busca la venta asociada al producto mediante su ID y guarda la nueva valoración en el repositorio. Devuelve el ID de la valoración creada. |
+
+| **Dependencias**                             | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `RateRepository`                           | Repositorio para manejar la persistencia y consulta de valoraciones.                                                          |
+| `SaleQueryService`                         | Servicio utilizado para obtener información sobre ventas, necesario para asociar una valoración a una venta específica.       |
+| `CreateRateCommand`                        | Comando que encapsula los datos necesarios para crear una nueva valoración, como la tasa, la fecha, y el ID del usuario.     |
+| `GetSaleByIdQuery`                        | Consulta que encapsula el ID del producto para buscar la venta asociada.                                                      |
+
+| **Servicio**: `RateQueryServiceImpl`                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación de la interfaz `RateQueryService`, encargada de manejar las consultas relacionadas con las valoraciones.       |
+
+| **Método**                                   | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `handle(GetAllRatesQuery query)`            | Maneja la consulta para obtener todas las valoraciones. Retorna una lista de todas las valoraciones almacenadas en el repositorio. |
+| `handle(GetRateByIdQuery query)`            | Maneja la consulta para obtener una valoración específica mediante su ID. Retorna un `Optional<Rate>` que puede contener la valoración si existe. |
+
+| **Dependencias**                             | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `RateRepository`                           | Repositorio para manejar la persistencia y consulta de valoraciones.                                                          |
+| `GetAllRatesQuery`                        | Consulta que se utiliza para obtener todas las valoraciones.                                                                  |
+| `GetRateByIdQuery`                        | Consulta que encapsula el ID de la valoración que se desea recuperar.                                                         |
+
+| **Servicio**: `SaleCommandServiceImpl`                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación de la interfaz `SaleCommandService`, encargada de manejar la creación de ventas.                        |
+
+| **Método**                                   | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `handle(CreateSaleCommand command)`         | Maneja el comando para crear una nueva venta. Crea una instancia de `Sale` utilizando los parámetros del comando y la guarda en el repositorio. Retorna el ID de la venta creada. |
+
+| **Dependencias**                             | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `SaleRepository`                           | Repositorio para manejar la persistencia y consulta de ventas.                                                          |
+| `CreateSaleCommand`                        | Comando que encapsula los parámetros necesarios para crear una nueva venta, como nombre, descripción, precio unitario, cantidad, URL de imagen y ID de usuario. |
+
+| **Servicio**: `SaleQueryServiceImpl`                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación de la interfaz `SaleQueryService`, encargada de manejar las consultas relacionadas con ventas.              |
+
+| **Método**                                   | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `handle(GetAllSalesQuery query)`            | Maneja el comando para obtener todas las ventas. Retorna una lista de todas las instancias de `Sale` almacenadas en el repositorio. |
+| `handle(GetSaleByIdQuery query)`            | Maneja el comando para obtener una venta específica por su ID. Retorna un `Optional<Sale>` que puede contener la venta buscada. |
+
+| **Dependencias**                             | **Descripción**                                                                                                               |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `SaleRepository`                           | Repositorio para manejar la persistencia y consulta de ventas.                                                          |
+| `GetAllSalesQuery`                         | Comando que encapsula la solicitud para obtener todas las ventas.                                                        |
+| `GetSaleByIdQuery`                         | Comando que encapsula la solicitud para obtener una venta específica por su ID.                                          |
 
 ### 4.2.2.4. Infrastructure Layer
 
+| **Repositorio**: `OrderRepository`                                                                                      |
+|-------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Repositorio de acceso a datos para la entidad `Order`, utilizando JPA para realizar operaciones de persistencia. |
 
-<table>
-    <tr>
-        <td colspan="4" align="center">Repository</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Categoria</td>
-        <td colspan="2">Propósito</td>
-    </tr>
-    <tr>
-        <td>OrderRepository</td>
-        <td>Repository</td>
-        <td colspan="2">Repository </td>
-    </tr>
-    <tr>
-        <td colspan="4" align="center">Métodos</td>
-    </tr>
-    <tr>
-        <td>Nombre</td>
-        <td>Tipo de retorno</td>
-        <td>Visibilidad</td>
-        <td>Descripción</td>
-    </tr>
-    <tr>
-        <td> findOrderBySaleIdAndId</td>
-        <td>order</td>
-        <td>Public</td>
-        <td>Metodo para obtener una orden por sale Id</td>
-    </tr>
-</table>
-
+| **Método**                                          | **Descripción**                                                                                                  |
+|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| `findOrderBySaleIdAndId(Long saleId, Long orderId)` | Busca una orden específica asociada a una venta dada, utilizando el ID de la venta y el ID de la orden. Retorna un `Optional<Order>` que puede contener la orden buscada o estar vacío si no se encuentra. |
 
 
 ### 4.2.2.6. Bounded Context Software Architecture Component Level Diagrams
@@ -1207,44 +1040,89 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 ## 4.2.3. Bounded Context: Crop Registration
 ### 4.2.3.1. Domain Layer
 
-<table> <tr> <td colspan="4" align="center">Aggregate</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>Product</td> <td>Entity/Aggregate</td> <td colspan="2">Representación de un producto agrícola</td> </tr> <tr> <td colspan="4" align="center">Atributos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>id</td> <td>Long</td> <td>Private</td> <td>Identificador único</td> </tr> <tr> <td>name</td> <td>String</td> <td>Private</td> <td>Nombre del producto</td> </tr> <tr> <td>description</td> <td>String</td> <td>Private</td> <td>Descripción del producto</td> </tr> <tr> <td>recommendedCultivationDistance</td> <td>String</td> <td>Private</td> <td>Distancia de cultivo recomendada</td> </tr> <tr> <td>recommendedCultivationDepth</td> <td>String</td> <td>Private</td> <td>Profundidad de cultivo recomendada</td> </tr> <tr> <td>recommendedGrowingClimate</td> <td>String</td> <td>Private</td> <td>Clima de crecimiento recomendado</td> </tr> <tr> <td>recommendedSoilType</td> <td>String</td> <td>Private</td> <td>Tipo de suelo recomendado</td> </tr> <tr> <td>recommendedGrowingSeason</td> <td>String</td> <td>Private</td> <td>Temporada de crecimiento recomendada</td> </tr> <tr> <td>imageUrl</td> <td>String</td> <td>Private</td> <td>URL de la imagen del producto</td> </tr> <tr> <td>userId</td> <td>Long</td> <td>Private</td> <td>Identificador del usuario que creó el producto</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>getId</td> <td>Long</td> <td>Public</td> <td>Obtiene el identificador del producto</td> </tr> <tr> <td>getName</td> <td>String</td> <td>Public</td> <td>Obtiene el nombre del producto</td> </tr> <tr> <td>getDescription</td> <td>String</td> <td>Public</td> <td>Obtiene la descripción del producto</td> </tr> <tr> <td>getRecommendedCultivationDistance</td> <td>String</td> <td>Public</td> <td>Obtiene la distancia de cultivo recomendada</td> </tr> <tr> <td>getRecommendedCultivationDepth</td> <td>String</td> <td>Public</td> <td>Obtiene la profundidad de cultivo recomendada</td> </tr> <tr> <td>getRecommendedGrowingClimate</td> <td>String</td> <td>Public</td> <td>Obtiene el clima de crecimiento recomendado</td> </tr> <tr> <td>getRecommendedSoilType</td> <td>String</td> <td>Public</td> <td>Obtiene el tipo de suelo recomendado</td> </tr> <tr> <td>getRecommendedGrowingSeason</td> <td>String</td> <td>Public</td> <td>Obtiene la temporada de crecimiento recomendada</td> </tr> <tr> <td>getImageUrl</td> <td>String</td> <td>Public</td> <td>Obtiene la URL de la imagen del producto</td> </tr> <tr> <td>getUserId</td> <td>Long</td> <td>Public</td> <td>Obtiene el identificador del usuario que creó el producto</td> </tr> </table>
+| **Entidad**: `Product`                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa un producto agrícola y su información relacionada.                                              |
+
+| **Atributo**                      | **Tipo**       | **Descripción**                                                   |
+|-----------------------------------|----------------|-------------------------------------------------------------------|
+| `id`                              | `Long`         | Identificador único del producto (autogenerado).                  |
+| `name`                            | `String`       | Nombre del producto.                                              |
+| `description`                     | `String`       | Descripción del producto.                                         |
+| `recommendedCultivationDistance`  | `String`       | Distancia de cultivo recomendada.                                 |
+| `recommendedCultivationDepth`     | `String`       | Profundidad de cultivo recomendada.                               |
+| `recommendedGrowingClimate`       | `String`       | Clima de crecimiento recomendado.                                 |
+| `recommendedSoilType`             | `String`       | Tipo de suelo recomendado.                                        |
+| `recommendedGrowingSeason`        | `String`       | Temporada de crecimiento recomendada.                             |
+| `imageUrl`                        | `String`       | URL de la imagen del producto.                                    |
+| `userId`                          | `Long`         | ID del usuario que creó o gestiona el producto.                   |
+
+| **Método**                        | **Descripción**                                                       |
+|-----------------------------------|-----------------------------------------------------------------------|
+| `getId()`                         | Retorna el `id` del producto.                                         |
+| `getName()`                       | Retorna el `name` del producto.                                       |
+| `getDescription()`                | Retorna la `description` del producto.                                |
+| `getRecommendedCultivationDistance()` | Retorna la distancia de cultivo recomendada (`recommendedCultivationDistance`). |
+| `getRecommendedCultivationDepth()`| Retorna la profundidad de cultivo recomendada (`recommendedCultivationDepth`). |
+| `getRecommendedGrowingClimate()`  | Retorna el clima de crecimiento recomendado (`recommendedGrowingClimate`). |
+| `getRecommendedSoilType()`        | Retorna el tipo de suelo recomendado (`recommendedSoilType`).          |
+| `getRecommendedGrowingSeason()`   | Retorna la temporada de crecimiento recomendada (`recommendedGrowingSeason`). |
+| `getImageUrl()`                   | Retorna la URL de la imagen del producto (`imageUrl`).                |
+| `getUserId()`                     | Retorna el ID del usuario (`userId`).                                 |
+
+
 
 ### 4.2.3.2. Interface Layer
 
-<table> 
-  <tr> <td colspan="4" align="center">Controller</td> </tr> 
-  <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> 
-  <tr> <td>ProductController</td> <td>Controller</td> <td colspan="2">Controlador para productos</td> </tr> 
-  <tr> <td colspan="4" align="center">Atributos</td> </tr> 
-  <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
-  <tr> <td>ProductQueryService</td> <td>productQueryService</td> <td>Private</td> <td>Servicio de consultas de productos</td> </tr> 
-  <tr> <td>ProductCommandService</td> <td>productCommandService</td> <td>Private</td> <td>Servicio de comandos de productos</td> </tr> 
-  <tr> <td colspan="4" align="center">Métodos</td> </tr> 
-  <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
-  <tr> <td>createProduct</td> <td>ProductResource</td> <td>Public</td> <td>Método para crear un producto</td> </tr> 
-  <tr> <td>getAllProducts</td> <td>List&lt;ProductResource&gt;</td> <td>Public</td> <td>Método para obtener todos los productos</td> </tr> 
-  <tr> <td>getProductById</td> <td>ProductResource</td> <td>Public</td> <td>Método para obtener un producto por ID</td> </tr> 
-</table>
+| **Controlador**: `ProductController`                                                                                                   |
+|---------------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador para la gestión de productos. Define los endpoints para manejar las solicitudes y respuestas relacionadas con los productos. |
+
+| **Método**                                          | **Descripción**                                                                                               |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `createProduct(CreateProductResource resource)`      | Maneja la creación de un nuevo producto. Toma un recurso de creación de producto, convierte a un comando y llama al servicio de comando. Retorna el recurso del producto creado. |
+| `getAllProducts(String name)`                        | Maneja la recuperación de todos los productos. Si se proporciona un nombre como parámetro, filtra la lista de productos por nombre antes de devolverla. |
+| `getProductById(Long productId)`                    | Maneja la recuperación de un producto por su ID. Si el producto no se encuentra, retorna un estado 404 Not Found. De lo contrario, retorna el recurso del producto. |
+
+| **Controlador**: `ProductCropsController`                                                                                                |
+|-----------------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador para manejar los cultivos asociados a un producto. Define los endpoints para manejar las solicitudes y respuestas relacionadas con los cultivos de un producto específico. |
+
+| **Método**                                          | **Descripción**                                                                                               |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `getAllCropsByProductId(Long productId)`           | Maneja la recuperación de todos los cultivos asociados a un producto específico dado su ID. Retorna una lista de recursos de cultivos. |
+| `getCropByProductIdAndCropId(Long productId, Long cropId)` | Maneja la recuperación de un cultivo específico dado su ID y el ID del producto. Si el cultivo no se encuentra, retorna un estado 404 Not Found; de lo contrario, retorna el recurso del cultivo. |
 
 ### 4.2.3.3. Application Layer
 
-<table> 
- <tr> <td colspan="4" align="center">Service</td> </tr> 
- <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> 
- <tr> <td>ProductCommandService</td> <td>Service</td> <td colspan="2">Servicio con lógica de negocio para productos</td> </tr> 
- <tr> <td>ProductQueryService</td> <td>Service</td> <td colspan="2">Servicio con lógica de negocio para productos</td> </tr> 
- <tr> <td colspan="4" align="center">Atributos</td> </tr> 
- <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
- <tr> <td>ProductRepository</td> <td>productRepository</td> <td>Private</td> <td>Repositorio de productos</td> </tr> 
- <tr> <td colspan="4" align="center">Métodos</td> </tr> 
- <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
- <tr> <td>handleCreateProduct</td> <td>Long</td> <td>Public</td> <td>Método para manejar la creación de un producto</td> </tr> 
- <tr> <td>handleGetProductById</td> <td>Optional&lt;Product&gt;</td> <td>Public</td> <td>Método para manejar la consulta de un producto por su ID</td> </tr> 
- <tr> <td>handleGetAllProducts</td> <td>List&lt;Product&gt;</td> <td>Public</td> <td>Método para manejar la consulta de todos los productos</td> </tr> </table>
+| **Servicio**: `ProductCommandServiceImpl`                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación del servicio `ProductCommandService` que maneja la creación de productos en la aplicación.              |
+
+| **Método**                                         | **Descripción**                                                                                               |
+|----------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `handle(CreateProductCommand command)`             | Maneja la creación de un nuevo producto. Toma un comando que contiene la información del producto y lo persiste en la base de datos. Retorna el ID del producto creado. |
+
+| **Servicio**: `ProductQueryServiceImpl`                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación del servicio `ProductQueryService` que maneja la recuperación de productos de la aplicación.           |
+
+| **Método**                                         | **Descripción**                                                                                               |
+|----------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `handle(GetProductByIdQuery query)`                | Maneja la consulta para recuperar un producto por su ID. Devuelve un `Optional<Product>` que contiene el producto si se encuentra, o está vacío si no. |
+| `handle(GetAllProductsQuery query)`                | Maneja la consulta para recuperar todos los productos. Retorna una lista de productos disponibles en la base de datos. |
 
 ### 4.2.3.4. Infrastructure Layer
 
-<table> <tr> <td colspan="4" align="center">Repository</td> </tr> <tr> <td>Nombre</td> <td>Categoria</td> <td colspan="2">Propósito</td> </tr> <tr> <td>ProductRepository</td> <td>Repository</td> <td colspan="2">Repositorio para la persistencia de productos</td> </tr> <tr> <td colspan="4" align="center">Métodos</td> </tr> <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> <tr> <td>findById</td> <td>Optional&lt;Product&gt;</td> <td>Public</td> <td>Método para encontrar un producto por su ID</td> </tr> <tr> <td>findAll</td> <td>List&lt;Product&gt;</td> <td>Public</td> <td>Método para obtener todos los productos</td> </tr> </table>
+| **Repositorio**: `ProductRepository`                                                                                                  |
+|-----------------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Repositorio que maneja la persistencia de la entidad `Product` en la base de datos utilizando JPA.                     |
+
+| **Método**                     | **Descripción**                                                                                                       |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| `findAll()`                   | Recupera todos los productos de la base de datos. Devuelve una lista de objetos `Product`.                          |
+| `findById(Long id)`           | Recupera un producto por su ID. Devuelve un `Optional<Product>` que contiene el producto si se encuentra, o está vacío si no. |
+
 
 ### 4.2.1.6. Bounded Context Software Architecture Component Level Diagrams
 
@@ -1266,89 +1144,88 @@ En la siguiente imagen se visualizan los contenedores, los cuales sirven para di
 ## 4.2.4. Bounded Context: Planification
 ### 4.2.4.1. Domain Layer
 
-<table> <tr> <td colspan="4" align="center"><strong>Aggregate</strong></td> </tr> 
-  <tr> <td><strong>Nombre</strong></td> <td><strong>Categoría</strong></td> <td colspan="2"><strong>Propósito</strong></td> </tr> 
-  <tr> <td>Crop</td> <td>Entity/Aggregate</td> <td colspan="2">Representación de un cultivo agrícola</td> </tr> 
-  <tr> <td colspan="4" align="center"><strong>Atributos</strong></td> </tr> 
-  <tr> <td><strong>Nombre</strong></td> <td><strong>Tipo de dato</strong></td> <td><strong>Visibilidad</strong></td> <td><strong>Descripción</strong></td> </tr> 
-  <tr> <td>id</td> <td>Long</td> <td>Private</td> <td>Identificador único del cultivo</td> </tr> 
-  <tr> <td>name</td> <td>String</td> <td>Private</td> <td>Nombre del cultivo</td> </tr> 
-  <tr> <td>pickUpWeed</td> <td>Boolean</td> <td>Private</td> <td>Indica si el deshierbe está activo</td> </tr> 
-  <tr> <td>fertilizeCrop</td> <td>Boolean</td> <td>Private</td> <td>Indica si la fertilización del cultivo está activa</td> </tr> 
-  <tr> <td>oxygenateCrop</td> <td>Boolean</td> <td>Private</td> <td>Indica si la oxigenación del cultivo está activa</td> </tr> 
-  <tr> <td>makeCropLine</td> <td>Boolean</td> <td>Private</td> <td>Indica si se deben hacer líneas en el cultivo</td> </tr> 
-  <tr> <td>makeCropHole</td> <td>Boolean</td> <td>Private</td> <td>Indica si se deben hacer hoyos en el cultivo</td> </tr> 
-  <tr> <td>wateringDays</td> <td>Long</td> <td>Private</td> <td>Número de días de riego</td> </tr> 
-  <tr> <td>pestCleanupDays</td> <td>Long</td> <td>Private</td> <td>Número de días de limpieza de plagas</td> </tr> 
-  <tr> <td>product</td> <td>Product (Entity)</td> <td>Private</td> <td>Producto asociado al cultivo</td> </tr> 
-  <tr> <td>userId</td> <td>Long</td> <td>Private</td> <td>Identificador del usuario responsable</td> </tr> 
-  <tr> <td colspan="4" align="center"><strong>Métodos</strong></td> </tr> 
-  <tr> <td><strong>Nombre</strong></td> <td><strong>Tipo de retorno</strong></td> <td><strong>Visibilidad</strong></td> <td><strong>Descripción</strong></td> </tr> 
-  <tr> <td>updateInformation</td> <td>Crop</td> <td>Public</td> <td>Actualiza la información del cultivo</td> </tr> 
-  <tr> <td>isPickUpWeedActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si el deshierbe está activo</td> </tr> 
-  <tr> <td>isFertilizeCropActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si la fertilización del cultivo está activa</td> </tr> 
-  <tr> <td>isOxygenateCropActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si la oxigenación del cultivo está activa</td> </tr> 
-  <tr> <td>isMakeCropLineActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si se deben hacer líneas en el cultivo</td> </tr> 
-  <tr> <td>isMakeCropHoleActive</td> <td>boolean</td> <td>Public</td> <td>Verifica si se deben hacer hoyos en el cultivo</td> </tr> 
-  <tr> <td>getId</td> <td>Long</td> <td>Public</td> <td>Obtiene el identificador único del cultivo</td> </tr> 
-  <tr> <td>getName</td> <td>String</td> <td>Public</td> <td>Obtiene el nombre del cultivo</td> </tr> 
-  <tr> <td>getPickUpWeed</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado del deshierbe</td> </tr> 
-  <tr> <td>getFertilizeCrop</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado de la fertilización del cultivo</td> </tr> 
-  <tr> <td>getOxygenateCrop</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado de la oxigenación del cultivo</td> </tr> 
-  <tr> <td>getMakeCropLine</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado de la creación de líneas en el cultivo</td> </tr> 
-  <tr> <td>getMakeCropHole</td> <td>Boolean</td> <td>Public</td> <td>Obtiene el estado de la creación de hoyos en el cultivo</td> </tr> 
-  <tr> <td>getWateringDays</td> <td>Long</td> <td>Public</td> <td>Obtiene el número de días de riego</td> </tr> 
-  <tr> <td>getPestCleanupDays</td> <td>Long</td> <td>Public</td> <td>Obtiene el número de días de limpieza de plagas</td> </tr> 
-  <tr> <td>getProduct</td> <td>Product</td> <td>Public</td> <td>Obtiene el producto asociado al cultivo</td> </tr> 
-  <tr> <td>getUserId</td> <td>Long</td> <td>Public</td> <td>Obtiene el identificador del usuario responsable</td> </tr> 
-</table>
+| **Aggregate**: `Crop`                                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Representa el agregado raíz "Cultivo" y su información relacionada. Se mapea a la tabla `crops` en la base de datos.|
+
+| **Atributo**                      | **Tipo**       | **Descripción**                                                   |
+|-----------------------------------|----------------|-------------------------------------------------------------------|
+| `id`                              | `Long`         | Identificador único del cultivo (autogenerado).                   |
+| `name`                            | `String`       | Nombre del cultivo.                                               |
+| `pickUpWeed`                      | `Boolean`      | Indica si se realiza el deshierbe en el cultivo.                  |
+| `fertilizeCrop`                   | `Boolean`      | Indica si se fertiliza el cultivo.                                |
+| `oxygenateCrop`                   | `Boolean`      | Indica si se oxigena el cultivo.                                  |
+| `makeCropLine`                    | `Boolean`      | Indica si se trazan líneas en el cultivo.                         |
+| `makeCropHole`                    | `Boolean`      | Indica si se hacen agujeros en el cultivo.                        |
+| `wateringDays`                    | `Long`         | Días entre riegos del cultivo.                                    |
+| `pestCleanupDays`                 | `Long`         | Días entre limpiezas de plagas.                                   |
+| `product`                         | `Product`      | El producto asociado con el cultivo (entidad `Product`).          |
+| `userId`                          | `Long`         | ID del usuario que gestiona el cultivo.                           |
+
+| **Método**                        | **Descripción**                                                                                   |
+|-----------------------------------|---------------------------------------------------------------------------------------------------|
+| `getId()`                         | Retorna el `id` del cultivo.                                                                      |
+| `getName()`                       | Retorna el `name` del cultivo.                                                                    |
+| `getPickUpWeed()`                 | Retorna si el deshierbe está activo (`pickUpWeed`).                                               |
+| `getFertilizeCrop()`              | Retorna si la fertilización está activa (`fertilizeCrop`).                                        |
+| `getOxygenateCrop()`              | Retorna si la oxigenación está activa (`oxygenateCrop`).                                          |
+| `getMakeCropLine()`               | Retorna si el trazado de líneas está activo (`makeCropLine`).                                     |
+| `getMakeCropHole()`               | Retorna si la perforación de agujeros está activa (`makeCropHole`).                               |
+| `getWateringDays()`               | Retorna los días entre riegos (`wateringDays`).                                                   |
+| `getPestCleanupDays()`            | Retorna los días entre limpiezas de plagas (`pestCleanupDays`).                                   |
+| `getProduct()`                    | Retorna el `product` asociado al cultivo.                                                         |
+| `getUserId()`                     | Retorna el ID del usuario (`userId`).                                                             |
+| `updateInformation()`             | Actualiza la información del cultivo con nuevos valores.                                          |
+| `isPickUpWeedActive()`            | Verifica si el deshierbe está activo.                                                             |
+| `isFertilizeCropActive()`         | Verifica si la fertilización está activa.                                                         |
+| `isOxygenateCropActive()`         | Verifica si la oxigenación está activa.                                                           |
+| `isMakeCropLineActive()`          | Verifica si el trazado de líneas está activo.                                                     |
+| `isMakeCropHoleActive()`          | Verifica si la perforación de agujeros está activa.                                               |
 
 ### 4.2.4.2. Interface Layer
 
-<table> 
-  <tr> <td colspan="4" align="center">Controller</td> </tr> 
-  <tr> <td>Nombre</td> <td>Categoría</td> <td colspan="2">Propósito</td> </tr> 
-  <tr> <td>CropController</td> <td>Controller</td> <td colspan="2">Controlador para manejar solicitudes relacionadas con cultivos</td> </tr> 
-  <tr> <td colspan="4" align="center">Atributos</td> </tr> 
-  <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
-  <tr> <td>CropQueryService</td> <td>CropQueryService</td> <td>Private</td> <td>Servicio para consultas de cultivos</td> </tr> 
-  <tr> <td>CropCommandService</td> <td>CropCommandService</td> <td>Private</td> <td>Servicio para comandos de cultivos</td> </tr> 
-  <tr> <td colspan="4" align="center">Métodos</td> </tr> 
-  <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
-  <tr> <td>createCrop</td> <td>Crop Resource</td> <td>Public</td> <td>Método para crear un nuevo cultivo</td> </tr> 
-  <tr> <td>getAllCrops</td> <td>List(Crop Resource)</td> <td>Public</td> <td>Método para obtener todos los cultivos</td> </tr> 
-  <tr> <td>getCropById</td> <td>Crop Resource</td> <td>Public</td> <td>Método para obtener un cultivo en especifico</td> </tr> 
-</table>
+| **Controlador**: `CropController`                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Controlador que maneja las operaciones relacionadas con cultivos. Define los endpoints para la gestión de cultivos. |
+
+| **Método**                                    | **Descripción**                                                                                                        |
+|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| `createCrop(CreateCropResource resource)`    | Maneja la creación de un nuevo cultivo. Recibe un comando de creación, lo procesa y devuelve el recurso del cultivo creado. |
+| `getAllCrops(String name)`                   | Maneja la recuperación de todos los cultivos. Devuelve una lista de recursos de cultivo. Permite filtrar por nombre.        |
+| `getCropById(Long cropId)`                   | Maneja la recuperación de un cultivo específico por su ID. Devuelve el recurso del cultivo correspondiente o un 404 si no se encuentra. |
 
 ### 4.2.4.3. Application Layer
 
-<table> 
-  <tr> <td colspan="4" align="center">Service</td> </tr> 
-  <tr> <td>Nombre</td> <td>Categoría</td> <td colspan="2">Propósito</td> </tr> 
-  <tr> <td>CropCommandService</td> <td>Service</td> <td colspan="2">Servicio que contiene las reglas de negocio para los cultivos</td> </tr> 
-  <tr> <td>CropQueryService</td> <td>Service</td> <td colspan="2">Servicio que contiene las reglas de negocio para los cultivos</td> </tr> 
-  <tr> <td colspan="4" align="center">Atributos</td> </tr> 
-  <tr> <td>Nombre</td> <td>Tipo de dato</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
-  <tr> <td>CropRepository</td> <td>CropRepository</td> <td>Private</td> <td>Repositorio de cultivos</td> </tr> 
-  <tr> <td colspan="4" align="center">Métodos</td> </tr> 
-  <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
-  <tr> <td>getAllCrops</td> <td>List(Crop)</td> <td>Public</td> <td>Obtinene todos los cultivos</td> </tr> 
-  <tr> <td>getCropById</td> <td>Crop</td> <td>Public</td> <td>Obtinene un cultivo especifico</td> </tr> 
-  <tr> <td>getCropsByProductId</td> <td>List(Crop)</td> <td>Public</td> <td>Busca todos los cultivo que le pertenecen a un producto</td> </tr> 
-  <tr> <td>getCropByProductId</td> <td>Crop</td> <td>Public</td> <td>Busca un cultivo por la id el producto</td> </tr> 
-  <tr> <td>createCrop</td> <td>Crop</td> <td>Public</td> <td>Crea un cultivo</td> </tr> 
-</table>
+| **Servicio**: `CropCommandServiceImpl`                                                                                         |
+|----------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación del servicio que maneja la creación de cultivos. Utiliza un repositorio para persistir los cultivos y un servicio de consulta para verificar la existencia del producto asociado. |
+
+| **Método**                                   | **Descripción**                                                                                                              |
+|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| `handle(CreateCropCommand command)`         | Maneja la creación de un nuevo cultivo. Verifica la existencia del producto asociado y guarda el cultivo en el repositorio.  |
+
+| **Servicio**: `CropQueryServiceImpl`                                                                                         |
+|----------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Implementación del servicio que maneja las consultas relacionadas con los cultivos. Utiliza un repositorio para acceder a los datos de los cultivos. |
+
+| **Método**                                   | **Descripción**                                                                                                              |
+|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| `handle(GetAllCropsQuery query)`            | Maneja la consulta para obtener todos los cultivos. Devuelve una lista de todos los cultivos almacenados en el repositorio.  |
+| `handle(GetCropByIdQuery query)`            | Maneja la consulta para obtener un cultivo por su ID. Devuelve un `Optional<Crop>` que contiene el cultivo, si existe.      |
+| `handle(GetAllCropsByProductIdQuery query)`| Maneja la consulta para obtener todos los cultivos asociados a un producto específico. Devuelve una lista de cultivos.      |
+| `handle(GetCropByProductIdQuery query)`     | Maneja la consulta para obtener un cultivo específico asociado a un producto dado. Devuelve un `Optional<Crop>` si existe. |
+
 
 ### 4.2.4.4. Infrastructure Layer
 
-<table> <tr> <td colspan="4" align="center">Repository</td> </tr> 
-  <tr> <td>Nombre</td> <td>Categoría</td> <td colspan="2">Propósito</td> </tr> 
-  <tr> <td>CropRepository</td> <td>Repository</td> <td colspan="2">Repositorio para manejar la persistencia de cultivos</td> </tr> 
-  <tr> <td colspan="4" align="center">Métodos</td> </tr> 
-  <tr> <td>Nombre</td> <td>Tipo de retorno</td> <td>Visibilidad</td> <td>Descripción</td> </tr> 
-  <tr> <td>findCropByProductIdAndId</td> <td>Crop</td> <td>Public</td> <td>Encuentra un cultivo por su ID y el ID del producto asociado</td> </tr> 
-  <tr> <td>findAllByProductId</td> <td>List(Crop)</td> <td>Public</td> <td>Retorna todos los cultivos asociados a un producto específico</td> </tr> 
-    </table>
+| **Repositorio**: `CropRepository`                                                                                           |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| **Descripción**: Interfaz que extiende `JpaRepository` para manejar la persistencia de los cultivos. Proporciona métodos para acceder a los cultivos en la base de datos. |
+
+| **Método**                                        | **Descripción**                                                                                                          |
+|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| `findCropByProductIdAndId(Long productId, Long cropId)` | Busca un cultivo específico por su ID y el ID del producto al que está asociado. Devuelve un `Optional<Crop>` que contiene el cultivo, si existe. |
+| `findAllByProductId(Long productId)`            | Devuelve una lista de todos los cultivos que están asociados a un producto específico, utilizando el ID del producto.    |
 
 ### 4.2.4.6. Bounded Context Software Architecture Component Level Diagrams
 
