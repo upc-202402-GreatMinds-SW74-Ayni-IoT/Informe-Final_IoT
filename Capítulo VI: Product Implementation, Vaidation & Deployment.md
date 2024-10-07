@@ -132,7 +132,25 @@ Para el desarrollo de Mobile App, se hará uso de Flutter/Dart como lenguaje y s
 
 ### 6.1.4 Software Deployment Configuration
 
-Para el despliegue del Landing Page se utilizará Netlify, para el despliegue automático y gracias a su integración con GitHub se irá actualizando con cada commit realizado y para el Frontend de la aplicación se usará Netlify.
+Para el despliegue de la landing page y la aplicación web, se usará netlify, donde se seguirán los siguientes pasos:
+
+Primero se debe iniciar sesión en Netlify con una cuenta de Github, luego ir a "Sites" donde se ubica el siguiente botón:
+
+![image](https://github.com/user-attachments/assets/627ccab8-2b59-4d70-a682-697ddbdc32f6)
+
+Luego, se debe seleccionar la organización del proyecto en Github, y seleccionar el repositorio deseado:
+
+![image](https://github.com/user-attachments/assets/d480e632-3de1-412e-9ed5-d3611c37d5b4)
+
+Para la landing page, al ser un sitio estático, no es necesario configurar rutas para acceder al proyecto, por ende solo es necesario darle al botón de "Deploy"
+
+![image](https://github.com/user-attachments/assets/da55e807-ebaa-4f47-9537-dd43092cefa6)
+
+Para la aplicación web, es necesario indicarle a la plataforma donde se encuentra el contenido, en este caso "dist/AyniFrontend" y luego darle click al botón de "Deploy"
+
+![image](https://github.com/user-attachments/assets/624999cf-f954-41a0-8eea-d830d5facc01)
+
+De esta manera se la plataforma se encarga del build y en pocos minutos estaría desplegada la Landing Page y la aplicación web.
 
 ## 6.2 Landing Page, Services & Applications Implementation
 
@@ -157,6 +175,16 @@ Para el despliegue del Landing Page se utilizará Netlify, para el despliegue au
 
 
 ### 6.2.1.2 Sprint Backlog 1
+
+El objetivo de este sprint es establecer una base sólida en la experiencia de usuario mediante el desarrollo de una landing page que brinde información clave sobre la aplicación y sus funcionalidades. Además, de desarrollar la primera versión de la aplicación web, donde se centrará en la visualización, monitoreo y planificación de cultivos.
+
+Como herramienta de control para este Sprint se usó Trello con un board exclusivo para esta iteración:
+
+![image](https://github.com/user-attachments/assets/88299426-62b1-4ce4-a9a5-03ba69145a7b)
+
+Link: https://trello.com/invite/b/66f74e2b2e7e0503fc0ca23a/ATTI06668ea4a9d72f90e44db6bef78629110186947B/sprint-1-ayni
+
+
 
 <table><tr><th valign="top">Sprint #</th><th colspan="7" valign="top">Sprint 1</th></tr>
 <tr><td colspan="2" valign="top">User Story</td><td colspan="6" valign="top">Work-Item / Task</td></tr>
@@ -185,6 +213,9 @@ Para el despliegue del Landing Page se utilizará Netlify, para el despliegue au
 
 ### 6.2.1.3 Development Evidence for Sprint Review
 
+
+Con respecto al alcance de desarrollo en este sprint, se logró realziar las secciones principales para landing page, tales como la sección Hero, especificación de funcionalidades y precios, acerca del equipo de desarrollo. Por otro lado, en la aplicación web se diseñó e implementó distintas secciones, tales como: Home, Crops, y la compra de productos mediante un stepper. Una de las pantallas a resaltar es el dashboard de monitoreo de cultivo. 
+
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | - | - | - | - | - | - |
 | Ayni_LandingPageOfficial | feature/aboutus-section | 5832e79 | feat: update descriptions  | - | 25/09/2023 |
@@ -206,6 +237,18 @@ Para el despliegue del Landing Page se utilizará Netlify, para el despliegue au
 
 ### 6.2.1.4 Testing Suite Evidence for Sprint Review
 
+En esta sección, se realizaron acceptance test en .feature para cada una de las historias de usuario incluidas en este Sprint.
+Las historias de usuario relacionadas a estos primeros .features son:
+- HU-11	Sección Hero y Botón Call-to-Action
+- HU-12	Landing Page responsive
+- HU-13	Sección de Funcionalidades y Planes
+- HU-14	Sección de Misión y Visión
+- HU-16	Sección principal ("Home")
+- HU-04	Realizar pedidos de productos
+- HU-08	Planificar actividades agrícolas
+- HU-15	Sistemas de búsqueda y paginación
+- HU-02	Inicio de sesión
+
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | - | - | - | - | - | - |
 | acceptance-test-IoT | test/UserStories | 70f7178 | Acceptance_test_09.feature  | - | 25/09/2023 |
@@ -218,10 +261,11 @@ Para el despliegue del Landing Page se utilizará Netlify, para el despliegue au
 | acceptance-test-IoT | test/UserStories | 16df5ba | Acceptance_test_02.feature  | - | 25/09/2023 |
 | acceptance-test-IoT | test/UserStories | 3fab5b6 | Acceptance_test_01.feature  | - | 25/09/2023 |
 
+Link de repositorio: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/acceptance-test-IoT
 
 ### 6.2.1.5 Execution Evidence for Sprint Review
 
-En el Sprint 1 se alcanzó a desarrollar una primera versión de las web apps y la landing page
+En el Sprint 1 se alcanzó a desarrollar una primera versión de las web apps y la landing page, como principales caracteristicas tenemos las vistas de Dashboard de monitoreo de cultivo, Home, PLanificación de cultivo, etc. A continuación se muestran imagenes de las vistas:
 
 Principales vistas desarrolladas:
 Landing page (sección Hero):
