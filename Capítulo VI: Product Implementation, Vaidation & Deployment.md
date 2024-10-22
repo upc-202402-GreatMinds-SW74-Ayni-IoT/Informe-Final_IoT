@@ -121,8 +121,6 @@ En resumen, las convenciones o estilos de programación, se seguirá la guía de
 
 Para el almacenamiento y control de versiones de código se utilizará GIT gestionado desde GitHub aplicando GitFlow Workflow, Conventional Commits y Semantic Versioning. Además, todos los hotfixes se realizan en ella, para así poder tener los arreglos desplegados de forma automática.
 
-(imagen network)
-
 El lenguaje de diseño de Landing Page y Web Applications estará basado en Material Design. Como biblioteca de componentes de UI se utilizará Angular Material.
 
 Para el desarrollo de Web Services, se realizará bajo RESTful API architectural style y se hará uso de Spring Boot Framework, utilizando Java como lenguaje de Programación.
@@ -168,7 +166,7 @@ De esta manera se la plataforma se encarga del build y en pocos minutos estaría
 | Sprint 1 - Review Summary | No aplica (Es el primer Sprint) |
 | Sprint 1 - Retrospective Summary  | No aplica (Es el primer Sprint) |
 | **Sprint Goal & User Stories** | - |
-| Sprint 1 Goal| **Nuestro objetivo** es brindar información pertinente en secciones acerca de la aplicación en la landing page y visualizar cultivos, planificar cultivos en una primera versión de la web app. **Creemos que esto genera** una base sólida de las funcionalidades y experiencia de usaurio para nuestra organización. **Esto será confirmado cuando** la landing page contenga las secciones correctamente desarrolladas y se redirija a la aplicación web  |
+| Sprint 1 Goal| Nuestro objetivo es brindar información pertinente en secciones acerca de la solución IoT en la landing page y visualizar, almacenar, planificar y mostrar cultivos en la aplicación web. <br> Creemos que esto genera una base sólida acerca de las funcionalidades de Ayni para los visitantes y permitir a los agricultores registrar y planificar sus cultivos. <br> Esto será confirmado cuando los visitantes se suscriban para acceder a las aplicaciones y los agricultores registren sus cultivos en la plataforma |
 | Sprint 1 - Velocity | El equipo puede aceptar 28 Story Points|
 | Sprint 1 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 18|
 
@@ -180,9 +178,10 @@ El objetivo de este sprint es establecer una base sólida en la experiencia de u
 
 Como herramienta de control para este Sprint se usó Trello con un board exclusivo para esta iteración:
 
-![image](https://github.com/user-attachments/assets/88299426-62b1-4ce4-a9a5-03ba69145a7b)
+![imagen](https://github.com/user-attachments/assets/dbeff7a3-afd4-4c97-9461-966e1dba4488)
 
-Link: https://trello.com/invite/b/66f74e2b2e7e0503fc0ca23a/ATTI06668ea4a9d72f90e44db6bef78629110186947B/sprint-1-ayni
+
+Link: https://trello.com/invite/b/6711c7f10cf002d7fb8bb2da/ATTIc01f58e45484044f9c2e58d5fa2605b37DCEF44E/sprint-backlog-1-ayni
 
 
 
@@ -374,5 +373,185 @@ Landing Page
 Web App
 ![image](https://github.com/user-attachments/assets/fa251f6c-bb7c-4536-b578-f616b159f250)
 ![image](https://github.com/user-attachments/assets/8343536d-d3f4-47ce-aa48-6e2b82479e94)
+
+
+## 6.2.2 Sprint 2
+### 6.2.2.1 Sprint Planning 2
+
+| Sprint # | 2 | 
+| - | - | 
+| **Sprint Planning Background** | - |
+| Date | 2024 - 10 - 10 |
+| Time | 19:00 PM |
+| Location | Virtual via Google Meet |
+| Prepared By | Gonzales Carrión, Jorge Enrique |
+| Attendees (to planning meeting) | Gonzales Carrión, Jorge Enrique / Espejo Macuri, Paolo Andre / Alejo Cardenas, Luis Angel / Rios Jaimes, Jhonel Enrique / Sebastian Tasayco, Javier Martin |
+| Sprint 1 - Review Summary | Se alcanzó Se debe detallar la herramienta de control de gestión de proeyctos empleada en el Sprint 1 y mejorar explicaciones en las secciones Development, Testing, Execution, Documentation, Deployment |
+| Sprint 1 - Retrospective Summary  |  |
+| **Sprint Goal & User Stories** | - |
+| Sprint 2 Goal| Nuestro enfoque está en permitir que los agricultores puedan registrar y planificar cultivos, además de monitorear sus cultivos utilizando datos de una aplicación embebida y en proporcionar a los comerciantes pantallas para la compra eficiente de cultivos en la aplicación móvil.<br> Creemos que esto ofrecerá una experiencia fluida de gestión de cultivos para los agricultores, brindando herramientas detalladas de planificación y monitoreo, mientras que los comerciantes podrán navegar y realizar compras de cultivos de manera sencilla dentro del sistema. <br> Esto se confirmará cuando los agricultores puedan monitorear sus cultivos a través de la aplicación embebida, y los comerciantes puedan acceder y completar la compra de cultivos mediante las pantallas implementadas, utilizando los endpoints en Ayni. |
+| Sprint 2 - Velocity | El equipo puede aceptar 25 Story Points|
+| Sprint 2 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 23|
+
+
+
+### 6.2.2.2 Sprint Backlog 2
+
+El objetivo de este sprint es establecer una base sólida en la experiencia de usuario mediante el desarrollo de una landing page que brinde información clave sobre la aplicación y sus funcionalidades. Además, de desarrollar la primera versión de la aplicación web, donde se centrará en la visualización, monitoreo y planificación de cultivos.
+
+Como herramienta de control para este Sprint se usó Trello con un board exclusivo para esta iteración:
+
+![imagen](https://github.com/user-attachments/assets/780525f7-8c58-4746-967e-cf866d216182)
+
+
+
+Link: https://trello.com/invite/b/6711cea372164d45ac966845/ATTIfc89256cc30d96794e9f205a7629c5f382930C0C/sprint-backlog-2-ayni
+
+
+
+<table><tr><th valign="top">Sprint #</th><th colspan="7" valign="top">Sprint 2</th></tr>
+<tr><td colspan="2" valign="top">User Story</td><td colspan="6" valign="top">Work-Item / Task</td></tr>
+<tr><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Description</td><td valign="top">Estimation (Hours)</td><td valign="top">Assigned To</td><td valign="top"><p>Status </p><p>(To-do / </p><p>InProcess / </p><p>To Review / </p><p>Done)</p></td></tr>
+<tr><td rowspan="1" valign="top">HU-10</td><td rowspan="1" valign="top">Atender pedidos</td><td valign="top">10.1</td><td valign="top">Desarrollar las páginas de compra/venta para comerciantes en la app web</td><td valign="top">Realizar las vistas de ventas para comerciantes utulizando componenets de Angular Material</td><td valign="top">4</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
+
+
+<tr><td rowspan="1" valign="top">HU-16</td><td rowspan="1" valign="top">Sección principal ("Home")</td><td valign="top">16.1</td><td valign="top">Desarrollar la página "Home" para los comerciante</td><td valign="top">Desarrollar las paginas con los estilos en Angular Material</td><td valign="top">4</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
+
+
+<tr><td rowspan="1" valign="top">HU-05</td><td rowspan="1" valign="top"> 	Realizar pedidos de productos</td><td valign="top">5.1</td><td valign="top">Desarrollar la pagina de obtención de cultivos para los comerciantes en la app web</td><td valign="top">Realizar la pagina correspondiente mediante un stepper usando Angular Material</td><td valign="top">2</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
+
+<tr><td rowspan="1" valign="top">HU-08</td><td rowspan="1" valign="top">Sección de Misión y Visión</td><td valign="top">08.2</td><td valign="top">Desarrollar paginas de planificación y lista de cultivos en la aplicación móvil</td><td valign="top">Realizar las secciones en Flutter para la aplicación móvil</td><td valign="top">2</td><td valign="top">Jorge Gonzales</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">TS-02</td><td valign="top">Creación y obtención de cultivos</td><td valign="top">TS02.1</td><td valign="top">Desarrollar endpoints de creación y obtención de cultivos</td><td valign="top">2</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">TS-03</td><td valign="top"> Desarrollar endpoints de creación y obtención de productos</td><td valign="top">TS03.1</td><td valign="top">Desarrollar endpoints de creación y obtención de productos</td><td valign="top">Implementar endpoints relacionados a los productos y su relación con las ordenes</td><td valign="top">8</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-08</td><td valign="top">Planificar actividades agrícolas</td><td valign="top">08.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web</td><td valign="top">4</td><td valign="top">Javier Sebastían</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-15</td><td valign="top">Sistemas de búsqueda y paginación</td><td valign="top">15.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web</td><td valign="top">3</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-02</td><td valign="top">Inicio de sesión</td><td valign="top">02.1</td><td valign="top">Implementar vistas de inicio de sesión y planes en la web app</td><td valign="top">Implementar vistas y formularios de inicio de sesión (sin función)</td><td valign="top">3</td><td valign="top">Jorge gonzales</td><td valign="top">Done</td></tr>
+
+</table>
+
+### 6.2.2.3 Development Evidence for Sprint Review
+
+
+Con respecto al alcance de desarrollo en este sprint, se logró realziar las secciones principales para landing page, tales como la sección Hero, especificación de funcionalidades y precios, acerca del equipo de desarrollo. Por otro lado, en la aplicación web se diseñó e implementó distintas secciones, tales como: Home, Crops, y la compra de productos mediante un stepper. Una de las pantallas a resaltar es el dashboard de monitoreo de cultivo. 
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| - | - | - | - | - | - |
+| AyniFrontend  | feature/crop-detail | 4eb7589 | fix: signin and signup components  | - | 19/09/2023 |
+| AyniFrontend  | feature/crop-detail | 13fa79a | fix: sales indentation  | - | 19/09/2023 |
+| AyniFrontend  | feature/crop-detail | b79d6a8 | fix: rates component indentation | - | 19/09/2023 |
+| AyniFrontend  | feature/crop-detail | 597a41e | feat: json server | - | 21/09/2023 |
+| AyniFrontend  | feature/crop-detail | 02d5eab | feat: crop details component | - | 21/09/2023 |
+| AyniFrontend  | feature/crop-detail | 9dd841f | feat: navigate to crop detail | - | 21/09/2023 |
+| AyniFrontend  | feature/home-ui | 239aecd | fix: update fonts and cards | - | 23/09/2023 |
+| AyniFrontend  | feature/plans-forms | 27abcdf | update: fix stepper for plans forms | - | 23/09/2023 |
+| AyniFrontend  | feature/plans-forms | 40aacad | fix: update following steps to plan form | - | 23/09/2023 |
+| AyniFrontend  | fix/code-style | c72eeb2 | fix: styles in bottom bar and rates | - | 23/09/2023 |
+
+### 6.2.2.4 Testing Suite Evidence for Sprint Review
+
+En esta sección, se realizaron acceptance test en .feature para cada una de las historias de usuario incluidas en este Sprint.
+Las historias de usuario relacionadas a estos primeros .features son:
+- HU-11	Sección Hero y Botón Call-to-Action
+- HU-12	Landing Page responsive
+- HU-13	Sección de Funcionalidades y Planes
+- HU-14	Sección de Misión y Visión
+- HU-16	Sección principal ("Home")
+- HU-04	Realizar pedidos de productos
+- HU-08	Planificar actividades agrícolas
+
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| - | - | - | - | - | - |
+| acceptance-test-IoT | test/UserStories | 70f7178 | Acceptance_test_09.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | e075329 | Acceptance_test_08.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 7580071 | Acceptance_test_07.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 792b52e | Acceptance_test_06.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 3549d2d | Acceptance_test_05.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | dbf0ead | Acceptance_test_04.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | d9d7765 | Acceptance_test_03.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 16df5ba | Acceptance_test_02.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 3fab5b6 | Acceptance_test_01.feature  | - | 25/09/2023 |
+
+Link de repositorio: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/acceptance-test-IoT
+
+### 6.2.2.5 Execution Evidence for Sprint Review
+
+En el Sprint 2 se alcanzó a desarrollar una primera versión de las web apps y la landing page, como principales caracteristicas tenemos las vistas de Dashboard de monitoreo de cultivo, Home, PLanificación de cultivo, etc. A continuación se muestran imagenes de las vistas:
+
+Principales vistas desarrolladas:
+
+
+A continuación se muestra un video con todas las vistas mostradas:
+
+
+
+### 6.2.2.6 Services Documentation Evidence for Sprint Review
+
+
+
+### 6.2.2.7 Software Deployment Evidence for Sprint Review
+
+
+Para el despliegue de la web app y landing page se usó Netlify, a continuación se detallará paso a paso para este Sprint 1:
+
+Ejecutamos el comando “ng build” en la ruta de nuestro projecto en angular, nos muestra lo siguiente:
+
+![image](https://github.com/user-attachments/assets/04bc0a04-824c-472c-93e2-f28ee2533092)
+
+
+Se genera la carpeta dist:
+
+![image](https://github.com/user-attachments/assets/044c7e28-9ba6-418d-b38a-0b1f6d4f48b9)
+
+
+Se añade el archivo “netlify.toml” para que netlify pueda entender las rutas de nuestro programa en angular con la siguiente configuración:
+
+![image](https://github.com/user-attachments/assets/c709bea5-f479-493f-bb9b-dee374c80e7a)
+
+
+
+Por último, vamos a netlify a la sección que nos permite desplegar nuestra aplicación manualmente para evitar errores:
+
+![image](https://github.com/user-attachments/assets/e4ff6f55-ee48-4e0e-bbcd-ed09daf71694)
+
+
+Y pasamos la carpeta que se encuentra dentro de la carpeta dist generada en nuestro proyecto. Y se obtiene el registro del despliegue dentro de Netlify
+
+![image](https://github.com/user-attachments/assets/3a7f5aa8-86cc-4d3d-8f06-cc76a4f224c5)
+
+
+De esta manera el avance del Sprint 1 queda desplegado.
+
+Link de landing page: (https://ayni-landingpage-v1.netlify.app/)
+Link de primera versión de frontend: (https://ayni-webapp-v1.netlify.app/)
+
+
+
+### 6.2.2.8 Team Collaboration Insights during Sprint
+
+En el presente sprint se implementó la landing page y una primera versión de la web application, a continuación se mostrará una tabal de las actividades de todos participantes:
+
+| Alumno | Actividad | 
+| - | - | 
+| Espejo Macuri, Paolo Andre  | Desarrollo de frontend y landing page | 
+| Gonzales Carrión, Jorge Enrique  | Desarrollo de frontend y landing page | 
+| Alejo Cardenas, Luis Angel  |  Desarrollo de frontend y landing page | 
+| Rios Jaimes, Jhonel Enrique |  Desarrollo de frontend y landing pageDesarrollo de frontend y backend | 
+| Sebastian Tasayco, Javier Martin |  Desarrollo de frontend y landing page | 
+
+
+Web App
+
+Mobile App
+
+IoT Embedded App
+
+Backend
+
 
 
