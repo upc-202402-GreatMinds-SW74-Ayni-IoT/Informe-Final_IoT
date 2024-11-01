@@ -437,61 +437,119 @@ Link: https://trello.com/invite/b/6711cea372164d45ac966845/ATTIfc89256cc30d96794
 ### 6.2.2.3 Development Evidence for Sprint Review
 
 
-Con respecto al alcance de desarrollo en este sprint, se logró realziar las secciones principales para landing page, tales como la sección Hero, especificación de funcionalidades y precios, acerca del equipo de desarrollo. Por otro lado, en la aplicación web se diseñó e implementó distintas secciones, tales como: Home, Crops, y la compra de productos mediante un stepper. Una de las pantallas a resaltar es el dashboard de monitoreo de cultivo. 
-
+Con respecto al alcance del desarrollo de este Sprint, se desarrolló la primera versión de la aplicación móvil, abarcando la intefaz del agricultor y sus principales funcioanlidades como las secciones de Home, Crops y Orders. Por otro lado, tambien se realizó al primera versión de la aplicación embebida IoT, obteniendo como resultado el funcionamiento de los sensores y actuadores a utilziar en la solución IoT. Finalmente, se implementaron los principales endpoints en el API Restful Web, relacionados a la creación y obtencion de cultivos, productos y ordenes.
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | - | - | - | - | - | - |
-| AyniFrontend  | feature/crop-detail | 4eb7589 | fix: signin and signup components  | - | 19/09/2023 |
-| AyniFrontend  | feature/crop-detail | 13fa79a | fix: sales indentation  | - | 19/09/2023 |
-| AyniFrontend  | feature/crop-detail | b79d6a8 | fix: rates component indentation | - | 19/09/2023 |
-| AyniFrontend  | feature/crop-detail | 597a41e | feat: json server | - | 21/09/2023 |
-| AyniFrontend  | feature/crop-detail | 02d5eab | feat: crop details component | - | 21/09/2023 |
-| AyniFrontend  | feature/crop-detail | 9dd841f | feat: navigate to crop detail | - | 21/09/2023 |
-| AyniFrontend  | feature/home-ui | 239aecd | fix: update fonts and cards | - | 23/09/2023 |
-| AyniFrontend  | feature/plans-forms | 27abcdf | update: fix stepper for plans forms | - | 23/09/2023 |
-| AyniFrontend  | feature/plans-forms | 40aacad | fix: update following steps to plan form | - | 23/09/2023 |
-| AyniFrontend  | fix/code-style | c72eeb2 | fix: styles in bottom bar and rates | - | 23/09/2023 |
+| ayni_flutter_app | feat/crops_and_products | f5a33a5 | feat: added dashboards crops and profiles  | - | 28/10/2024 |
+| ayni_flutter_app | feat/crops_monitoring | f1f8c63f | feat: update functionalities about the project | - | 25/10/2024 |
+| ayni_flutter_app | feat/orders_and_sales | 733bc1b | feat: added orders and sales service | - | 25/10/2024 |
+| AyniBackend-API | develop | e12ce74 | feat: added orders and sales service | - | 23/10/2024 |
+| AyniBackend-API | develop | 7e576cc | feat: Created Sensor Repository | - | 23/10/2024 |
+| AyniBackend-API | develop | 0a9b31b | feat: Created Sensor Service and Controller | - | 23/10/2024 |
+| AyniBackend-API | develop | dd0d38b | feat: Created Actuator Aggregate | - | 23/10/2024 |
+| AyniBackend-API | develop | 6518a12 | feat: Created Actuator Services and Repository | - | 23/10/2024 |
+| AyniBackend-API | develop | ad7fb89 | feat: Created Actuator Controller | - | 23/10/2024 |
+| AyniWokwi | develop | 06b8c3e | feat: added wokwi sketch | - | 25/10/2024 |
+
 
 ### 6.2.2.4 Testing Suite Evidence for Sprint Review
 
 En esta sección, se realizaron acceptance test en .feature para cada una de las historias de usuario incluidas en este Sprint.
 Las historias de usuario relacionadas a estos primeros .features son:
-- HU-11	Sección Hero y Botón Call-to-Action
-- HU-12	Landing Page responsive
-- HU-13	Sección de Funcionalidades y Planes
-- HU-14	Sección de Misión y Visión
+- HU-10 Atender pedidos
+- HU-05 Realizar pedidos de productos
+- TS-02 Creación y obtención de cultivos
 - HU-16	Sección principal ("Home")
-- HU-04	Realizar pedidos de productos
+- TS-03 Obtención y creación para productos agrícolas
 - HU-08	Planificar actividades agrícolas
+- HU-15 Sistemas de búsqueda y paginación
+- HU-02 Inicio de sesión
 
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | - | - | - | - | - | - |
-| acceptance-test-IoT | test/UserStories | 70f7178 | Acceptance_test_09.feature  | - | 25/09/2023 |
-| acceptance-test-IoT | test/UserStories | e075329 | Acceptance_test_08.feature  | - | 25/09/2023 |
-| acceptance-test-IoT | test/UserStories | 7580071 | Acceptance_test_07.feature  | - | 25/09/2023 |
-| acceptance-test-IoT | test/UserStories | 792b52e | Acceptance_test_06.feature  | - | 25/09/2023 |
-| acceptance-test-IoT | test/UserStories | 3549d2d | Acceptance_test_05.feature  | - | 25/09/2023 |
-| acceptance-test-IoT | test/UserStories | dbf0ead | Acceptance_test_04.feature  | - | 25/09/2023 |
-| acceptance-test-IoT | test/UserStories | d9d7765 | Acceptance_test_03.feature  | - | 25/09/2023 |
-| acceptance-test-IoT | test/UserStories | 16df5ba | Acceptance_test_02.feature  | - | 25/09/2023 |
-| acceptance-test-IoT | test/UserStories | 3fab5b6 | Acceptance_test_01.feature  | - | 25/09/2023 |
+| acceptance-test-IoT | test/UserStories | 5084640 | Acceptance_test_10.feature  | - | 31/10/2024 |
+| acceptance-test-IoT | test/UserStories | fb40fde | Acceptance_test_11.feature  | - | 31/10/2024 |
+| acceptance-test-IoT | test/UserStories | 48b72cc | Acceptance_test_12.feature  | - | 31/10/2024 |
+| acceptance-test-IoT | test/UserStories | d604b83 | Acceptance_test_13.feature  | - | 31/10/2024 |
+| acceptance-test-IoT | test/UserStories | dc02648 | Acceptance_test_14.feature  | - | 31/10/2024 |
+| acceptance-test-IoT | test/UserStories | 64597a6 | Acceptance_test_15.feature  | - | 31/10/2024 |
+| acceptance-test-IoT | test/UserStories | 50f709c | Acceptance_test_16.feature  | - | 31/10/2024 |
 
 Link de repositorio: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/acceptance-test-IoT
 
 ### 6.2.2.5 Execution Evidence for Sprint Review
 
-En el Sprint 2 se alcanzó a desarrollar una primera versión de las web apps y la landing page, como principales caracteristicas tenemos las vistas de Dashboard de monitoreo de cultivo, Home, PLanificación de cultivo, etc. A continuación se muestran imagenes de las vistas:
+En el Sprint 2 se alcanzó a desarrollar una primera versión del Web Service (API RESTful) y la aplicación móvil, como principales caracteristicas tenemos las vistas de Dashboard de monitoreo de cultivo, Home, PLanificación de cultivo, etc. A continuación se muestran imagenes de las vistas:
 
 Principales vistas desarrolladas:
 
+![imagen](https://github.com/user-attachments/assets/e482bc49-f295-449e-b472-2e99e8b2b6bb)
 
-A continuación se muestra un video con todas las vistas mostradas:
+![imagen](https://github.com/user-attachments/assets/45142eca-7ac2-48eb-a4a0-f0e8fd7c1669)
+
+![imagen](https://github.com/user-attachments/assets/6f0a2eaa-b861-4b7d-abd5-1804bd78a272)
+
+![imagen](https://github.com/user-attachments/assets/d9f84ab7-fb64-45fb-804f-de4788d32583)
+
+![imagen](https://github.com/user-attachments/assets/6cd7281a-9c80-4929-8713-512b57651435)
+
+![imagen](https://github.com/user-attachments/assets/5ed24371-a20b-471c-a599-f43b0897c639)
+
+![imagen](https://github.com/user-attachments/assets/517f97b1-70dd-4904-b82e-26c1c11d8735)
+
+A continuación se muestra un video con todas las vistas, endpoints y simulaciones:
+
+
 
 
 
 ### 6.2.2.6 Services Documentation Evidence for Sprint Review
 
+En esta sección, se documentará los endpoints de Web Services, en este sprint se logró abarcar los endpoints más importantes para la aplicación. Sin embargo, todavía queda adicionar más metodos de regla de negocio. Con respecto a la documentación, se usó OpenApi para documentar la interacción de los usuarios con los controllers  El link del repositorio de WebServices: (https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniBackend-API).
+
+| Acciones | Endpoint | Detalles | Enlace | Datos de muestra |
+| - | - | - | - | - |
+| POST | /api/auth/signin | En este endpoint se puede iniciar sesión | http://localhost:8080/swagger-ui/index.html#/Authentication/authenticateUser | username: "Juan" <br> "password: contrasenia" |
+| POST | /api/auth/signup | En este endpoint se puede crear el usuario  | http://localhost:8080/swagger-ui/index.html#/Authentication/registerUser | username: "Juan" <br> email: "Juan@gmail.com" <br> "role: farmer" <br> "password: contrasenia" |
+| POST | api/v1/products  | En este endpoint se puede utilizar para registrar un producto | http://localhost:8080/swagger-ui/index.html#/Products/createProduct | "name": "Zanahoria","description": "Rica zanahora","recommendedCultivationDistance": "12","recommendedCultivationDepth": "2","recommendedGrowingClimate": "Templado","recommendedSoilType": "Arenoso","recommendedGrowingSeason": "Otoño","imageUrl": "imagen","userId": 1 |
+| GET | api/v1/products  | En este endpoint se puede utilizar para obtener todos los productos | http://localhost:8080/swagger-ui/index.html#/Products/getAllProducts | - |
+| GET | api/v1/products/{productId}  | En este endpoint se puede utilizar para obtener todos un producto por Id | http://localhost:8080/swagger-ui/index.html#/Products/getProductById | productId: 1 |
+| GET | api/v1/products/{productId}/crops | En este endpoint se puede utilizar para obtener todos los cultivos del producto | http://localhost:8080/swagger-ui/index.html#/Products/getAllCropsByProductId | productId: 1 |
+| GET | api/v1/products/{productId}/crops/{cropId} | En este endpoint se puede utilizar para obtener un cultivo en especifico de un producto en especifico | http://localhost:8080/swagger-ui/index.html#/Products/getCropByProductIdAndCropId | productId: 1, cropId: 1 |
+| POST | api/v1/crops  | En este endpoint se puede utilizar para registrar un cultivo | http://localhost:8080/swagger-ui/index.html#/Crops/createCrop | "name": "Papa","pickUpWeed": true,"fertilizeCrop": true,"oxygenateCrop": false,"makeCropLine": true,"makeCropHole": true,"wateringDays": 12,"pestCleanupDays": 3,"productId": 1,"userId": 1 |
+| GET | api/v1/crops  | En este endpoint se puede utilizar para obtener todos los cultivo | http://localhost:8080/swagger-ui/index.html#/Crops/getAllCrops | - |
+| GET | api/v1/crops/{cropId}  | En este endpoint se puede utilizar para un cultivo por Id | http://localhost:8080/swagger-ui/index.html#/Crops/getCropById | cropId: 1 |
+| POST | api/v1/orders  | En este endpoint se puede utilizar para registrar una orden | http://localhost:8080/swagger-ui/index.html#/Orders/createOrder |   "description": "Papayas muy buenas", "totalPrice": 15, "quantity": 3, "paymentMethod": "mastercard", "status": "On Package", "saleId": 1, "orderedBy": 1, "acceptedBy": 2, "orderedDate": "2023-11-02T13:16:02.798Z" |
+| POST | api/v1/orders/{orderId}/qualifications  | En este endpoint se puede utilizar para cambiar el estado de una orden | http://localhost:8080/swagger-ui/index.html#/Orders/qualifyOrder | orderId: 1 |
+| POST | api/v1/orders/{orderId}/finalizations | En este endpoint se puede utilizar para cambiar el estado de una orden | http://localhost:8080/swagger-ui/index.html#/Orders/finalizeOrder | orderId: 1 |
+| GET | api/v1/orders  | En este endpoint se puede utilizar para obtener todas las ordenes | http://localhost:8080/swagger-ui/index.html#/Orders/getAllOrders | - |
+| GET | api/v1/orders/{orderId}  | En este endpoint se puede utilizar para obtener una orden por Id | http://localhost:8080/swagger-ui/index.html#/Orders/getOrderById | orderId: 1 |
+| PUT | api/v1/orders{orderId}  | En este endpoint se puede actualizar una orden por Id | http://localhost:8080/swagger-ui/index.html#/Orders/updateOrder | orderId: 1 |
+| DELETE | api/v1/orders/{orderId}  | En este endpoint se puede eliminar una orden por Id | http://localhost:8080/swagger-ui/index.html#/Orders/deleteOrder | orderId: 1 |
+| POST | api/v1/sales  | En este endpoint se puede utilizar para registrar una venta | http://localhost:8080/swagger-ui/index.html#/Sales/createSale |   "name": "Venta de camote", "description": "buena venta", "unitPrice": 24, "quantity": 2, "imageUrl": "https://www.gob.mx/cms/uploads/article/main_image/20333/camote1.jpg" |
+| GET | api/v1/sales  | En este endpoint se puede utilizar para obtener todas las ventas | http://localhost:8080/swagger-ui/index.html#/Sales/getAllSales | - |
+| GET | api/v1/sales/{salesId}  | En este endpoint se puede utilizar para obtener una venta por Id | http://localhost:8080/swagger-ui/index.html#/Sales/getSaleById | saleId: 1 |
+| GET | api/v1/sales/{salesId}/orders/{orderId}  | En este endpoint se puede utilizar para obtener una venta por Id en especifico vinculado a una orden por Id en especifico | http://localhost:8080/swagger-ui/index.html#/Sales/getOrderBySaleIdAndOrderId | saleId: 1, orderId: 1 |
+| POST | api/v1/rates  | En este endpoint se puede utilizar para crear una calificación de un producto | http://localhost:8080/swagger-ui/index.html#/Rates/createRate | "rate": 5, "date": "25-09-2023","productId": 1, "userId": 1 |
+| GET | api/v1/rates  | En este endpoint se puede utilizar para obtener todas las calificaciones | http://localhost:8080/swagger-ui/index.html#/Rates/getAllRates | - |
+| GET | api/v1/rates/{ratesId}  | En este endpoint se puede utilizar para obtener una calificación por Id | http://localhost:8080/swagger-ui/index.html#/Rates/getRateById | rateId: 1 |
+| GET | /api/v1/sensors/{sensorId} | Este endpoint se usa para obtener información de un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/getSensorById | sensorId: 1 |
+| PUT | /api/v1/sensors/{sensorId} | Este endpoint se usa para actualizar un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/updateSensor | sensorId: 1 |
+| DELETE | /api/v1/sensors/{sensorId} | Este endpoint se usa para eliminar un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/deleteSensor | sensorId: 1 |
+| POST | /api/v1/sensors | Este endpoint se usa para registrar un nuevo sensor | http://localhost:8080/swagger-ui/index.html#/Sensors/createSensor | "type": "temperature", "location": "Warehouse" |
+| GET | /api/sensors/{sensorId}/actuators | Este endpoint se usa para obtener todos los actuadores de un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/getAllActuatorsBySensorId | sensorId: 1 |
+| GET | /api/sensors/{sensorId}/actuators/{actuatorId} | Este endpoint se usa para obtener un actuador específico de un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/getActuatorBySensorIdAndActuatorId | sensorId: 1, actuatorId: 1 |
+| GET | /api/v1/actuators/{actuatorId} | Este endpoint se usa para obtener información de un actuador específico | http://localhost:8080/swagger-ui/index.html#/Actuators/getActuatorById | actuatorId: 1 |
+| PUT | /api/v1/actuators/{actuatorId} | Este endpoint se usa para actualizar un actuador específico | http://localhost:8080/swagger-ui/index.html#/Actuators/updateActuator | actuatorId: 1 |
+| DELETE | /api/v1/actuators/{actuatorId} | Este endpoint se usa para eliminar un actuador específico | http://localhost:8080/swagger-ui/index.html#/Actuators/deleteActuator | actuatorId: 1 |
+| POST | /api/v1/actuators | Este endpoint se usa para registrar un nuevo actuador | http://localhost:8080/swagger-ui/index.html#/Actuators/createActuator | "type": "valve", "status": "off", "sensorId": 1 |
+
+A continuación se mostrarán capturas de la documentación usando OpenAPI:
+
+![imagen](https://github.com/user-attachments/assets/8e864981-59b5-463a-85ed-8c5a9ea7e0e1)
+![imagen](https://github.com/user-attachments/assets/bac07886-c344-4f84-84a6-a19355ecdfce)
+![imagen](https://github.com/user-attachments/assets/8b0198a3-51ae-450d-9212-4061cf699cf1)
 
 
 ### 6.2.2.7 Software Deployment Evidence for Sprint Review
@@ -525,33 +583,440 @@ Y pasamos la carpeta que se encuentra dentro de la carpeta dist generada en nues
 ![image](https://github.com/user-attachments/assets/3a7f5aa8-86cc-4d3d-8f06-cc76a4f224c5)
 
 
-De esta manera el avance del Sprint 1 queda desplegado.
+De esta manera el avance del Sprint 2 queda desplegado.
 
 Link de landing page: (https://ayni-landingpage-v1.netlify.app/)
 Link de primera versión de frontend: (https://ayni-webapp-v1.netlify.app/)
 
+Para el despliegue del backend, se usó primero Railway, donde se creó un servicio para el hosting de la base de datos:
+
+![imagen](https://github.com/user-attachments/assets/df245cf1-0ef2-4a4f-b122-cbb84dad8a6e)
+![imagen](https://github.com/user-attachments/assets/c5ddeeff-788b-4642-b23c-c8b39ce726bc)
+
+Link de base de datos: (https://railway.app/invite/vGyddg8tAkd)
+
+Luego, se usó Zeaburn para el despliegue del backend, primero se crea un espacio de trabajo:
+
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/284024946-31a139f1-37cc-4f38-b28b-ab99cff2b1d0.png)
+
+Posteriormente, se vincula con Github para realizar el deploy y este es el resultado:
+
+![imagen](https://github.com/user-attachments/assets/7e1feb74-c6d7-4aa0-9154-b13b74870ecd)
+
+
+Como se puede observar, cada vez que se haga un push a la rama master, se realiza un build nuevo para que se apliquen los cambios realizados en el proyecto.
+
+Sin embargo, solo da 7 días de prueba para hacer deploys. Por lo tanto, se buscarán mejores alternativas
+
+El link es el siguiente: (https://ayni-v1.sfo1.zeabur.app/swagger-ui/index.html)
 
 
 ### 6.2.2.8 Team Collaboration Insights during Sprint
 
-En el presente sprint se implementó la landing page y una primera versión de la web application, a continuación se mostrará una tabal de las actividades de todos participantes:
+En este Sprint se realizó la primera versión del backend, mobile application y Embedded Application IoT
 
 | Alumno | Actividad | 
 | - | - | 
-| Espejo Macuri, Paolo Andre  | Desarrollo de frontend y landing page | 
-| Gonzales Carrión, Jorge Enrique  | Desarrollo de frontend y landing page | 
-| Alejo Cardenas, Luis Angel  |  Desarrollo de frontend y landing page | 
-| Rios Jaimes, Jhonel Enrique |  Desarrollo de frontend y landing pageDesarrollo de frontend y backend | 
-| Sebastian Tasayco, Javier Martin |  Desarrollo de frontend y landing page | 
+| Espejo Macuri, Paolo Andre  | Desarrollo de backend, mobile app y embedded app IoT | 
+| Gonzales Carrión, Jorge Enrique  | Desarrollo de backend, mobile app y embedded app IoT | 
+| Alejo Cardenas, Luis Angel  |  Desarrollo de backend, mobile app y embedded app IoT | 
+| Rios Jaimes, Jhonel Enrique |  Desarrollo de backend, mobile app y embedded app IoT | 
+| Sebastian Tasayco, Javier Martin |  Desarrollo de backend, mobile app y embedded app IoT | 
 
-
-Web App
 
 Mobile App
 
+![imagen](https://github.com/user-attachments/assets/b3813063-7905-4e87-87f4-59419c442651)
+
 IoT Embedded App
+
+
 
 Backend
 
+![imagen](https://github.com/user-attachments/assets/0545b25d-c6cc-4f8e-8bf9-ab485d4d399a)
 
 
+# 6.3 Validation Interviews
+
+En esta sección, se registra las actividades correspondientes a las entrevistas de validación del proyecto. Estas entrevistas van dirigidas a ambos segmentos objetivos donde se evidencia la interacción con el landing page y con las aplicaciones.
+
+## 6.3.1 Diseño de Entrevistas
+
+**Segmento Objetivo: Productores que quieren mejorar la calidad de sus ventas**
+- **Presentación del entrevistado**
+  - ¿Cuál es tu nombre?
+  - ¿Qué edad tienes?
+  - ¿Hace cuánto se dedica a la agricultura?
+- **Explicación de los alcances de la demostración**
+  - Landing Page
+  - Principales tareas en la aplicación móvil y web
+- **Navegación a través de la aplicación web**
+  
+  **User Flow: Añadir cultivo y plan de cultivo**
+  - El usuario ingresa a landing page
+  - Busca el botón call to action
+  - Se redirige a la sección de registro de usuarios y llena los campos solicitados
+  - Selecciona su rol 
+  - Se redirige a la sección de Home
+  - Ingresa a la sección "Mis Productos"
+  - Añade un cultivo
+  - Crea un plan de cultivo
+  - Ingresa los campos solicitados en el formulario
+ 
+- **Preguntas principales**
+  - ¿Consideras atractiva la manera en la que el producto Ayni está promocionado en la Landing Page?
+  - ¿Consideras que el landing page ofrece toda la información necesaria para tener un entendimiento adecuado del funcionamento, propósito y funcionalidades ofrecidas por la apliación?
+  - ¿Resulta agradable a la vista la manera en la que la información está presentada?
+  - ¿Qué dispositivo utilizaste para acceder al Landing Page? ¿La página presenta  algún tipo de inconveniente de diseño que impida navegar de manera fluida?
+  - Del 1 al 10 ¿Cómo calificarías el diseño de la Landing Page?
+  - Con respecto a la aplicación, ¿considera que es complicado añadir un cultivo?
+  - ¿Los cultivos que son añadidos contienen lo que necesitas saber sobre ellas para su correcto sembrío? ¿Qué otros apartados le gustaría visualizar?
+  - ¿Qué opina acerca de la distribución de secciones?
+  - ¿Cómo describiría nuestra aplicación web en pocas palabras?
+  - ¿Qué características específicas desea usted que agreguemos a la aplicación web?
+  - ¿Utiliza actualmente una aplicación web para administrar sus sembríos u obtener información sobre sus plantas? De ser así, ¿Qué características logra diferenciar entra esa aplicación y la nuestra?
+  - ¿De todas las características evidenciadas en la aplicación web, cuál cree que debería mejorarse? ¿Por qué?
+  - ¿Considera que el diseño es adecuado?
+
+
+
+**Segmento Objetivo: Comerciantes que quieren mejorar la calidad de sus ventas**
+- **Presentación del entrevistado**
+  - ¿Cuál es tu nombre?
+  - ¿Qué edad tienes?
+  - ¿Hace cuánto se dedica a la venta de productos agrícolas?
+- **Explicación de los alcances de la demostración**
+  - Landing Page
+  - Prinipales tareas en la aplicación móvil y web
+- **Navegación a través de la aplicación web**
+  
+  **User Flow: Comprar un producto**
+  - El usuario ingresa a landing page
+  - Busca el botón call to action
+  - Se redirige a la sección de registro de usuarios y llena los campos solicitados
+  - Selecciona su rol 
+  - Se redirige a la sección de Home
+  - Ingresa a la sección "Buscar productos"
+  - Selecciona un cultivo
+  - Hace click en el botón "Comprar"
+  - Ingresa los campos solicitados en el stepper
+  - Confirma la compra
+- **Preguntas principales**
+  - ¿Consideras atractiva la manera en la que el producto Ayni está promocionado en la Landing Page?
+  - ¿Consideras que el landing page ofrece toda la información necesaria para tener un entendimiento adecuado del funcionamento, propósito y funcionalidades ofrecidas por la apliación?
+  - ¿Resulta agradable a la vista la manera en la que la información está presentada?
+  - ¿Qué dispositivo utilizaste para acceder al Landing Page? ¿La página presenta  algún tipo de inconveniente de diseño que impida navegar de manera fluida?
+  - Del 1 al 10 ¿Cómo calificarías el diseño de la Landing Page?
+  - Con respecto a la aplicación, ¿considera que es complicado encontrar un cultivo?
+  - ¿Los cultivos que son mostrados contienen lo que necesitas saber sobre ellas para incentivar su compra? ¿Qué otros apartados le gustaría visualizar?
+  - ¿Qué opina acerca de la distribución de secciones?
+  - ¿Cómo describiría nuestra aplicación web en pocas palabras?
+  - ¿Qué características específicas desea usted que agreguemos a la aplicación web?
+  - ¿Utiliza actualmente una aplicación web para administrar sus ventas u obtener información sobre los productos agrícolas? De ser así, ¿Qué características logra diferenciar entra esa aplicación y la nuestra?
+  - ¿De todas las características evidenciadas en la aplicación web, cuál cree que debería mejorarse? ¿Por qué?
+  - ¿Considera que el diseño es adecuado?
+
+## 6.3.2 Registro de Entrevistas
+
+**Segmento Objetivo: Productores que quieren mejorar la calidad de sus ventas**
+
+Nombre y apellidos: Lissane Mareni
+
+Edad: 19
+
+Distrito: San Juan de Miraflores - Lima
+
+Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EfLY4Qw8AGBEpu9XEWFbefIB0WewWhZiif7ZarR2J_8NRw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4bzpf2
+
+Inicio: 0:00
+
+Fin: 11:00
+
+Duración: 11:00
+
+![imagen](https://github.com/user-attachments/assets/f43fcc98-e758-4ea2-8a13-56889fda4d56)
+
+
+Lissane nos brindó su sincera opinión acerca de la landing page, aplicación web y aplicacion movil, con respecto a la landing page, nos resaltó el diseño atractivo y eficiente de las secciones asimismo con el orden de estas, sin embargo considera que debe tener más relevancia las funcionalidades mostradas incluyendo capturas de pantalla de la aplicación web. Pese a ello, la landing page resultó agradable visualmente para ella, calificándola con un 8 de 10. Por otro lado, con respecto a la aplicación web, no consideró dificil la navegación del flujo de añadir un cultivo, asimismo, está conforme con la distribución de las secciones de la barra de navegación. Sin embargo, cree que se debería mejorar el formulario de añadir un cultivo, donde deberían poner mas datos para el registro. Finalmente, le parecio bueno el diseño de la apliación web, pero sería aún mucho mejor si se mejoraran las observaciones que nos compartió.
+
+
+
+**Segmento Objetivo: Comerciantes que quieren mejorar la calidad de sus ventas**
+
+Nombre y apellidos: Andre Luna
+
+Edad: 25
+
+Distrito: Lince - Lima
+
+Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EfLY4Qw8AGBEpu9XEWFbefIB0WewWhZiif7ZarR2J_8NRw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4bzpf2
+
+Inicio: 11:00
+
+Fin: 21:20
+
+Duración: 10:20
+
+![imagen](https://github.com/user-attachments/assets/1c4f2ab5-5ecc-472e-8cd1-44f7a178cec2)
+
+
+Al analizar la entrevista, Andre nos menciona que las vistas son atracticas y logradas para el propósito de la aplicación que se desea ofrecer, además, le resulta muy facilmente navegar en ella al ser intuitiva y las secciones le parecen bien distribuidas, con respecto a la información brindada acerca de las funcionalidades, considera que es adecuada. No tuvo problemas para abrir la landing page en su dispositivo móvil, debido a ello, calificó la landing page con un 8 de 10. Por otro lado, con respecto a la aplicación web, nos brindó una sugerencia con respecto a la creación de un perfil propio del usuario donde proporcione teléfonos de contacto. De esta manera facilitaria aún más el contacto con el agricultor. De la misma manera, nos dejó sugerencias acerca de la tipografía y de el tamaño de algunos botones. Finalmente, indica que, si bien la aplicación web le parece muy buena, todavia cree que se puede mejorar añadiendo funciones y pulir un poco más las vistas. 
+
+Nombre y apellidos: Favio Onofre
+
+Edad: 21
+
+Distrito: Lince - Lima
+
+Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EfLY4Qw8AGBEpu9XEWFbefIB0WewWhZiif7ZarR2J_8NRw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4bzpf2
+
+
+Inicio: 21:20
+
+Fin: 28:00
+
+Duración: 07:40
+
+![imagen](https://github.com/user-attachments/assets/cb5b629e-61c1-4da9-9dfb-3bac71266a2d)
+
+
+Favio nos proporcionó su tiempo para que visite la landing page y las web applications de Ayni. Asimismo, nos proprocionó su opiniones acerca del diseño de ambas, lo cual le pareció bueno y adecuado, asimismo con la información brindada acerca delas funcionalidades ofrecidas de la aplicación web dentro de  la landing page, resultadole agradable a la vista. Por otro lado, pudo acceder a la alnding page desde su navegador web sin problema, brindandonos su apreciación con 8 puntos de 10. Sin embargo, mencionó que dentro de la landing page hay algunas cosas para mejorar, como el tamaño de los botones y la cantidad de información brindada siendo un poco excedente. Por otro lado, en la aplicación web, mencionó que desea que la información brindada acerca de los cultivos sea más detallada, con secciones de clima o altura. Finalmente, resaltó que la distribución de las secciones es correcta y de igual manera los colores, pues refleja caracteristicas propias de la agricultura brindando un ambiente ameno. 
+
+Nombre y apellidos: Juli Carrión
+
+Edad: 45
+
+Distrito: Surco - Lima
+
+Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EfLY4Qw8AGBEpu9XEWFbefIB0WewWhZiif7ZarR2J_8NRw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4bzpf2
+
+
+Inicio: 28:00
+
+Fin: 35:26
+
+Duración: 07:26
+
+![imagen](https://github.com/user-attachments/assets/a4d57f87-527d-496d-b185-a5836e8fa379)
+
+
+
+Juli nos brindó su sincera opinión acerca de la landing page y aplicación web, con respecto a la landing page, nos felicitó por la distribución y promoción del producto dentro de las secciones, tambien considera que ofrece lo necario en cuando información de funcionalidades pero recomendaría reducir un poco del texto y poner las funcionalidades de manera más específica. Sin embargo, le resultó agradable la navegación por las secciones puntuando con un 8 de 10 la landing page. Por otro lado, con respecto a la aplicación web, le resultó nada complicado encontrar y seleccionar un cultivo para comprar, además la distribución de las secciones es buena dado que resume las funcionalidades que ofrecen. Tambien, consdera que no debe añadirse caracteristicas dado que siente que está completa para sus necesidades como comerciante. Sin embargo, cree que la sección de estado de compra debería mostrar más información. Finalmente, resume la aplicación web como muy buena, intuitiva y efectiva, con un diseño adecuado.
+
+## 6.3.3 Evaluaciones según heurísticas
+
+UX Heuristics & Principles Evaluation
+
+En esta sección se realizará el reporte de Heurísticas de usabilidad que se ecnotnraron en la realización de la valdiación con posibles usuarios según su segmento.
+
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA : Ingeniería de Software**
+
+**CURSO : Desarrollo de Soluciones IOT**
+
+**SECCIÓN : SW74**
+
+**PROFESORES : Todos**
+
+**AUDITOR : Equipo de desarrollo Greatminds** 
+
+**CLIENTE(S) : Ayni** 
+
+
+- **SITE o APP A EVALUAR:**
+
+Ayni - Solución IOT de gestión y monitoreo agrícola. 
+
+- **TAREAS A EVALUAR:**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Desktop landing page
+   1. Información y descripción de la aplicación y sus funcionalidades
+   2. Visualización de botón call to action y redirección a web applications
+   3. Header y footer apropiado para la landing page
+2. Web Applications
+   1. Registro de nuevo usuario
+   2. Inicio de sesión de usuario existente
+   3. Botones interactivos y de uso intuitivo
+   4. Creación de cultivos
+   5. Navegación y orientación dentro de las secciones
+   6. Proceso de compra de cultivo
+   7. Visualización de cultivos
+3. Mobile Application
+    1. 
+
+- **ESCALA DE SEVERIDAD:**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+|**Nivel:**|**Descripción**|
+| :- | :- |
+|**1**|<p>Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco </p><p>frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.</p>|
+|**2**|<p>Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de </p><p>superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente </p><p>reléase</p>|
+|**3**|<p>Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es </p><p>importante que sean corregidos y se les debe asignar una prioridad alta.</p>|
+|**4**|<p>Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de </p><p>la herramienta. Es imperativo que sea corregido antes del lanzamiento</p>|
+
+
+
+- **TABLA RESUMEN:**
+
+1. **Web Application**
+
+|*#*|*Problema*|*Escala de severidad*|*Heurística/Principio violada(o)*|
+| :-: | :-: | :-: | :-: |
+|*1*|*El formato de diseño elegido para los botones es inconsistente*|*1*|*Usabilidad - Consistencia y estándares*|
+|*2*|*Al estar en una de las secciones, resulta imposible de diferenciar entre estos debido a que la barra de navegación no indica en qué sección se encuentra el usuario*|*1*|*Usabilidad - Reconocer antes que recordar*|
+|*3*|*No existe un apartado de edición de perfil*|*2*|*Usabilidad - Control de usuario y libertad*|
+|*4*|*En el inicio de sesión, la card de contenido no resalta diferencia del fondo*|*1*|*Usabilidad - Diseño estético y minimalista*|
+|*5*|*Inconsistencia en tamaño de tipografía*|*2*|*Usabilidad - Consistencia y estándares*|
+
+2. **Landing page**
+
+|*#*|*Problema*|*Escala de severidad*|*Heurística/Principio violada(o)*|
+| :-: | :-: | :-: | :-: |
+|*1*|*El contenido de funcionalidades no se actualiza periódicamente*|*3*|*Information Architecture - Is it credible?*|
+
+3. **Mobile Application**
+
+
+|*#*|*Problema*|*Escala de severidad*|*Heurística/Principio violada(o)*|
+| :-: | :-: | :-: | :-: |
+|*1*|*Al estar en una de las pantallas, resulta imposible de diferenciar entre estos debido a que la barra de navegación no indica en qué sección se encuentra el usuario*|*1*|*Usabilidad - Reconocer antes que recordar*|
+
+
+- **DESCRIPCIÓN DE PROBLEMAS:**
+
+
+
+1. **Web Application**
+
+***PROBLEMA #1:** El formato de diseño elegido para los botones es inconsistente*
+
+***Severidad:** 1*
+
+*Heurística violada: Usabilidad - Consistencia y estándares*
+
+***Problema:***
+Botones en sección "Sign In y Sign Up"
+
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/278846713-9ed0ca37-09d7-45c7-b111-b614739c209e.png)
+
+
+Botones en sección "Financial Management"
+
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/278846724-a145e2c6-d273-4e4e-9bfc-73b8c11b22f8.png)
+
+
+*El formato de diseño elegido para los botones “Sign In” es inconsistente a comparación de todas las secciones de la aplicación web. Esto incluye el color y bordes del botón que permite identificarlos. Como consecuencia, esto puede provocar que potencialmente los usuarios se desorienten y no puedan diferenciar el texto de un botón con el cual pueden interactuar.*
+
+***Recomendación:**
+Utilizar el mismo estilo de botones para mostrar más información en todas las secciones, de manera que el usuario se familiarice mejor con la aplicación web.*
+
+***PROBLEMA #2:** Al estar en una de las secciones, resulta imposible de diferenciar entre estos debido a que la barra de navegación no indica en qué sección se encuentra el usuario*
+
+***Severidad:** 1*
+
+*Heurística violada: Usabilidad - Reconocer antes que recordar*
+
+***Problema:***
+
+Barra de navegación:
+
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/277204700-cbbfa595-2a68-4619-8a4c-fa66067715cc.png)
+
+
+*Dentro de las secciones que se ofrecen para ambos roles, no existe ningún indicador resaltante que permita indicar al usuario en qué sección se encuentra, potencialmente provocando que se desubique.*
+
+***Recomendación:**
+Resaltar con un cuadro de color resaltante la sección que se seleccione dentro de la barra de navegación, con la finalidad de orientar al usuario.*
+
+***PROBLEMA #3:** No existe un apartado de edición de perfil*
+
+***Severidad:** 2*
+
+*Heurística violada: Usabilidad - Control de usuario y libertad*
+
+***Problema:***
+
+*Dentro de la barra de navegación no hay un apartado de edición de perfil, esto ocasiona que el usuario no brinde y proporcione datos quepeuden llegar a ser relevantes, como teléfono de contacto entre otros campos.*
+
+***Recomendación:**
+Implementar un boton o apartado para editar perfil de usuario.*
+
+***PROBLEMA #4:** En el inicio de sesión, la card de contenido no resalta diferencia del fondo*
+
+***Severidad:** 1*
+
+*Heurística violada: Usabilidad - Diseño estético y minimalista*
+
+***Problema:***
+
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/277204363-409272f0-0261-4092-bccf-3331e5c190c8.png)
+
+
+*En la pantalla de login, el contenido dento de la card principal de la página, no es notable visualmente ya que no tiene un color que lo diferencie del fondo principal, por lo que el usuario puede forzar la vista y descontrarse para realizar un inicio de sesión exitoso.*
+
+***Recomendación:**
+Cambiar el color de la card contenedora de los campos de inicio de sesión*
+
+***PROBLEMA #5:** Inconsistencia en tamaño de tipografía *
+
+***Severidad:** 2*
+
+*Heurística violada: Usabilidad - Consistencia y estándares*
+
+***Problema:***
+
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/277205109-ba79cecd-1ba0-489c-a18e-f8eeb0a91a3a.png)
+
+*En las pantallas de home para ambos roles, existe una incosistencia en el tamaño de la tipografía, lo que ocasiona insatisfacción visual al usuario al momento de navegar por las pantallas de home*
+
+
+***Recomendación:**
+Corregir la tipografía en todas las secciones de un tamaño equivalente*
+
+---
+
+**Landing Page**
+
+***PROBLEMA #1:**  El contenido de funcionalidades no se actualiza periodicamente*
+
+***Severidad:** 3*
+
+*Heurística violada: Information Architecture - Is it credible?*
+
+***Problema:***
+
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/277208099-62d39d65-9fa9-4d98-859a-cf2b655faad0.png)
+
+*En la sección de funcionalidades, algunas de estas ya no se están implementando, por lo que el usuario puede ser confundido al querer usar esas caracteristicas*
+
+***Recomendación:**
+Corregir las funcionalidades mostradas en las listas de la sección*
+
+---
+
+**Mobile Application**
+
+**PROBLEMA #1:** Al estar en una de las pantallas, resulta imposible de diferenciar entre estos debido a que la barra de navegación no indica en qué sección se encuentra el usuario
+
+***Severidad:** 1*
+
+*Heurística violada: Usabilidad - Reconocer antes que recordar*
+
+***Problema:***
+
+![imagen](https://github.com/user-attachments/assets/d6b01ccc-f7cc-403a-bcde-044098a81327)
+
+*En la pantalla de dashboard de monitoreo de cultivo no se presenta el bottom navigation bar, lo que resulta imposible*
+
+# 6.4 Video About-the-Product
+
+A continuación, se mostrará el Video About the Product, donde se mostrará las carácteristicas de la Landing Page para los segmentos objetivos interesados. De igual manera, la aplicación web y móvil serán mostrada en su nueva versión del Sprint #2, abarcando muchas más funcionalidades para ser expuestas en este video. Finalmente, también incluye un testimonio de uso realizado en una entrevista de validación:
+
+![imagen](https://github.com/user-attachments/assets/64c16a19-d96e-42b6-8667-7097a6cf4a5c)
+
+Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EQvkrqtupmNCiHPncyZHlRIBhQ_NC-3csCH_4G9RJcVbeQ?e=92sY2y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
