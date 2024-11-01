@@ -63,7 +63,7 @@ Como mencionamos anteriormente, se utilizará GitHub para llevar un control de l
 
 Repositorio de Landing Page: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/Ayni_LandingPageOfficial
 
-Repositorio de pruebas de aceptación:
+Repositorio de pruebas de aceptación:  https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/acceptance-test-IoT
 
 Repositorio frontend: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniFrontend
 
@@ -130,6 +130,7 @@ Para el desarrollo de Mobile App, se hará uso de Flutter/Dart como lenguaje y s
 
 ### 6.1.4 Software Deployment Configuration
 
+
 Para el despliegue de la landing page y la aplicación web, se usará netlify, donde se seguirán los siguientes pasos:
 
 Primero se debe iniciar sesión en Netlify con una cuenta de Github, luego ir a "Sites" donde se ubica el siguiente botón:
@@ -149,6 +150,7 @@ Para la aplicación web, es necesario indicarle a la plataforma donde se encuent
 ![image](https://github.com/user-attachments/assets/624999cf-f954-41a0-8eea-d830d5facc01)
 
 De esta manera se la plataforma se encarga del build y en pocos minutos estaría desplegada la Landing Page y la aplicación web.
+
 
 ## 6.2 Landing Page, Services & Applications Implementation
 
@@ -173,6 +175,7 @@ De esta manera se la plataforma se encarga del build y en pocos minutos estaría
 
 
 ### 6.2.1.2 Sprint Backlog 1
+
 
 El objetivo de este sprint es establecer una base sólida en la experiencia de usuario mediante el desarrollo de una landing page que brinde información clave sobre la aplicación y sus funcionalidades. Además, de desarrollar la primera versión de la aplicación web, donde se centrará en la visualización, monitoreo y planificación de cultivos.
 
@@ -212,7 +215,6 @@ Link: https://trello.com/invite/b/6711c7f10cf002d7fb8bb2da/ATTIc01f58e45484044f9
 
 ### 6.2.1.3 Development Evidence for Sprint Review
 
-
 Con respecto al alcance de desarrollo en este sprint, se logró realziar las secciones principales para landing page, tales como la sección Hero, especificación de funcionalidades y precios, acerca del equipo de desarrollo. Por otro lado, en la aplicación web se diseñó e implementó distintas secciones, tales como: Home, Crops, y la compra de productos mediante un stepper. Una de las pantallas a resaltar es el dashboard de monitoreo de cultivo. 
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
@@ -235,6 +237,7 @@ Con respecto al alcance de desarrollo en este sprint, se logró realziar las sec
 | AyniFrontend  | fix/code-style | c72eeb2 | fix: styles in bottom bar and rates | - | 23/09/2023 |
 
 ### 6.2.1.4 Testing Suite Evidence for Sprint Review
+
 
 En esta sección, se realizaron acceptance test en .feature para cada una de las historias de usuario incluidas en este Sprint.
 Las historias de usuario relacionadas a estos primeros .features son:
@@ -259,6 +262,7 @@ Las historias de usuario relacionadas a estos primeros .features son:
 | acceptance-test-IoT | test/UserStories | d9d7765 | Acceptance_test_03.feature  | - | 25/09/2023 |
 | acceptance-test-IoT | test/UserStories | 16df5ba | Acceptance_test_02.feature  | - | 25/09/2023 |
 | acceptance-test-IoT | test/UserStories | 3fab5b6 | Acceptance_test_01.feature  | - | 25/09/2023 |
+
 
 Link de repositorio: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/acceptance-test-IoT
 
@@ -373,6 +377,7 @@ Landing Page
 Web App
 ![image](https://github.com/user-attachments/assets/fa251f6c-bb7c-4536-b578-f616b159f250)
 ![image](https://github.com/user-attachments/assets/8343536d-d3f4-47ce-aa48-6e2b82479e94)
+
 
 
 ## 6.2.2 Sprint 2
@@ -1020,3 +1025,4 @@ A continuación, se mostrará el Video About the Product, donde se mostrará las
 ![imagen](https://github.com/user-attachments/assets/64c16a19-d96e-42b6-8667-7097a6cf4a5c)
 
 Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EQvkrqtupmNCiHPncyZHlRIBhQ_NC-3csCH_4G9RJcVbeQ?e=92sY2y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+

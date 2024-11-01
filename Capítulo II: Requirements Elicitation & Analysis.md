@@ -126,20 +126,19 @@ y análisis de cultivos.</th>
 </tr>
 <tr class="header">
 <th>Precios y Costos</th>
-<th>Estructura de precios basada en suscripciones o uso.</th>
-<th>Estructura de precios basada en suscripciones o uso.</th>
-<th>Estructura de precios basada en suscripciones o uso.</th>
-<th>Estructura de precios basada en suscripciones o uso.</th>
+<th>Suscripciones mensuales desde los 15 dolares a 89 dolares.</th>
+<th>Plan Básico, Pro y Premium desde 500 dolares anuales.</th>
+<th>Prueba gratuita. 10 dolares por mes</th>
+<th>Plan Lite, Essentials y Business. desde 19 dolares a 149 dolares</th>
 </tr>
 <tr class="odd">
 <th><p>Canales de distribución</p>
 <p>(Web y/o Móvil)</p></th>
 <th>Plataforma en línea accesible a través de dispositivos móviles y
-computadoras.</th>
+plataforma web.</th>
 <th>Plataforma en línea accesible a través de dispositivos móviles y
-computadoras.</th>
-<th>Plataforma en línea accesible a través de dispositivos móviles y
-computadoras.</th>
+plataforma web.</th>
+<th>Plataforma en línea accesible a través plataforma web</th>
 <th>Plataforma en línea accesible a través de dispositivos móviles y
 computadoras.</th>
 </tr>
@@ -217,6 +216,7 @@ de comercio.</th>
 
 **Segmento Objetivo: Productores que quieren mejorar la calidad de sus ventas**
 - **Preguntas principales**
+
   - En términos de cantidad, ¿considera que su producción es al por mayor o al por menor?
   - ¿Qué es lo que normalmente siembra en sus terrenos?
   - ¿Cómo es que vende lo que produce?
@@ -235,9 +235,15 @@ de comercio.</th>
   - ¿Qué características considera importantes que deben incluirse?
   - ¿Qué canales de comunicación prefiere utilizar si necesita ayuda y capacitación?
   - ¿Cuál es el navegador que utiliza para acceder a internet?
+  - ¿Puede resumir su personalidad en pocas palabras?
+  - ¿Hay algunas marcas técnológicas que sean de su favoritismo?
+  - ¿Cuál es su distrito de residencia y su estado civil?
 
 **Segmento Objetivo: Comerciantes que quieren mejorar la calidad de sus ventas**
 - **Preguntas principales**
+  - ¿Puede resumir su personalidad en pocas palabras?
+  - ¿Hay algunas marcas técnológicas que sean de su favoritismo?
+  - ¿Cuál es su distrito de residencia y su estado civil?
   - En términos de cantidad, ¿considera que sus ventas son al por mayor o al por menor?
   - ¿Qué es lo que normalmente busca de los productos agrícolas?
   - ¿Qué medios usa para comerciar?
@@ -257,7 +263,9 @@ de comercio.</th>
   - ¿Qué características considera importantes que deben incluirse en la aplicación?
   - ¿Qué canales de comunicación prefiere utilizar si necesita ayuda y capacitación?
   - ¿Cuál es el navegador que utiliza para acceder a internet?
-
+  - ¿Puede resumir su personalidad en pocas palabras?
+  - ¿Hay algunas marcas técnológicas que sean de su favoritismo?
+  - ¿Cuál es su distrito de residencia y su estado civil?
 ### 2.2.2. Registro de entrevistas.
 
 **Segmento Objetivo: Productores que quieren mejorar la calidad de sus ventas**
@@ -270,7 +278,7 @@ Edad: 21
 
 Distrito: Lince
 
-Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Link de entrevista: https://t.ly/xiC2D (Microsoft Stream)
 
 Inicio: 0:00
 
@@ -282,7 +290,7 @@ Duración: 5:15
 
 Resumen de la entrevista:
 
-Lisanne Mareni, se dedica a al agricultura como negocio familiar, nos expuso las actividades cotidianas que realiza y la manera en las que las hace, el cual la mayoria son manualmente. Además, exponse sus dificultades que tiene para realizar procesos de cultivos, los cuales en su mayoria son las fechas de riego. Por otro lado, nos dice que el uso de una solución IOT le llama mucho la atención y que la utilizaría en sus terrenos de cultivos. Su dispositivo preferido para usar apliaciones o programas es su celular con sistema operativo Android. Los navegadores que más usa son Chorme y Edge.
+Lisanne Mareni, se dedica a al agricultura como negocio familiar, nos expuso las actividades cotidianas que realiza y la manera en las que las hace, el cual la mayoria son manualmente y sus frustraciones son a raiz de que se olvide de ellas cuando tiene nuevas tareas a cumplir. Además, exponse sus dificultades que tiene para realizar procesos de cultivos, los cuales en su mayoria son las fechas de riego. Por otro lado, nos dice que el uso de una solución IOT le llama mucho la atención dado que investigó un poco de la adopción de estos modelos en empresas grandes de agricultura y que le encantaría utilizar en sus terrenos de cultivos. Por otro lado, describe su personalidad como trabajadora, metódica y dispuesta a adoptar nuevas tecnologías si eso le ayudaría a su pequeño negocio, su marca favorita es Samsung por su durabilidad y fácil uso, mencionó que es soltera y vive en el distrito de Lince. Su dispositivo preferido para usar apliaciones o programas es su celular con sistema operativo Android. Los navegadores que más usa son Chorme y Edge.
 
 Entrevistado 2:
 
@@ -292,7 +300,7 @@ Edad: 23
 
 Región: Ancash
 
-Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Link de entrevista: https://t.ly/xiC2D (Microsoft Stream)
 
 Inicio: 5:15
 
@@ -300,11 +308,11 @@ Fin: 11:24
 
 Duración: 6:08
 
-![entrevistado2](./assets/entrevista2.png)
+![image](https://github.com/user-attachments/assets/bd427fcf-6354-4013-bf80-11cb9cd8847c)
 
 Resumen de la entrevista:
 
-El entrevistado fue German Portella de 23 años del departamento de Ancash. Él está enfocado a una producción y venta al por menor, su producto principal es la papa. La venta la realiza en mercados locales y tiendas pequeñas. También menciona que a veces le resulta complicado coordinar todas las fechas y procesos. También menciona que hace uso de su celular para buscar información en internet o hacer uso de Facebook y Whatsapp. Por último, el dispositivo que más usa es su celular Android y su navegador de preferencia es Google Chrome.
+El entrevistado fue German Portella de 23 años del departamento de Ancash, posee una personalidad relajada, organizado y enfocado en los detalles. Él está enfocado en la venta de su producción de cultivo, su producto principal es la papa. La venta la realiza en mercados locales y tiendas pequeñas. También menciona que a veces tiene frustraciones como coordinar todas las fechas y procesos, precios competitivos a comparación de la calidad de sus cultivos y poco alcance de su mercadería. Como objetivos a futuro, desea expandir su negocio a nivel nacional y explorar mercados internacionales. Le gustaría exportar productos agrícolas, especialmente aquellos con certificaciones de calidad y sostenibilidad. Menciona que le atrae la idea de una solución IOT, porque de esa manera no tendría que gastar en mano de obra y solo confiar en las aplicaciones y sensores que le notifiquen todo acerca de su terreno de cultivo. Las características que desea de una solución IOT son: Intuitiva y fácil de usar. Además, debe ofrecer datos precisos sobre el estado de los productos, el tiempo estimado de cosecha y la trazabilidad del origen de los productos. También menciona que hace uso de su celular para buscar información en internet o hacer uso de Facebook y Whatsapp. Sus marcas favoritas son Huawei y Samsung, y las laptops marca Asus. Por último, el dispositivo que más usa es su celular Android y su navegador de preferencia es Google Chrome. 
 
 Entrevistado 3:
 
@@ -314,7 +322,7 @@ Edad: 50
 
 Región: Junín 
 
-Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Link de entrevista: https://t.ly/xiC2D (Microsoft Stream)
 
 Inicio: 11:24
 
@@ -326,7 +334,7 @@ Duración: 08:05
 
 Resumen de la entrevista:
 
- El entrevistado fue Rolando Salvatierra un agricultor de 50 años del departamento de Junín. Como agricultor considera que sus cosechas son enfocadas a una producción al por mayor, con respecto a sus sembríos son realizados dependiendo a la temporada del año siendo los principales productos maíces, papas y zanahorias. La venta de sus productos se efectúa cuando el comprador va hacia ellos ofreciéndo un precio según el mercado, además, comenta que hubo veces en donde sus productos no fueron vendidos en su totalidad y para poder terminar sus ventas tuvo que venderlas a un precio menor al promedio según el mercado. Con respecto a la gestión de sus sembríos no se le hace complicado porque lleva años en el rubro, sin embargo, también hay veces en que se le olvida las fechas de ciertas actividades por lo que considera que la aplicación le ayudaría mucho para poder tener una cosecha de calidad y considera que el uso de las redes sociales y servicio de videollamadas como Zoom son una buena forma de capacitación para el uso de la app. Por último, el dispositivo que más usa es su celular con sistema operativo Android y el navegador que frecuenta usar es Google Chrome.
+ El entrevistado fue Rolando Salvatierra un agricultor de 50 años del departamento de Junín. Como agricultor considera que sus cosechas son enfocadas a una producción al por mayor, con respecto a sus sembríos son realizados dependiendo a la temporada del año siendo los principales productos maíces, papas y zanahorias. La venta de sus productos se efectúa cuando el comprador va hacia ellos ofreciéndo un precio según el mercado, además, comenta que hubo veces en donde sus productos no fueron vendidos en su totalidad y para poder terminar sus ventas tuvo que venderlas a un precio menor al promedio según el mercado. Con respecto a la gestión de sus sembríos no se le hace complicado porque lleva años en el rubro, sin embargo, también hay veces en que se le olvida las fechas de ciertas actividades por lo que considera que la aplicación le ayudaría mucho para poder tener una cosecha de calidad y considera que el uso de las redes sociales y servicio de videollamadas como Zoom son una buena forma de capacitación para el uso de la app. No tiene una preferencia marcada por marcas tecnológicas, aunque dice que su teléfono Xiaomi ha sido una buena herramienta por su relación calidad/precio.Su personalidad es perseverante y dedicada. Es meticuloso con su trabajo, pero también está abierto a explorar nuevas formas de mejorar su producción si le demuestran que funcionan. Por último, el dispositivo que más usa es su celular con sistema operativo Android y el navegador que frecuenta usar es Google Chrome.
 
 **Segmento Objetivo: Comerciantes que quieren mejorar la calidad de sus ventas**
 
@@ -338,7 +346,7 @@ Edad: 25
 
 Distrito: Lince - Lima
 
-Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Link de entrevista: https://t.ly/xiC2D (Microsoft Stream)
 
 Inicio: 19:21
 
@@ -350,7 +358,7 @@ Duración: 08:42
 
 Resumen de entrevista:
 
-El entrevistado fue Andre Luna, un joven de 25 años que se dedica a ser asistente en un grupo de comercio de frutas y verduras desde hace unos años. Andre menciona que los precios son bien definidos por los productores y que se basa en la calidad de producto, la disponibilidad del producto y la temporada en la cual son cultivadas. A futuro se plantea crear una empresa o marca propia de comercio de productos agrícolas con reconocimiento a nivel nacional. SIn embargo, a veces tiene frustraciones como la desorganización e incumplimiento de los productores en lo acordado. André nos comentó que utilizó programas para manejar ventas o reuniones usando excel, pero que no es lo suficientemente eficiente para cumplir todas sus funciones de asistente de comerciante. Por último, la creación de una aplicación web que responda a sus principales inconvenientes para organizarse le parece una idea innovadora. Sin embargo, el desea que la principal funcionalidad sea la de buscar productos y poder hacer una compra con contacto directo con el vendedor. Por último, el entrevistado nos dijo que el dispositivo que más usa es una laptop con sistema operativo Windows y el browser que más usa es Google Chrome.
+El entrevistado fue Andre Luna, un joven de 25 años que se dedica a ser asistente en un grupo de comercio de frutas y verduras desde hace unos años. Andre menciona que los precios son bien definidos por los productores y que se basa en la calidad de producto, la disponibilidad del producto y la temporada en la cual son cultivadas. A futuro se plantea crear una empresa o marca propia de comercio de productos agrícolas con reconocimiento a nivel nacional. SIn embargo, a veces tiene frustraciones como la desorganización e incumplimiento de los productores en lo acordado. André nos comentó que utilizó programas para manejar ventas o reuniones usando excel, pero que no es lo suficientemente eficiente para cumplir todas sus funciones de asistente de comerciante. Por último, la creación de una aplicación web que responda a sus principales inconvenientes para organizarse le parece una idea innovadora. Sin embargo, el desea que la principal funcionalidad sea la de buscar productos y poder hacer una compra con contacto directo con el vendedor. Se describe como una persona organizada, eficiente y enfocada en los detalles. Siempre busca oportunidades para mejorar su negocio y mantenerse actualizado con las tendencias del mercado. Le gusta estar en control de todos los aspectos de su comercio, desde la adquisición hasta la venta. No tiene una preferencia específica por marcas tecnológicas, pero menciona que ha tenido buenas experiencias con Samsung en cuanto a dispositivos móviles y con HP en cuanto a laptops. Utiliza principalmente LinkedIn para hacer conexiones comerciales, así como WhatsApp para mantenerse en contacto con productores y distribuidores. También utiliza Instagram para explorar tendencias de productos agrícolas y ver qué es popular en otros mercados. Por último, el entrevistado nos dijo que el dispositivo que más usa es una laptop con sistema operativo Windows y el browser que más usa es Google Chrome.
 
 Entrevistado 5:
 
@@ -360,7 +368,7 @@ Edad: 24
 
 Distrito: Santiago de Surco - Lima
 
-Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Link de entrevista: https://t.ly/xiC2D (Microsoft Stream)
 
 Inicio: 28:03
 
@@ -371,7 +379,7 @@ Duración: 08:24
 ![entrevistado5](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/1db9b603-0d51-4cd1-a8f1-a06507ad8ec9)
 
 Resumen de entrevista:
-El entrevistado es Favio Onofre, un joven de 25 años que se dedica a ser asistente en un comercio familiar de venta de productos agrícolas. Favio nos comenta que la calidad es la prioridad de los productos que vende de tipo al por mayor, debido a ello en su lugar de trabajo tienen un proceso de calidad por el cual someten al producto a una serie de pasos. Por otro lado, nos dice que los precios se negocian según los acuerdos de los productores dado que ellos son los que generan la ganancia. A futuro quiere mejorar la calidad de los productos que vende siendo reconocido a nivel internacional. También, nos comentó que los inconvenientes que presentó en su trabajo fueron la desorganización de las compras o el contacto de proveedor. Por último, la creación de una aplicación web ayudaría mucho a su trabajo ya que facilita el contacto con los productores para concretar ventas. Por último, nos dijo que el navegador que más usa es Google Chrome y que el dispositivo que más usa en el trabajo de asistente de comercio de agricultura es una laptop.
+El entrevistado es Favio Onofre, un joven de 25 años que se dedica a ser asistente en un comercio familiar de venta de productos agrícolas. Favio nos comenta que la calidad es la prioridad de los productos que vende de tipo al por mayor, debido a ello en su lugar de trabajo tienen un proceso de calidad por el cual someten al producto a una serie de pasos. Por otro lado, nos dice que los precios se negocian según los acuerdos de los productores dado que ellos son los que generan la ganancia. A futuro quiere mejorar la calidad de los productos que vende siendo reconocido a nivel internacional. También, nos comentó que los inconvenientes que presentó en su trabajo fueron la desorganización de las compras o el contacto de proveedor. Por último, la creación de una aplicación web ayudaría mucho a su trabajo ya que facilita el contacto con los productores para concretar ventas. Se describe como una persona emprendedora y pragmática, siempre buscando oportunidades para innovar en su negocio. Le gusta estar al tanto de las nuevas tecnologías, pero también se preocupa por mantener las relaciones personales con sus proveedores y clientes. Valora la eficiencia y la rapidez en su proceso comercial. Prefiere dispositivos de Apple debido a su facilidad de uso y confiabilidad. Usa tanto el iPhone como la MacBook para sus operaciones diarias y considera que estas herramientas le permiten gestionar su negocio con más eficiencia. Prefiere utilizar WhatsApp o correo electrónico para coordinar con su equipo y proveedores. También mencionó que le gustaría tener un servicio de soporte técnico en la plataforma IoT para resolver cualquier duda que pueda surgir. Por último, nos dijo que el navegador que más usa es Google Chrome y que el dispositivo que más usa en el trabajo de asistente de comercio de agricultura es una laptop.
 
 Entrevistado 6:
 
@@ -381,7 +389,7 @@ Edad: 45
 
 Distrito: Surco - Lima
 
-Url: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EUgptzmdXa1Ltd5hNVDpwY8Bi4qCmvsEhnFgklP8W7mhZA?e=NOCrK1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Link de entrevista: https://t.ly/xiC2D (Microsoft Stream)
 
 Inicio: 36:27
 
@@ -392,7 +400,7 @@ Duración: 04:45
 ![entrevsitado 6](https://github.com/upc-pre-202302-GreatMinds-SW51/SW51-GreatMinds-OpenSource/assets/104078975/0a0a8d9e-5582-49dc-9bf7-1976f0e1cad1)
 
 Resumen de entrevista: 
-La entrevistada es Juli Carrión, una mujer de 45 años que se dedica a ser asistente en un pequeño comercio de venta de productos agrícolas. Juli nos dice que vende sus productos al por mayor. Además, que gestiona sus ventas de manera tradicional pero conservando la preferencia por la calidad de los productos que compra para posteriormente vender. Lamentablemente, tuvo que optar por decisiones tales como vender a bajo precio lo que le sobraba de productos, eso refleja una mala manera de gestionar los productos. Relacionado a ello, tuvo experiencias malas de que los proveedores de productos a veces no cumplen con su parte del trato incluso poniendo precios muy altos en la negociación. Sin embargo, ella piensa que una aplicación web que le ayude a comprar productos y hacerles un seguimiento, arreglaría sus problemas para sus ventas. Por último, nos dice que su dispositivo de preferencia es el celular, y el navegador que más usa es Google Chrome. 
+La entrevistada es Juli Carrión, una mujer de 45 años que se dedica a ser asistente en un pequeño comercio de venta de productos agrícolas. Juli nos dice que vende sus productos al por mayor. Además, que gestiona sus ventas de manera tradicional pero conservando la preferencia por la calidad de los productos que compra para posteriormente vender. Lamentablemente, tuvo que optar por decisiones tales como vender a bajo precio lo que le sobraba de productos, eso refleja una mala manera de gestionar los productos. Relacionado a ello, tuvo experiencias malas de que los proveedores de productos a veces no cumplen con su parte del trato incluso poniendo precios muy altos en la negociación. Sin embargo, ella piensa que una aplicación web que le ayude a comprar productos y hacerles un seguimiento, arreglaría sus problemas para sus ventas. Es una persona organizada y enfocada en los detalles. Como parte de su personalidad, busca siempre ofrecer productos de alta calidad y mantenerse al día con las tendencias del mercado. Se considera alguien perfeccionista y no tolera errores en los procesos logísticos o de control de calidad. Prefiere dispositivos Samsung por su durabilidad y versatilidad. Utiliza un Samsung Galaxy para sus actividades diarias y una laptop Dell para trabajar desde su oficina. También menciona que le gusta la marca Lenovo por la fiabilidad de sus equipos. Vive en Surco, Lima, y está casada con dos hijos. Su familia juega un papel importante en su vida, y menciona que trata de equilibrar su vida personal con el crecimiento de su negocio. Por último, nos dice que su dispositivo de preferencia es el celular, y el navegador que más usa es Google Chrome. 
 
 ### 2.2.3. Análisis de entrevistas.
 
@@ -453,6 +461,15 @@ La entrevistada es Juli Carrión, una mujer de 45 años que se dedica a ser asis
 
 - **¿Cuál es el navegador que utiliza para acceder a internet?**  
   El 100% de los entrevistados usan Google Chrome para navegar en internet.
+
+- **¿Puede resumir su personalidad en pocas palabras?**
+  El 100% de los entrevistados se describen como personas organizadas, enfocadas en los detalles y con disposición para adoptar nuevas tecnologías si estas pueden mejorar la eficiencia de sus negocios.
+
+- **¿Hay algunas marcas tecnológicas que sean de su favoritismo?**
+  El 60% de los entrevistados mencionan preferir dispositivos de marcas como Samsung y Huawei por su durabilidad y facilidad de uso, mientras que el 40% valoran la confiabilidad de Apple para tareas más comerciales y administrativas.
+
+- **¿Cuál es su distrito de residencia y su estado civil?**
+El 40% de los entrevistados residen en Lima, específicamente en distritos como Lince y Surco. El 60% restante vive en áreas rurales o en departamentos como Ancash y Junín. En cuanto al estado civil, el 40% son solteros y el 60% son casados, en su mayoría con familias involucradas en el negocio agrícola.
 
 ## Segmento Objetivo: Comerciantes que quieren mejorar la calidad de sus ventas
 
@@ -515,6 +532,15 @@ La entrevistada es Juli Carrión, una mujer de 45 años que se dedica a ser asis
 - **¿Cuál es el navegador que utiliza para acceder a internet?**  
   El 100% de los encuestados usan Google Chrome como navegador habitual.
 
+- **¿Puede resumir su personalidad en pocas palabras?**
+  El 100% de los entrevistados se describen como organizados, enfocados en los detalles, y comprometidos con la calidad de los productos que comercializan. Algunos también mencionan características como eficiencia y pragmatismo, lo cual les ayuda a mejorar en sus negocios.
+
+- **¿Hay algunas marcas tecnológicas que sean de su favoritismo?**
+  El 60% de los encuestados prefieren marcas como Samsung y HP por su confiabilidad y durabilidad, mientras que el 40% mencionan que tienen preferencia por dispositivos de Apple o Lenovo debido a su facilidad de uso y eficiencia en la gestión de sus negocios.
+
+- **¿Cuál es su distrito de residencia y su estado civil?**
+  El 40% de los encuestados viven en distritos de Lima como Surco y Lince, mientras que el 60% residen en otras regiones del país como Junín y Ancash. En cuanto a su estado civil, el 60% de los entrevistados son solteros, mientras que el 40% son casados.
+
 
 ## 2.3. Needfinding.
 
@@ -541,8 +567,8 @@ Agricultores que desean mejorar la calidad de sus productos y comerciantes que d
 <table>
   <tr>
     <th></th>
-    <td colspan="2">COMERCIANTES</td>
-    <td colspan="2">AGRICULTORES</td>
+    <td colspan="2">CARLOS MARTINEZ (COMERCIANTE)</td>
+    <td colspan="2">MARIA GRACIA (AGRICULTOR)</td>
   </tr>
   <tr>
     <td>TASK</td>
@@ -731,15 +757,7 @@ Visualización de los As-Is Scenario Mapping:
 
 • Profile (Perfil): Un perfil es un registro que contiene información personal sobre un usuario, típicamente almacenado dentro de la base de datos de la aplicación.
 
-• Registration (Registro): La inscripción es el proceso de crear una cuenta de usuario dentro de la aplicación.
-
-• FAQ (Frequently Asked Questions) (Preguntas Frecuentes): Las FAQ (Preguntas Frecuentes) son una recopilación de preguntas comúnmente formuladas y sus respectivas respuestas, con el objetivo de proporcionar una ayuda rápida a los usuarios.
-
-• About Us (Acerca de Nosotros): "Acerca de nosotros" es una sección de la aplicación que contiene información sobre los creadores, la misión y los objetivos de la plataforma.
-
 • Dashboard (Panel de control): Un panel de control es un componente de la interfaz de usuario que proporciona una visión general de la información relevante y las acciones disponibles para el usuario, como la gestión de eventos para los organizadores o la configuración de la cuenta para los asistentes.
-
-• Confirmation (Confirmación): Una confirmación es un reconocimiento o notificación proporcionada a los usuarios después de completar una solicitud o registro de incidente.
 
 • Marketplace (Mercado): Espacio virtual o físico donde se realizan las transacciones de compra y venta de cultivos.
 
