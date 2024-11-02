@@ -593,6 +593,8 @@ De esta manera el avance del Sprint 2 queda desplegado.
 Link de landing page: (https://ayni-landingpage-v1.netlify.app/)
 Link de primera versión de frontend: (https://ayni-webapp-v1.netlify.app/)
 
+---
+
 Para el despliegue del backend, se usó primero Railway, donde se creó un servicio para el hosting de la base de datos:
 
 ![imagen](https://github.com/user-attachments/assets/df245cf1-0ef2-4a4f-b122-cbb84dad8a6e)
@@ -615,6 +617,33 @@ Sin embargo, solo da 7 días de prueba para hacer deploys. Por lo tanto, se busc
 
 El link es el siguiente: (https://ayni-v1.sfo1.zeabur.app/swagger-ui/index.html)
 
+---
+
+Para el despliegue de la aplicación móvil, se usó Firebase App Distribution, se siguieron los siguientes pasos:
+
+Se crea un proyecto en Firebase:
+
+![imagen](https://github.com/user-attachments/assets/166c3724-fe14-4573-ae51-65b4221c9edf)
+
+Se ejecuta la siguiente linea de codigo:
+
+![imagen](https://github.com/user-attachments/assets/74c08eb8-9c3a-49cb-897c-276847db1533)
+
+Luego se registra la app:
+
+![imagen](https://github.com/user-attachments/assets/b47e96b6-ccf8-4044-8b3b-99052dd01781)
+
+Se crea un grupo de testers:
+
+![imagen](https://github.com/user-attachments/assets/bd9881ea-048c-4cbf-8818-e3abf4f07904)
+
+Luego se realizan cambios en el main.dart:
+
+![imagen](https://github.com/user-attachments/assets/cb3de7de-b00f-41b0-8c92-ac6fb9e1b357)
+
+Y se obtiene la invitación: 
+
+Link: https://appdistribution.firebase.dev/i/4eb4946b644720bd
 
 ### 6.2.2.8 Team Collaboration Insights during Sprint
 
