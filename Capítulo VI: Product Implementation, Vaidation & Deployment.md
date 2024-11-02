@@ -397,12 +397,12 @@ Web App
 | Location | Virtual via Google Meet |
 | Prepared By | Gonzales Carrión, Jorge Enrique |
 | Attendees (to planning meeting) | Gonzales Carrión, Jorge Enrique / Espejo Macuri, Paolo Andre / Alejo Cardenas, Luis Angel / Rios Jaimes, Jhonel Enrique / Sebastian Tasayco, Javier Martin |
-| Sprint 1 - Review Summary | Se alcanzó Se debe detallar la herramienta de control de gestión de proeyctos empleada en el Sprint 1 y mejorar explicaciones en las secciones Development, Testing, Execution, Documentation, Deployment |
-| Sprint 1 - Retrospective Summary  |  |
+| Sprint 1 - Review Summary | Se realizó la primera versión de landing page y web app, asimismo features de alta prioridad para los usuarios agricolas. |
+| Sprint 1 - Retrospective Summary  | Se debe detallar la herramienta de control de gestión de proeyctos empleada en el Sprint 1 y mejorar explicaciones en las secciones Development, Testing, Execution, Documentation, Deployment |
 | **Sprint Goal & User Stories** | - |
 | Sprint 2 Goal| Nuestro enfoque está en permitir que los agricultores puedan registrar y planificar cultivos, además de monitorear sus cultivos utilizando datos de una aplicación embebida y en proporcionar a los comerciantes pantallas para la compra eficiente de cultivos en la aplicación móvil.<br> Creemos que esto ofrecerá una experiencia fluida de gestión de cultivos para los agricultores, brindando herramientas detalladas de planificación y monitoreo, mientras que los comerciantes podrán navegar y realizar compras de cultivos de manera sencilla dentro del sistema. <br> Esto se confirmará cuando los agricultores puedan monitorear sus cultivos a través de la aplicación embebida, y los comerciantes puedan acceder y completar la compra de cultivos mediante las pantallas implementadas, utilizando los endpoints en Ayni. |
-| Sprint 2 - Velocity | El equipo puede aceptar 25 Story Points|
-| Sprint 2 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 23|
+| Sprint 2 - Velocity | El equipo puede aceptar 80 Story Points|
+| Sprint 2 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 72|
 
 
 
@@ -467,8 +467,10 @@ Con respecto al alcance del desarrollo de este Sprint, se desarrolló la primera
 | AyniBackend-API | develop | 6518a12 | feat: Created Actuator Services and Repository | - | 23/10/2024 |
 | AyniBackend-API | develop | ad7fb89 | feat: Created Actuator Controller | - | 23/10/2024 |
 | AyniBackend-API | develop | 002b6d1| feat: Updated Sensor model | - | 02/10/2024 |
-| AyniBackend-API | develop | fd36f1b | feat: Updated Sensor model | - | 02/10/2024 |
+| AyniBackend-API | develop | fd36f1b | feat: Updated Crop model | - | 02/10/2024 |
+| AyniBackend-API | develop | 4e20aad | fix: Fixed bugs | - | 02/10/2024 |
 | AyniWokwi | develop | 06b8c3e | feat: added wokwi sketch | - | 25/10/2024 |
+| AyniWokwi | develop | e75542a | feat: Added connection with Edge API | - | 02/10/2024 |
 | Ayni_LandingPage_Official | main | 177fd55 | feat: added about the team and product | - | 01/10/2024 |
 | AyniEdgeApi | master | cdfd4825 | chore: Initial commit | - | 02/10/2024 |
 | AyniEdgeApi | master | 1617ed1 | feat: Added AppConfig | - | 02/10/2024 |
@@ -553,9 +555,10 @@ Embedded App Iot:
 
 A continuación se muestra un video con todas las vistas, endpoints y simulaciones:
 
+![imagen](https://github.com/user-attachments/assets/c0955189-792a-4568-80a4-331868ec83a6)
 
 
-Link:
+Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/ERew7zrbe-BPoUqTItiUFJoBq7t4_XrFh_nPxtTgLq_Q5Q?e=LVeLc4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ### 6.2.2.6 Services Documentation Evidence for Sprint Review
 
@@ -720,19 +723,18 @@ En este Sprint se realizó la primera versión del backend, mobile application y
 
 | Alumno | Actividad | 
 | - | - | 
-| Espejo Macuri, Paolo Andre  | Desarrollo de backend, mobile app, embedded app IoT y Edge API | 
-| Gonzales Carrión, Jorge Enrique  | Desarrollo de backend, mobile app, Landing Page y Edge API | 
-| Alejo Cardenas, Luis Angel  |  Desarrollo de backend, mobile app y Edge API| 
-| Rios Jaimes, Jhonel Enrique |  Desarrollo de backend, mobile app, Frontend y Edge API| 
+| Espejo Macuri, Paolo Andre  | Desarrollo de backend, mobile app, embedded app IoT, Edge API, Embedded app Iot | 
+| Gonzales Carrión, Jorge Enrique  | Desarrollo de backend, mobile app, Landing Page, Embedded app Iot y Edge API | 
+| Alejo Cardenas, Luis Angel  |  Desarrollo de backend, mobile app, Embedded app Iot y Edge API| 
+| Rios Jaimes, Jhonel Enrique |  Desarrollo de backend, mobile app, Frontend, Embedded app Iot y Edge API| 
 | Sebastian Tasayco, Javier Martin |  Desarrollo de backend, mobile app, embedded app IoT y Edge API | 
 
 
 Mobile App
-
 ![imagen](https://github.com/user-attachments/assets/b3813063-7905-4e87-87f4-59419c442651)
 
-Backend
 
+Backend
 ![imagen](https://github.com/user-attachments/assets/0545b25d-c6cc-4f8e-8bf9-ab485d4d399a)
 
 
@@ -741,6 +743,7 @@ Edge API:
 
 
 IoT Embedded App:
+![imagen](https://github.com/user-attachments/assets/561ab524-f4b6-436d-b855-7aedd8f8ede4)
 
 
 Landing Page:
@@ -748,7 +751,6 @@ Landing Page:
 
 
 Frontend:
-
 ![imagen](https://github.com/user-attachments/assets/d2c43f9f-7ce0-4bbf-bd4b-2000ec4646d1)
 
 
