@@ -402,11 +402,16 @@ Web App
 
 ### 6.2.2.2 Sprint Backlog 2
 
-El objetivo de este sprint es establecer una base sólida en la experiencia de usuario mediante el desarrollo de una landing page que brinde información clave sobre la aplicación y sus funcionalidades. Además, de desarrollar la primera versión de la aplicación web, donde se centrará en la visualización, monitoreo y planificación de cultivos.
+El objetivo de este Sprint es permitir que los agricultores puedan registrar y planificar cultivos, además de monitorear sus cultivos utilizando datos de una aplicación embebida y en proporcionar a los comerciantes pantallas para la compra eficiente de cultivos en la aplicación móvil.
+
+Creemos que esto ofrecerá una experiencia fluida de gestión de cultivos para los agricultores, brindando herramientas detalladas de planificación y monitoreo, mientras que los comerciantes podrán navegar y realizar compras de cultivos de manera sencilla dentro del sistema.
+
+Esto se confirmará cuando los agricultores puedan monitorear sus cultivos a través de la aplicación embebida, y los comerciantes puedan acceder y completar la compra de cultivos mediante las pantallas implementadas, utilizando los endpoints en Ayni.
 
 Como herramienta de control para este Sprint se usó Trello con un board exclusivo para esta iteración:
 
-![imagen](https://github.com/user-attachments/assets/780525f7-8c58-4746-967e-cf866d216182)
+![imagen](https://github.com/user-attachments/assets/cc649612-1584-46a8-a2ec-8a0e1111f52d)
+
 
 
 
@@ -489,6 +494,8 @@ En el Sprint 2 se alcanzó a desarrollar una primera versión del Web Service (A
 
 Principales vistas desarrolladas:
 
+Mobile App:
+
 ![imagen](https://github.com/user-attachments/assets/e482bc49-f295-449e-b472-2e99e8b2b6bb)
 
 ![imagen](https://github.com/user-attachments/assets/45142eca-7ac2-48eb-a4a0-f0e8fd7c1669)
@@ -502,6 +509,20 @@ Principales vistas desarrolladas:
 ![imagen](https://github.com/user-attachments/assets/5ed24371-a20b-471c-a599-f43b0897c639)
 
 ![imagen](https://github.com/user-attachments/assets/517f97b1-70dd-4904-b82e-26c1c11d8735)
+
+Web App:
+
+![imagen](https://github.com/user-attachments/assets/e308ebbf-2bf2-432d-85a0-4e2e52c862c1)
+
+![imagen](https://github.com/user-attachments/assets/91a56652-7086-45c2-a763-aab46a07aba3)
+
+![imagen](https://github.com/user-attachments/assets/1c81807f-65c4-4724-86d7-dd45ab1cd2da)
+
+![imagen](https://github.com/user-attachments/assets/23999c06-2322-417b-80fc-be5f0e53f4b2)
+
+![imagen](https://github.com/user-attachments/assets/e1c322b4-ec86-444e-9443-2fae0360b07d)
+
+
 
 A continuación se muestra un video con todas las vistas, endpoints y simulaciones:
 
