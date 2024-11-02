@@ -455,6 +455,23 @@ Con respecto al alcance del desarrollo de este Sprint, se desarrolló la primera
 | AyniBackend-API | develop | 6518a12 | feat: Created Actuator Services and Repository | - | 23/10/2024 |
 | AyniBackend-API | develop | ad7fb89 | feat: Created Actuator Controller | - | 23/10/2024 |
 | AyniWokwi | develop | 06b8c3e | feat: added wokwi sketch | - | 25/10/2024 |
+| Ayni_LandingPage_Official | main | 177fd55 | feat: added about the team and product | - | 01/10/2024 |
+| AyniEdgeApi | master | cdfd4825 | chore: Initial commit | - | 02/10/2024 |
+| AyniEdgeApi | master | e364baa |feat: Updated database | - | 02/10/2024 |
+| AyniFrontend | main | 845efdf |feat: sales integration | - | 01/10/2024 |
+| AyniFrontend | main | f372353 |feat: sale detail integration | - | 01/10/2024 |
+| AyniFrontend | main | 795e613 |feat: orders integration | - | 01/10/2024 |
+| AyniFrontend | main | 479f191 |feat: order detail integration | - | 01/10/2024 |
+| AyniFrontend | main | 43d5190 |feat: request form integration | - | 01/10/2024 |
+| AyniFrontend | main | 1ca0b40 |feat: merchant user integration | - | 01/10/2024 |
+| AyniFrontend | main | 2842d35 |feat: farmer user integration | - | 01/10/2024 |
+| AyniFrontend | main | 3b9bf5f |feat: farmer products integration | - | 01/10/2024 |
+| AyniFrontend | main | e000ab6 |feat: order integration | - | 01/10/2024 |
+| AyniFrontend | main | 45d6067 |feat: crop detail integration | - | 01/10/2024 |
+
+
+
+
 
 
 ### 6.2.2.4 Testing Suite Evidence for Sprint Review
