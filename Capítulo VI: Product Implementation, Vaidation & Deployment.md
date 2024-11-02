@@ -67,6 +67,12 @@ Repositorio de pruebas de aceptación:  https://github.com/upc-202402-GreatMinds
 
 Repositorio frontend: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniFrontend
 
+Repositorio Edge API: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniEdgeAPI 
+
+Repositorio Web API: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniBackend-API
+
+Repositorio Mobile App: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/ayni_flutter_app
+
 ### 6.1.3 Source Code Style Guide & Conventions
 
 A continuación, se darán a conocer las convenciones, formatos, estilos y entre otras propiedades de los lenguajes trabajados en la presente solución las cuales son: HTML, JavaScript/TypeScript, CSS:
@@ -460,10 +466,14 @@ Con respecto al alcance del desarrollo de este Sprint, se desarrolló la primera
 | AyniBackend-API | develop | dd0d38b | feat: Created Actuator Aggregate | - | 23/10/2024 |
 | AyniBackend-API | develop | 6518a12 | feat: Created Actuator Services and Repository | - | 23/10/2024 |
 | AyniBackend-API | develop | ad7fb89 | feat: Created Actuator Controller | - | 23/10/2024 |
+| AyniBackend-API | develop | 002b6d1| feat: Updated Sensor model | - | 02/10/2024 |
+| AyniBackend-API | develop | fd36f1b | feat: Updated Sensor model | - | 02/10/2024 |
 | AyniWokwi | develop | 06b8c3e | feat: added wokwi sketch | - | 25/10/2024 |
 | Ayni_LandingPage_Official | main | 177fd55 | feat: added about the team and product | - | 01/10/2024 |
 | AyniEdgeApi | master | cdfd4825 | chore: Initial commit | - | 02/10/2024 |
+| AyniEdgeApi | master | 1617ed1 | feat: Added AppConfig | - | 02/10/2024 |
 | AyniEdgeApi | master | e364baa |feat: Updated database | - | 02/10/2024 |
+| AyniEdgeApi | master | 09451aa |eat: Added connection with backend | - | 02/10/2024 |
 | AyniFrontend | main | 845efdf |feat: sales integration | - | 01/10/2024 |
 | AyniFrontend | main | f372353 |feat: sale detail integration | - | 01/10/2024 |
 | AyniFrontend | main | 795e613 |feat: orders integration | - | 01/10/2024 |
@@ -538,15 +548,14 @@ Web App:
 
 Embedded App Iot:
 
-
-
+![imagen](https://github.com/user-attachments/assets/3deeb138-44fc-4740-b990-0827f5dac862)
 
 
 A continuación se muestra un video con todas las vistas, endpoints y simulaciones:
 
 
 
-
+Link:
 
 ### 6.2.2.6 Services Documentation Evidence for Sprint Review
 
@@ -712,10 +721,10 @@ En este Sprint se realizó la primera versión del backend, mobile application y
 | Alumno | Actividad | 
 | - | - | 
 | Espejo Macuri, Paolo Andre  | Desarrollo de backend, mobile app, embedded app IoT y Edge API | 
-| Gonzales Carrión, Jorge Enrique  | Desarrollo de backend, mobile app y Landing Page | 
-| Alejo Cardenas, Luis Angel  |  Desarrollo de backend, mobile app | 
-| Rios Jaimes, Jhonel Enrique |  Desarrollo de backend, mobile app y Frontend | 
-| Sebastian Tasayco, Javier Martin |  Desarrollo de backend, mobile app y embedded app IoT | 
+| Gonzales Carrión, Jorge Enrique  | Desarrollo de backend, mobile app, Landing Page y Edge API | 
+| Alejo Cardenas, Luis Angel  |  Desarrollo de backend, mobile app y Edge API| 
+| Rios Jaimes, Jhonel Enrique |  Desarrollo de backend, mobile app, Frontend y Edge API| 
+| Sebastian Tasayco, Javier Martin |  Desarrollo de backend, mobile app, embedded app IoT y Edge API | 
 
 
 Mobile App
@@ -726,12 +735,12 @@ Backend
 
 ![imagen](https://github.com/user-attachments/assets/0545b25d-c6cc-4f8e-8bf9-ab485d4d399a)
 
-IoT Embedded App
-
-
 
 Edge API:
-![imagen](https://github.com/user-attachments/assets/ef69120d-92c7-4aa6-a389-bd149ed670af)
+![imagen](https://github.com/user-attachments/assets/62d4a5c8-9ebf-45fe-901f-f0cc8e2972a4)
+
+
+IoT Embedded App:
 
 
 Landing Page:
