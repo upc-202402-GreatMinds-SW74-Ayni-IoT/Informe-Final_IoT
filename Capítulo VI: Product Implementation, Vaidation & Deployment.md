@@ -448,6 +448,7 @@ Link: https://trello.com/invite/b/6711cea372164d45ac966845/ATTIfc89256cc30d96794
 
 
 Con respecto al alcance del desarrollo de este Sprint, se desarrolló la primera versión de la aplicación móvil, abarcando la intefaz del agricultor y sus principales funcioanlidades como las secciones de Home, Crops y Orders. Por otro lado, tambien se realizó al primera versión de la aplicación embebida IoT, obteniendo como resultado el funcionamiento de los sensores y actuadores a utilziar en la solución IoT. Finalmente, se implementaron los principales endpoints en el API Restful Web, relacionados a la creación y obtencion de cultivos, productos y ordenes.
+
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | - | - | - | - | - | - |
 | ayni_flutter_app | feat/crops_and_products | f5a33a5 | feat: added dashboards crops and profiles  | - | 28/10/2024 |
@@ -460,6 +461,19 @@ Con respecto al alcance del desarrollo de este Sprint, se desarrolló la primera
 | AyniBackend-API | develop | 6518a12 | feat: Created Actuator Services and Repository | - | 23/10/2024 |
 | AyniBackend-API | develop | ad7fb89 | feat: Created Actuator Controller | - | 23/10/2024 |
 | AyniWokwi | develop | 06b8c3e | feat: added wokwi sketch | - | 25/10/2024 |
+| Ayni_LandingPage_Official | main | 177fd55 | feat: added about the team and product | - | 01/10/2024 |
+| AyniEdgeApi | master | cdfd4825 | chore: Initial commit | - | 02/10/2024 |
+| AyniEdgeApi | master | e364baa |feat: Updated database | - | 02/10/2024 |
+| AyniFrontend | main | 845efdf |feat: sales integration | - | 01/10/2024 |
+| AyniFrontend | main | f372353 |feat: sale detail integration | - | 01/10/2024 |
+| AyniFrontend | main | 795e613 |feat: orders integration | - | 01/10/2024 |
+| AyniFrontend | main | 479f191 |feat: order detail integration | - | 01/10/2024 |
+| AyniFrontend | main | 43d5190 |feat: request form integration | - | 01/10/2024 |
+| AyniFrontend | main | 1ca0b40 |feat: merchant user integration | - | 01/10/2024 |
+| AyniFrontend | main | 2842d35 |feat: farmer user integration | - | 01/10/2024 |
+| AyniFrontend | main | 3b9bf5f |feat: farmer products integration | - | 01/10/2024 |
+| AyniFrontend | main | e000ab6 |feat: order integration | - | 01/10/2024 |
+| AyniFrontend | main | 45d6067 |feat: crop detail integration | - | 01/10/2024 |
 
 
 ### 6.2.2.4 Testing Suite Evidence for Sprint Review
@@ -492,7 +506,7 @@ Link de repositorio: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/acce
 
 En el Sprint 2 se alcanzó a desarrollar una primera versión del Web Service (API RESTful) y la aplicación móvil, como principales caracteristicas tenemos las vistas de Dashboard de monitoreo de cultivo, Home, PLanificación de cultivo, etc. A continuación se muestran imagenes de las vistas:
 
-Principales vistas desarrolladas:
+Principales vistas desarrolladas y otros productos:
 
 Mobile App:
 
@@ -522,6 +536,10 @@ Web App:
 
 ![imagen](https://github.com/user-attachments/assets/e1c322b4-ec86-444e-9443-2fae0360b07d)
 
+Embedded App Iot:
+
+
+
 
 
 A continuación se muestra un video con todas las vistas, endpoints y simulaciones:
@@ -532,7 +550,10 @@ A continuación se muestra un video con todas las vistas, endpoints y simulacion
 
 ### 6.2.2.6 Services Documentation Evidence for Sprint Review
 
-En esta sección, se documentará los endpoints de Web Services, en este sprint se logró abarcar los endpoints más importantes para la aplicación. Sin embargo, todavía queda adicionar más metodos de regla de negocio. Con respecto a la documentación, se usó OpenApi para documentar la interacción de los usuarios con los controllers  El link del repositorio de WebServices: (https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniBackend-API).
+En esta sección, se documentará los endpoints de Web Services, en este sprint se logró abarcar los endpoints más importantes para la aplicación. Sin embargo, todavía queda adicionar más metodos de regla de negocio. Con respecto a la documentación, se usó OpenApi para documentar la interacción de los usuarios con los controllers  El link del repositorio de WebServices: (https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniBackend-API) y EdgeAPI: (https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniEdgeAPI)
+
+
+Web Api:
 
 | Acciones | Endpoint | Detalles | Enlace | Datos de muestra |
 | - | - | - | - | - |
@@ -571,11 +592,27 @@ En esta sección, se documentará los endpoints de Web Services, en este sprint 
 | DELETE | /api/v1/actuators/{actuatorId} | Este endpoint se usa para eliminar un actuador específico | http://localhost:8080/swagger-ui/index.html#/Actuators/deleteActuator | actuatorId: 1 |
 | POST | /api/v1/actuators | Este endpoint se usa para registrar un nuevo actuador | http://localhost:8080/swagger-ui/index.html#/Actuators/createActuator | "type": "valve", "status": "off", "sensorId": 1 |
 
+Edge Api:
+| Acciones | Endpoint | Detalles | Enlace | Datos de muestra |
+| - | - | - | - | - |
+| POST | /api/v1/limitations | En este endpoint se puede utilizar para registrar las limitaciones de un cultivo | http://localhost:8080/swagger-ui/index.html#/Limitations/createLimitation | "cropId": 0, "recommendedTemperature": 0, "recommendedHumidity": 0, "recommendedOxygen": 0, "recommendedWaterlevel": 0 |
+| GET | /api/v1/limitations/{id} | En este endpoint se puede utilizar para obtener las limitaciones de un cultivo por Id | http://localhost:8080/swagger-ui/index.html#/Limitations/getLimitationById | id: 0 |
+| GET | /api/v1/limitations/{cropId} | En este endpoint se puede utilizar para obtener las limitaciones de un cultivo específico | http://localhost:8080/swagger-ui/index.html#/Limitations/getLimitationByCropId | cropId: 0 |
+| POST | /api/v1/status | En este endpoint se puede utilizar para registrar el estado actual de un cultivo | http://localhost:8080/swagger-ui/index.html#/Status/createStatus | "cropId": 0, "temperature": 0, "humidity": 0, "oxygen": 0, "waterLevel": 0 |
+| GET | /api/v1/status/{id} | En este endpoint se puede utilizar para obtener el estado de un cultivo por Id | http://localhost:8080/swagger-ui/index.html#/Status/getStatusById | id: 0 |
+
+
+
+
 A continuación se mostrarán capturas de la documentación usando OpenAPI:
 
+Backend: 
 ![imagen](https://github.com/user-attachments/assets/8e864981-59b5-463a-85ed-8c5a9ea7e0e1)
 ![imagen](https://github.com/user-attachments/assets/bac07886-c344-4f84-84a6-a19355ecdfce)
 ![imagen](https://github.com/user-attachments/assets/8b0198a3-51ae-450d-9212-4061cf699cf1)
+
+Edge API:
+![imagen](https://github.com/user-attachments/assets/022e8779-5131-4234-b706-50e271ed1f75)
 
 
 ### 6.2.2.7 Software Deployment Evidence for Sprint Review
@@ -614,7 +651,9 @@ De esta manera el avance del Sprint 2 queda desplegado.
 Link de landing page: (https://ayni-landingpage-v1.netlify.app/)
 Link de primera versión de frontend: (https://ayni-webapp-v1.netlify.app/)
 
-Para el despliegue del backend, se usó primero Railway, donde se creó un servicio para el hosting de la base de datos:
+---
+
+Para el despliegue del backend y Edge API, se usó primero Railway, donde se creó un servicio para el hosting de la base de datos:
 
 ![imagen](https://github.com/user-attachments/assets/df245cf1-0ef2-4a4f-b122-cbb84dad8a6e)
 ![imagen](https://github.com/user-attachments/assets/c5ddeeff-788b-4642-b23c-c8b39ce726bc)
@@ -635,7 +674,36 @@ Como se puede observar, cada vez que se haga un push a la rama master, se realiz
 Sin embargo, solo da 7 días de prueba para hacer deploys. Por lo tanto, se buscarán mejores alternativas
 
 El link es el siguiente: (https://ayni-v1.sfo1.zeabur.app/swagger-ui/index.html)
+Edge API: (https://ayni-edge.sfo1.zeabur.app/swagger-ui/index.html)
 
+
+---
+
+Para el despliegue de la aplicación móvil, se usó Firebase App Distribution, se siguieron los siguientes pasos:
+
+Se crea un proyecto en Firebase:
+
+![imagen](https://github.com/user-attachments/assets/166c3724-fe14-4573-ae51-65b4221c9edf)
+
+Se ejecuta la siguiente linea de codigo:
+
+![imagen](https://github.com/user-attachments/assets/74c08eb8-9c3a-49cb-897c-276847db1533)
+
+Luego se registra la app:
+
+![imagen](https://github.com/user-attachments/assets/b47e96b6-ccf8-4044-8b3b-99052dd01781)
+
+Se crea un grupo de testers:
+
+![imagen](https://github.com/user-attachments/assets/bd9881ea-048c-4cbf-8818-e3abf4f07904)
+
+Luego se realizan cambios en el main.dart:
+
+![imagen](https://github.com/user-attachments/assets/cb3de7de-b00f-41b0-8c92-ac6fb9e1b357)
+
+Y se obtiene la invitación: 
+
+Link: https://appdistribution.firebase.dev/i/4eb4946b644720bd
 
 ### 6.2.2.8 Team Collaboration Insights during Sprint
 
@@ -643,10 +711,10 @@ En este Sprint se realizó la primera versión del backend, mobile application y
 
 | Alumno | Actividad | 
 | - | - | 
-| Espejo Macuri, Paolo Andre  | Desarrollo de backend, mobile app y embedded app IoT | 
-| Gonzales Carrión, Jorge Enrique  | Desarrollo de backend, mobile app y embedded app IoT | 
-| Alejo Cardenas, Luis Angel  |  Desarrollo de backend, mobile app y embedded app IoT | 
-| Rios Jaimes, Jhonel Enrique |  Desarrollo de backend, mobile app y embedded app IoT | 
+| Espejo Macuri, Paolo Andre  | Desarrollo de backend, mobile app, embedded app IoT y Edge API | 
+| Gonzales Carrión, Jorge Enrique  | Desarrollo de backend, mobile app y Landing Page | 
+| Alejo Cardenas, Luis Angel  |  Desarrollo de backend, mobile app | 
+| Rios Jaimes, Jhonel Enrique |  Desarrollo de backend, mobile app y Frontend | 
 | Sebastian Tasayco, Javier Martin |  Desarrollo de backend, mobile app y embedded app IoT | 
 
 
@@ -654,13 +722,27 @@ Mobile App
 
 ![imagen](https://github.com/user-attachments/assets/b3813063-7905-4e87-87f4-59419c442651)
 
+Backend
+
+![imagen](https://github.com/user-attachments/assets/0545b25d-c6cc-4f8e-8bf9-ab485d4d399a)
+
 IoT Embedded App
 
 
 
-Backend
+Edge API:
+![imagen](https://github.com/user-attachments/assets/ef69120d-92c7-4aa6-a389-bd149ed670af)
 
-![imagen](https://github.com/user-attachments/assets/0545b25d-c6cc-4f8e-8bf9-ab485d4d399a)
+
+Landing Page:
+![imagen](https://github.com/user-attachments/assets/5d39b885-ae87-4aea-bff5-e24677212333)
+
+
+Frontend:
+
+![imagen](https://github.com/user-attachments/assets/d2c43f9f-7ce0-4bbf-bd4b-2000ec4646d1)
+
+
 
 
 # 6.3 Validation Interviews
