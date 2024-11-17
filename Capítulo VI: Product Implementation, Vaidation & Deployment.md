@@ -137,25 +137,80 @@ Para el desarrollo de Mobile App, se hará uso de Flutter/Dart como lenguaje y s
 ### 6.1.4 Software Deployment Configuration
 
 
-Para el despliegue de la landing page y la aplicación web, se usará netlify, donde se seguirán los siguientes pasos:
+Para el despliegue de la web app y landing page se usó Netlify, a continuación se detallará paso a paso para este proceso
 
-Primero se debe iniciar sesión en Netlify con una cuenta de Github, luego ir a "Sites" donde se ubica el siguiente botón:
+Ejecutamos el comando “ng build” en la ruta de nuestro projecto en angular, nos muestra lo siguiente:
 
-![image](https://github.com/user-attachments/assets/627ccab8-2b59-4d70-a682-697ddbdc32f6)
+![image](https://github.com/user-attachments/assets/04bc0a04-824c-472c-93e2-f28ee2533092)
 
-Luego, se debe seleccionar la organización del proyecto en Github, y seleccionar el repositorio deseado:
 
-![image](https://github.com/user-attachments/assets/d480e632-3de1-412e-9ed5-d3611c37d5b4)
+Se genera la carpeta dist:
 
-Para la landing page, al ser un sitio estático, no es necesario configurar rutas para acceder al proyecto, por ende solo es necesario darle al botón de "Deploy"
+![image](https://github.com/user-attachments/assets/044c7e28-9ba6-418d-b38a-0b1f6d4f48b9)
 
-![image](https://github.com/user-attachments/assets/da55e807-ebaa-4f47-9537-dd43092cefa6)
 
-Para la aplicación web, es necesario indicarle a la plataforma donde se encuentra el contenido, en este caso "dist/AyniFrontend" y luego darle click al botón de "Deploy"
+Se añade el archivo “netlify.toml” para que netlify pueda entender las rutas de nuestro programa en angular con la siguiente configuración:
 
-![image](https://github.com/user-attachments/assets/624999cf-f954-41a0-8eea-d830d5facc01)
+![image](https://github.com/user-attachments/assets/c709bea5-f479-493f-bb9b-dee374c80e7a)
 
-De esta manera se la plataforma se encarga del build y en pocos minutos estaría desplegada la Landing Page y la aplicación web.
+
+
+Por último, vamos a netlify a la sección que nos permite desplegar nuestra aplicación manualmente para evitar errores:
+
+![image](https://github.com/user-attachments/assets/e4ff6f55-ee48-4e0e-bbcd-ed09daf71694)
+
+
+Y pasamos la carpeta que se encuentra dentro de la carpeta dist generada en nuestro proyecto. Y se obtiene el registro del despliegue dentro de Netlify
+
+![image](https://github.com/user-attachments/assets/3a7f5aa8-86cc-4d3d-8f06-cc76a4f224c5)
+
+---
+
+Para el despliegue del backend y Edge API, se usó primero Railway, donde se creó un servicio para el hosting de la base de datos:
+
+![imagen](https://github.com/user-attachments/assets/df245cf1-0ef2-4a4f-b122-cbb84dad8a6e)
+![imagen](https://github.com/user-attachments/assets/c5ddeeff-788b-4642-b23c-c8b39ce726bc)
+
+Link de base de datos: (https://railway.app/invite/vGyddg8tAkd)
+
+Luego, se usó Zeaburn para el despliegue del backend, primero se crea un espacio de trabajo:
+
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/284024946-31a139f1-37cc-4f38-b28b-ab99cff2b1d0.png)
+
+Posteriormente, se vincula con Github para realizar el deploy y este es el resultado:
+
+![imagen](https://github.com/user-attachments/assets/7e1feb74-c6d7-4aa0-9154-b13b74870ecd)
+
+
+Como se puede observar, cada vez que se haga un push a la rama master, se realiza un build nuevo para que se apliquen los cambios realizados en el proyecto.
+
+Sin embargo, solo da 7 días de prueba para hacer deploys. Por lo tanto, se buscarán mejores alternativas
+
+---
+
+Para el despliegue de la aplicación móvil, se usara Firebase App Distribution, los pasos son los siguientes:
+
+Se crea un proyecto en Firebase:
+
+![imagen](https://github.com/user-attachments/assets/166c3724-fe14-4573-ae51-65b4221c9edf)
+
+Se ejecuta la siguiente linea de codigo:
+
+![imagen](https://github.com/user-attachments/assets/74c08eb8-9c3a-49cb-897c-276847db1533)
+
+Luego se registra la app:
+
+![imagen](https://github.com/user-attachments/assets/b47e96b6-ccf8-4044-8b3b-99052dd01781)
+
+Se crea un grupo de testers:
+
+![imagen](https://github.com/user-attachments/assets/bd9881ea-048c-4cbf-8818-e3abf4f07904)
+
+Luego se realizan cambios en el main.dart:
+
+![imagen](https://github.com/user-attachments/assets/cb3de7de-b00f-41b0-8c92-ac6fb9e1b357)
+
+Y se obtiene la invitación.
 
 
 ## 6.2 Landing Page, Services & Applications Implementation
@@ -753,6 +808,261 @@ Landing Page:
 Frontend:
 ![imagen](https://github.com/user-attachments/assets/d2c43f9f-7ce0-4bbf-bd4b-2000ec4646d1)
 
+## 6.2.3 Sprint 3
+### 6.2.3.1 Sprint Planning 3
+
+| Sprint # | 3 | 
+| - | - | 
+| **Sprint Planning Background** | - |
+| Date | 2024 - 10 - 10 |
+| Time | 19:00 PM |
+| Location | Virtual via Google Meet |
+| Prepared By | Gonzales Carrión, Jorge Enrique |
+| Attendees (to planning meeting) | Gonzales Carrión, Jorge Enrique / Espejo Macuri, Paolo Andre / Alejo Cardenas, Luis Angel / Rios Jaimes, Jhonel Enrique / Sebastian Tasayco, Javier Martin |
+| Sprint 2 - Review Summary | Se realizó la primera versión de landing page y web app, asimismo features de alta prioridad para los usuarios agricolas. |
+| Sprint 2 - Retrospective Summary  | Se debe detallar la herramienta de control de gestión de proeyctos empleada en el Sprint 1 y mejorar explicaciones en las secciones Development, Testing, Execution, Documentation, Deployment |
+| **Sprint Goal & User Stories** | - |
+| Sprint 3 Goal| Nuestro enfoque está en permitir que los agricultores puedan registrar y planificar cultivos, además de monitorear sus cultivos utilizando datos de una aplicación embebida y en proporcionar a los comerciantes pantallas para la compra eficiente de cultivos en la aplicación móvil.<br> Creemos que esto ofrecerá una experiencia fluida de gestión de cultivos para los agricultores, brindando herramientas detalladas de planificación y monitoreo, mientras que los comerciantes podrán navegar y realizar compras de cultivos de manera sencilla dentro del sistema. <br> Esto se confirmará cuando los agricultores puedan monitorear sus cultivos a través de la aplicación embebida, y los comerciantes puedan acceder y completar la compra de cultivos mediante las pantallas implementadas, utilizando los endpoints en Ayni. |
+| Sprint 3 - Velocity | El equipo puede aceptar 80 Story Points|
+| Sprint 3 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 72|
+
+
+
+### 6.2.3.2 Sprint Backlog 3
+
+El objetivo de este Sprint es permitir que los agricultores puedan registrar y planificar cultivos, además de monitorear sus cultivos utilizando datos de una aplicación embebida y en proporcionar a los comerciantes pantallas para la compra eficiente de cultivos en la aplicación móvil.
+
+Creemos que esto ofrecerá una experiencia fluida de gestión de cultivos para los agricultores, brindando herramientas detalladas de planificación y monitoreo, mientras que los comerciantes podrán navegar y realizar compras de cultivos de manera sencilla dentro del sistema.
+
+Esto se confirmará cuando los agricultores puedan monitorear sus cultivos a través de la aplicación embebida, y los comerciantes puedan acceder y completar la compra de cultivos mediante las pantallas implementadas, utilizando los endpoints en Ayni.
+
+Como herramienta de control para este Sprint se usó Trello con un board exclusivo para esta iteración:
+
+![imagen](https://github.com/user-attachments/assets/cc649612-1584-46a8-a2ec-8a0e1111f52d)
+
+
+
+
+Link: https://trello.com/invite/b/6711cea372164d45ac966845/ATTIfc89256cc30d96794e9f205a7629c5f382930C0C/sprint-backlog-2-ayni
+
+
+
+<table><tr><th valign="top">Sprint #</th><th colspan="7" valign="top">Sprint 2</th></tr>
+<tr><td colspan="2" valign="top">User Story</td><td colspan="6" valign="top">Work-Item / Task</td></tr>
+<tr><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Description</td><td valign="top">Estimation (Hours)</td><td valign="top">Assigned To</td><td valign="top"><p>Status </p><p>(To-do / </p><p>InProcess / </p><p>To Review / </p><p>Done)</p></td></tr>
+<tr><td rowspan="1" valign="top">HU-10</td><td rowspan="1" valign="top">Atender pedidos</td><td valign="top">10.1</td><td valign="top">Desarrollar las páginas de compra/venta para comerciantes en la app web</td><td valign="top">Realizar las vistas de ventas para comerciantes utulizando componenets de Angular Material</td><td valign="top">4</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
+
+
+<tr><td rowspan="1" valign="top">HU-16</td><td rowspan="1" valign="top">Sección principal ("Home")</td><td valign="top">16.1</td><td valign="top">Desarrollar la página "Home" para los comerciante</td><td valign="top">Desarrollar las paginas con los estilos en Angular Material</td><td valign="top">4</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
+
+
+<tr><td rowspan="1" valign="top">HU-05</td><td rowspan="1" valign="top"> 	Realizar pedidos de productos</td><td valign="top">5.1</td><td valign="top">Desarrollar la pagina de obtención de cultivos para los comerciantes en la app web</td><td valign="top">Realizar la pagina correspondiente mediante un stepper usando Angular Material</td><td valign="top">2</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
+
+<tr><td rowspan="1" valign="top">HU-08</td><td rowspan="1" valign="top">Sección de Misión y Visión</td><td valign="top">08.2</td><td valign="top">Desarrollar paginas de planificación y lista de cultivos en la aplicación móvil</td><td valign="top">Realizar las secciones en Flutter para la aplicación móvil</td><td valign="top">2</td><td valign="top">Jorge Gonzales</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">TS-02</td><td valign="top">Creación y obtención de cultivos</td><td valign="top">TS02.1</td><td valign="top">Desarrollar endpoints de creación y obtención de cultivos</td><td valign="top">2</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">TS-03</td><td valign="top"> Desarrollar endpoints de creación y obtención de productos</td><td valign="top">TS03.1</td><td valign="top">Desarrollar endpoints de creación y obtención de productos</td><td valign="top">Implementar endpoints relacionados a los productos y su relación con las ordenes</td><td valign="top">8</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-08</td><td valign="top">Planificar actividades agrícolas</td><td valign="top">08.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web</td><td valign="top">4</td><td valign="top">Javier Sebastían</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-15</td><td valign="top">Sistemas de búsqueda y paginación</td><td valign="top">15.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web</td><td valign="top">3</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
+
+<tr><td valign="top">HU-02</td><td valign="top">Inicio de sesión</td><td valign="top">02.1</td><td valign="top">Implementar vistas de inicio de sesión y planes en la web app</td><td valign="top">Implementar vistas y formularios de inicio de sesión (sin función)</td><td valign="top">3</td><td valign="top">Jorge gonzales</td><td valign="top">Done</td></tr>
+
+</table>
+
+### 6.2.3.3 Development Evidence for Sprint Review
+
+
+Con respecto al alcance del desarrollo de este Sprint, se desarrolló la primera versión de la aplicación móvil, abarcando la intefaz del agricultor y sus principales funcioanlidades como las secciones de Home, Crops y Orders. Por otro lado, tambien se realizó al primera versión de la aplicación embebida IoT, obteniendo como resultado el funcionamiento de los sensores y actuadores a utilziar en la solución IoT. Finalmente, se implementaron los principales endpoints en el API Restful Web, relacionados a la creación y obtencion de cultivos, productos y ordenes.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| - | - | - | - | - | - |
+| ayni_flutter_app | feat/crops_and_products | f5a33a5 | feat: added dashboards crops and profiles  | - | 28/10/2024 |
+
+
+
+### 6.2.3.4 Testing Suite Evidence for Sprint Review
+
+En esta sección, se realizaron acceptance test en .feature para cada una de las historias de usuario incluidas en este Sprint.
+Las historias de usuario relacionadas a estos primeros .features son:
+
+
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| - | - | - | - | - | - |
+| acceptance-test-IoT | test/UserStories | 5084640 | Acceptance_test_10.feature  | - | 31/10/2024 |
+
+
+Link de repositorio: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/acceptance-test-IoT
+
+### 6.2.3.5 Execution Evidence for Sprint Review
+
+En el Sprint 3 se alcanzó a desarrollar la ultima versión del Web Service (API RESTful) y la aplicación móvil, como principales caracteristicas tenemos las vistas de Dashboard de monitoreo de cultivo y su total funcionaldiad con los datos proporcionados por la aplicación embebido.
+
+Principales vistas desarrolladas y otros productos:
+
+Mobile App:
+
+
+Web App:
+
+
+
+Embedded App Iot:
+
+
+
+
+A continuación se muestra un video con todas las vistas, endpoints y simulaciones:
+
+
+
+Link: 
+
+### 6.2.3.6 Services Documentation Evidence for Sprint Review
+
+En esta sección, se documentará los endpoints de Web Services, en este sprint se logró abarcar los endpoints más importantes para la aplicación. Sin embargo, todavía queda adicionar más metodos de regla de negocio. Con respecto a la documentación, se usó OpenApi para documentar la interacción de los usuarios con los controllers  El link del repositorio de WebServices: (https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniBackend-API) y EdgeAPI: (https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/AyniEdgeAPI)
+
+
+Web Api:
+
+| Acciones | Endpoint | Detalles | Enlace | Datos de muestra |
+| - | - | - | - | - |
+| POST | /api/auth/signin | En este endpoint se puede iniciar sesión | http://localhost:8080/swagger-ui/index.html#/Authentication/authenticateUser | username: "Juan" <br> "password: contrasenia" |
+| POST | /api/auth/signup | En este endpoint se puede crear el usuario  | http://localhost:8080/swagger-ui/index.html#/Authentication/registerUser | username: "Juan" <br> email: "Juan@gmail.com" <br> "role: farmer" <br> "password: contrasenia" |
+| POST | api/v1/products  | En este endpoint se puede utilizar para registrar un producto | http://localhost:8080/swagger-ui/index.html#/Products/createProduct | "name": "Zanahoria","description": "Rica zanahora","recommendedCultivationDistance": "12","recommendedCultivationDepth": "2","recommendedGrowingClimate": "Templado","recommendedSoilType": "Arenoso","recommendedGrowingSeason": "Otoño","imageUrl": "imagen","userId": 1 |
+| GET | api/v1/products  | En este endpoint se puede utilizar para obtener todos los productos | http://localhost:8080/swagger-ui/index.html#/Products/getAllProducts | - |
+| GET | api/v1/products/{productId}  | En este endpoint se puede utilizar para obtener todos un producto por Id | http://localhost:8080/swagger-ui/index.html#/Products/getProductById | productId: 1 |
+| GET | api/v1/products/{productId}/crops | En este endpoint se puede utilizar para obtener todos los cultivos del producto | http://localhost:8080/swagger-ui/index.html#/Products/getAllCropsByProductId | productId: 1 |
+| GET | api/v1/products/{productId}/crops/{cropId} | En este endpoint se puede utilizar para obtener un cultivo en especifico de un producto en especifico | http://localhost:8080/swagger-ui/index.html#/Products/getCropByProductIdAndCropId | productId: 1, cropId: 1 |
+| POST | api/v1/crops  | En este endpoint se puede utilizar para registrar un cultivo | http://localhost:8080/swagger-ui/index.html#/Crops/createCrop | "name": "Papa","pickUpWeed": true,"fertilizeCrop": true,"oxygenateCrop": false,"makeCropLine": true,"makeCropHole": true,"wateringDays": 12,"pestCleanupDays": 3,"productId": 1,"userId": 1 |
+| GET | api/v1/crops  | En este endpoint se puede utilizar para obtener todos los cultivo | http://localhost:8080/swagger-ui/index.html#/Crops/getAllCrops | - |
+| GET | api/v1/crops/{cropId}  | En este endpoint se puede utilizar para un cultivo por Id | http://localhost:8080/swagger-ui/index.html#/Crops/getCropById | cropId: 1 |
+| POST | api/v1/orders  | En este endpoint se puede utilizar para registrar una orden | http://localhost:8080/swagger-ui/index.html#/Orders/createOrder |   "description": "Papayas muy buenas", "totalPrice": 15, "quantity": 3, "paymentMethod": "mastercard", "status": "On Package", "saleId": 1, "orderedBy": 1, "acceptedBy": 2, "orderedDate": "2023-11-02T13:16:02.798Z" |
+| POST | api/v1/orders/{orderId}/qualifications  | En este endpoint se puede utilizar para cambiar el estado de una orden | http://localhost:8080/swagger-ui/index.html#/Orders/qualifyOrder | orderId: 1 |
+| POST | api/v1/orders/{orderId}/finalizations | En este endpoint se puede utilizar para cambiar el estado de una orden | http://localhost:8080/swagger-ui/index.html#/Orders/finalizeOrder | orderId: 1 |
+| GET | api/v1/orders  | En este endpoint se puede utilizar para obtener todas las ordenes | http://localhost:8080/swagger-ui/index.html#/Orders/getAllOrders | - |
+| GET | api/v1/orders/{orderId}  | En este endpoint se puede utilizar para obtener una orden por Id | http://localhost:8080/swagger-ui/index.html#/Orders/getOrderById | orderId: 1 |
+| PUT | api/v1/orders{orderId}  | En este endpoint se puede actualizar una orden por Id | http://localhost:8080/swagger-ui/index.html#/Orders/updateOrder | orderId: 1 |
+| DELETE | api/v1/orders/{orderId}  | En este endpoint se puede eliminar una orden por Id | http://localhost:8080/swagger-ui/index.html#/Orders/deleteOrder | orderId: 1 |
+| POST | api/v1/sales  | En este endpoint se puede utilizar para registrar una venta | http://localhost:8080/swagger-ui/index.html#/Sales/createSale |   "name": "Venta de camote", "description": "buena venta", "unitPrice": 24, "quantity": 2, "imageUrl": "https://www.gob.mx/cms/uploads/article/main_image/20333/camote1.jpg" |
+| GET | api/v1/sales  | En este endpoint se puede utilizar para obtener todas las ventas | http://localhost:8080/swagger-ui/index.html#/Sales/getAllSales | - |
+| GET | api/v1/sales/{salesId}  | En este endpoint se puede utilizar para obtener una venta por Id | http://localhost:8080/swagger-ui/index.html#/Sales/getSaleById | saleId: 1 |
+| GET | api/v1/sales/{salesId}/orders/{orderId}  | En este endpoint se puede utilizar para obtener una venta por Id en especifico vinculado a una orden por Id en especifico | http://localhost:8080/swagger-ui/index.html#/Sales/getOrderBySaleIdAndOrderId | saleId: 1, orderId: 1 |
+| POST | api/v1/rates  | En este endpoint se puede utilizar para crear una calificación de un producto | http://localhost:8080/swagger-ui/index.html#/Rates/createRate | "rate": 5, "date": "25-09-2023","productId": 1, "userId": 1 |
+| GET | api/v1/rates  | En este endpoint se puede utilizar para obtener todas las calificaciones | http://localhost:8080/swagger-ui/index.html#/Rates/getAllRates | - |
+| GET | api/v1/rates/{ratesId}  | En este endpoint se puede utilizar para obtener una calificación por Id | http://localhost:8080/swagger-ui/index.html#/Rates/getRateById | rateId: 1 |
+| GET | /api/v1/sensors/{sensorId} | Este endpoint se usa para obtener información de un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/getSensorById | sensorId: 1 |
+| PUT | /api/v1/sensors/{sensorId} | Este endpoint se usa para actualizar un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/updateSensor | sensorId: 1 |
+| DELETE | /api/v1/sensors/{sensorId} | Este endpoint se usa para eliminar un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/deleteSensor | sensorId: 1 |
+| POST | /api/v1/sensors | Este endpoint se usa para registrar un nuevo sensor | http://localhost:8080/swagger-ui/index.html#/Sensors/createSensor | "type": "temperature", "location": "Warehouse" |
+| GET | /api/sensors/{sensorId}/actuators | Este endpoint se usa para obtener todos los actuadores de un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/getAllActuatorsBySensorId | sensorId: 1 |
+| GET | /api/sensors/{sensorId}/actuators/{actuatorId} | Este endpoint se usa para obtener un actuador específico de un sensor específico | http://localhost:8080/swagger-ui/index.html#/Sensors/getActuatorBySensorIdAndActuatorId | sensorId: 1, actuatorId: 1 |
+| GET | /api/v1/actuators/{actuatorId} | Este endpoint se usa para obtener información de un actuador específico | http://localhost:8080/swagger-ui/index.html#/Actuators/getActuatorById | actuatorId: 1 |
+| PUT | /api/v1/actuators/{actuatorId} | Este endpoint se usa para actualizar un actuador específico | http://localhost:8080/swagger-ui/index.html#/Actuators/updateActuator | actuatorId: 1 |
+| DELETE | /api/v1/actuators/{actuatorId} | Este endpoint se usa para eliminar un actuador específico | http://localhost:8080/swagger-ui/index.html#/Actuators/deleteActuator | actuatorId: 1 |
+| POST | /api/v1/actuators | Este endpoint se usa para registrar un nuevo actuador | http://localhost:8080/swagger-ui/index.html#/Actuators/createActuator | "type": "valve", "status": "off", "sensorId": 1 |
+
+Edge Api:
+| Acciones | Endpoint | Detalles | Enlace | Datos de muestra |
+| - | - | - | - | - |
+| POST | /api/v1/limitations | En este endpoint se puede utilizar para registrar las limitaciones de un cultivo | http://localhost:8080/swagger-ui/index.html#/Limitations/createLimitation | "cropId": 0, "recommendedTemperature": 0, "recommendedHumidity": 0, "recommendedOxygen": 0, "recommendedWaterlevel": 0 |
+| GET | /api/v1/limitations/{id} | En este endpoint se puede utilizar para obtener las limitaciones de un cultivo por Id | http://localhost:8080/swagger-ui/index.html#/Limitations/getLimitationById | id: 0 |
+| GET | /api/v1/limitations/{cropId} | En este endpoint se puede utilizar para obtener las limitaciones de un cultivo específico | http://localhost:8080/swagger-ui/index.html#/Limitations/getLimitationByCropId | cropId: 0 |
+| POST | /api/v1/status | En este endpoint se puede utilizar para registrar el estado actual de un cultivo | http://localhost:8080/swagger-ui/index.html#/Status/createStatus | "cropId": 0, "temperature": 0, "humidity": 0, "oxygen": 0, "waterLevel": 0 |
+| GET | /api/v1/status/{id} | En este endpoint se puede utilizar para obtener el estado de un cultivo por Id | http://localhost:8080/swagger-ui/index.html#/Status/getStatusById | id: 0 |
+
+
+
+
+A continuación se mostrarán capturas de la documentación usando OpenAPI:
+
+Backend: 
+![imagen](https://github.com/user-attachments/assets/8e864981-59b5-463a-85ed-8c5a9ea7e0e1)
+![imagen](https://github.com/user-attachments/assets/bac07886-c344-4f84-84a6-a19355ecdfce)
+![imagen](https://github.com/user-attachments/assets/8b0198a3-51ae-450d-9212-4061cf699cf1)
+
+Edge API:
+![imagen](https://github.com/user-attachments/assets/022e8779-5131-4234-b706-50e271ed1f75)
+
+
+### 6.2.3.7 Software Deployment Evidence for Sprint Review
+
+
+A continuación se muestra evidencia del despliege realizado en Netlify mediante los logs proporcionados por la herramienta:
+
+Despliegue de Landing Page:
+
+Despliegue de Web App:
+
+
+Link de landing page: (https://ayni-landingpage-v1.netlify.app/)
+Link de primera versión de frontend: (https://ayni-webapp-v1.netlify.app/)
+
+---
+
+A continuación se muestra evidencia del despliege realizado en Zeabur mediante los logs proporcionados por la herramienta:
+
+Despliegue de Edge API:
+![imagen](https://github.com/user-attachments/assets/60dcdf1f-e1e7-459a-bad6-c5738ddc2e8e)
+
+Despliegue de Web API:
+![imagen](https://github.com/user-attachments/assets/ab1c99be-a6d1-42ca-a35a-f5a4d082f8c0)
+
+
+El link es el siguiente: (https://ayni-v1.sfo1.zeabur.app/swagger-ui/index.html)
+Edge API: (https://ayni-edge.sfo1.zeabur.app/swagger-ui/index.html)
+
+
+---
+
+A continuación se muestra evidencia del despliege realizado en Firebase App Distribution mediante los logs proporcionados por la herramienta:
+
+Despliegue de app móvil:
+
+
+
+Link: https://appdistribution.firebase.dev/i/4eb4946b644720bd
+
+### 6.2.3.8 Team Collaboration Insights during Sprint
+
+En este Sprint se realizó la primera versión del backend, mobile application y Embedded Application IoT
+
+| Alumno | Actividad | 
+| - | - | 
+| Espejo Macuri, Paolo Andre  | Desarrollo de backend, mobile app, embedded app IoT, Edge API, Embedded app Iot | 
+| Gonzales Carrión, Jorge Enrique  | Desarrollo de backend, mobile app, Landing Page, Embedded app Iot y Edge API | 
+| Alejo Cardenas, Luis Angel  |  Desarrollo de backend, mobile app, Embedded app Iot y Edge API| 
+| Rios Jaimes, Jhonel Enrique |  Desarrollo de backend, mobile app, Frontend, Embedded app Iot y Edge API| 
+| Sebastian Tasayco, Javier Martin |  Desarrollo de backend, mobile app, embedded app IoT y Edge API | 
+
+
+Mobile App
+
+
+
+Backend
+![imagen](https://github.com/user-attachments/assets/cabee589-88ed-4ec2-aa69-e90389ecf4f8)
+
+
+
+Edge API:
+![imagen](https://github.com/user-attachments/assets/6dac96dc-b040-491c-be4f-d69cd1fa95f1)
+
+
+
+IoT Embedded App:
+![imagen](https://github.com/user-attachments/assets/1da41b01-2bd3-4ff6-91f7-15740d098121)
+
+
+
+Landing Page:
+
+
+
+Frontend:
 
 
 
