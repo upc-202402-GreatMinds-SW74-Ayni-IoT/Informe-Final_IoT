@@ -1186,7 +1186,8 @@ Este nuevo diagrama muestra una arquitectura monolítica ampliada de la aplicaci
 
 el diagrama UML presenta la estructura de un sistema de gestión de órdenes y ventas, mostrando clases como "Order" con atributos y métodos específicos, relacionadas con clases como "OrderStatus", "PaymentMethod", y "Sale". Incluye interfaces para servicios de comandos y consultas, sugiriendo una arquitectura orientada a servicios para operaciones CRUD. las relaciones y asociaciones en el diagrama reflejan principios de orientación a objetos como encapsulación, herencia y polimorfismo.
 
-![image](https://github.com/user-attachments/assets/bd054473-b833-4024-8598-d20666508e0b)
+![imagen](https://github.com/user-attachments/assets/9b5224a5-c4bc-48b6-aad7-8fc669b46506)
+
 
 
 
@@ -1318,7 +1319,8 @@ Ambos servicios, el ProductCommandService y el ProductQueryService, interactúan
 
 el diagrama UML muestra una entidad "Product" con atributos como "id", "name", "description" y varios consejos de cultivo, además de una "imageUrl". dos interfaces, "ProductCommandService" y "ProductQueryService", están relacionadas con esta entidad, indicando una posible implementación de servicios de comandos y consultas, típicos de un patrón CQRS. las flechas sugieren que estas interfaces manejan operaciones relacionadas con objetos "Product".
 
-![image](https://github.com/user-attachments/assets/126321e3-30df-4fbe-ab13-49421aafebbf)
+
+![imagen](https://github.com/user-attachments/assets/67a04124-f087-4e91-8588-deb30209bc4d)
 
 
 
