@@ -1090,9 +1090,9 @@ A continuación se muestra evidencia del despliege realizado en Firebase App Dis
 
 Despliegue de app móvil:
 
+![imagen](https://github.com/user-attachments/assets/3bb42c1b-8b0f-4c4f-b477-04bdd70f9714)
 
-
-Link: https://appdistribution.firebase.dev/i/4eb4946b644720bd
+Link: https://appdistribution.firebase.google.com/testerapps/1:21261281534:android:1a093cbd3cf02aebbb1daf/releases/4m43ppte0edlg?utm_source=firebase-console
 
 ### 6.2.3.8 Team Collaboration Insights during Sprint
 
