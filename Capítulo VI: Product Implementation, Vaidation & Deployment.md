@@ -1226,19 +1226,20 @@ Edad: 19
 
 Distrito: San Juan de Miraflores - Lima
 
-Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EfLY4Qw8AGBEpu9XEWFbefIB0WewWhZiif7ZarR2J_8NRw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4bzpf2
+Link: https://goo.su/Cvsf6
 
 Inicio: 0:00
 
 Fin: 11:00
 
-Duración: 11:00
-
-![imagen](https://github.com/user-attachments/assets/f43fcc98-e758-4ea2-8a13-56889fda4d56)
+Duración: 11:30
 
 
-Lissane nos brindó su sincera opinión acerca de la ultima versión de la landing page, aplicación web y aplicacion movil, con respecto a la landing page, nos resaltó el diseño atractivo y eficiente de las secciones asimismo con el orden de estas, sin embargo considera que debe tener más relevancia las funcionalidades mostradas incluyendo capturas de pantalla de la aplicación web. Pese a ello, la landing page resultó agradable visualmente para ella, calificándola con un 8 de 10. Por otro lado, con respecto a la aplicación web, no consideró dificil la navegación del flujo de añadir un cultivo, asimismo, está conforme con la distribución de las secciones de la barra de navegación. Sin embargo, cree que se debería mejorar el formulario de añadir un cultivo, donde deberían poner mas datos para el registro. Finalmente, le parecio bueno el diseño de la apliación web, pero sería aún mucho mejor si se mejoraran las observaciones que nos compartió.
+![imagen](https://github.com/user-attachments/assets/b656c4cb-8227-4597-9574-7d2812898b96)
 
+Lissane nos brindó su sincera opinión acerca de la última versión de la aplicación móvil, aplicación web y la landing page. Con respecto a la landing page, destacó el diseño atractivo y eficiente de las secciones, así como el orden de estas. Sin embargo, considera que se debería dar mayor relevancia a las funcionalidades mostradas, incluyendo capturas de pantalla de la aplicación web y móvil. Pese a ello, la landing page le resultó agradable visualmente, calificándola con un 8 de 10.
+En cuanto a la última versión de la aplicación web, que utilizó en el navegador Google Chrome, no encontró dificultades en la navegación del flujo para añadir un cultivo y está conforme con la distribución de las secciones en la barra de navegación. Sin embargo, sugirió mejorar el formulario de registro de cultivos, añadiendo más campos de datos relevantes. A pesar de estas observaciones, le pareció que el diseño general de la aplicación web es bueno, aunque podría ser aún mejor si se implementan las mejoras propuestas.
+Por último, evaluó la última versión de la aplicación móvil, la cual utilizó en un Samsung Galaxy S22, destacando su funcionalidad y diseño general. Aunque no se mencionaron observaciones específicas en este caso, sus comentarios serán fundamentales para seguir optimizando tanto la aplicación web como la móvil y la landing page.
 
 
 **Segmento Objetivo: Comerciantes que quieren mejorar la calidad de sus ventas**
@@ -1249,18 +1250,21 @@ Edad: 25
 
 Distrito: Lince - Lima
 
-Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EfLY4Qw8AGBEpu9XEWFbefIB0WewWhZiif7ZarR2J_8NRw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4bzpf2
-
-Inicio: 11:00
-
-Fin: 21:20
-
-Duración: 10:20
-
-![imagen](https://github.com/user-attachments/assets/1c4f2ab5-5ecc-472e-8cd1-44f7a178cec2)
+Link: https://goo.su/Cvsf6
 
 
-Al analizar la entrevista, Andre nos menciona que las vistas son atracticas y logradas para el propósito de la aplicación que se desea ofrecer, además, le resulta muy facilmente navegar en ella al ser intuitiva y las secciones le parecen bien distribuidas, con respecto a la información brindada acerca de las funcionalidades, considera que es adecuada. No tuvo problemas para abrir la landing page en su dispositivo móvil, debido a ello, calificó la landing page con un 8 de 10. Por otro lado, con respecto a la aplicación web, nos brindó una sugerencia con respecto a la creación de un perfil propio del usuario donde proporcione teléfonos de contacto. De esta manera facilitaria aún más el contacto con el agricultor. De la misma manera, nos dejó sugerencias acerca de la tipografía y de el tamaño de algunos botones. Finalmente, indica que, si bien la aplicación web le parece muy buena, todavia cree que se puede mejorar añadiendo funciones y pulir un poco más las vistas. 
+Inicio: 11:30
+
+Fin: 23:45
+
+Duración: 12:25
+
+![imagen](https://github.com/user-attachments/assets/b14b972f-e846-4973-816b-a408d5389483)
+
+
+Al analizar la entrevista, Andre nos menciona que las vistas son atractivas y adecuadas para el propósito de la aplicación que se desea ofrecer. Además, le resulta muy fácil navegar en ella al ser intuitiva, y las secciones le parecen bien distribuidas. Con respecto a la información brindada acerca de las funcionalidades, considera que es adecuada. No tuvo problemas para abrir la landing page en su dispositivo móvil, calificándola con un 8 de 10.
+En cuanto a la última versión de la aplicación web, que utilizó en el navegador Mozilla Firefox, nos brindó una sugerencia relacionada con la creación de un perfil propio del usuario, donde se puedan proporcionar teléfonos de contacto, lo que facilitaría aún más la comunicación con el agricultor. Además, sugirió mejorar la tipografía y el tamaño de algunos botones. Finalmente, aunque considera que la aplicación web es muy buena, cree que aún se puede mejorar añadiendo más funciones y puliendo un poco más las vistas.
+Andre destacó su experiencia con la aplicación móvil, utilizada en un iPhone 14 Pro Max, resaltando su diseño moderno, intuitivo y responsivo, adaptado perfectamente a la pantalla del dispositivo. Subrayó la fluidez en la navegación y el rápido tiempo de respuesta, además de la accesibilidad de botones y textos. Sin embargo, sugirió incorporar funciones personalizadas como la configuración de perfil, optimización de notificaciones y tutoriales interactivos para nuevos usuarios, lo que mejoraría la experiencia general. A pesar de estas observaciones, calificó la app con un 9 de 10, considerándola una herramienta muy cercana a ser ideal con algunos ajustes adicionales.
 
 Nombre y apellidos: Favio Onofre
 
@@ -1268,19 +1272,21 @@ Edad: 21
 
 Distrito: Lince - Lima
 
-Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EfLY4Qw8AGBEpu9XEWFbefIB0WewWhZiif7ZarR2J_8NRw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4bzpf2
+Link: https://goo.su/Cvsf6
 
 
-Inicio: 21:20
+Inicio: 23:45
 
-Fin: 28:00
+Fin: 33:13
 
-Duración: 07:40
+Duración: 09:28
 
-![imagen](https://github.com/user-attachments/assets/cb5b629e-61c1-4da9-9dfb-3bac71266a2d)
+![imagen](https://github.com/user-attachments/assets/c1148d96-3c42-4ccc-9ff0-540c39185178)
 
-
-Favio nos proporcionó su tiempo para que visite la landing page y las web applications de Ayni. Asimismo, nos proprocionó su opiniones acerca del diseño de ambas, lo cual le pareció bueno y adecuado, asimismo con la información brindada acerca delas funcionalidades ofrecidas de la aplicación web dentro de  la landing page, resultadole agradable a la vista. Por otro lado, pudo acceder a la alnding page desde su navegador web sin problema, brindandonos su apreciación con 8 puntos de 10. Sin embargo, mencionó que dentro de la landing page hay algunas cosas para mejorar, como el tamaño de los botones y la cantidad de información brindada siendo un poco excedente. Por otro lado, en la aplicación web, mencionó que desea que la información brindada acerca de los cultivos sea más detallada, con secciones de clima o altura. Finalmente, resaltó que la distribución de las secciones es correcta y de igual manera los colores, pues refleja caracteristicas propias de la agricultura brindando un ambiente ameno. 
+Favio nos dedicó su tiempo para explorar la landing page y las aplicaciones web de Ayni, compartiendo su opinión sobre el diseño y funcionalidad de ambas. Le pareció que el diseño es bueno y adecuado, y destacó la claridad de la información acerca de las funcionalidades de la aplicación web presentadas en la landing page, describiéndola como agradable a la vista. Pudo acceder a la landing page desde su navegador Google Chrome sin inconvenientes, calificándola con un 8 de 10. Sin embargo, sugirió algunas mejoras, como ajustar el tamaño de los botones y reducir la cantidad de información, que considera algo excedente.
+En cuanto a la aplicación web, Favio recomendó incluir información más detallada sobre los cultivos, como datos sobre el clima o la altitud, para enriquecer la experiencia del usuario. A pesar de ello, elogió la correcta distribución de las secciones y los colores utilizados, destacando que reflejan características propias de la agricultura y generan un ambiente visualmente ameno. Sus comentarios son valiosos para continuar mejorando tanto la landing page como la aplicación web.
+Favio también exploró la aplicación móvil de Ayni, utilizándola en un Xiaomi Redmi Note 12, y compartió su experiencia. Destacó que la aplicación es intuitiva y funcional, con un diseño limpio que mantiene la coherencia con las otras plataformas. La navegación le resultó sencilla, permitiéndole explorar las funciones principales sin complicaciones. Sin embargo, sugirió incluir un apartado de guía rápida o tutorial interactivo para nuevos usuarios, que podría facilitar aún más el uso de la app.
+Entre los aspectos positivos, resaltó el tiempo de respuesta ágil de la app y su correcta adaptación al tamaño de la pantalla del dispositivo. No obstante, recomendó optimizar algunos elementos visuales, como el tamaño y la ubicación de ciertos botones, para mejorar la experiencia de uso. En general, calificó la aplicación móvil con un 8.5 de 10, considerando que, con algunas mejoras, podría ser una herramienta aún más eficiente y atractiva para los usuarios. Su retroalimentación abarca puntos clave para seguir perfeccionando las tres plataformas de Ayni.
 
 Nombre y apellidos: Juli Carrión
 
@@ -1288,20 +1294,22 @@ Edad: 45
 
 Distrito: Surco - Lima
 
-Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EfLY4Qw8AGBEpu9XEWFbefIB0WewWhZiif7ZarR2J_8NRw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=4bzpf2
+Link: https://goo.su/Cvsf6
 
 
-Inicio: 28:00
+Inicio: 33:13
 
-Fin: 35:26
+Fin: 40:52
 
-Duración: 07:26
-
-![imagen](https://github.com/user-attachments/assets/a4d57f87-527d-496d-b185-a5836e8fa379)
+Duración: 07:39
 
 
+![imagen](https://github.com/user-attachments/assets/b73a2a3c-a956-4109-bb29-0a367714f680)
 
-Juli nos brindó su sincera opinión acerca de la landing page y aplicación web, con respecto a la landing page, nos felicitó por la distribución y promoción del producto dentro de las secciones, tambien considera que ofrece lo necario en cuando información de funcionalidades pero recomendaría reducir un poco del texto y poner las funcionalidades de manera más específica. Sin embargo, le resultó agradable la navegación por las secciones puntuando con un 8 de 10 la landing page. Por otro lado, con respecto a la aplicación web, le resultó nada complicado encontrar y seleccionar un cultivo para comprar, además la distribución de las secciones es buena dado que resume las funcionalidades que ofrecen. Tambien, consdera que no debe añadirse caracteristicas dado que siente que está completa para sus necesidades como comerciante. Sin embargo, cree que la sección de estado de compra debería mostrar más información. Finalmente, resume la aplicación web como muy buena, intuitiva y efectiva, con un diseño adecuado.
+
+Juli nos compartió su sincera opinión acerca de la landing page, la aplicación web y la aplicación móvil. Con respecto a la landing page, elogió la distribución de las secciones y la promoción del producto, destacando que ofrece la información necesaria sobre las funcionalidades. Sin embargo, recomendó reducir un poco el texto y presentar las funcionalidades de manera más específica. A pesar de ello, encontró la navegación por las secciones agradable, calificándola con un 8 de 10.
+En cuanto a la aplicación web, Juli comentó que no tuvo complicaciones para encontrar y seleccionar un cultivo para comprar. Destacó la buena distribución de las secciones, ya que resumen adecuadamente las funcionalidades ofrecidas. Considera que la app está completa para sus necesidades como comerciante y no cree necesario añadir más características. Sin embargo, sugirió mejorar la sección de estado de compra, añadiendo más detalles relevantes para el usuario. En general, describió la aplicación web como muy buena, intuitiva y efectiva, con un diseño adecuado.
+Sobre la aplicación móvil, que utilizó en un iPhone 13 Mini, destacó la fluidez y rapidez en su desempeño. Resaltó que el diseño es coherente con las otras plataformas, pero sugirió optimizar algunos elementos visuales, como la legibilidad de los textos en pantallas más pequeñas. En general, calificó la experiencia móvil como positiva, mencionando que facilita sus tareas como comerciante y complementa perfectamente la aplicación web y la landing page.
 
 ## 6.3.3 Evaluaciones según heurísticas
 
@@ -1520,3 +1528,8 @@ A continuación, se mostrará el Video About the Product, donde se mostrará las
 
 Link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202118468_upc_edu_pe/EQvkrqtupmNCiHPncyZHlRIBhQ_NC-3csCH_4G9RJcVbeQ?e=92sY2y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
+Finalmente, se presenta el video about the product donde se muestra las caracteristicas de los productos digitales en su ultima versión del Sprint 3.
+
+![imagen](https://github.com/user-attachments/assets/ee795d38-c32e-43ed-aff8-d0fb2a0ea251)
+
+Link: https://goo.su/nRWtcx
