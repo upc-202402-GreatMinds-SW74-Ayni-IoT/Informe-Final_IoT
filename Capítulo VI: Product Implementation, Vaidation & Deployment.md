@@ -838,16 +838,16 @@ Esto se confirmará cuando los agricultores puedan monitorear sus cultivos a tra
 
 Como herramienta de control para este Sprint se usó Trello con un board exclusivo para esta iteración:
 
-![imagen](https://github.com/user-attachments/assets/cc649612-1584-46a8-a2ec-8a0e1111f52d)
 
 
 
 
-Link: https://trello.com/invite/b/6711cea372164d45ac966845/ATTIfc89256cc30d96794e9f205a7629c5f382930C0C/sprint-backlog-2-ayni
+
+Link: 
 
 
 
-<table><tr><th valign="top">Sprint #</th><th colspan="7" valign="top">Sprint 2</th></tr>
+<table><tr><th valign="top">Sprint #</th><th colspan="7" valign="top">Sprint 3</th></tr>
 <tr><td colspan="2" valign="top">User Story</td><td colspan="6" valign="top">Work-Item / Task</td></tr>
 <tr><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Description</td><td valign="top">Estimation (Hours)</td><td valign="top">Assigned To</td><td valign="top"><p>Status </p><p>(To-do / </p><p>InProcess / </p><p>To Review / </p><p>Done)</p></td></tr>
 <tr><td rowspan="1" valign="top">HU-10</td><td rowspan="1" valign="top">Atender pedidos</td><td valign="top">10.1</td><td valign="top">Desarrollar las páginas de compra/venta para comerciantes en la app web</td><td valign="top">Realizar las vistas de ventas para comerciantes utulizando componenets de Angular Material</td><td valign="top">4</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
@@ -879,47 +879,113 @@ Con respecto al alcance del desarrollo de este Sprint, se desarrolló la primera
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | - | - | - | - | - | - |
-| ayni_flutter_app | feat/crops_and_products | f5a33a5 | feat: added dashboards crops and profiles  | - | 28/10/2024 |
-
-
+| AyniFrontend | feat/dashboard | 9b3d252 | feat: dashbaord  | - | 17/11/2024 |
+| AyniFrontend | feat: membership page | 9318580| feat: membership page  | - | 17/11/2024 |
+| AyniFrontend | feat: membership page | b7e1b06 | feat: addedd components to fix getUser  | - | 18/11/2024 |
+| AyniFrontend | feat: membership page | 9b5141c | fix: delete transatcions | - | 18/11/2024 |
+| ayni_flutter_app | feat/dashboards_by_crops | 1374ef6 | feat: Sensor and SensorService  | - | 16/11/2024 |
+| ayni_flutter_app | feat/dashboards_by_crops | b77e558 | fix: clean crop dashboard details screen  | - | 18/11/2024 |
+| ayni_flutter_app | feat/dashboards_by_crops | 597f3c0 | feat: added and edit profile service | - | 18/11/2024 |
+| ayni_flutter_app | feat/dashboards_by_crops | adfe6b7 | feat: fix sensor service  | - | 18/11/2024 |
+| ayni_flutter_app | feat/dashboards_by_crops | 06c3a45 | feat: update main screen  | - | 18/11/2024 |
+| ayni_flutter_app | main | f050609 | Create main.yml  | - | 01/11/2024 |
+| ayni_flutter_app | main | dcda3e0 | Update main.yml  | - | 01/11/2024 |
+| ayni_flutter_app | main | 236133e | fix: fixed bugs  | - | 01/11/2024 |
+| AyniEdgeAPI  | master | 24344ae | update database  | - | 14/11/2024 |
+| AyniEdgeAPI  | master | 61521a3 | fix: Fixed update  | - | 14/11/2024 |
+| AyniEdgeAPI  | master | 1d5f071 | fix: Fixed update | - | 14/11/2024 |
+| AyniEdgeAPI  | master | d7e9a9a | fix: Fixed get bugs | - | 15/11/2024 |
+| AyniEdgeAPI  | master | 818d1db | update database | - | 14/11/2024 |
+| AyniWokwi  | master | e75542a | feat: Added connection with Edge API | - | 02/11/2024 |
+| AyniWokwi  | master | f1d1caa | feat: Updated structure | - | 15/11/2024 |
+| AyniWokwi  | master | c8a6cec | feat: Split code using headers | - | 15/11/2024 |
 
 ### 6.2.3.4 Testing Suite Evidence for Sprint Review
 
 En esta sección, se realizaron acceptance test en .feature para cada una de las historias de usuario incluidas en este Sprint.
 Las historias de usuario relacionadas a estos primeros .features son:
 
+Historias de usuario:
+- HU09
+- HU13
+- HU14
+- HU17
+- TS10
+- TS01
+- TS09
+- 
+- 
+
+| Repository            | Branch           | Commit Id | Commit Message           | Commit Message Body | Commited on (Date) |
+|-----------------------|------------------|-----------|--------------------------|----------------------|--------------------|
+| acceptance-test-IoT  | test/UserStories | d394ed    | Acceptance_test_17.feature | -                    | 16/11/2024        |
+| acceptance-test-IoT  | test/UserStories | 543a74    | Acceptance_test_18.feature | -                    | 16/11/2024        |
+| acceptance-test-IoT  | test/UserStories | b59dab    | Acceptance_test_19.feature | -                    | 16/11/2024        |
+| acceptance-test-IoT  | test/UserStories | 48a76e    | Acceptance_test_20.feature | -                    | 16/11/2024        |
+| acceptance-test-IoT  | test/UserStories | 91164e    | Acceptance_test_21.feature | -                    | 16/11/2024        |
+| acceptance-test-IoT  | test/UserStories | 9d7d7d    | Acceptance_test_22.feature | -                    | 16/11/2024        |
+| acceptance-test-IoT  | test/UserStories | 366016    | Acceptance_test_23.feature | -                    | 16/11/2024        |
+| acceptance-test-IoT  | test/UserStories | 6ac9a8    | Acceptance_test_24.feature | -                    | 16/11/2024        |
+| acceptance-test-IoT  | test/UserStories | 5beed2    | Acceptance_test_25.feature | -                    | 16/11/2024        |
+| AyniBackend-API | main | ecd2c89324e228939982f13c241b0876b95cddbd | test: added test to qualifated sale  | - | 18/11/2024 |
+| AyniBackend-API | main | 851d556cf71935e659f4d52efc1463690028c6c9 | test: add test about finalizated product | - | 18/11/2024 |
 
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-| - | - | - | - | - | - |
-| acceptance-test-IoT | test/UserStories | 5084640 | Acceptance_test_10.feature  | - | 31/10/2024 |
+Testing en Frontend:
+A continuación se muestran pruebas realizadas en el frontend usando TestBed, proporcionado por el mismo Framework de Angular
+![imagen](https://github.com/user-attachments/assets/efdc7ad0-2c87-43bf-95c3-447d815cb493)
+![imagen](https://github.com/user-attachments/assets/fe2114e7-a481-4c6b-919a-397122b54a8e)
+
+Finalmente, se hicieron pruebas automatizadas con Selenium:
+![imagen](https://github.com/user-attachments/assets/b50567c8-ae44-49ab-8f7b-08f005fd1c34)
+
+
+Testing Backend y Edge API:
+A continuación, se muestran pruebas unitarias realizadas con J-Unit para el backend:
+
+Esta prueba valida una orden existente y si es calificada:
+![imagen](https://github.com/user-attachments/assets/3fc42917-d4a5-44e6-8f43-6c2b25dd5241)
+
+Esta prueba valida una venta existente y si es finalizada:
+![imagen](https://github.com/user-attachments/assets/618d886a-0e18-4d67-b565-ae09ef56f8f4)
 
 
 Link de repositorio: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/acceptance-test-IoT
 
 ### 6.2.3.5 Execution Evidence for Sprint Review
 
-En el Sprint 3 se alcanzó a desarrollar la ultima versión del Web Service (API RESTful) y la aplicación móvil, como principales caracteristicas tenemos las vistas de Dashboard de monitoreo de cultivo y su total funcionaldiad con los datos proporcionados por la aplicación embebido.
+En el Sprint 3 se alcanzó a desarrollar la ultima versión del Web Service (API RESTful) y la aplicación móvil, como principales caracteristicas tenemos las vistas de Dashboard de monitoreo de cultivo y su total funcionaldiad con los datos proporcionados por la aplicación embebida.
 
 Principales vistas desarrolladas y otros productos:
 
 Mobile App:
+Pantalla de dashboard de información de sensores:
+![imagen](https://github.com/user-attachments/assets/36bc49da-6dcf-4055-bc94-4bba808b0db5)
 
 
 Web App:
 
+Pantalla de membresias:
+![imagen](https://github.com/user-attachments/assets/3e679fe0-31ad-495a-972f-57f1e17b6356)
 
+Pantalla de login:
+![imagen](https://github.com/user-attachments/assets/34591a37-be92-4bb3-96c0-68f8210ec1f3)
+
+Dashbaord de cultivo:
+![imagen](https://github.com/user-attachments/assets/e79a8f1d-a3bc-44d3-9b48-ec8678934b26)
 
 Embedded App Iot:
 
+![imagen](https://github.com/user-attachments/assets/f1bffc07-ab4a-4094-870f-ee119eb8b860)
 
 
 
 A continuación se muestra un video con todas las vistas, endpoints y simulaciones:
 
+![imagen](https://github.com/user-attachments/assets/1f80f0af-69fc-4664-ac3e-98a0d205e483)
 
 
-Link: 
+Link: https://goo.su/8ddlB
 
 ### 6.2.3.6 Services Documentation Evidence for Sprint Review
 
@@ -995,7 +1061,9 @@ A continuación se muestra evidencia del despliege realizado en Netlify mediante
 
 Despliegue de Landing Page:
 
+
 Despliegue de Web App:
+![imagen](https://github.com/user-attachments/assets/d191d3de-13ec-4b64-91cc-6805fcf09651)
 
 
 Link de landing page: (https://ayni-landingpage-v1.netlify.app/)
@@ -1040,6 +1108,7 @@ En este Sprint se realizó la primera versión del backend, mobile application y
 
 
 Mobile App
+![imagen](https://github.com/user-attachments/assets/fd35b979-2f47-4300-a1b9-085a62560570)
 
 
 
@@ -1063,6 +1132,7 @@ Landing Page:
 
 
 Frontend:
+![imagen](https://github.com/user-attachments/assets/c65e0171-6f23-41e5-a575-1695022d4aa1)
 
 
 
@@ -1167,7 +1237,7 @@ Duración: 11:00
 ![imagen](https://github.com/user-attachments/assets/f43fcc98-e758-4ea2-8a13-56889fda4d56)
 
 
-Lissane nos brindó su sincera opinión acerca de la landing page, aplicación web y aplicacion movil, con respecto a la landing page, nos resaltó el diseño atractivo y eficiente de las secciones asimismo con el orden de estas, sin embargo considera que debe tener más relevancia las funcionalidades mostradas incluyendo capturas de pantalla de la aplicación web. Pese a ello, la landing page resultó agradable visualmente para ella, calificándola con un 8 de 10. Por otro lado, con respecto a la aplicación web, no consideró dificil la navegación del flujo de añadir un cultivo, asimismo, está conforme con la distribución de las secciones de la barra de navegación. Sin embargo, cree que se debería mejorar el formulario de añadir un cultivo, donde deberían poner mas datos para el registro. Finalmente, le parecio bueno el diseño de la apliación web, pero sería aún mucho mejor si se mejoraran las observaciones que nos compartió.
+Lissane nos brindó su sincera opinión acerca de la ultima versión de la landing page, aplicación web y aplicacion movil, con respecto a la landing page, nos resaltó el diseño atractivo y eficiente de las secciones asimismo con el orden de estas, sin embargo considera que debe tener más relevancia las funcionalidades mostradas incluyendo capturas de pantalla de la aplicación web. Pese a ello, la landing page resultó agradable visualmente para ella, calificándola con un 8 de 10. Por otro lado, con respecto a la aplicación web, no consideró dificil la navegación del flujo de añadir un cultivo, asimismo, está conforme con la distribución de las secciones de la barra de navegación. Sin embargo, cree que se debería mejorar el formulario de añadir un cultivo, donde deberían poner mas datos para el registro. Finalmente, le parecio bueno el diseño de la apliación web, pero sería aún mucho mejor si se mejoraran las observaciones que nos compartió.
 
 
 
