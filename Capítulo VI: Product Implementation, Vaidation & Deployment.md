@@ -814,17 +814,17 @@ Frontend:
 | Sprint # | 3 | 
 | - | - | 
 | **Sprint Planning Background** | - |
-| Date | 2024 - 10 - 10 |
+| Date | 2024 - 11 - 09 |
 | Time | 19:00 PM |
 | Location | Virtual via Google Meet |
 | Prepared By | Gonzales Carrión, Jorge Enrique |
 | Attendees (to planning meeting) | Gonzales Carrión, Jorge Enrique / Espejo Macuri, Paolo Andre / Alejo Cardenas, Luis Angel / Rios Jaimes, Jhonel Enrique / Sebastian Tasayco, Javier Martin |
-| Sprint 2 - Review Summary | Se realizó la primera versión de landing page y web app, asimismo features de alta prioridad para los usuarios agricolas. |
-| Sprint 2 - Retrospective Summary  | Se debe detallar la herramienta de control de gestión de proeyctos empleada en el Sprint 1 y mejorar explicaciones en las secciones Development, Testing, Execution, Documentation, Deployment |
+| Sprint 2 - Review Summary | Se realizó la segunda versión de landing page, web app, mobile app, embedded app iot, edge api y web api, asimismo features de alta prioridad para los usuarios agricolas. |
+| Sprint 2 - Retrospective Summary  | Se debe detallar la evidencia de despliegue de cada producto, realizar mejoras en documentación, rehacer los videos about the team, corregir los diagramas de clases.|
 | **Sprint Goal & User Stories** | - |
-| Sprint 3 Goal| Nuestro enfoque está en permitir que los agricultores puedan registrar y planificar cultivos, además de monitorear sus cultivos utilizando datos de una aplicación embebida y en proporcionar a los comerciantes pantallas para la compra eficiente de cultivos en la aplicación móvil.<br> Creemos que esto ofrecerá una experiencia fluida de gestión de cultivos para los agricultores, brindando herramientas detalladas de planificación y monitoreo, mientras que los comerciantes podrán navegar y realizar compras de cultivos de manera sencilla dentro del sistema. <br> Esto se confirmará cuando los agricultores puedan monitorear sus cultivos a través de la aplicación embebida, y los comerciantes puedan acceder y completar la compra de cultivos mediante las pantallas implementadas, utilizando los endpoints en Ayni. |
-| Sprint 3 - Velocity | El equipo puede aceptar 80 Story Points|
-| Sprint 3 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 72|
+| Sprint 3 Goal| Nuestro enfoque está en ofrecer la implementación de los sensores IoT y que los datos obtenidos se procesen en un servidor Edge y se muestren mediante un dashboard en la aplicación móvil y web, por ultimo ofrecer endpoints a los desarrolladores para manejar los datos de los cultivos y la información obtenida del Edge API mediante endpoints que usan el Edge API. Creemos que esto ofrecerá una caracteristica única a los usuarios agrícolas y comerciantes para conocer la calidad del proceso de cultivo de los productos. Esto se confirmará cuando los usuarios agrícolas puedan monitorear los cultivos previamente registrados mediante el dashboard y los comerciantes puedan verificar esos datos ofrecidos al seleccionar un cultivo a su compra y los desarrolladores usen la Web API para verificar el uso correcto de los endpoints por los productos digialtes |
+| Sprint 3 - Velocity | El equipo puede aceptar 45 Story Points|
+| Sprint 3 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 41|
 
 
 
@@ -839,11 +839,13 @@ Esto se confirmará cuando los agricultores puedan monitorear sus cultivos a tra
 Como herramienta de control para este Sprint se usó Trello con un board exclusivo para esta iteración:
 
 
+![imagen](https://github.com/user-attachments/assets/5fd30009-e7bd-4bfb-9e03-3692a8440002)
 
 
 
 
-Link: 
+
+Link: https://trello.com/invite/b/672d5682405b8d81a2f7c6ea/ATTI62872a2050fbf22679d9f352d1cf261dE29FD05F/ayni-sprint-backlog-3
 
 
 
@@ -933,20 +935,26 @@ Historias de usuario:
 
 Testing en Frontend:
 A continuación se muestran pruebas realizadas en el frontend usando TestBed, proporcionado por el mismo Framework de Angular
+
 ![imagen](https://github.com/user-attachments/assets/efdc7ad0-2c87-43bf-95c3-447d815cb493)
+
 ![imagen](https://github.com/user-attachments/assets/fe2114e7-a481-4c6b-919a-397122b54a8e)
 
 Finalmente, se hicieron pruebas automatizadas con Selenium:
+
 ![imagen](https://github.com/user-attachments/assets/b50567c8-ae44-49ab-8f7b-08f005fd1c34)
 
 
 Testing Backend y Edge API:
+
 A continuación, se muestran pruebas unitarias realizadas con J-Unit para el backend:
 
 Esta prueba valida una orden existente y si es calificada:
+
 ![imagen](https://github.com/user-attachments/assets/3fc42917-d4a5-44e6-8f43-6c2b25dd5241)
 
 Esta prueba valida una venta existente y si es finalizada:
+
 ![imagen](https://github.com/user-attachments/assets/618d886a-0e18-4d67-b565-ae09ef56f8f4)
 
 
@@ -959,19 +967,24 @@ En el Sprint 3 se alcanzó a desarrollar la ultima versión del Web Service (API
 Principales vistas desarrolladas y otros productos:
 
 Mobile App:
+
 Pantalla de dashboard de información de sensores:
+
 ![imagen](https://github.com/user-attachments/assets/36bc49da-6dcf-4055-bc94-4bba808b0db5)
 
 
 Web App:
 
 Pantalla de membresias:
+
 ![imagen](https://github.com/user-attachments/assets/3e679fe0-31ad-495a-972f-57f1e17b6356)
 
 Pantalla de login:
+
 ![imagen](https://github.com/user-attachments/assets/34591a37-be92-4bb3-96c0-68f8210ec1f3)
 
 Dashbaord de cultivo:
+
 ![imagen](https://github.com/user-attachments/assets/e79a8f1d-a3bc-44d3-9b48-ec8678934b26)
 
 Embedded App Iot:
@@ -1046,11 +1059,15 @@ Edge Api:
 A continuación se mostrarán capturas de la documentación usando OpenAPI:
 
 Backend: 
+
 ![imagen](https://github.com/user-attachments/assets/8e864981-59b5-463a-85ed-8c5a9ea7e0e1)
+
 ![imagen](https://github.com/user-attachments/assets/bac07886-c344-4f84-84a6-a19355ecdfce)
+
 ![imagen](https://github.com/user-attachments/assets/8b0198a3-51ae-450d-9212-4061cf699cf1)
 
 Edge API:
+
 ![imagen](https://github.com/user-attachments/assets/022e8779-5131-4234-b706-50e271ed1f75)
 
 
@@ -1063,10 +1080,12 @@ Despliegue de Landing Page:
 
 
 Despliegue de Web App:
+
 ![imagen](https://github.com/user-attachments/assets/d191d3de-13ec-4b64-91cc-6805fcf09651)
 
 
 Link de landing page: (https://ayni-landingpage-v1.netlify.app/)
+
 Link de primera versión de frontend: (https://ayni-webapp-v1.netlify.app/)
 
 ---
@@ -1074,9 +1093,11 @@ Link de primera versión de frontend: (https://ayni-webapp-v1.netlify.app/)
 A continuación se muestra evidencia del despliege realizado en Zeabur mediante los logs proporcionados por la herramienta:
 
 Despliegue de Edge API:
+
 ![imagen](https://github.com/user-attachments/assets/60dcdf1f-e1e7-459a-bad6-c5738ddc2e8e)
 
 Despliegue de Web API:
+
 ![imagen](https://github.com/user-attachments/assets/ab1c99be-a6d1-42ca-a35a-f5a4d082f8c0)
 
 
@@ -1108,30 +1129,36 @@ En este Sprint se realizó la primera versión del backend, mobile application y
 
 
 Mobile App
+
 ![imagen](https://github.com/user-attachments/assets/fd35b979-2f47-4300-a1b9-085a62560570)
 
 
 
 Backend
+
 ![imagen](https://github.com/user-attachments/assets/cabee589-88ed-4ec2-aa69-e90389ecf4f8)
 
 
 
 Edge API:
+
 ![imagen](https://github.com/user-attachments/assets/6dac96dc-b040-491c-be4f-d69cd1fa95f1)
 
 
 
 IoT Embedded App:
+
 ![imagen](https://github.com/user-attachments/assets/1da41b01-2bd3-4ff6-91f7-15740d098121)
 
 
 
 Landing Page:
 
+![imagen](https://github.com/user-attachments/assets/7e643ac5-158b-4124-aee8-6543b352d3af)
 
 
 Frontend:
+
 ![imagen](https://github.com/user-attachments/assets/c65e0171-6f23-41e5-a575-1695022d4aa1)
 
 
