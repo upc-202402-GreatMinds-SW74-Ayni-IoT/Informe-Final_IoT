@@ -822,7 +822,7 @@ Frontend:
 | Sprint 2 - Review Summary | Se realizó la segunda versión de landing page, web app, mobile app, embedded app iot, edge api y web api, asimismo features de alta prioridad para los usuarios agricolas. |
 | Sprint 2 - Retrospective Summary  | Se debe detallar la evidencia de despliegue de cada producto, realizar mejoras en documentación, rehacer los videos about the team, corregir los diagramas de clases.|
 | **Sprint Goal & User Stories** | - |
-| Sprint 3 Goal| Nuestro enfoque está en ofrecer la implementación de los sensores IoT y que los datos obtenidos se procesen en un servidor Edge y se muestren mediante un dashboard en la aplicación móvil y web, por ultimo ofrecer endpoints a los desarrolladores para manejar los datos de los cultivos y la información obtenida del Edge API mediante endpoints que usan el Edge API. Creemos que esto ofrecerá una caracteristica única a los usuarios agrícolas y comerciantes para conocer la calidad del proceso de cultivo de los productos. Esto se confirmará cuando los usuarios agrícolas puedan monitorear los cultivos previamente registrados mediante el dashboard y los comerciantes puedan verificar esos datos ofrecidos al seleccionar un cultivo a su compra y los desarrolladores usen la Web API para verificar el uso correcto de los endpoints por los productos digialtes |
+| Sprint 3 Goal| Nuestro enfoque está en implementar la funcionalidad de dashboards para monitorear datos de cultivos obtenidos de sensores IoT, procesados en el servidor Edge, y visualizarlos en las aplicaciones web y móvil, además de habilitar endpoints específicos en la Web API para que los desarrolladores puedan manejar y utilizar esta información. Creemos que esto permitirá a los usuarios agrícolas monitorear en tiempo real sus cultivos registrados, a los comerciantes verificar datos confiables antes de realizar compras, y a los desarrolladores integrar los datos procesados en sus propios productos digitales. Esto se confirmará cuando los usuarios puedan visualizar los datos en los dashboards, los comerciantes puedan verificar la información de los cultivos desde las aplicaciones, los desarrolladores usen con éxito los endpoints de la Web API conectados a la Edge API, los visitantes accedan a la landing page del sistema, y todos los productos digitales (Embedded App IoT, App Móvil, App Web, Edge API y Web API) funcionen de manera integrada. |
 | Sprint 3 - Velocity | El equipo puede aceptar 45 Story Points|
 | Sprint 3 - Story Points | La suma de los Story Points de los User Sotires que se atenderá es 41|
 
@@ -847,30 +847,24 @@ Como herramienta de control para este Sprint se usó Trello con un board exclusi
 
 Link: https://trello.com/invite/b/672d5682405b8d81a2f7c6ea/ATTI62872a2050fbf22679d9f352d1cf261dE29FD05F/ayni-sprint-backlog-3
 
-
+En esta tabla se detallará las task más importantes del Sprint
 
 <table><tr><th valign="top">Sprint #</th><th colspan="7" valign="top">Sprint 3</th></tr>
 <tr><td colspan="2" valign="top">User Story</td><td colspan="6" valign="top">Work-Item / Task</td></tr>
 <tr><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Id</td><td valign="top">Title</td><td valign="top">Description</td><td valign="top">Estimation (Hours)</td><td valign="top">Assigned To</td><td valign="top"><p>Status </p><p>(To-do / </p><p>InProcess / </p><p>To Review / </p><p>Done)</p></td></tr>
-<tr><td rowspan="1" valign="top">HU-10</td><td rowspan="1" valign="top">Atender pedidos</td><td valign="top">10.1</td><td valign="top">Desarrollar las páginas de compra/venta para comerciantes en la app web</td><td valign="top">Realizar las vistas de ventas para comerciantes utulizando componenets de Angular Material</td><td valign="top">4</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
+<tr><td rowspan="1" valign="top">HU-09</td><td rowspan="1" valign="top">Acceder a la información que brindan los sensores mediante dashboards</td><td valign="top">09.2</td><td valign="top">Desarrollar los graficos con los datos de los sensores através del Web API</td><td valign="top">Realizar la página de dashboard para la aplicación web usando los datos del Web API</td><td valign="top">4</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
 
 
-<tr><td rowspan="1" valign="top">HU-16</td><td rowspan="1" valign="top">Sección principal ("Home")</td><td valign="top">16.1</td><td valign="top">Desarrollar la página "Home" para los comerciante</td><td valign="top">Desarrollar las paginas con los estilos en Angular Material</td><td valign="top">4</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
+<tr><td rowspan="1" valign="top">IOT-01</td><td rowspan="1" valign="top">Monitorear el estado de la temperatura ambiental del cultivo</td><td valign="top">IOT01.1</td><td valign="top">Implementar POO</td><td valign="top">Estructirizar el codigo fuente utilizando headers y chip customs</td><td valign="top">4</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
 
 
-<tr><td rowspan="1" valign="top">HU-05</td><td rowspan="1" valign="top"> 	Realizar pedidos de productos</td><td valign="top">5.1</td><td valign="top">Desarrollar la pagina de obtención de cultivos para los comerciantes en la app web</td><td valign="top">Realizar la pagina correspondiente mediante un stepper usando Angular Material</td><td valign="top">2</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
+<tr><td rowspan="1" valign="top">HU-09</td><td rowspan="1" valign="top"> 	Acceder a la información que brindan los sensores mediante dashboards</td><td valign="top">09.3</td><td valign="top">Desarrollar los dashboards con datos de sensores en detalles de cultivo en aplicación móvil</td><td valign="top">Realizar la pagina correspondiente mediante un stepper usando Angular Material</td><td valign="top">2</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
 
-<tr><td rowspan="1" valign="top">HU-08</td><td rowspan="1" valign="top">Sección de Misión y Visión</td><td valign="top">08.2</td><td valign="top">Desarrollar paginas de planificación y lista de cultivos en la aplicación móvil</td><td valign="top">Realizar las secciones en Flutter para la aplicación móvil</td><td valign="top">2</td><td valign="top">Jorge Gonzales</td><td valign="top">Done</td></tr>
+<tr><td rowspan="1" valign="top">HU-14</td><td rowspan="1" valign="top">Sección de Misión y Visión</td><td valign="top">14.2</td><td valign="top">Actualizar la landing page con las nuevas versiones de videos About the Team</td><td valign="top">Editar la alnding page usando HTML y CSS el acceso rapido a los videos about the team</td><td valign="top">2</td><td valign="top">Javier Sebastian</td><td valign="top">Done</td></tr>
 
-<tr><td valign="top">TS-02</td><td valign="top">Creación y obtención de cultivos</td><td valign="top">TS02.1</td><td valign="top">Desarrollar endpoints de creación y obtención de cultivos</td><td valign="top">2</td><td valign="top">Luis Alejo</td><td valign="top">Done</td></tr>
+<tr><td valign="top">IOT-03</td><td valign="top">Obtener datos del nivel de oxígeno del suelo</td><td valign="top">IOT03.1</td><td valign="top">Implementar sensores con chip custom para el nivel de oxigeno del suelo</td><td valign="top">4/td><td valign="top">Javier Sebastian</td><td valign="top">Done</td></tr>
 
-<tr><td valign="top">TS-03</td><td valign="top"> Desarrollar endpoints de creación y obtención de productos</td><td valign="top">TS03.1</td><td valign="top">Desarrollar endpoints de creación y obtención de productos</td><td valign="top">Implementar endpoints relacionados a los productos y su relación con las ordenes</td><td valign="top">8</td><td valign="top">Jhonel Rios</td><td valign="top">Done</td></tr>
-
-<tr><td valign="top">HU-08</td><td valign="top">Planificar actividades agrícolas</td><td valign="top">08.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web</td><td valign="top">4</td><td valign="top">Javier Sebastían</td><td valign="top">Done</td></tr>
-
-<tr><td valign="top">HU-15</td><td valign="top">Sistemas de búsqueda y paginación</td><td valign="top">15.1</td><td valign="top">Implementar vistas de registro y detalles de cultivo de la app web</td><td valign="top">Implementar componentes de paginación y barras de búsquedas en las secciones de la app web</td><td valign="top">3</td><td valign="top">Paolo Espejo</td><td valign="top">Done</td></tr>
-
-<tr><td valign="top">HU-02</td><td valign="top">Inicio de sesión</td><td valign="top">02.1</td><td valign="top">Implementar vistas de inicio de sesión y planes en la web app</td><td valign="top">Implementar vistas y formularios de inicio de sesión (sin función)</td><td valign="top">3</td><td valign="top">Jorge gonzales</td><td valign="top">Done</td></tr>
+<tr><td valign="top">IOT-04</td><td valign="top"> Evaluación a tiempo real del nivel de agua</td><td valign="top">TS03.1</td><td valign="top">Implementar sensores de nivel de agua con chips de ultrasonido </td><td valign="top">Implementar sensor de ultrasonido para medir el agua utilizando POO y herencia</td><td valign="top">8</td><td valign="top">Jorge Gonzales</td><td valign="top">Done</td></tr>
 
 </table>
 
@@ -915,8 +909,10 @@ Historias de usuario:
 - TS10
 - TS01
 - TS09
-- 
-- 
+- IOT-01
+- IOT-02
+- IOT-03
+- IOT-04
 
 | Repository            | Branch           | Commit Id | Commit Message           | Commit Message Body | Commited on (Date) |
 |-----------------------|------------------|-----------|--------------------------|----------------------|--------------------|
@@ -964,7 +960,6 @@ Link de repositorio: https://github.com/upc-202402-GreatMinds-SW74-Ayni-IoT/acce
 
 En el Sprint 3 se alcanzó a desarrollar la ultima versión del Web Service (API RESTful) y la aplicación móvil, como principales caracteristicas tenemos las vistas de Dashboard de monitoreo de cultivo y su total funcionaldiad con los datos proporcionados por la aplicación embebida.
 
-Principales vistas desarrolladas y otros productos:
 
 Mobile App:
 
@@ -1077,6 +1072,7 @@ Edge API:
 A continuación se muestra evidencia del despliege realizado en Netlify mediante los logs proporcionados por la herramienta:
 
 Despliegue de Landing Page:
+![imagen](https://github.com/user-attachments/assets/8bd7596c-5c9c-417e-9ffe-32944f4c25a2)
 
 
 Despliegue de Web App:
@@ -1439,35 +1435,14 @@ Botones en sección "Sign In y Sign Up"
 ![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/278846713-9ed0ca37-09d7-45c7-b111-b614739c209e.png)
 
 
-Botones en sección "Financial Management"
-
-![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/278846724-a145e2c6-d273-4e4e-9bfc-73b8c11b22f8.png)
-
 
 *El formato de diseño elegido para los botones “Sign In” es inconsistente a comparación de todas las secciones de la aplicación web. Esto incluye el color y bordes del botón que permite identificarlos. Como consecuencia, esto puede provocar que potencialmente los usuarios se desorienten y no puedan diferenciar el texto de un botón con el cual pueden interactuar.*
 
 ***Recomendación:**
 Utilizar el mismo estilo de botones para mostrar más información en todas las secciones, de manera que el usuario se familiarice mejor con la aplicación web.*
 
-***PROBLEMA #2:** Al estar en una de las secciones, resulta imposible de diferenciar entre estos debido a que la barra de navegación no indica en qué sección se encuentra el usuario*
 
-***Severidad:** 1*
-
-*Heurística violada: Usabilidad - Reconocer antes que recordar*
-
-***Problema:***
-
-Barra de navegación:
-
-![image](https://github-production-user-asset-6210df.s3.amazonaws.com/104078975/277204700-cbbfa595-2a68-4619-8a4c-fa66067715cc.png)
-
-
-*Dentro de las secciones que se ofrecen para ambos roles, no existe ningún indicador resaltante que permita indicar al usuario en qué sección se encuentra, potencialmente provocando que se desubique.*
-
-***Recomendación:**
-Resaltar con un cuadro de color resaltante la sección que se seleccione dentro de la barra de navegación, con la finalidad de orientar al usuario.*
-
-***PROBLEMA #3:** No existe un apartado de edición de perfil*
+***PROBLEMA #2:** No existe un apartado de edición de perfil*
 
 ***Severidad:** 2*
 
